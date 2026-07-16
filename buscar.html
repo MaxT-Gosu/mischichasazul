@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar Modelos</title>
+    <style>
+        /* Estilos generales */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Roboto, sans-serif;
+        }
+
+        body {
+            background-color: #0b0b0c;
+            color: #ffffff;
+            /* Espacio inferior para la barra de navegación */
+            padding-bottom: 85px; 
+        }
+
+        /* Cabecera */
+        header {
+            background: linear-gradient(180deg, #16161a 0%, #0b0b0c 100%);
+            padding: 15px 10px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 1.4rem;
+            color: #ff2a74;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-shadow: 0 0 10px rgba(255, 42, 116, 0.3);
+        }
+
+        /* Contenedor del Buscador */
+        .search-box-container {
+            max-width: 500px;
+            margin: 10px auto 20px auto;
+            padding: 0 15px;
+            position: relative;
+        }
+
+        /* Input o barra de entrada de texto */
+        .search-input {
+            width: 100%;
+            padding: 14px 14px 14px 45px; /* Espacio a la izquierda para el icono */
+            background-color: #16161a;
+            border: 1px solid #232329;
+            border-radius: 30px;
+            color: #ffffff;
+            font-size: 1rem;
+            outline: none;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+
+        /* Efecto al seleccionar la barra de búsqueda */
+        .search-input:focus {
+            border-color: #ff2a74;
+            box-shadow: 0 0 8px rgba(255, 42, 116, 0.2);
+        }
+
+        /* Icono de la lupa dentro del input */
+        .search-icon {
+            position: absolute;
+            left: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #8a8a93;
+            font-size: 1.1rem;
+            pointer-events: none;
+        }
+
+        /* CUADRÍCULA DE RESULTADOS (3 columnas para mantener la elegancia) */
+        .grid-resultados {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+            padding: 8px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Tarjeta de resultado */
+        .card-resultado {
+            background-color: #16161a;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #232329;
+            text-decoration: none; 
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            animation: fadeIn 0.3s ease-in-out;
+        }
+
+        .card-resultado:active {
+            transform: scale(0.96);
+        }
+
+        .img-container {
+            width: 100%;
+            aspect-ratio: 3 / 4; 
+            background-color: #000;
+        }
+
+        .img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+        }
+
+        .info-modelo {
+            padding: 6px;
+            text-align: center;
+        }
+
+        .info-modelo .nombre {
+            font-size: 0.85rem;
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 2px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        /* Mensaje cuando no hay resultados */
+        .no-results {
+            grid-column: span 3;
+            text-align: center;
+            padding: 40px 20px;
+            color: #8a8a93;
+            font-size: 0.95rem;
+        }
+
+        .no-results span {
+            display: block;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        /* Animación suave al aparecer los resultados */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(5px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* ==========================================
+           BARRA DE NAVEGACIÓN INFERIOR
+           ========================================== */
+        .nav-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 65px;
+            background-color: #111115;
+            border-top: 1px solid #1f1f24;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            z-index: 999;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        .nav-item {
+            color: #8a8a93;
+            text-decoration: none;
+            font-size: 0.75rem;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 25%;
+            height: 100%;
+            transition: color 0.2s;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .nav-icon {
+            font-size: 1.3rem;
+            margin-bottom: 2px;
+        }
+
+        /* El botón "Buscar" aparece activo */
+        .nav-item.active {
+            color: #ff2a74;
+            font-weight: bold;
+        }
+
+        .nav-item:active {
+            transform: scale(0.92);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Buscar Chicas</h1>
+    </header>
+
+    <!-- BARRA DE BÚSQUEDA -->
+    <div class="search-box-container">
+        <span class="search-icon">🔍</span>
+        <input 
+            type="text" 
+            id="search-input" 
+            class="search-input" 
+            placeholder="Escribe el nombre de la modelo..." 
+            autocomplete="off"
+        >
+    </div>
+
+    <!-- Resultados de la búsqueda -->
+    <main class="grid-resultados" id="resultados-container"></main>
+
+    <!-- ==========================================
+       MENÚ INFERIOR TÁCTIL
+       ========================================== -->
+    <nav class="nav-bar">
+        <!-- 1. Home -->
+        <a href="index.html" class="nav-item">
+            <span class="nav-icon">🏠</span>
+            <span>Home</span>
+        </a>
+        
+        <!-- 2. Mis Chicas -->
+        <a href="chicas.html" class="nav-item">
+            <span class="nav-icon">🔥</span>
+            <span>Mis Chicas</span>
+        </a>
+        
+        <!-- 3. Buscar (Activo) -->
+        <a href="buscar.html" class="nav-item active">
+            <span class="nav-icon">🔍</span>
+            <span>Buscar</span>
+        </a>
+        
+        <!-- 4. Info -->
+        <a href="info.html" class="nav-item">
+            <span class="nav-icon">ℹ️</span>
+            <span>Info</span>
+        </a>
+    </nav>
+
+    <!-- 1. Importación de tu base de datos central -->
+    <script src="db.js"></script>
+
+    <!-- 2. Motor de búsqueda interactivo -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const searchInput = document.getElementById("search-input");
+            const resultadosContainer = document.getElementById("resultados-container");
+
+            // Función para renderizar los resultados filtrados
+            function filtrarModelos(busqueda = "") {
+                resultadosContainer.innerHTML = "";
+
+                // Si la base de datos no está disponible
+                if (typeof modelosDB === 'undefined' || !Array.isArray(modelosDB)) {
+                    resultadosContainer.innerHTML = "<p class='no-results'>Error al cargar los datos.</p>";
+                    return;
+                }
+
+                // Convertimos la búsqueda a minúsculas y quitamos espacios extras
+                const termino = busqueda.toLowerCase().trim();
+
+                // Filtramos el array de db.js por coincidencia de nombre o categoría
+                const filtrados = modelosDB.filter(modelo => {
+                    const nombreCoincide = modelo.nombre.toLowerCase().includes(termino);
+                    const categoriaCoincide = modelo.categoria ? modelo.categoria.toLowerCase().includes(termino) : false;
+                    return nombreCoincide || categoriaCoincide;
+                });
+
+                // Si no hay coincidencias
+                if (filtrados.length === 0) {
+                    resultadosContainer.innerHTML = `
+                        <div class="no-results">
+                            <span>🤷‍♀️</span>
+                            No se encontraron modelos con ese nombre.
+                        </div>
+                    `;
+                    return;
+                }
+
+                // Dibujamos las tarjetas que coincidan
+                filtrados.forEach(modelo => {
+                    const card = document.createElement("a");
+                    card.className = "card-resultado";
+                    card.href = `modelo.html?id=${modelo.id}`;
+
+                    card.innerHTML = `
+                        <div class="img-container">
+                            <img src="${modelo.fotoPortada}" alt="${modelo.nombre}">
+                        </div>
+                        <div class="info-modelo">
+                            <div class="nombre">${modelo.nombre}</div>
+                        </div>
+                    `;
+                    resultadosContainer.appendChild(card);
+                });
+            }
+
+            // Al cargar la página por primera vez, muestra todas las chicas
+            filtrarModelos("");
+
+            // Escuchar cada tecla que el usuario escribe en la barra de búsqueda
+            searchInput.addEventListener("input", (e) => {
+                filtrarModelos(e.target.value);
+            });
+        });
+    </script>
+</body>
+</html>
