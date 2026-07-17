@@ -43,7 +43,9 @@ const modelosDB = [
 			
         ],
         videos: [
-		    "https://bunkr.ws/f/sQysNqhYKnZd2",
+		    "https://www.burstcloud.co/embed/267f4840f666da070b89c730752d55d7d24368bc9c2b12a5c85f2d77d3b0f363/4ac7bea6-dcd7-40ba-a0d1-c311bb334e24.mp4",
+			"https://www.burstcloud.co/embed/cd272c665c3d32426ae09ebe7883498b8d302e222e513fc933b671c433732401/VID_20260608_233151_443.mp4",
+			"https://www.burstcloud.co/embed/6766dd5feb8774b61458471f6b769b7455b4d33cd0feb0d4733894b571f6cd66/VID_20260715_234616_833-HePxBIpK.mp4"
 		]
     },
     {
