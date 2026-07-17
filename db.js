@@ -103,7 +103,7 @@ const modelosDB = [
 			"https://simp6.cuckcapital.cr/images3/2316x2316_b2b866e3d3c44ea430a79a222ba72718c4bd2c85d9343dbd.md.jpg",
 			"https://simp6.cuckcapital.cr/images3/2316x2316_6aa5128dbf255af0e26fff2d945d31ad6eb4fcd50c980366.md.jpg",
 			"https://simp6.cuckcapital.cr/images3/858x1475_ecc5dd17387a0e4b108e0d4f2cd0bbade6af0690ad38bd46.md.jpg",
-			"https://simp6.cuckcapital.cr/images3/914x1273_ef4887e90def8b60b88a8829538aaeeffa5fdc0ec7b6984d.md.jpg",
+			"https://simp6.cuckcapital.cr/images3/914x1273_ef4887e90def8b60b88a8829538aaeeffa5fdc0ec7b6984d.md.jpg"
 			
 			
 			
