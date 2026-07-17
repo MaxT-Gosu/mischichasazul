@@ -15,24 +15,55 @@ const modelosDB = [
         ],
         // Enlaces a sus videos (pueden ser de servidores externos o de tu github)
         videos: [
-            "https://www.burstcloud.co/embed/097a74af6ca1355e1ec3b0b1dd0592bc6bbd14a310bf32dae64b143243237eaa/1.mp4", // Video de ejemplo
+            "https://appcine.b-cdn.net/tuconte/gilticus.mp4", // Video de ejemplo
             "https://www.burstcloud.co/embed/9c7fa55ec5e216b50f7d58ddf2b0b7afcedead66b5cf1a0da6ddf46c054f14ef/2.mp4"
         ]
     },
     {
         id: 2,
-        nombre: "Camila",
-        fotoPortada: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80",
+        nombre: "iaribroin",
+        fotoPortada: "https://simp6.cuckcapital.cr/images4/20260311_00433836f9304564435504.md.jpg",
         badge: "Nueva",
-        categoria: "Europea",
+        categoria: "Estadounidense",
         descripcion: "Subiendo videos nuevos todos los días 🔥",
         fotos: [
-            "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80"
+            "https://simp6.cuckcapital.cr/images3/photo_2024-08-30_00-11-38e59190eecc2983fe.md.jpg",
+			"https://simp6.cuckcapital.cr/images3/photo_2024-08-30_00-13-4587f3005df3c12249.md.jpg",
+			"https://simp6.cuckcapital.cr/images3/photo_2024-08-30_00-13-4345f6ad93f4139f43.md.jpg",
+			"https://simp6.cuckcapital.cr/images3/hD7fPzcf_oafe1a108de0255b0.md.jpg",
+			"https://simp6.cuckcapital.cr/images3/169796146888ec91751a25f4a218.md.jpg",
+			"https://simp6.cuckcapital.cr/images3/iara-broin-v0-84csolqv0n3g14962ccca537eecf6.md.jpg"
+			"https://simp6.cuckcapital.cr/images3/20260101_2325513e4b8cfd505bd0b5.md.jpg",
+			"https://simp6.cuckcapital.cr/images3/G91-qGwWEAAiEhQc3ef996e074efcaa.md.jpg",
+			"https://simp6.cuckcapital.cr/images4/20260327_2243387f248a67f68bd3b1.md.jpg",
+			"https://simp6.cuckcapital.cr/images4/iarabroin_2026-05-23_25b3a050e2047f70e.md.jpg",
+			
+			
+			
+				
+			
         ],
-        videos: []
+        videos: [
+		    "https://bunkr.ws/f/sQysNqhYKnZd2",
+		]
     },
     {
         id: 3,
+        nombre: "Sofía",
+        fotoPortada: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=300&q=80",
+        badge: "",
+        categoria: "Latina",
+        descripcion: "Amante del fitness y las sesiones de fotos atrevidas.",
+        fotos: [
+            "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=80",
+            "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=600&q=80"
+        ],
+        videos: [
+            "https://www.w3schools.com/html/movie.mp4"
+        ]
+    },
+	{
+        id: 4,
         nombre: "Sofía",
         fotoPortada: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=300&q=80",
         badge: "",
