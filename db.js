@@ -91,9 +91,9 @@ const modelosDB = [
 			"https://t93.pixhost.to/thumbs/469/441368251_gepyux9w4aan9oj.jpg",
 			"https://simp6.cuckcapital.cr/images3/spitreliigion15ef34896794f2291.md.png",
 			"https://simp6.cuckcapital.cr/images3/GaquLmAXgAAz-Me92dfb7ebcb20c405.md.jpg",
-			"https://simp6.cuckcapital.cr/images3/10000033026755f706b183271e.jpg"
+			"https://simp6.cuckcapital.cr/images3/10000033026755f706b183271e.jpg",
 			"https://simp6.cuckcapital.cr/images3/1000003303d6b0cdd0b92a4be2.jpg",
-			"https://simp6.cuckcapital.cr/images3/10000033044093dd12b3aa1b7f.md.jpg"
+			"https://simp6.cuckcapital.cr/images3/10000033044093dd12b3aa1b7f.md.jpg",
 			"https://simp6.cuckcapital.cr/images3/IMG_5569a334057d72d9129d.md.jpg",
 			"https://simp6.cuckcapital.cr/images3/G7Npq_-W4AA3zPv4d99a33f1fe17c76.md.jpg",
 			"https://simp6.cuckcapital.cr/images3/G7Npq_9W0AAx6xW6431d84b0f870f8c.md.jpg",
