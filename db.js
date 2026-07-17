@@ -77,6 +77,44 @@ const modelosDB = [
         videos: [
             "https://www.w3schools.com/html/movie.mp4"
         ]
+    },
+	{
+        id: 4,
+        nombre: "spitreligion",
+        fotoPortada: "https://simp6.cuckcapital.cr/images2/IMG_38705439888e5cc6e6b1.md.jpg",
+        badge: "",
+        categoria: "Latina",
+        descripcion: "Amante del fitness y las sesiones de fotos atrevidas.",
+        fotos: [
+            "https://t93.pixhost.to/thumbs/469/441368248_ge1ckplwkaairol.jpg",
+            "https://t93.pixhost.to/thumbs/469/441368250_gepyux8xiaamut7.jpg",
+			"https://t93.pixhost.to/thumbs/469/441368251_gepyux9w4aan9oj.jpg",
+			"https://simp6.cuckcapital.cr/images3/spitreliigion15ef34896794f2291.md.png",
+			"https://simp6.cuckcapital.cr/images3/GaquLmAXgAAz-Me92dfb7ebcb20c405.md.jpg",
+			"https://simp6.cuckcapital.cr/images3/10000033026755f706b183271e.jpg"
+			"https://simp6.cuckcapital.cr/images3/1000003303d6b0cdd0b92a4be2.jpg",
+			"https://simp6.cuckcapital.cr/images3/10000033044093dd12b3aa1b7f.md.jpg"
+			"https://simp6.cuckcapital.cr/images3/IMG_5569a334057d72d9129d.md.jpg",
+			"https://simp6.cuckcapital.cr/images3/G7Npq_-W4AA3zPv4d99a33f1fe17c76.md.jpg",
+			"https://simp6.cuckcapital.cr/images3/G7Npq_9W0AAx6xW6431d84b0f870f8c.md.jpg",
+			"https://simp6.cuckcapital.cr/images3/G31ZjUTW0AA4SXpda42179515309a59.md.jpg",
+			"https://simp6.cuckcapital.cr/images3/G31ZjURWcAA_Z8Ibaed51410213a948.md.jpg",
+			"https://simp6.cuckcapital.cr/images3/2316x2406_e2ab140dead577e77dbc68280b1db93bbfb571eb12b772d6.md.jpg",
+			"https://simp6.cuckcapital.cr/images3/2316x2316_b2b866e3d3c44ea430a79a222ba72718c4bd2c85d9343dbd.md.jpg",
+			"https://simp6.cuckcapital.cr/images3/2316x2316_6aa5128dbf255af0e26fff2d945d31ad6eb4fcd50c980366.md.jpg",
+			"https://simp6.cuckcapital.cr/images3/858x1475_ecc5dd17387a0e4b108e0d4f2cd0bbade6af0690ad38bd46.md.jpg",
+			"https://simp6.cuckcapital.cr/images3/914x1273_ef4887e90def8b60b88a8829538aaeeffa5fdc0ec7b6984d.md.jpg",
+			
+			
+			
+        ],
+        videos: [
+            "https://www.burstcloud.co/embed/db5b20a8c9b2bbd950a5830ece85ecd31ce13aa4919aac81f153d75e22aaeb3b/406258ae86d0aba7244cbf52824b7441.mp4",
+			"https://www.burstcloud.co/embed/8263e455a28085ae43c4a85294d8d4f877d41f0570d8fd9b7bab35d4aa04a408/8730ab0e92780a2e32e10bbc155e8d45.mp4",
+			"https://www.burstcloud.co/embed/07ddd8c713684167078b5ece93965d74078e16f7a3d2a59a58235e19375d8888/8fdfe3135098c0665462a8cecac69bc2.mp4",
+			"https://www.burstcloud.co/embed/2d1df8ffd0b605cfd73d67f63e0718a4191047db3253c9becba2fc21a9b654f0/ca9ec4cf7376d004e8ce0925bc570345.mp4",
+			"https://www.burstcloud.co/embed/d33906496dddab5cde173c006e4f2d30455e6ca96a9a9fe35f2a3bfdfb3c4516/d28f7762db985ae023b9903be3c59110.mp4"
+        ]
     }
     // Puedes seguir agregando las modelos que quieras aquí abajo...
 ];
