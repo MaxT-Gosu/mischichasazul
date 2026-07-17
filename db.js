@@ -40,7 +40,6 @@ const modelosDB = [
 			
 			
 			
-				
 			
         ],
         videos: [
@@ -64,7 +63,7 @@ const modelosDB = [
     },
 	{
         id: 4,
-        nombre: "Sofía",
+        nombre: "qwe",
         fotoPortada: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=300&q=80",
         badge: "",
         categoria: "Latina",
