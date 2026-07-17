@@ -79,7 +79,7 @@ const modelosDB = [
         ]
     },
 	{
-        id: 4,
+        id: 5,
         nombre: "spitreligion",
         fotoPortada: "https://simp6.cuckcapital.cr/images2/IMG_38705439888e5cc6e6b1.md.jpg",
         badge: "",
