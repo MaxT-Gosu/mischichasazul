@@ -217,7 +217,10 @@
             z-index: 1000;
             justify-content: center;
             align-items: center;
-            touch-action: none; /* Evitamos comportamientos por defecto al arrastrar */
+            touch-action: none; /* Evita arrastres de fondo accidentales */
+            /* CORRECCIÓN: Elimina el destello azul translúcido al tocar en móviles */
+            -webkit-tap-highlight-color: transparent; 
+            outline: none;
         }
 
         .lightbox-img {
@@ -226,7 +229,10 @@
             object-fit: contain;
             border-radius: 4px;
             user-select: none;
-            transition: transform 0.2s ease-out; 
+            /* CORRECCIÓN: Quita destello de selección en la imagen */
+            -webkit-tap-highlight-color: transparent;
+            /* Suavidad al cambiar o escalar */
+            transition: transform 0.12s ease-out, opacity 0.12s ease-out; 
         }
 
         /* Botón de cerrar discreto en la esquina superior */
@@ -324,11 +330,11 @@
 
     </main>
 
-    <!-- VISOR EN PANTALLA COMPLETA (SÓLO TÁCTIL) -->
-    <!-- Al hacer click en el fondo negro, se cierra el visor -->
-    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <!-- VISOR EN PANTALLA COMPLETA MEJORADO (SÓLO GESTOS) -->
+    <!-- Se eliminó el onclick global para que no interfiera con el swipe -->
+    <div id="lightbox" class="lightbox">
         <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
-        <img src="" alt="Ampliada" id="lightbox-img" class="lightbox-img" onclick="event.stopPropagation()">
+        <img src="" alt="Ampliada" id="lightbox-img" class="lightbox-img">
     </div>
 
     <!-- MENÚ INFERIOR TÁCTIL -->
@@ -360,7 +366,9 @@
 
         // Coordenadas para los gestos Swipe
         let touchStartX = 0;
+        let touchStartY = 0;
         let touchEndX = 0;
+        let touchEndY = 0;
 
         function switchTab(tabName, buttonElement) {
             document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
@@ -370,7 +378,7 @@
         }
 
         // ==========================================
-        // VISOR TÁCTIL (LIGHTBOX)
+        // VISOR TÁCTIL MEJORADO (CON RESPUESTA DE GESTOS)
         // ==========================================
         function openLightbox(index) {
             currentFotoIndex = index;
@@ -394,35 +402,52 @@
             }
 
             const lightboxImg = document.getElementById('lightbox-img');
+            
+            // Animación limpia y súper rápida para cambiar de imagen
+            lightboxImg.style.opacity = '0.3';
             lightboxImg.style.transform = 'scale(0.95)';
+            
             setTimeout(() => {
                 lightboxImg.src = fotosArray[currentFotoIndex];
+                lightboxImg.style.opacity = '1';
                 lightboxImg.style.transform = 'scale(1)';
-            }, 100);
+            }, 120);
         }
 
-        // Detección del Swipe táctil
+        // DETECTOR DE SWIPE EN EL LIGHTBOX
         const lightboxArea = document.getElementById('lightbox');
 
         lightboxArea.addEventListener('touchstart', (e) => {
-            touchStartX = e.changedTouches[0].screenX;
+            touchStartX = e.changedTouches[0].clientX;
+            touchStartY = e.changedTouches[0].clientY;
         }, { passive: true });
 
         lightboxArea.addEventListener('touchend', (e) => {
-            touchEndX = e.changedTouches[0].screenX;
+            touchEndX = e.changedTouches[0].clientX;
+            touchEndY = e.changedTouches[0].clientY;
             handleSwipe();
         }, { passive: true });
 
         function handleSwipe() {
-            const swipeThreshold = 50; 
+            const swipeThresholdX = 40; // Sensibilidad horizontal (Izquierda / Derecha)
+            const swipeThresholdY = 60; // Sensibilidad vertical (Arriba / Abajo)
             
-            // Swipe a la izquierda (Ver siguiente foto)
-            if (touchStartX - touchEndX > swipeThreshold) {
-                changeImage(1);
-            }
-            // Swipe a la derecha (Ver foto anterior)
-            if (touchEndX - touchStartX > swipeThreshold) {
-                changeImage(-1);
+            const diffX = touchStartX - touchEndX;
+            const diffY = touchStartY - touchEndY;
+
+            // Evaluamos cuál movimiento fue más marcado si el horizontal o el vertical
+            if (Math.abs(diffX) > Math.abs(diffY)) {
+                // Movimiento Horizontal (Cambiar fotos)
+                if (diffX > swipeThresholdX) {
+                    changeImage(1);  // Deslizó a la izquierda -> Siguiente foto
+                } else if (diffX < -swipeThresholdX) {
+                    changeImage(-1); // Deslizó a la derecha -> Foto anterior
+                }
+            } else {
+                // Movimiento Vertical (Cierra el lightbox si desliza arriba o abajo)
+                if (Math.abs(diffY) > swipeThresholdY) {
+                    closeLightbox();
+                }
             }
         }
 
