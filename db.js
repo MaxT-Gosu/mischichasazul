@@ -109,11 +109,18 @@ const modelosDB = [
 			
         ],
         videos: [
-            "https://www.burstcloud.co/embed/db5b20a8c9b2bbd950a5830ece85ecd31ce13aa4919aac81f153d75e22aaeb3b/406258ae86d0aba7244cbf52824b7441.mp4",
-			"https://www.burstcloud.co/embed/8263e455a28085ae43c4a85294d8d4f877d41f0570d8fd9b7bab35d4aa04a408/8730ab0e92780a2e32e10bbc155e8d45.mp4",
-			"https://www.burstcloud.co/embed/07ddd8c713684167078b5ece93965d74078e16f7a3d2a59a58235e19375d8888/8fdfe3135098c0665462a8cecac69bc2.mp4",
-			"https://www.burstcloud.co/embed/2d1df8ffd0b605cfd73d67f63e0718a4191047db3253c9becba2fc21a9b654f0/ca9ec4cf7376d004e8ce0925bc570345.mp4",
-			"https://www.burstcloud.co/embed/d33906496dddab5cde173c006e4f2d30455e6ca96a9a9fe35f2a3bfdfb3c4516/d28f7762db985ae023b9903be3c59110.mp4"
+            "https://tucontenido.b-cdn.net/tuconte/spitreligion/0hw840cfpggb0010mi8y9_source.mp4",
+			"https://tucontenido.b-cdn.net/tuconte/spitreligion/0hzce9lk8sns3fxzh2t58_source.mp4",
+			"https://tucontenido.b-cdn.net/tuconte/spitreligion/406258ae86d0aba7244cbf52824b7441.mp4",
+			"https://tucontenido.b-cdn.net/tuconte/spitreligion/8730ab0e92780a2e32e10bbc155e8d45.mp4",
+			"https://tucontenido.b-cdn.net/tuconte/spitreligion/8fdfe3135098c0665462a8cecac69bc2.mp4",
+			"https://tucontenido.b-cdn.net/tuconte/spitreligion/921c0fd4a6f9ae93173b005c260a51ea.mp4",
+			"https://tucontenido.b-cdn.net/tuconte/spitreligion/ca9ec4cf7376d004e8ce0925bc570345.mp4",
+			"https://tucontenido.b-cdn.net/tuconte/spitreligion/d28f7762db985ae023b9903be3c59110.mp4",
+			"https://tucontenido.b-cdn.net/tuconte/spitreligion/EmilyyManson.mp4",
+			"https://tucontenido.b-cdn.net/tuconte/spitreligion/NAsvkk1SDi2.mp4",
+			"https://tucontenido.b-cdn.net/tuconte/spitreligion/Spitireligion%20riding.mp4",
+			
         ]
     }
     // Puedes seguir agregando las modelos que quieras aquí abajo...
