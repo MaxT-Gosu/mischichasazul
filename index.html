@@ -56,12 +56,12 @@
             scroll-snap-align: start;
         }
 
-        /* CAMBIO 1: Únicamente las destacadas de la semana se verán un poco más grandes */
+        /* Únicamente las destacadas de la semana se verán un poco más grandes */
         #carrusel-hot .card-modelo {
             flex: 0 0 180px; 
         }
 
-        /* TARJETA ULTRA-MINIMALISTA BASE */
+        /* TARJETA ULTRA-MINIMALISTA BASE (Convertida a enlace nativo) */
         .card-modelo {
             position: relative;
             background-color: #16161a;
@@ -72,6 +72,9 @@
             border: 1px solid #1f1f24;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
             transition: transform 0.2s ease;
+            text-decoration: none;
+            color: inherit;
+            display: block;
         }
 
         .card-modelo:active {
@@ -176,7 +179,7 @@
     <h2 class="seccion-titulo">✨ Nuevos Rostros</h2>
     <section class="carrusel-horizontal" id="carrusel-nuevas"></section>
 
-    <!-- CAMBIO 2: Cambiado "Descubrir Todas" por Slider horizontal de Top Trans -->
+    <!-- Slider horizontal de Top Trans -->
     <h2 class="seccion-titulo">⚧️ Top Trans</h2>
     <section class="carrusel-horizontal" id="carrusel-trans"></section>
 
@@ -204,12 +207,10 @@
             if (typeof modelosDB !== 'undefined' && Array.isArray(modelosDB)) {
                 
                 modelosDB.forEach(modelo => {
-                    // Crear el elemento base de la tarjeta
-                    const card = document.createElement('div');
+                    // SOLUCIÓN: Cambiado a elemento "a" nativo para heredar la navegación sin romperse al clonar
+                    const card = document.createElement('a');
                     card.className = 'card-modelo';
-                    card.onclick = () => {
-                        window.location.href = `modelo.html?id=${modelo.id}`;
-                    };
+                    card.href = `modelo.html?id=${modelo.id}`;
 
                     // Usar la propiedad 'badge' de tu db.js y pasarla a mayúsculas
                     const badgeNormalizado = modelo.badge ? modelo.badge.toUpperCase() : '';
@@ -239,14 +240,14 @@
                         </div>
                     `;
 
-                    // REPARTO INTELIGENTE
+                    // REPARTO INTELIGENTE EN LOS CARRUSELES DESLIZABLES
                     if (badgeNormalizado === 'HOT') {
                         carruselHot.appendChild(card.cloneNode(true));
                     } else if (badgeNormalizado === 'NUEVA') {
                         carruselNuevas.appendChild(card.cloneNode(true));
                     }
                     
-                    // CAMBIO 3: Identifica la etiqueta "trans" en tu db.js y la añade al carrusel deslizable
+                    // Identifica la etiqueta "trans" en tu db.js y la añade al carrusel deslizable
                     if (modelo.categoria && modelo.categoria.toLowerCase() === 'trans') {
                         carruselTrans.appendChild(card.cloneNode(true));
                     }
