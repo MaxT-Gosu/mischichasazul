@@ -50,15 +50,15 @@
             display: none; /* Oculta barra en móviles */
         }
 
-        /* Ajuste para mantener las dimensiones en el carrusel estándar */
+        /* Ajuste para mantener las dimensiones en el carrusel (Original: 140px) */
         .carrusel-horizontal .card-modelo {
             flex: 0 0 140px; 
             scroll-snap-align: start;
         }
 
-        /* Modificación 1: Imagen destacada de la semana un poco más grande */
+        /* CAMBIO 1: Únicamente las destacadas de la semana se verán un poco más grandes */
         #carrusel-hot .card-modelo {
-            flex: 0 0 190px; 
+            flex: 0 0 180px; 
         }
 
         /* TARJETA ULTRA-MINIMALISTA BASE */
@@ -139,7 +139,7 @@
         .badge-hot { background-color: #ff2a74; color: #ffffff; }
         .badge-nueva { background-color: #00bcd4; color: #ffffff; }
 
-        /* BARRA DE NAVEGACIÓN INFERIOR */
+        /* BARRA DE NAVEGACIÓN INFERIOR (BOTONES ORIGINALES) */
         .nav-bar {
             position: fixed;
             bottom: 0;
@@ -168,19 +168,19 @@
 </head>
 <body>
 
-    <!-- 1. CATEGORÍA: DESTACADAS (CARRUSEL HORIZONTAL - MÁS GRANDE) -->
+    <!-- 1. CATEGORÍA: DESTACADAS (CARRUSEL HORIZONTAL - UN POCO MÁS GRANDE) -->
     <h2 class="seccion-titulo">🔥 Destacadas de la Semana</h2>
     <section class="carrusel-horizontal" id="carrusel-hot"></section>
 
-    <!-- 2. CATEGORÍA: NOVEDADES (CARRUSEL HORIZONTAL) -->
+    <!-- 2. CATEGORÍA: NOVEDADES (CARRUSEL HORIZONTAL - TAMAÑO ESTÁNDAR) -->
     <h2 class="seccion-titulo">✨ Nuevos Rostros</h2>
     <section class="carrusel-horizontal" id="carrusel-nuevas"></section>
 
-    <!-- Modificación 2 y 3: Cambiado "Descubrir todas" por un Slider deslizable de Top Trans -->
+    <!-- CAMBIO 2: Cambiado "Descubrir Todas" por Slider horizontal de Top Trans -->
     <h2 class="seccion-titulo">⚧️ Top Trans</h2>
     <section class="carrusel-horizontal" id="carrusel-trans"></section>
 
-    <!-- Menú Inferior -->
+    <!-- Menú Inferior (Botones originales intactos) -->
     <nav class="nav-bar">
         <a href="index.html" class="nav-item"><span>🏠</span><span>Home</span></a>
         <a href="chicas.html" class="nav-item"><span>🔥</span><span>Mis Chicas</span></a>
@@ -211,7 +211,7 @@
                         window.location.href = `modelo.html?id=${modelo.id}`;
                     };
 
-                    // CORRECCIÓN: Usar la propiedad 'badge' de tu db.js y pasarla a mayúsculas
+                    // Usar la propiedad 'badge' de tu db.js y pasarla a mayúsculas
                     const badgeNormalizado = modelo.badge ? modelo.badge.toUpperCase() : '';
 
                     // Control visual de etiquetas superiores
@@ -239,14 +239,14 @@
                         </div>
                     `;
 
-                    // REPARTO INTELIGENTE CORREGIDO
+                    // REPARTO INTELIGENTE
                     if (badgeNormalizado === 'HOT') {
                         carruselHot.appendChild(card.cloneNode(true));
                     } else if (badgeNormalizado === 'NUEVA') {
                         carruselNuevas.appendChild(card.cloneNode(true));
                     }
                     
-                    // Modificación 3: Filtro para identificar la etiqueta "trans" y mandarla al slider
+                    // CAMBIO 3: Identifica la etiqueta "trans" en tu db.js y la añade al carrusel deslizable
                     if (modelo.categoria && modelo.categoria.toLowerCase() === 'trans') {
                         carruselTrans.appendChild(card.cloneNode(true));
                     }
