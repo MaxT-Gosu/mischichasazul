@@ -17,16 +17,17 @@
         body {
             background-color: #0b0b0c;
             color: #ffffff;
-            padding-bottom: 100px;
+            /* CORRECCIÓN: Colchón amplio abajo para que las tarjetas no queden detrás del menú */
+            padding-bottom: 110px; 
             overflow-x: hidden;
             width: 100vw;
         }
 
-        /* Títulos de las Secciones (Estilo Películas) */
+        /* Títulos de las Secciones (Estilo Cartelera) */
         .seccion-titulo {
-            font-size: 1.2rem;
+            font-size: 1.25rem;
             font-weight: bold;
-            padding: 15px 15px 5px 15px;
+            padding: 20px 15px 5px 15px;
             letter-spacing: 0.5px;
             color: #ffffff;
             display: flex;
@@ -35,40 +36,23 @@
         }
 
         /* ==========================================
-           CARRUSEL HORIZONTAL (TIPO NETFLIX)
+           SLIDER / CARRUSEL HORIZONTAL RESPONSIVO
            ========================================== */
         .carrusel-horizontal {
             display: flex;
-            gap: 12px;
+            gap: 14px;
             overflow-x: auto;
-            padding: 10px 15px;
-            scroll-snap-type: x mandatory;
+            padding: 10px 15px 15px 15px;
+            /* Efecto magnético de película al deslizar */
+            scroll-snap-type: x mandatory; 
             scrollbar-width: none; /* Oculta barra en Firefox */
         }
 
         .carrusel-horizontal::-webkit-scrollbar {
-            display: none; /* Oculta barra en móviles */
+            display: none; /* Oculta barra en Chrome/Brave/Móviles */
         }
 
-        /* Ajuste para mantener las dimensiones en el carrusel */
-        .carrusel-horizontal .card-modelo {
-            flex: 0 0 140px; 
-            scroll-snap-align: start;
-        }
-
-        /* ==========================================
-           CUADRÍCULA VERTICAL (EXPLORAR TODO)
-           ========================================== */
-        .grid-modelos {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 12px;
-            padding: 10px 15px;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        /* TARJETA ULTRA-MINIMALISTA BASE */
+        /* TARJETA BASE ULTRA-MINIMALISTA */
         .card-modelo {
             position: relative;
             background-color: #16161a;
@@ -79,10 +63,22 @@
             border: 1px solid #1f1f24;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
             transition: transform 0.2s ease;
+            scroll-snap-align: start; /* Punto de anclaje para el slider */
         }
 
         .card-modelo:active {
             transform: scale(0.96); 
+        }
+
+        /* 👑 CORRECCIÓN 2: FILA DESTACADAS MÁS GRANDE (TIPO POSTER PRINCIPAL) */
+        #carrusel-hot .card-modelo {
+            flex: 0 0 180px; /* Tarjeta más ancha y alta */
+        }
+
+        /* FILAS NORMALES (Nuevos rostros y Top Trends) */
+        #carrusel-nuevas .card-modelo,
+        #carrusel-trends .card-modelo {
+            flex: 0 0 135px; /* Tamaño estándar de catálogo */
         }
 
         .card-img {
@@ -98,7 +94,7 @@
             bottom: 0;
             left: 0;
             width: 100%;
-            padding: 25px 10px 10px 10px;
+            padding: 30px 10px 10px 10px;
             background: linear-gradient(transparent, rgba(0, 0, 0, 0.95));
             display: flex;
             flex-direction: column;
@@ -116,6 +112,11 @@
             text-overflow: ellipsis; 
         }
 
+        /* Hacer el texto un poquito más visible en las tarjetas grandes */
+        #carrusel-hot .card-name {
+            font-size: 1.05rem;
+        }
+
         .card-stats {
             font-size: 0.75rem;
             color: rgba(255, 255, 255, 0.8);
@@ -130,7 +131,7 @@
             gap: 3px; 
         }
 
-        /* Etiquetas (HOT / NUEVA) */
+        /* Etiquetas flotantes (HOT / NUEVA) */
         .badge {
             position: absolute;
             top: 8px;
@@ -146,82 +147,109 @@
         .badge-hot { background-color: #ff2a74; color: #ffffff; }
         .badge-nueva { background-color: #00bcd4; color: #ffffff; }
 
-        /* BARRA DE NAVEGACIÓN INFERIOR */
+        /* ==========================================
+           👑 CORRECCIÓN 1: MENÚ INFERIOR MEJORADO (MÁS GRANDE Y CÓMODO)
+           ========================================== */
         .nav-bar {
             position: fixed;
             bottom: 0;
             left: 0;
             width: 100%;
-            height: 65px;
+            height: 70px; /* Incrementado para mejor ergonomía */
             background-color: #111115;
             border-top: 1px solid #1f1f24;
             display: flex;
             justify-content: space-around;
             align-items: center;
             z-index: 999;
+            box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.5);
         }
 
         .nav-item {
             color: #8a8a93;
             text-decoration: none;
-            font-size: 0.75rem;
+            font-size: 0.85rem; /* Letras más legibles */
             text-align: center;
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: center;
             width: 25%;
+            height: 100%;
+            transition: color 0.2s, transform 0.1s;
+        }
+
+        .nav-icon {
+            font-size: 1.45rem; /* Iconos notablemente más grandes */
+            margin-bottom: 3px;
+        }
+
+        /* Color de item activo simulado (Home) */
+        .nav-item.active {
+            color: #ff2a74;
         }
     </style>
 </head>
 <body>
 
-    <!-- 1. CATEGORÍA: DESTACADAS (CARRUSEL HORIZONTAL) -->
+    <!-- 1. CATEGORÍA: DESTACADAS (FILA SÚPER GRANDE) -->
     <h2 class="seccion-titulo">🔥 Destacadas de la Semana</h2>
     <section class="carrusel-horizontal" id="carrusel-hot"></section>
 
-    <!-- 2. CATEGORÍA: NOVEDADES (CARRUSEL HORIZONTAL) -->
+    <!-- 2. CATEGORÍA: NOVEDADES (FILA ESTÁNDAR) -->
     <h2 class="seccion-titulo">✨ Nuevos Rostros</h2>
     <section class="carrusel-horizontal" id="carrusel-nuevas"></section>
 
-    <!-- 3. CATEGORÍA: GENERAL (CUADRÍCULA DE 2 COLUMNAS) -->
-    <h2 class="seccion-titulo">📷 Descubrir Todas</h2>
-    <main class="grid-modelos" id="grid-general"></main>
+    <!-- 3. 👑 CORRECCIÓN 3: CATEGORÍA TOP TRENDS (REEMPLAZA A DESCUBRIR TODAS) -->
+    <h2 class="seccion-titulo">📈 Top Trends</h2>
+    <section class="carrusel-horizontal" id="carrusel-trends"></section>
 
-    <!-- Menú Inferior -->
+    <!-- Menú Inferior Restaurado -->
     <nav class="nav-bar">
-        <a href="index.html" class="nav-item"><span>🏠</span><span>Home</span></a>
-        <a href="chicas.html" class="nav-item"><span>🔥</span><span>Mis Chicas</span></a>
-        <a href="buscar.html" class="nav-item"><span>🔍</span><span>Buscar</span></a>
-        <a href="info.html" class="nav-item"><span>ℹ️</span><span>Info</span></a>
+        <a href="index.html" class="nav-item active">
+            <span class="nav-icon">🏠</span>
+            <span>Home</span>
+        </a>
+        <a href="chicas.html" class="nav-item">
+            <span class="nav-icon">🔥</span>
+            <span>Mis Chicas</span>
+        </a>
+        <a href="buscar.html" class="nav-item">
+            <span class="nav-icon">🔍</span>
+            <span>Buscar</span>
+        </a>
+        <a href="info.html" class="nav-item">
+            <span class="nav-icon">ℹ️</span>
+            <span>Info</span>
+        </a>
     </nav>
 
     <script src="db.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", () => {
-            // Contenedores HTML
+            // Capturar contenedores de los Sliders
             const carruselHot = document.getElementById('carrusel-hot');
             const carruselNuevas = document.getElementById('carrusel-nuevas');
-            const gridGeneral = document.getElementById('grid-general');
+            const carruselTrends = document.getElementById('carrusel-trends');
 
-            // Limpiar contenedores
+            // Limpiar sliders
             carruselHot.innerHTML = "";
             carruselNuevas.innerHTML = "";
-            gridGeneral.innerHTML = "";
+            carruselTrends.innerHTML = "";
 
             if (typeof modelosDB !== 'undefined' && Array.isArray(modelosDB)) {
                 
                 modelosDB.forEach(modelo => {
-                    // Crear el elemento base de la tarjeta
+                    // Crear el elemento de la tarjeta
                     const card = document.createElement('div');
                     card.className = 'card-modelo';
                     card.onclick = () => {
                         window.location.href = `modelo.html?id=${modelo.id}`;
                     };
 
-                    // CORRECCIÓN: Usar la propiedad 'badge' de tu db.js y pasarla a mayúsculas
-                    const badgeNormalizado = modelo.badge ? modelo.badge.toUpperCase() : '';
+                    // Control de las palabras de tus insignias (badge)[cite: 1, 2]
+                    const badgeNormalizado = modelo.badge ? modelo.badge.toUpperCase() : '';[cite: 1, 2]
 
-                    // Control visual de etiquetas superiores
                     let badgeHTML = '';
                     if (badgeNormalizado === 'HOT') {
                         badgeHTML = `<span class="badge badge-hot">HOT</span>`;
@@ -229,11 +257,11 @@
                         badgeHTML = `<span class="badge badge-nueva">NUEVA</span>`;
                     }
 
-                    // Contadores de recursos
+                    // Contadores de archivos
                     const totalFotos = modelo.fotos ? modelo.fotos.length : 0;
                     const totalVideos = modelo.videos ? modelo.videos.length : 0;
 
-                    // Diseño interno limpio e intuitivo con iconos
+                    // Diseño de la tarjeta
                     card.innerHTML = `
                         ${badgeHTML}
                         <img src="${modelo.fotoPortada}" alt="${modelo.nombre}" class="card-img" loading="lazy">
@@ -246,18 +274,23 @@
                         </div>
                     `;
 
-                    // REPARTO INTELIGENTE CORREGIDO
+                    // 🔀 REPARTO EN SLIDERS HORIZONTALES
                     if (badgeNormalizado === 'HOT') {
+                        // Va al slider de destacadas gigantes
                         carruselHot.appendChild(card.cloneNode(true));
                     } else if (badgeNormalizado === 'NUEVA') {
+                        // Va al slider de nuevos rostros
                         carruselNuevas.appendChild(card.cloneNode(true));
                     }
-                    
-                    // Absolutamente todas aparecen abajo en la cuadrícula general
-                    gridGeneral.appendChild(card);
+
+                    // AUTOMATIZACIÓN DE TOP TRENDS: 
+                    // Si la modelo tiene muchos videos o es de categoría "Latina", entra en las tendencias[cite: 1]
+                    if (totalVideos >= 2 || modelo.categoria === 'Latina') {[cite: 1]
+                        carruselTrends.appendChild(card.cloneNode(true));
+                    }
                 });
 
-                // Control automático de filas vacías
+                // Control dinámico de filas vacías para mantener estética limpia
                 if (carruselHot.children.length === 0) {
                     carruselHot.style.display = 'none';
                     carruselHot.previousElementSibling.style.display = 'none';
@@ -265,6 +298,10 @@
                 if (carruselNuevas.children.length === 0) {
                     carruselNuevas.style.display = 'none';
                     carruselNuevas.previousElementSibling.style.display = 'none';
+                }
+                if (carruselTrends.children.length === 0) {
+                    carruselTrends.style.display = 'none';
+                    carruselTrends.previousElementSibling.style.display = 'none';
                 }
             }
         });
