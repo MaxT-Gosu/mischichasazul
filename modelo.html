@@ -11,7 +11,6 @@
             margin: 0;
             padding: 0;
             font-family: 'Segoe UI', Roboto, sans-serif;
-            /* ELIMINA EL DESTELLO AZUL DE CUALQUIER ELEMENTO EN TODA LA APP */
             -webkit-tap-highlight-color: transparent; 
         }
 
@@ -105,7 +104,7 @@
             line-height: 1.4;
         }
 
-        /* Pestañas de Navegación (Fotos / Videos) */
+        /* Pestañas de Navegación */
         .tabs {
             display: flex;
             background-color: #111115;
@@ -178,18 +177,49 @@
             gap: 15px;
         }
 
+        /* CAPA DE PUBLICIDAD SOBRE EL VIDEO */
         .video-card {
+            position: relative; /* Esencial para posicionar el botón encima */
             background-color: #16161a;
             border-radius: 10px;
             border: 1px solid #232329;
             overflow: hidden;
         }
 
-        /* Estilo responsivo para reproductores y ventanas incrustadas */
         .video-card video, .video-card iframe {
             width: 100%;
             display: block;
             background-color: #000;
+        }
+
+        /* Capa invisible/falsa que atrapa el clic de reproducción */
+        .ad-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.1);
+            z-index: 10;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Icono de play premium falso flotando en el medio */
+        .ad-play-btn {
+            width: 65px;
+            height: 65px;
+            background-color: rgba(255, 42, 116, 0.9);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+            font-size: 1.6rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            pointer-events: none; /* Deja pasar el clic al contenedor ad-overlay */
         }
 
         .empty-message {
@@ -206,7 +236,7 @@
         }
 
         /* ==========================================
-           VISOR PANTALLA COMPLETA ULTRA-MINIMALISTA (SÓLO GESTOS)
+           VISOR PANTALLA COMPLETA
            ========================================== */
         .lightbox {
             display: none;
@@ -219,7 +249,7 @@
             z-index: 1000;
             justify-content: center;
             align-items: center;
-            touch-action: none; /* Evita arrastres de fondo accidentales */
+            touch-action: none; 
             -webkit-tap-highlight-color: transparent; 
             outline: none;
         }
@@ -234,7 +264,6 @@
             transition: transform 0.12s ease-out, opacity 0.12s ease-out; 
         }
 
-        /* Botón de cerrar discreto en la esquina superior */
         .lightbox-close {
             position: absolute;
             top: 20px;
@@ -284,21 +313,15 @@
             font-size: 1.3rem;
             margin-bottom: 2px;
         }
-
-        .nav-item:active {
-            transform: scale(0.92);
-        }
     </style>
 </head>
 <body>
 
-    <!-- Cabecera de Navegación -->
     <header>
         <button class="back-btn" onclick="window.history.back()">⬅</button>
         <h1 id="header-title">Perfil</h1>
     </header>
 
-    <!-- Datos Dinámicos -->
     <section class="profile-header">
         <div class="profile-banner" id="profile-banner"></div>
         <div class="profile-info">
@@ -308,65 +331,47 @@
         </div>
     </section>
 
-    <!-- Pestañas -->
     <nav class="tabs">
         <button class="tab-btn active" onclick="switchTab('fotos', this)">📷 Fotos</button>
         <button class="tab-btn" onclick="switchTab('videos', this)">🎬 Videos</button>
     </nav>
 
-    <!-- Secciones de Contenido -->
     <main class="tab-content">
-        
-        <!-- Sección Fotos -->
         <section id="sec-fotos" class="content-section active">
             <div class="gallery-grid" id="gallery-container"></div>
         </section>
 
-        <!-- Sección Videos -->
         <section id="sec-videos" class="content-section">
             <div class="videos-list" id="videos-container"></div>
         </section>
-
     </main>
 
-    <!-- VISOR EN PANTALLA COMPLETA MEJORADO (SÓLO GESTOS) -->
     <div id="lightbox" class="lightbox">
         <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
         <img src="" alt="Ampliada" id="lightbox-img" class="lightbox-img">
     </div>
 
-    <!-- MENÚ INFERIOR TÁCTIL -->
     <nav class="nav-bar">
-        <a href="index.html" class="nav-item">
-            <span class="nav-icon">🏠</span>
-            <span>Home</span>
-        </a>
-        <a href="chicas.html" class="nav-item">
-            <span class="nav-icon">🔥</span>
-            <span>Mis Chicas</span>
-        </a>
-        <a href="buscar.html" class="nav-item">
-            <span class="nav-icon">🔍</span>
-            <span>Buscar</span>
-        </a>
-        <a href="info.html" class="nav-item">
-            <span class="nav-icon">ℹ️</span>
-            <span>Info</span>
-        </a>
+        <a href="index.html" class="nav-item"><span class="nav-icon">🏠</span><span>Home</span></a>
+        <a href="chicas.html" class="nav-item"><span class="nav-icon">🔥</span><span>Mis Chicas</span></a>
+        <a href="buscar.html" class="nav-item"><span class="nav-icon">🔍</span><span>Buscar</span></a>
+        <a href="info.html" class="nav-item"><span class="nav-icon">ℹ️</span><span>Info</span></a>
     </nav>
 
     <script src="db.js"></script>
 
     <script>
-        // Variables globales
         let fotosArray = []; 
         let currentFotoIndex = 0; 
 
-        // Coordenadas para los gestos Swipe
         let touchStartX = 0;
         let touchStartY = 0;
         let touchEndX = 0;
         let touchEndY = 0;
+
+        // 🔗 CONFIGURACIÓN DE TU ENLACE DE PUBLICIDAD
+        // Reemplaza esta URL por tu enlace de Smartlink, Adsterra, Popads o tu red publicitaria
+        const URL_PUBLICIDAD = "https://www.ejemplo.com/tu-enlace-de-publicidad";
 
         function switchTab(tabName, buttonElement) {
             document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
@@ -375,14 +380,27 @@
             document.getElementById(`sec-${tabName}`).classList.add('active');
         }
 
-        // ==========================================
-        // VISOR TÁCTIL MEJORADO (CON RESPUESTA DE GESTOS)
-        // ==========================================
+        // CONTROL DE REPRODUCCIÓN E INTERCEPTOR DE ANUNCIOS
+        function manejarPlayVideo(elementoCapa) {
+            // 1. Abrir el anuncio en una pestaña externa del celular
+            window.open(URL_PUBLICIDAD, '_blank');
+
+            // 2. Remover la capa/botón falso inmediatamente para liberar el reproductor
+            const contenedorCard = elementoCapa.parentElement;
+            elementoCapa.remove();
+
+            // 3. Buscar si es un video local (.mp4) y darle play de forma automática
+            const videoReal = contenedorCard.querySelector('video');
+            if (videoReal) {
+                videoReal.play();
+            }
+        }
+
+        // VISOR TÁCTIL (LIGHTBOX)
         function openLightbox(index) {
             currentFotoIndex = index;
             const lightbox = document.getElementById('lightbox');
             const lightboxImg = document.getElementById('lightbox-img');
-            
             lightboxImg.src = fotosArray[currentFotoIndex];
             lightbox.style.display = 'flex';
         }
@@ -393,14 +411,10 @@
 
         function changeImage(direction) {
             currentFotoIndex += direction;
-            if (currentFotoIndex < 0) {
-                currentFotoIndex = fotosArray.length - 1; 
-            } else if (currentFotoIndex >= fotosArray.length) {
-                currentFotoIndex = 0; 
-            }
+            if (currentFotoIndex < 0) currentFotoIndex = fotosArray.length - 1; 
+            else if (currentFotoIndex >= fotosArray.length) currentFotoIndex = 0; 
 
             const lightboxImg = document.getElementById('lightbox-img');
-            
             lightboxImg.style.opacity = '0.3';
             lightboxImg.style.transform = 'scale(0.95)';
             
@@ -411,9 +425,8 @@
             }, 120);
         }
 
-        // DETECTOR DE SWIPE EN EL LIGHTBOX
+        // DETECTOR DE SWIPE
         const lightboxArea = document.getElementById('lightbox');
-
         lightboxArea.addEventListener('touchstart', (e) => {
             touchStartX = e.changedTouches[0].clientX;
             touchStartY = e.changedTouches[0].clientY;
@@ -428,26 +441,18 @@
         function handleSwipe() {
             const swipeThresholdX = 40; 
             const swipeThresholdY = 60; 
-            
             const diffX = touchStartX - touchEndX;
             const diffY = touchStartY - touchEndY;
 
             if (Math.abs(diffX) > Math.abs(diffY)) {
-                if (diffX > swipeThresholdX) {
-                    changeImage(1);  
-                } else if (diffX < -swipeThresholdX) {
-                    changeImage(-1); 
-                }
+                if (diffX > swipeThresholdX) changeImage(1);  
+                else if (diffX < -swipeThresholdX) changeImage(-1); 
             } else {
-                if (Math.abs(diffY) > swipeThresholdY) {
-                    closeLightbox();
-                }
+                if (Math.abs(diffY) > swipeThresholdY) closeLightbox();
             }
         }
 
-        // ==========================================
-        // CARGAR DATOS DESDE LA BASE DE DATOS
-        // ==========================================
+        // CARGAR BASE DE DATOS
         document.addEventListener("DOMContentLoaded", () => {
             const urlParams = new URLSearchParams(window.location.search);
             const modeloId = parseInt(urlParams.get('id'));
@@ -458,44 +463,34 @@
             }
 
             const modelo = modelosDB.find(m => m.id === modeloId);
-
             if (!modelo) {
                 document.getElementById('profile-name').textContent = "Modelo no encontrada";
                 return;
             }
 
             fotosArray = modelo.fotos || [];
-
-            // Inyectar información básica
             document.getElementById('header-title').textContent = modelo.nombre;
             document.getElementById('profile-name').textContent = modelo.nombre;
             document.getElementById('profile-avatar').src = modelo.fotoPortada;
             document.getElementById('profile-banner').style.backgroundImage = `url('${modelo.fotoPortada}')`;
             document.getElementById('profile-bio').textContent = modelo.descripcion || "¡Bienvenido a mi galería de contenido exclusivo!";
 
-            // Renderizar Galería de Fotos
+            // Renderizar Fotos
             const galleryContainer = document.getElementById('gallery-container');
             galleryContainer.innerHTML = "";
-
             if (fotosArray.length > 0) {
                 fotosArray.forEach((fotoUrl, index) => {
                     const img = document.createElement('img');
                     img.src = fotoUrl;
                     img.className = 'gallery-item';
-                    img.alt = `Contenido de ${modelo.nombre}`;
                     img.onclick = () => openLightbox(index);
                     galleryContainer.appendChild(img);
                 });
             } else {
-                galleryContainer.innerHTML = `
-                    <div class="empty-message" style="grid-column: span 3;">
-                        <span>📷</span>
-                        Próximamente se subirán fotos exclusivas.
-                    </div>
-                `;
+                galleryContainer.innerHTML = `<div class="empty-message" style="grid-column: span 3;"><span>📷</span>Próximamente se subirán fotos exclusivas.</div>`;
             }
 
-            // Renderizar Lista de Videos (Optimizado para BurstCloud)
+            // Renderizar Videos con Capa de Anuncio Interceptora
             const videosContainer = document.getElementById('videos-container');
             videosContainer.innerHTML = "";
 
@@ -504,34 +499,25 @@
                     const videoCard = document.createElement('div');
                     videoCard.className = 'video-card';
                     
-                    // Comprobación inteligente para enlaces Embed de BurstCloud
+                    // Contenido del reproductor (Iframe o Video HTML5)
+                    let reproductorHTML = '';
                     if (videoUrl.includes('embed') || videoUrl.includes('burstcloud')) {
-                        videoCard.innerHTML = `
-                            <iframe src="${videoUrl}" 
-                                    width="100%" 
-                                    height="300" 
-                                    frameborder="0" 
-                                    allowfullscreen 
-                                    scrolling="no">
-                            </iframe>
-                        `;
+                        reproductorHTML = `<iframe src="${videoUrl}" width="100%" height="300" frameborder="0" allowfullscreen scrolling="no"></iframe>`;
                     } else {
-                        videoCard.innerHTML = `
-                            <video controls playsinline preload="metadata" style="max-height: 400px;">
-                                <source src="${videoUrl}" type="video/mp4">
-                                Tu celular no soporta la reproducción de video.
-                            </video>
-                        `;
+                        reproductorHTML = `<video controls playsinline preload="metadata" style="max-height: 400px;"><source src="${videoUrl}" type="video/mp4"></video>`;
                     }
+
+                    // Se inyecta el reproductor junto con la capa falsa táctil (.ad-overlay)
+                    videoCard.innerHTML = `
+                        <div class="ad-overlay" onclick="manejarPlayVideo(this)">
+                            <div class="ad-play-btn">▶</div>
+                        </div>
+                        ${reproductorHTML}
+                    `;
                     videosContainer.appendChild(videoCard);
                 });
             } else {
-                videosContainer.innerHTML = `
-                    <div class="empty-message">
-                        <span>🎬</span>
-                        Próximamente se subirán videos exclusivos.
-                    </div>
-                `;
+                videosContainer.innerHTML = `<div class="empty-message"><span>🎬</span>Próximamente se subirán videos exclusivos.</div>`;
             }
         });
     </script>
