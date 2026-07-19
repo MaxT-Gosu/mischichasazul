@@ -16,7 +16,7 @@ const modelosDB = [
         // Enlaces a sus videos (pueden ser de servidores externos o de tu github)
         videos: [
             "https://appcine.b-cdn.net/tuconte/gilticus.mp4", // Video de ejemplo
-            "https://www.burstcloud.co/embed/9c7fa55ec5e216b50f7d58ddf2b0b7afcedead66b5cf1a0da6ddf46c054f14ef/2.mp4"
+            
         ]
     },
     {
@@ -74,7 +74,7 @@ const modelosDB = [
         nombre: "qwe",
         fotoPortada: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=300&q=80",
         badge: "",
-        categoria: "trans", // <--- Otra de prueba asignada a trans
+        categoria: "", // <--- Otra de prueba asignada a trans
         descripcion: "Amante del fitness y las sesiones de fotos atrevidas.",
         fotos: [
             "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=80",
@@ -152,6 +152,43 @@ const modelosDB = [
 			"https://www.burstcloud.co/embed/ec515af342cc2d160cd36baa3d583207039a32a2a8d6d1cf3be6109fe5eaebe4/He%2BTried%2BTo%2BWatch%2BPorn%2C%2BWhen%2BMy%2BMouth%2BIs%2BAvailable%2BHow%2BRude.%2BFirst%2BTime%2B(On%2BCamera)%2BShooting%2BA%2BLoad%2BIn%2BMy%2BMou.mp4",
 			"https://www.burstcloud.co/embed/4972972375f0bfad81a737e749f29a9114ad06bdec5fc6029fcfbd9b2e292ecf/Kenalialuv%20-%20Reze.mp4",
 			"https://www.burstcloud.co/embed/85cc270573f6cf0a9f796da3c8ce13c3c57386a78d8742091a4d58489bfca8c7/Kenalialuv.mp4"
+        ]
+    },
+	{
+        id: 7,
+        nombre: "chloewildd",
+        fotoPortada: "https://simp2.cuckcapital.cr/FLViwejWUAUsPF2.md.jpg",
+        badge: "Nueva",
+        categoria: "Cam Girls",
+        descripcion: "Amante del fitness y las sesiones de fotos atrevidas.",
+        fotos: [
+            "https://simp3.cuckcapital.cr/images/2160x1215_c0058d3a9f6a7c6b8f2d11dcfd224409.md.jpg",
+            "https://simp3.cuckcapital.cr/images/2160x1215_00b3a8d368facf4815d961725af71cf9.md.jpg",
+			"https://simp3.cuckcapital.cr/images/2160x1215_4358e7f16309353102c383ff54cf40ab.md.jpg",
+			"https://simp3.cuckcapital.cr/images/1215x2160_d59f86e8effa5f0132812eae35ed7a7a.md.jpg",
+			"https://simp3.cuckcapital.cr/images/1892x1215_bdb7c50af5cb4be7fb6ddce794037b69.md.jpg",
+			"https://simp3.cuckcapital.cr/images/1215x2160_aa67fca5614f01163ed95ae1455c5b1f.md.jpg",
+			"https://simp3.cuckcapital.cr/images/2160x1215_9970f0e95019a2537f3993bd6c4a5c0f.md.jpg",
+			"https://simp3.cuckcapital.cr/images/1920x1258_4d77a71aa30158957e2b61c6aa679b4f.md.jpg",
+			"https://simp3.cuckcapital.cr/images/1620x2160_f63ece4966d1c0dbb25393c59b3b83a1.md.jpg",
+			"https://simp3.cuckcapital.cr/images/2160x1215_1c762244f70658f37fabe9d1efff3026.md.jpg",
+			"https://simp3.cuckcapital.cr/images/1215x2160_5c1c59cf2de692d38d74187f5308c415.md.jpg",
+			"https://simp3.cuckcapital.cr/images/768x1024_88bea6b46b018090d74828c363d10ecf.md.jpg",
+			"https://simp4.cuckcapital.cr/Screenshot_20221020_211151_Opera.md.jpg",
+			"https://simp6.cuckcapital.cr/images4/46bcd7b2-1c2a-4b75-884b-5acba76e3ec1.jpg",
+			"https://simp6.cuckcapital.cr/images4/b2a6e1ee-c207-497b-b046-5b0e18e508a2.jpg",
+			"https://simp6.cuckcapital.cr/images4/6279b746-be10-405b-9750-1a03fd329ddd.jpg",
+			"https://simp6.cuckcapital.cr/images4/9dad8ecd-3f16-474f-866d-0ac88c80b31f.jpg",
+			"https://simp6.cuckcapital.cr/images3/2160x1216_8f2e1af9af3df65d40c16d7fe82a609fb71e442d0753cfaf.md.jpg",
+			
+			
+        ],
+        videos: [
+            "https://www.burstcloud.co/embed/3d8d8dd9ab34da354aceb86f22a58c4bde3f94c164adbcce3753beb2bfeb0476/Chloewildd%2B2025-02-08%2B00.17.mp4",
+			"https://www.burstcloud.co/embed/4566c8c3a4c714512ea384eabbc994e47d904e064f9f227819f502ebee6fd137/gKLkfVCcyiZ.mp4",
+			"https://www.burstcloud.co/embed/7d7c663fe2f8dcd80d368116b0d220b83b544e2310f07c4a8a2995dbb84fffda/gKLkfVCcyiZ.mp4",
+			"https://www.burstcloud.co/embed/7ae82925acda3d517e07ad98b2f8752b2554c40dca6c8d9846f866e006062826/Chloewildd%2B2025-12-14%2BPart%2B8.mp4"
+
         ]
     }
 ];
