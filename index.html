@@ -47,12 +47,12 @@
         }
 
         .carrusel-horizontal::-webkit-scrollbar {
-            display: none; /* Oculta barra en Chrome/Brave/Celulares */
+            display: none; /* Oculta barra en móviles */
         }
 
-        /* Tarjeta más horizontal/estilizada para los carruseles */
+        /* Ajuste para mantener las dimensiones en el carrusel */
         .carrusel-horizontal .card-modelo {
-            flex: 0 0 140px; /* Ancho fijo para cada elemento del carrusel */
+            flex: 0 0 140px; 
             scroll-snap-align: start;
         }
 
@@ -110,10 +110,10 @@
             font-weight: bold;
             color: #ffffff;
             text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
-            margin-bottom: 3px;
+            margin-bottom: 4px;
             white-space: nowrap;
             overflow: hidden;
-            text-overflow: ellipsis; /* Corta nombres largos elegantemente */
+            text-overflow: ellipsis; 
         }
 
         .card-stats {
@@ -121,7 +121,7 @@
             color: rgba(255, 255, 255, 0.8);
             display: flex;
             align-items: center;
-            gap: 8px; 
+            gap: 10px; 
         }
 
         .stat-item {
@@ -211,18 +211,21 @@
             if (typeof modelosDB !== 'undefined' && Array.isArray(modelosDB)) {
                 
                 modelosDB.forEach(modelo => {
-                    // 1. Crear el elemento base de la tarjeta
+                    // Crear el elemento base de la tarjeta
                     const card = document.createElement('div');
                     card.className = 'card-modelo';
                     card.onclick = () => {
                         window.location.href = `modelo.html?id=${modelo.id}`;
                     };
 
-                    // Control de etiquetas
+                    // CORRECCIÓN: Usar la propiedad 'badge' de tu db.js y pasarla a mayúsculas
+                    const badgeNormalizado = modelo.badge ? modelo.badge.toUpperCase() : '';
+
+                    // Control visual de etiquetas superiores
                     let badgeHTML = '';
-                    if (modelo.etiqueta === 'HOT') {
+                    if (badgeNormalizado === 'HOT') {
                         badgeHTML = `<span class="badge badge-hot">HOT</span>`;
-                    } else if (modelo.etiqueta === 'NUEVA') {
+                    } else if (badgeNormalizado === 'NUEVA') {
                         badgeHTML = `<span class="badge badge-nueva">NUEVA</span>`;
                     }
 
@@ -230,7 +233,7 @@
                     const totalFotos = modelo.fotos ? modelo.fotos.length : 0;
                     const totalVideos = modelo.videos ? modelo.videos.length : 0;
 
-                    // Diseño interno de la tarjeta (Limpio con emojis)
+                    // Diseño interno limpio e intuitivo con iconos
                     card.innerHTML = `
                         ${badgeHTML}
                         <img src="${modelo.fotoPortada}" alt="${modelo.nombre}" class="card-img" loading="lazy">
@@ -243,24 +246,23 @@
                         </div>
                     `;
 
-                    // 2. REPARTO INTELIGENTE ESTILO STREAMING
-                    // Clonamos o añadimos la tarjeta a la sección correspondiente
-                    if (modelo.etiqueta === 'HOT') {
+                    // REPARTO INTELIGENTE CORREGIDO
+                    if (badgeNormalizado === 'HOT') {
                         carruselHot.appendChild(card.cloneNode(true));
-                    } else if (modelo.etiqueta === 'NUEVA') {
+                    } else if (badgeNormalizado === 'NUEVA') {
                         carruselNuevas.appendChild(card.cloneNode(true));
                     }
                     
-                    // Al final, todas aparecen también abajo en la biblioteca general
+                    // Absolutamente todas aparecen abajo en la cuadrícula general
                     gridGeneral.appendChild(card);
                 });
 
-                // Mensajes de respaldo por si algún carrusel se queda vacío temporalmente en db.js
-                if(carruselHot.children.length === 0) {
+                // Control automático de filas vacías
+                if (carruselHot.children.length === 0) {
                     carruselHot.style.display = 'none';
                     carruselHot.previousElementSibling.style.display = 'none';
                 }
-                if(carruselNuevas.children.length === 0) {
+                if (carruselNuevas.children.length === 0) {
                     carruselNuevas.style.display = 'none';
                     carruselNuevas.previousElementSibling.style.display = 'none';
                 }
