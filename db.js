@@ -5,7 +5,7 @@ const modelosDB = [
         nombre: "Valeria",
         fotoPortada: "https://simp1.cuckcapital.cr/images/2022-10-10_10-06.md.png",
         badge: "Hot", // Puede ser "Hot", "Nueva", o "" (vacío si no tiene)
-        categoria: "Latina", // Te servirá si luego quieres poner filtros
+        categoria: "trans", // <--- Etiqueta asignada para identificar en Top Trans
         descripcion: "Bienvenidos a mi galería privada. Aquí verás mi contenido más exclusivo.",
         // Enlaces a sus fotos exclusivas
         fotos: [
@@ -37,10 +37,6 @@ const modelosDB = [
 			"https://simp6.cuckcapital.cr/images3/G91-qGwWEAAiEhQc3ef996e074efcaa.md.jpg",
 			"https://simp6.cuckcapital.cr/images4/20260327_2243387f248a67f68bd3b1.md.jpg",
 			"https://simp6.cuckcapital.cr/images4/iarabroin_2026-05-23_25b3a050e2047f70e.md.jpg"
-			
-			
-			
-			
         ],
         videos: [
 		    "https://www.burstcloud.co/embed/267f4840f666da070b89c730752d55d7d24368bc9c2b12a5c85f2d77d3b0f363/4ac7bea6-dcd7-40ba-a0d1-c311bb334e24.mp4",
@@ -78,7 +74,7 @@ const modelosDB = [
         nombre: "qwe",
         fotoPortada: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=300&q=80",
         badge: "",
-        categoria: "Latina",
+        categoria: "trans", // <--- Otra de prueba asignada a trans
         descripcion: "Amante del fitness y las sesiones de fotos atrevidas.",
         fotos: [
             "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=80",
@@ -114,9 +110,6 @@ const modelosDB = [
 			"https://simp6.cuckcapital.cr/images3/2316x2316_6aa5128dbf255af0e26fff2d945d31ad6eb4fcd50c980366.md.jpg",
 			"https://simp6.cuckcapital.cr/images3/858x1475_ecc5dd17387a0e4b108e0d4f2cd0bbade6af0690ad38bd46.md.jpg",
 			"https://simp6.cuckcapital.cr/images3/914x1273_ef4887e90def8b60b88a8829538aaeeffa5fdc0ec7b6984d.md.jpg"
-			
-			
-			
         ],
         videos: [
             "https://tucontenido.b-cdn.net/tuconte/spitreligion/0hw840cfpggb0010mi8y9_source.mp4",
@@ -129,8 +122,7 @@ const modelosDB = [
 			"https://tucontenido.b-cdn.net/tuconte/spitreligion/d28f7762db985ae023b9903be3c59110.mp4",
 			"https://tucontenido.b-cdn.net/tuconte/spitreligion/EmilyyManson.mp4",
 			"https://tucontenido.b-cdn.net/tuconte/spitreligion/NAsvkk1SDi2.mp4",
-			"https://tucontenido.b-cdn.net/tuconte/spitreligion/Spitireligion%20riding.mp4",
-			
+			"https://tucontenido.b-cdn.net/tuconte/spitreligion/Spitireligion%20riding.mp4"
         ]
     },
 	{
@@ -151,9 +143,6 @@ const modelosDB = [
 			"https://simp6.cuckcapital.cr/images/IMG_004209d19e6aec94a7b1.jpg",
 			"https://simp6.cuckcapital.cr/images2/IMG_08931ebd5a9541899ec5.md.jpg",
 			"https://simp6.cuckcapital.cr/images3/4369c5cb062c25d10.png"
-			
-			
-			
         ],
         videos: [
             "https://www.burstcloud.co/embed/bdbafe890e73858b3e29bd29efadafa678bbe480b0395fc4a991725ab3be546e/0Ha4znrst2j6g5tskajt5%20720P.mp4",
@@ -162,9 +151,7 @@ const modelosDB = [
 			"https://www.burstcloud.co/embed/6f996ed2228c213b96f874fa20c7d29d6f3f8b0562eed0c19ff5e0ec5a6a8b37/1000001597.mp4",
 			"https://www.burstcloud.co/embed/ec515af342cc2d160cd36baa3d583207039a32a2a8d6d1cf3be6109fe5eaebe4/He%2BTried%2BTo%2BWatch%2BPorn%2C%2BWhen%2BMy%2BMouth%2BIs%2BAvailable%2BHow%2BRude.%2BFirst%2BTime%2B(On%2BCamera)%2BShooting%2BA%2BLoad%2BIn%2BMy%2BMou.mp4",
 			"https://www.burstcloud.co/embed/4972972375f0bfad81a737e749f29a9114ad06bdec5fc6029fcfbd9b2e292ecf/Kenalialuv%20-%20Reze.mp4",
-			"https://www.burstcloud.co/embed/85cc270573f6cf0a9f796da3c8ce13c3c57386a78d8742091a4d58489bfca8c7/Kenalialuv.mp4",
-			
+			"https://www.burstcloud.co/embed/85cc270573f6cf0a9f796da3c8ce13c3c57386a78d8742091a4d58489bfca8c7/Kenalialuv.mp4"
         ]
     }
-    // Puedes seguir agregando las modelos que quieras aquí abajo...
 ];

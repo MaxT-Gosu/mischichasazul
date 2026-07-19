@@ -50,22 +50,15 @@
             display: none; /* Oculta barra en móviles */
         }
 
-        /* Ajuste para mantener las dimensiones en el carrusel */
+        /* Ajuste para mantener las dimensiones en el carrusel estándar */
         .carrusel-horizontal .card-modelo {
             flex: 0 0 140px; 
             scroll-snap-align: start;
         }
 
-        /* ==========================================
-           CUADRÍCULA VERTICAL (EXPLORAR TODO)
-           ========================================== */
-        .grid-modelos {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 12px;
-            padding: 10px 15px;
-            max-width: 600px;
-            margin: 0 auto;
+        /* Modificación 1: Imagen destacada de la semana un poco más grande */
+        #carrusel-hot .card-modelo {
+            flex: 0 0 190px; 
         }
 
         /* TARJETA ULTRA-MINIMALISTA BASE */
@@ -175,7 +168,7 @@
 </head>
 <body>
 
-    <!-- 1. CATEGORÍA: DESTACADAS (CARRUSEL HORIZONTAL) -->
+    <!-- 1. CATEGORÍA: DESTACADAS (CARRUSEL HORIZONTAL - MÁS GRANDE) -->
     <h2 class="seccion-titulo">🔥 Destacadas de la Semana</h2>
     <section class="carrusel-horizontal" id="carrusel-hot"></section>
 
@@ -183,9 +176,9 @@
     <h2 class="seccion-titulo">✨ Nuevos Rostros</h2>
     <section class="carrusel-horizontal" id="carrusel-nuevas"></section>
 
-    <!-- 3. CATEGORÍA: GENERAL (CUADRÍCULA DE 2 COLUMNAS) -->
-    <h2 class="seccion-titulo">📷 Descubrir Todas</h2>
-    <main class="grid-modelos" id="grid-general"></main>
+    <!-- Modificación 2 y 3: Cambiado "Descubrir todas" por un Slider deslizable de Top Trans -->
+    <h2 class="seccion-titulo">⚧️ Top Trans</h2>
+    <section class="carrusel-horizontal" id="carrusel-trans"></section>
 
     <!-- Menú Inferior -->
     <nav class="nav-bar">
@@ -201,12 +194,12 @@
             // Contenedores HTML
             const carruselHot = document.getElementById('carrusel-hot');
             const carruselNuevas = document.getElementById('carrusel-nuevas');
-            const gridGeneral = document.getElementById('grid-general');
+            const carruselTrans = document.getElementById('carrusel-trans');
 
             // Limpiar contenedores
             carruselHot.innerHTML = "";
             carruselNuevas.innerHTML = "";
-            gridGeneral.innerHTML = "";
+            carruselTrans.innerHTML = "";
 
             if (typeof modelosDB !== 'undefined' && Array.isArray(modelosDB)) {
                 
@@ -253,8 +246,10 @@
                         carruselNuevas.appendChild(card.cloneNode(true));
                     }
                     
-                    // Absolutamente todas aparecen abajo en la cuadrícula general
-                    gridGeneral.appendChild(card);
+                    // Modificación 3: Filtro para identificar la etiqueta "trans" y mandarla al slider
+                    if (modelo.categoria && modelo.categoria.toLowerCase() === 'trans') {
+                        carruselTrans.appendChild(card.cloneNode(true));
+                    }
                 });
 
                 // Control automático de filas vacías
@@ -265,6 +260,10 @@
                 if (carruselNuevas.children.length === 0) {
                     carruselNuevas.style.display = 'none';
                     carruselNuevas.previousElementSibling.style.display = 'none';
+                }
+                if (carruselTrans.children.length === 0) {
+                    carruselTrans.style.display = 'none';
+                    carruselTrans.previousElementSibling.style.display = 'none';
                 }
             }
         });
