@@ -50,17 +50,22 @@ const modelosDB = [
     },
     {
         id: 3,
-        nombre: "Sofía",
-        fotoPortada: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=300&q=80",
+        nombre: "lilijunex",
+        fotoPortada: "https://simp6.cuckcapital.cr/images/7qermhv7auy91.md.webp",
         badge: "",
         categoria: "Latina",
         descripcion: "Amante del fitness y las sesiones de fotos atrevidas.",
         fotos: [
-            "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=80",
-            "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=600&q=80"
+            "https://simp6.cuckcapital.cr/images3/scene000019cd3eb9e7786fed4.md.jpg",
+            "https://simp6.cuckcapital.cr/images3/scene205213c0a30fb71ac5d01.md.jpg",
+			"https://simp6.cuckcapital.cr/images3/scene0000156c1d805f51a3d9b.md.jpg",
+			"https://simp6.cuckcapital.cr/images3/scene0234194498ff5c979aba5.md.jpg",
+			"https://simp6.cuckcapital.cr/images3/scene000017b8244a08faffbc8.md.jpg",
+			"https://simp6.cuckcapital.cr/images3/scene0243193a2474162176e65.md.jpg",
+			
         ],
         videos: [
-            "https://www.w3schools.com/html/movie.mp4"
+            "https://www.burstcloud.co/embed/335d3c5388aefc23a4afcacff2d84173e0f032a0d922e50249ce3c20f4f96aca/691851021239988224-P4cgjlay(1).mp4"
         ]
     },
 	{
