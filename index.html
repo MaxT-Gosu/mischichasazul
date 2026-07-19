@@ -76,15 +76,21 @@
             font-weight: bold;
             color: #ffffff;
             text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
-            margin-bottom: 2px;
+            margin-bottom: 4px;
         }
 
         .card-stats {
-            font-size: 0.75rem;
-            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.85);
             display: flex;
             align-items: center;
-            gap: 4px;
+            gap: 10px; /* Separación cómoda entre los dos contadores */
+        }
+
+        .stat-item {
+            display: flex;
+            align-items: center;
+            gap: 4px; /* Separación entre el icono y el número */
         }
 
         /* Etiquetas flotantes superiores (HOT / NUEVA) */
@@ -105,7 +111,7 @@
         .badge-hot { background-color: #ff2a74; color: #ffffff; }
         .badge-nueva { background-color: #00bcd4; color: #ffffff; }
 
-        /* BARRA DE NAVEGACIÓN INFERIOR (Se mantiene igual) */
+        /* BARRA DE NAVEGACIÓN INFERIOR */
         .nav-bar {
             position: fixed;
             bottom: 0;
@@ -162,7 +168,7 @@
                         window.location.href = `modelo.html?id=${modelo.id}`;
                     };
 
-                    // Lógica para las etiquetas superiores (Hot/Nueva) según tu db.js
+                    // Lógica para las etiquetas superiores (Hot/Nueva)
                     let badgeHTML = '';
                     if (modelo.etiqueta === 'HOT') {
                         badgeHTML = `<span class="badge badge-hot">HOT</span>`;
@@ -170,16 +176,23 @@
                         badgeHTML = `<span class="badge badge-nueva">NUEVA</span>`;
                     }
 
-                    // Estructura limpia: foto completa e información encimada
+                    // Cantidades de contenido
+                    const totalFotos = modelo.fotos ? modelo.fotos.length : 0;
+                    const totalVideos = modelo.videos ? modelo.videos.length : 0;
+
+                    // Estructura limpia con iconos directos (📷 y 🎬)
                     card.innerHTML = `
                         ${badgeHTML}
                         <img src="${modelo.fotoPortada}" alt="${modelo.nombre}" class="card-img" loading="lazy">
                         <div class="card-info">
                             <h2 class="card-name">${modelo.nombre}</h2>
                             <div class="card-stats">
-                                <span>🔥 ${modelo.fotos ? modelo.fotos.length : 0} F.</span>
-                                <span>•</span>
-                                <span>🎬 ${modelo.videos ? modelo.videos.length : 0} V.</span>
+                                <div class="stat-item">
+                                    <span>📷</span> <span>${totalFotos}</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span>🎬</span> <span>${totalVideos}</span>
+                                </div>
                             </div>
                         </div>
                     `;
