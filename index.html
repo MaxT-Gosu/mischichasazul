@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelos Premium</title>
+    <title>Home - Premium App</title>
     <style>
         /* Estilos generales */
         * {
@@ -11,125 +11,101 @@
             margin: 0;
             padding: 0;
             font-family: 'Segoe UI', Roboto, sans-serif;
+            -webkit-tap-highlight-color: transparent; 
         }
 
         body {
             background-color: #0b0b0c;
             color: #ffffff;
-            /* Espacio al final para que la barra inferior no tape el contenido */
-            padding-bottom: 85px; 
+            padding-bottom: 90px;
+            overflow-x: hidden;
+            width: 100vw;
         }
 
-        /* Cabecera */
-        header {
-            background: linear-gradient(180deg, #16161a 0%, #0b0b0c 100%);
-            padding: 15px 10px;
-            text-align: center;
-            border-bottom: 1px solid #1f1f24;
-        }
-
-        header h1 {
-            font-size: 1.4rem;
-            color: #ff2a74;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            text-shadow: 0 0 10px rgba(255, 42, 116, 0.3);
-        }
-
-        header p {
-            font-size: 0.8rem;
-            color: #8a8a93;
-            margin-top: 5px;
-        }
-
-        /* CUADRÍCULA DE 3 COLUMNAS */
+        /* Cuadrícula de Modelos (2 columnas limpias en móvil) */
         .grid-modelos {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 8px;
-            padding: 8px;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            padding: 12px;
             max-width: 600px;
             margin: 0 auto;
         }
 
-        /* Tarjeta de cada Modelo */
+        /* TARJETA ULTRA-MINIMALISTA */
         .card-modelo {
-            background-color: #16161a;
-            border-radius: 8px;
-            overflow: hidden;
-            border: 1px solid #232329;
-            text-decoration: none; 
-            color: inherit;
-            display: flex;
-            flex-direction: column;
             position: relative;
-            transition: transform 0.2s;
+            background-color: #16161a;
+            border-radius: 12px;
+            overflow: hidden;
+            aspect-ratio: 2 / 3; /* Proporción vertical elegante */
+            cursor: pointer;
+            border: 1px solid #1f1f24;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s ease;
         }
 
         .card-modelo:active {
-            transform: scale(0.96);
+            transform: scale(0.97); /* Efecto táctil al presionar */
         }
 
-        .img-container {
-            width: 100%;
-            aspect-ratio: 3 / 4; 
-            position: relative;
-            background-color: #000;
-        }
-
-        .img-container img {
+        /* La foto ahora ocupa el 100% de la tarjeta */
+        .card-img {
             width: 100%;
             height: 100%;
-            object-fit: cover; 
+            object-fit: cover;
+            display: block;
         }
 
-        .badge {
+        /* INFORMACIÓN FLOTANTE SOBRE LA FOTO */
+        .card-info {
             position: absolute;
-            top: 4px;
-            left: 4px;
-            color: white;
-            font-size: 0.6rem;
-            font-weight: bold;
-            padding: 2px 6px;
-            border-radius: 10px;
-            text-transform: uppercase;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 25px 12px 12px 12px;
+            /* Degradado de negro a transparente para que el texto resalte */
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
         }
 
-        .info-modelo {
-            padding: 6px;
-            text-align: center;
-        }
-
-        .info-modelo .nombre {
-            font-size: 0.85rem;
+        .card-name {
+            font-size: 1.05rem;
             font-weight: bold;
             color: #ffffff;
+            text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
             margin-bottom: 2px;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
         }
 
-        .info-modelo .detalles {
-            font-size: 0.65rem;
-            color: #8a8a93;
+        .card-stats {
+            font-size: 0.75rem;
+            color: rgba(255, 255, 255, 0.7);
+            display: flex;
+            align-items: center;
+            gap: 4px;
         }
 
-        .btn-ver {
-            display: block;
-            background-color: #1f1f24;
-            color: #ff2a74;
-            font-size: 0.7rem;
+        /* Etiquetas flotantes superiores (HOT / NUEVA) */
+        .badge {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.68rem;
             font-weight: bold;
-            text-align: center;
-            padding: 6px;
-            border-top: 1px solid #232329;
             text-transform: uppercase;
+            letter-spacing: 0.5px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+            z-index: 2;
         }
 
-        /* ==========================================
-           BARRA DE NAVEGACIÓN INFERIOR (4 BOTONES)
-           ========================================== */
+        .badge-hot { background-color: #ff2a74; color: #ffffff; }
+        .badge-nueva { background-color: #00bcd4; color: #ffffff; }
+
+        /* BARRA DE NAVEGACIÓN INFERIOR (Se mantiene igual) */
         .nav-bar {
             position: fixed;
             bottom: 0;
@@ -142,7 +118,6 @@
             justify-content: space-around;
             align-items: center;
             z-index: 999;
-            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.4);
         }
 
         .nav-item {
@@ -153,113 +128,63 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            width: 25%; /* Divide la barra perfectamente en 4 partes (25% cada una) */
-            height: 100%;
-            transition: color 0.2s;
-            -webkit-tap-highlight-color: transparent; /* Evita parpadeo azul al pulsar en Android */
-        }
-
-        .nav-icon {
-            font-size: 1.3rem;
-            margin-bottom: 2px;
-        }
-
-        /* Clase activa para resaltar dónde se encuentra el usuario */
-        .nav-item.active {
-            color: #ff2a74;
-            font-weight: bold;
-        }
-
-        .nav-item:active {
-            transform: scale(0.92);
+            width: 25%;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Modelos Premium</h1>
-        <p>Selecciona una modelo para ver su contenido</p>
-    </header>
+    <!-- Contenedor donde JS pintará las tarjetas -->
+    <main class="grid-modelos" id="contenedor-modelos"></main>
 
-    <!-- La cuadrícula lee la base de datos local db.js -->
-    <main class="grid-modelos" id="grid-modelos"></main>
-
-    <!-- ==========================================
-       MENÚ INFERIOR TÁCTIL (4 BOTONES)
-       ========================================== */ -->
+    <!-- Menú Inferior -->
     <nav class="nav-bar">
-        <!-- 1. Home -->
-        <a href="index.html" class="nav-item active">
-            <span class="nav-icon">🏠</span>
-            <span>Home</span>
-        </a>
-        
-        <!-- 2. Mis Chicas (Tu catálogo principal de 3x3) -->
-        <a href="chicas.html" class="nav-item">
-            <span class="nav-icon">🔥</span>
-            <span>Mis Chicas</span>
-        </a>
-        
-        <!-- 3. Buscar -->
-        <a href="buscar.html" class="nav-item">
-            <span class="nav-icon">🔍</span>
-            <span>Buscar</span>
-        </a>
-        
-        <!-- 4. Info -->
-        <a href="info.html" class="nav-item">
-            <span class="nav-icon">ℹ️</span>
-            <span>Info</span>
-        </a>
+        <a href="index.html" class="nav-item"><span>🏠</span><span>Home</span></a>
+        <a href="chicas.html" class="nav-item"><span>🔥</span><span>Mis Chicas</span></a>
+        <a href="buscar.html" class="nav-item"><span>🔍</span><span>Buscar</span></a>
+        <a href="info.html" class="nav-item"><span>ℹ️</span><span>Info</span></a>
     </nav>
 
-    <!-- 1. Importación de tu archivo base de datos -->
     <script src="db.js"></script>
-
-    <!-- 2. Script para renderizar la cuadrícula -->
     <script>
         document.addEventListener("DOMContentLoaded", () => {
-            const gridContainer = document.getElementById("grid-modelos");
-            gridContainer.innerHTML = ""; 
+            const contenedor = document.getElementById('contenedor-modelos');
+            contenedor.innerHTML = "";
 
-            // Cargar datos desde db.js
             if (typeof modelosDB !== 'undefined' && Array.isArray(modelosDB)) {
                 modelosDB.forEach(modelo => {
-                    const card = document.createElement("a");
-                    card.className = "card-modelo";
+                    // Crear elemento de la tarjeta
+                    const card = document.createElement('div');
+                    card.className = 'card-modelo';
                     
-                    // Al pulsar, se envía a la página individual de la modelo pasándole su ID
-                    card.href = `modelo.html?id=${modelo.id}`;
+                    // Al hacer clic en cualquier parte de la tarjeta, abre su perfil
+                    card.onclick = () => {
+                        window.location.href = `modelo.html?id=${modelo.id}`;
+                    };
 
-                    // Contadores automáticos
-                    const totalFotos = modelo.fotos ? modelo.fotos.length : 0;
-                    const totalVideos = modelo.videos ? modelo.videos.length : 0;
-                    const textoDetalles = `🔥 ${totalFotos} F. ${totalVideos > 0 ? `• ${totalVideos} V.` : ''}`;
-
-                    let badgeHTML = "";
-                    if (modelo.badge) {
-                        const colorBadge = modelo.badge.toLowerCase() === "nueva" ? "#00bcd4" : "#ff2a74";
-                        badgeHTML = `<span class="badge" style="background-color: ${colorBadge};">${modelo.badge}</span>`;
+                    // Lógica para las etiquetas superiores (Hot/Nueva) según tu db.js
+                    let badgeHTML = '';
+                    if (modelo.etiqueta === 'HOT') {
+                        badgeHTML = `<span class="badge badge-hot">HOT</span>`;
+                    } else if (modelo.etiqueta === 'NUEVA') {
+                        badgeHTML = `<span class="badge badge-nueva">NUEVA</span>`;
                     }
 
+                    // Estructura limpia: foto completa e información encimada
                     card.innerHTML = `
-                        <div class="img-container">
-                            ${badgeHTML}
-                            <img src="${modelo.fotoPortada}" alt="${modelo.nombre}">
+                        ${badgeHTML}
+                        <img src="${modelo.fotoPortada}" alt="${modelo.nombre}" class="card-img" loading="lazy">
+                        <div class="card-info">
+                            <h2 class="card-name">${modelo.nombre}</h2>
+                            <div class="card-stats">
+                                <span>🔥 ${modelo.fotos ? modelo.fotos.length : 0} F.</span>
+                                <span>•</span>
+                                <span>🎬 ${modelo.videos ? modelo.videos.length : 0} V.</span>
+                            </div>
                         </div>
-                        <div class="info-modelo">
-                            <div class="nombre">${modelo.nombre}</div>
-                            <div class="detalles">${textoDetalles}</div>
-                        </div>
-                        <span class="btn-ver">Ver</span>
                     `;
-
-                    gridContainer.appendChild(card);
+                    contenedor.appendChild(card);
                 });
-            } else {
-                gridContainer.innerHTML = "<p style='grid-column: span 3; text-align: center; padding: 20px; color: #8a8a93;'>Error: No se pudo cargar la base de datos (db.js).</p>";
             }
         });
     </script>
