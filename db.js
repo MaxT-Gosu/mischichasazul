@@ -62,10 +62,15 @@ const modelosDB = [
 			"https://simp6.cuckcapital.cr/images3/scene0234194498ff5c979aba5.md.jpg",
 			"https://simp6.cuckcapital.cr/images3/scene000017b8244a08faffbc8.md.jpg",
 			"https://simp6.cuckcapital.cr/images3/scene0243193a2474162176e65.md.jpg",
+			"https://simp6.cuckcapital.cr/images3/scene00001dd4cae1859cd9120.md.jpg",
+			"https://simp6.cuckcapital.cr/images3/scene56821080ae41f3040589e.md.jpg",
+		    "https://simp6.cuckcapital.cr/images3/scene59851c11cdb80a3d2693e.md.jpg",
 			
         ],
         videos: [
-            "https://www.burstcloud.co/embed/335d3c5388aefc23a4afcacff2d84173e0f032a0d922e50249ce3c20f4f96aca/691851021239988224-P4cgjlay(1).mp4"
+            "https://www.burstcloud.co/embed/335d3c5388aefc23a4afcacff2d84173e0f032a0d922e50249ce3c20f4f96aca/691851021239988224-P4cgjlay(1).mp4",
+			"https://www.burstcloud.co/embed/72ce3384a737331d2b428bce63fb5243b3dde290b661f6c036c89deb39a41de8/693315955991785472-5Meguirj.mp4",
+			"https://www.burstcloud.co/embed/db719201ee4e08d53eb0fbb8839e16eb7b0275a4f98f339e0372062d0cbb7eff/694732882609975296.mp4"
         ]
     },
 	{
