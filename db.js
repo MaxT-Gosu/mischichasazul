@@ -157,7 +157,7 @@ const modelosDB = [
 	{
         id: 7,
         nombre: "chloewildd",
-        fotoPortada: "https://simp2.cuckcapital.cr/FLViwejWUAUsPF2.md.jpg",
+        fotoPortada: "https://simp6.cuckcapital.cr/images3/1215x2160_5c1c59cf2de692d38d74187f5308c4153df47f76f4187a65.jpg",
         badge: "Nueva",
         categoria: "Cam Girls",
         descripcion: "Amante del fitness y las sesiones de fotos atrevidas.",
@@ -180,14 +180,27 @@ const modelosDB = [
 			"https://simp6.cuckcapital.cr/images4/6279b746-be10-405b-9750-1a03fd329ddd.jpg",
 			"https://simp6.cuckcapital.cr/images4/9dad8ecd-3f16-474f-866d-0ac88c80b31f.jpg",
 			"https://simp6.cuckcapital.cr/images3/2160x1216_8f2e1af9af3df65d40c16d7fe82a609fb71e442d0753cfaf.md.jpg",
+			"https://simp6.cuckcapital.cr/images3/10002043859d4c3ffa1c7460e8.md.jpg",
+			"https://simp6.cuckcapital.cr/images3/1000006832aad8db1c94fb5dc1.md.jpg",
+			"https://simp6.cuckcapital.cr/images3/cw9b9f9e108e5fa2e8a.md.jpg",
+			"https://simp6.cuckcapital.cr/images3/2635x2176_c87ff3b3428e71582f1962eb6f4ddb0d4efc3f42caf93570.jpg",
+			"https://simp6.cuckcapital.cr/images3/2176x3264_3fa18ea697491696b27bd95e6d67c93b04c73be971e265a4.jpg",
+			"https://simp6.cuckcapital.cr/images3/3264x2176_b0a703dd8d97c3c4ede6e58c93cfa6234f5b423763240081.jpg",
+			"https://simp6.cuckcapital.cr/images3/1306x1440_bb2fd8867686ceba958559116dbf37c4b70532303cfadd5a.jpg",
+			"https://simp6.cuckcapital.cr/images3/1892x1215_bdb7c50af5cb4be7fb6ddce794037b6954565c5203be9630.jpg",
+			"https://simp6.cuckcapital.cr/images3/1517x1863_0ebc307dbdee6a7f36df0f2593326eed4d36e74797b23956.jpg",
+			"https://simp6.cuckcapital.cr/images3/1087x1715_9a4d7beb0b11458b87d4dfc53c6e5d7f32eab17abec06efe.jpg"
+			
 			
 			
         ],
         videos: [
-            "https://www.burstcloud.co/embed/3d8d8dd9ab34da354aceb86f22a58c4bde3f94c164adbcce3753beb2bfeb0476/Chloewildd%2B2025-02-08%2B00.17.mp4",
-			"https://www.burstcloud.co/embed/4566c8c3a4c714512ea384eabbc994e47d904e064f9f227819f502ebee6fd137/gKLkfVCcyiZ.mp4",
-			"https://www.burstcloud.co/embed/7d7c663fe2f8dcd80d368116b0d220b83b544e2310f07c4a8a2995dbb84fffda/gKLkfVCcyiZ.mp4",
-			"https://www.burstcloud.co/embed/7ae82925acda3d517e07ad98b2f8752b2554c40dca6c8d9846f866e006062826/Chloewildd%2B2025-12-14%2BPart%2B8.mp4"
+            "https://www.burstcloud.co/embed/2b205ae0b609316dee185e17a9f70edb61e6d550550c16c0797851a82692f01a/Chloe%20Wild%20-%20Your%20Anal%20Whore.mp4",
+			"https://www.burstcloud.co/embed/a96c62d79d3051bc616cc9b6cc5669843958db269fa3b68885bfb61518a8b377/Chloewildd%2B2025-02-08%2B00.17.mp4",
+			"https://www.burstcloud.co/embed/897a67326d434e8ae1a0742e7baa5118aa6806f095ec7da1c57fd7be97e2fae5/Chloewildd%2B2025-12-14%2BPart%2B8.mp4",
+			"https://www.burstcloud.co/embed/2c962dda7d7afda8654d397cff506cb36043f96c36bc28ba69e18c699866e883/gKLkfVCcyiZ.mp4"
+			"https://www.burstcloud.co/embed/efc0e2b340fa3d3ef4fb398d63ea5dbf28b1db9dd85723043a9b0f35c9a3522d/Onlyfans.23.11.04.Chloewildd.Princess.Leias.Sextape.Xxx.mp4",
+			"https://www.burstcloud.co/embed/011a53966c39b9e60c3de242e742b1ef80ffa0e0b79d57981cbb6d9550f22150/Threesome%2BWith%2BChloe%2BWildd%2B%26%2BChristina%2BSage%2BCmobxqkmm01u39xhcrohqxazd.mp4"
 
         ]
     }
