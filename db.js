@@ -132,6 +132,39 @@ const modelosDB = [
 			"https://tucontenido.b-cdn.net/tuconte/spitreligion/Spitireligion%20riding.mp4",
 			
         ]
+    },
+	{
+        id: 6,
+        nombre: "kenalialuv",
+        fotoPortada: "https://simp4.cuckcapital.cr/9BD6F307-BC48-4369-96CF-317BE381A216.md.jpg",
+        badge: "",
+        categoria: "Latina",
+        descripcion: "Amante del fitness y las sesiones de fotos atrevidas.",
+        fotos: [
+            "https://simp6.cuckcapital.cr/images/Screenshot_20230311_090809.md.jpg",
+            "https://simp6.cuckcapital.cr/images/Screenshot_20230311_090836.md.jpg",
+			"https://simp6.cuckcapital.cr/images/Screenshot_20230311_090856.md.jpg",
+			"https://simp6.cuckcapital.cr/images/b3dae269-728f-474f-9a11-f87dd01ece06.md.jpg",
+			"https://simp6.cuckcapital.cr/images/FkrosSkXkAQ8ODb.md.jpg",
+			"https://simp6.cuckcapital.cr/images3/doubleflash1e00df206428c070.png",
+			"https://simp4.cuckcapital.cr/2024/pussyspread33e16ed7fd343c36.png",
+			"https://simp6.cuckcapital.cr/images/IMG_004209d19e6aec94a7b1.jpg",
+			"https://simp6.cuckcapital.cr/images2/IMG_08931ebd5a9541899ec5.md.jpg",
+			"https://simp6.cuckcapital.cr/images3/4369c5cb062c25d10.png"
+			
+			
+			
+        ],
+        videos: [
+            "https://www.burstcloud.co/embed/bdbafe890e73858b3e29bd29efadafa678bbe480b0395fc4a991725ab3be546e/0Ha4znrst2j6g5tskajt5%20720P.mp4",
+			"https://www.burstcloud.co/embed/cc223c544162420f918443f0c687655423e16b508fd51695b96751110050a7ae/0Hjf3i94i1h047mcrtkbu%20Source.mp4",
+			"https://www.burstcloud.co/embed/0203d183809a17ade51ec1c1b54b3a15a26f624cf549c2f03d570ac438de64de/1000001590.mp4",
+			"https://www.burstcloud.co/embed/6f996ed2228c213b96f874fa20c7d29d6f3f8b0562eed0c19ff5e0ec5a6a8b37/1000001597.mp4",
+			"https://www.burstcloud.co/embed/ec515af342cc2d160cd36baa3d583207039a32a2a8d6d1cf3be6109fe5eaebe4/He%2BTried%2BTo%2BWatch%2BPorn%2C%2BWhen%2BMy%2BMouth%2BIs%2BAvailable%2BHow%2BRude.%2BFirst%2BTime%2B(On%2BCamera)%2BShooting%2BA%2BLoad%2BIn%2BMy%2BMou.mp4",
+			"https://www.burstcloud.co/embed/4972972375f0bfad81a737e749f29a9114ad06bdec5fc6029fcfbd9b2e292ecf/Kenalialuv%20-%20Reze.mp4",
+			"https://www.burstcloud.co/embed/85cc270573f6cf0a9f796da3c8ce13c3c57386a78d8742091a4d58489bfca8c7/Kenalialuv.mp4",
+			
+        ]
     }
     // Puedes seguir agregando las modelos que quieras aquí abajo...
 ];
