@@ -17,17 +17,17 @@
         body {
             background-color: #0b0b0c;
             color: #ffffff;
-            /* CORRECCIÓN: Colchón amplio abajo para que las tarjetas no queden detrás del menú */
-            padding-bottom: 110px; 
+            /* Espacio amplio abajo para que el menú de 75px no tape nada */
+            padding-bottom: 120px; 
             overflow-x: hidden;
             width: 100vw;
         }
 
-        /* Títulos de las Secciones (Estilo Cartelera) */
+        /* Títulos de las Secciones */
         .seccion-titulo {
             font-size: 1.25rem;
             font-weight: bold;
-            padding: 20px 15px 5px 15px;
+            padding: 22px 15px 5px 15px;
             letter-spacing: 0.5px;
             color: #ffffff;
             display: flex;
@@ -43,7 +43,6 @@
             gap: 14px;
             overflow-x: auto;
             padding: 10px 15px 15px 15px;
-            /* Efecto magnético de película al deslizar */
             scroll-snap-type: x mandatory; 
             scrollbar-width: none; /* Oculta barra en Firefox */
         }
@@ -63,22 +62,22 @@
             border: 1px solid #1f1f24;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
             transition: transform 0.2s ease;
-            scroll-snap-align: start; /* Punto de anclaje para el slider */
+            scroll-snap-align: start; 
         }
 
         .card-modelo:active {
             transform: scale(0.96); 
         }
 
-        /* 👑 CORRECCIÓN 2: FILA DESTACADAS MÁS GRANDE (TIPO POSTER PRINCIPAL) */
+        /* 👑 DESTACADAS DE LA SEMANA (CARRUSEL GRANDE - TIPO POSTER) */
         #carrusel-hot .card-modelo {
-            flex: 0 0 180px; /* Tarjeta más ancha y alta */
+            flex: 0 0 175px; 
         }
 
-        /* FILAS NORMALES (Nuevos rostros y Top Trends) */
+        /* FILAS ESTÁNDAR (Nuevos rostros y Top Trends) */
         #carrusel-nuevas .card-modelo,
         #carrusel-trends .card-modelo {
-            flex: 0 0 135px; /* Tamaño estándar de catálogo */
+            flex: 0 0 130px; 
         }
 
         .card-img {
@@ -112,7 +111,6 @@
             text-overflow: ellipsis; 
         }
 
-        /* Hacer el texto un poquito más visible en las tarjetas grandes */
         #carrusel-hot .card-name {
             font-size: 1.05rem;
         }
@@ -131,7 +129,7 @@
             gap: 3px; 
         }
 
-        /* Etiquetas flotantes (HOT / NUEVA) */
+        /* Etiquetas flotantes */
         .badge {
             position: absolute;
             top: 8px;
@@ -148,27 +146,27 @@
         .badge-nueva { background-color: #00bcd4; color: #ffffff; }
 
         /* ==========================================
-           👑 CORRECCIÓN 1: MENÚ INFERIOR MEJORADO (MÁS GRANDE Y CÓMODO)
+           👑 MENÚ INFERIOR PREMIUM RESTAURADO Y COMODO
            ========================================== */
         .nav-bar {
             position: fixed;
             bottom: 0;
             left: 0;
             width: 100%;
-            height: 70px; /* Incrementado para mejor ergonomía */
+            height: 75px; 
             background-color: #111115;
             border-top: 1px solid #1f1f24;
             display: flex;
             justify-content: space-around;
             align-items: center;
             z-index: 999;
-            box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.6);
         }
 
         .nav-item {
             color: #8a8a93;
             text-decoration: none;
-            font-size: 0.85rem; /* Letras más legibles */
+            font-size: 0.85rem; 
             text-align: center;
             display: flex;
             flex-direction: column;
@@ -176,35 +174,40 @@
             justify-content: center;
             width: 25%;
             height: 100%;
-            transition: color 0.2s, transform 0.1s;
         }
 
         .nav-icon {
-            font-size: 1.45rem; /* Iconos notablemente más grandes */
-            margin-bottom: 3px;
+            font-size: 1.5rem; 
+            margin-bottom: 4px;
         }
 
-        /* Color de item activo simulado (Home) */
         .nav-item.active {
             color: #ff2a74;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
 
-    <!-- 1. CATEGORÍA: DESTACADAS (FILA SÚPER GRANDE) -->
-    <h2 class="seccion-titulo">🔥 Destacadas de la Semana</h2>
-    <section class="carrusel-horizontal" id="carrusel-hot"></section>
+    <!-- 1. CATEGORÍA: DESTACADAS (GIGANTE TIPO POSTER) -->
+    <div id="contenedor-hot-row">
+        <h2 class="seccion-titulo">🔥 Destacadas de la Semana</h2>
+        <section class="carrusel-horizontal" id="carrusel-hot"></section>
+    </div>
 
-    <!-- 2. CATEGORÍA: NOVEDADES (FILA ESTÁNDAR) -->
-    <h2 class="seccion-titulo">✨ Nuevos Rostros</h2>
-    <section class="carrusel-horizontal" id="carrusel-nuevas"></section>
+    <!-- 2. CATEGORÍA: NOVEDADES -->
+    <div id="contenedor-nuevas-row">
+        <h2 class="seccion-titulo">✨ Nuevos Rostros</h2>
+        <section class="carrusel-horizontal" id="carrusel-nuevas"></section>
+    </div>
 
-    <!-- 3. 👑 CORRECCIÓN 3: CATEGORÍA TOP TRENDS (REEMPLAZA A DESCUBRIR TODAS) -->
-    <h2 class="seccion-titulo">📈 Top Trends</h2>
-    <section class="carrusel-horizontal" id="carrusel-trends"></section>
+    <!-- 3. CATEGORÍA: TOP TRENDS (REEMPLAZA COMPLETAMENTE LA GRILLA GENERAL) -->
+    <div id="contenedor-trends-row">
+        <h2 class="seccion-titulo">📈 Top Trends</h2>
+        <section class="carrusel-horizontal" id="carrusel-trends"></section>
+    </div>
 
-    <!-- Menú Inferior Restaurado -->
+    <!-- Menú Inferior de Navegación -->
     <nav class="nav-bar">
         <a href="index.html" class="nav-item active">
             <span class="nav-icon">🏠</span>
@@ -227,28 +230,15 @@
     <script src="db.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", () => {
-            // Capturar contenedores de los Sliders
             const carruselHot = document.getElementById('carrusel-hot');
             const carruselNuevas = document.getElementById('carrusel-nuevas');
             const carruselTrends = document.getElementById('carrusel-trends');
 
-            // Limpiar sliders
-            carruselHot.innerHTML = "";
-            carruselNuevas.innerHTML = "";
-            carruselTrends.innerHTML = "";
-
             if (typeof modelosDB !== 'undefined' && Array.isArray(modelosDB)) {
                 
                 modelosDB.forEach(modelo => {
-                    // Crear el elemento de la tarjeta
-                    const card = document.createElement('div');
-                    card.className = 'card-modelo';
-                    card.onclick = () => {
-                        window.location.href = `modelo.html?id=${modelo.id}`;
-                    };
-
-                    // Control de las palabras de tus insignias (badge)[cite: 1, 2]
-                    const badgeNormalizado = modelo.badge ? modelo.badge.toUpperCase() : '';[cite: 1, 2]
+                    // Procesar la etiqueta badge de db.js
+                    const badgeNormalizado = modelo.badge ? modelo.badge.toUpperCase() : '';
 
                     let badgeHTML = '';
                     if (badgeNormalizado === 'HOT') {
@@ -257,51 +247,46 @@
                         badgeHTML = `<span class="badge badge-nueva">NUEVA</span>`;
                     }
 
-                    // Contadores de archivos
                     const totalFotos = modelo.fotos ? modelo.fotos.length : 0;
                     const totalVideos = modelo.videos ? modelo.videos.length : 0;
 
-                    // Diseño de la tarjeta
-                    card.innerHTML = `
-                        ${badgeHTML}
-                        <img src="${modelo.fotoPortada}" alt="${modelo.nombre}" class="card-img" loading="lazy">
-                        <div class="card-info">
-                            <h2 class="card-name">${modelo.nombre}</h2>
-                            <div class="card-stats">
-                                <div class="stat-item"><span>📷</span> <span>${totalFotos}</span></div>
-                                <div class="stat-item"><span>🎬</span> <span>${totalVideos}</span></div>
+                    // Generar la tarjeta limpia en una variable de texto pura
+                    const tarjetaHTML = `
+                        <div class="card-modelo" onclick="window.location.href='modelo.html?id=${modelo.id}'">
+                            ${badgeHTML}
+                            <img src="${modelo.fotoPortada}" alt="${modelo.nombre}" class="card-img" loading="lazy">
+                            <div class="card-info">
+                                <h2 class="card-name">${modelo.nombre}</h2>
+                                <div class="card-stats">
+                                    <div class="stat-item"><span>📷</span> <span>${totalFotos}</span></div>
+                                    <div class="stat-item"><span>🎬</span> <span>${totalVideos}</span></div>
+                                </div>
                             </div>
                         </div>
                     `;
 
-                    // 🔀 REPARTO EN SLIDERS HORIZONTALES
+                    // Asignación limpia sin romper el árbol del DOM en móviles
                     if (badgeNormalizado === 'HOT') {
-                        // Va al slider de destacadas gigantes
-                        carruselHot.appendChild(card.cloneNode(true));
+                        carruselHot.insertAdjacentHTML('beforeend', tarjetaHTML);
                     } else if (badgeNormalizado === 'NUEVA') {
-                        // Va al slider de nuevos rostros
-                        carruselNuevas.appendChild(card.cloneNode(true));
+                        carruselNuevas.insertAdjacentHTML('beforeend', tarjetaHTML);
                     }
 
-                    // AUTOMATIZACIÓN DE TOP TRENDS: 
-                    // Si la modelo tiene muchos videos o es de categoría "Latina", entra en las tendencias[cite: 1]
-                    if (totalVideos >= 2 || modelo.categoria === 'Latina') {[cite: 1]
-                        carruselTrends.appendChild(card.cloneNode(true));
+                    // Regla de automatización para Top Trends
+                    if (totalVideos >= 2 || modelo.categoria === 'Latina') {
+                        carruselTrends.insertAdjacentHTML('beforeend', tarjetaHTML);
                     }
                 });
 
-                // Control dinámico de filas vacías para mantener estética limpia
+                // Ocultar de forma segura bloques completos si no contienen datos
                 if (carruselHot.children.length === 0) {
-                    carruselHot.style.display = 'none';
-                    carruselHot.previousElementSibling.style.display = 'none';
+                    document.getElementById('contenedor-hot-row').style.display = 'none';
                 }
                 if (carruselNuevas.children.length === 0) {
-                    carruselNuevas.style.display = 'none';
-                    carruselNuevas.previousElementSibling.style.display = 'none';
+                    document.getElementById('contenedor-nuevas-row').style.display = 'none';
                 }
                 if (carruselTrends.children.length === 0) {
-                    carruselTrends.style.display = 'none';
-                    carruselTrends.previousElementSibling.style.display = 'none';
+                    document.getElementById('contenedor-trends-row').style.display = 'none';
                 }
             }
         });
