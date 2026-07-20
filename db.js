@@ -2,20 +2,17 @@
 const modelosDB = [
     {
         id: 1,
-        nombre: "Valeria",
+        nombre: "gilticus",
         fotoPortada: "https://simp1.cuckcapital.cr/images/2022-10-10_10-06.md.png",
-        badge: "Hot", // Puede ser "Hot", "Nueva", o "" (vacío si no tiene)
-        categoria: "trans", // <--- Etiqueta asignada para identificar en Top Trans
-        descripcion: "Bienvenidos a mi galería privada. Aquí verás mi contenido más exclusivo.",
-        // Enlaces a sus fotos exclusivas
+        onlyfans: "https://onlyfans.com/gilticus",
+        instagram: "https://instagram.com/usuario_ejemplo",
         fotos: [
             "https://simp1.cuckcapital.cr/images/2022-10-10_10-03.md.png",
             "https://simp1.cuckcapital.cr/images/2022-10-10_10-05_1.md.png",
             "https://simp1.cuckcapital.cr/images/2022-10-10_10-08.md.png"
         ],
-        // Enlaces a sus videos (pueden ser de servidores externos o de tu github)
         videos: [
-            "https://appcine.b-cdn.net/tuconte/gilticus.mp4", // Video de ejemplo
+            "https://appcine.b-cdn.net/tuconte/gilticus.mp4",
             
         ]
     },
@@ -23,9 +20,8 @@ const modelosDB = [
         id: 2,
         nombre: "iaribroin",
         fotoPortada: "https://simp6.cuckcapital.cr/images4/20260311_00433836f9304564435504.md.jpg",
-        badge: "Nueva",
-        categoria: "Estadounidense",
-        descripcion: "Subiendo videos nuevos todos los días 🔥",
+        onlyfans: "https://onlyfans.com/iaribroin",
+        instagram: "Desconocido",
         fotos: [
             "https://simp6.cuckcapital.cr/images3/photo_2024-08-30_00-11-38e59190eecc2983fe.md.jpg",
 			"https://simp6.cuckcapital.cr/images3/photo_2024-08-30_00-13-4587f3005df3c12249.md.jpg",
@@ -48,9 +44,8 @@ const modelosDB = [
         id: 3,
         nombre: "lilijunex",
         fotoPortada: "https://simp6.cuckcapital.cr/images/7qermhv7auy91.md.webp",
-        badge: "",
-        categoria: "Latina",
-        descripcion: "Amante del fitness y las sesiones de fotos atrevidas.",
+        onlyfans: "https://onlyfans.com/lilijunex",
+        instagram: "Desconocido",
         fotos: [
             "https://simp6.cuckcapital.cr/images3/scene000019cd3eb9e7786fed4.md.jpg",
             "https://simp6.cuckcapital.cr/images3/scene205213c0a30fb71ac5d01.md.jpg",
@@ -73,9 +68,8 @@ const modelosDB = [
         id: 4,
         nombre: "qwe",
         fotoPortada: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=300&q=80",
-        badge: "",
-        categoria: "", // <--- Otra de prueba asignada a trans
-        descripcion: "Amante del fitness y las sesiones de fotos atrevidas.",
+        onlyfans: "https://onlyfans.com/usuario_ejemplo",
+        instagram: "https://instagram.com/usuario_ejemplo",
         fotos: [
             "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=80",
             "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=600&q=80"
@@ -88,9 +82,8 @@ const modelosDB = [
         id: 5,
         nombre: "spitreligion",
         fotoPortada: "https://simp6.cuckcapital.cr/images2/IMG_38705439888e5cc6e6b1.md.jpg",
-        badge: "",
-        categoria: "Latina",
-        descripcion: "Amante del fitness y las sesiones de fotos atrevidas.",
+        onlyfans: "https://onlyfans.com/spitreligion",
+        instagram: "Desconocido",
         fotos: [
             "https://t93.pixhost.to/thumbs/469/441368248_ge1ckplwkaairol.jpg",
             "https://t93.pixhost.to/thumbs/469/441368250_gepyux8xiaamut7.jpg",
@@ -129,9 +122,8 @@ const modelosDB = [
         id: 6,
         nombre: "kenalialuv",
         fotoPortada: "https://simp4.cuckcapital.cr/9BD6F307-BC48-4369-96CF-317BE381A216.md.jpg",
-        badge: "",
-        categoria: "Latina",
-        descripcion: "Amante del fitness y las sesiones de fotos atrevidas.",
+        onlyfans: "https://onlyfans.com/kenalialuv",
+        instagram: "Desconocido",
         fotos: [
             "https://simp6.cuckcapital.cr/images/Screenshot_20230311_090809.md.jpg",
             "https://simp6.cuckcapital.cr/images/Screenshot_20230311_090836.md.jpg",
@@ -158,9 +150,8 @@ const modelosDB = [
         id: 7,
         nombre: "chloewildd",
         fotoPortada: "https://simp6.cuckcapital.cr/images3/1215x2160_5c1c59cf2de692d38d74187f5308c4153df47f76f4187a65.jpg",
-        badge: "Nueva",
-        categoria: "Cam Girls",
-        descripcion: "Amante del fitness y las sesiones de fotos atrevidas.",
+        onlyfans: "https://onlyfans.com/chloewildd/media",
+        instagram: "Desconocido",
         fotos: [
             "https://simp3.cuckcapital.cr/images/2160x1215_c0058d3a9f6a7c6b8f2d11dcfd224409.md.jpg",
             "https://simp3.cuckcapital.cr/images/2160x1215_00b3a8d368facf4815d961725af71cf9.md.jpg",
@@ -208,9 +199,8 @@ const modelosDB = [
         id: 8,
         nombre: "Lilly Lynn",
         fotoPortada: "https://simp6.cuckcapital.cr/images3/3024x4032_d11813489ac39c901b20cf583a7f9ca68b16a20f3ec57ff6.md.jpg",
-        badge: "Nueva",
-        categoria: "Thai",
-        descripcion: "Amante del fitness y las sesiones de fotos atrevidas.",
+        onlyfans: "https://onlyfans.com/naturalbabe69",
+        instagram: "https://www.instagram.com/naturalbabe69/",
         fotos: [
             "https://simp6.cuckcapital.cr/images3/10h04m32s79157914de5520c8305.md.png",
             "https://simp6.cuckcapital.cr/images3/vlcsnap-102e9174a0da9f46c.md.png",
@@ -258,6 +248,115 @@ const modelosDB = [
 			"https://www.burstcloud.co/embed/f87d0f07a9039f112c0244f768ce98725f1c0e392dab56ec44dc4e842d075881/Titslap.mp4",
 			"https://www.burstcloud.co/embed/d6f5bc3e2f12c051a8be4e2c482f30298d4a2a2d8ad3d550f5f20318ba75e253/Mll%20Anal.mp4"
 
+        ]
+    },
+	{
+        id: 9,
+        nombre: "LovingEli",
+        fotoPortada: "https://img.coomer.st/thumbnail/data/3b/35/3b358a8e630bc1bf44929f36a5df4c18d020280c250bb985084560620aeb9e6b.jpg",
+        onlyfans: "https://onlyfans.com/lovingeli1/media",
+        instagram: "https://www.instagram.com/loving_eli1/",
+        fotos: [
+            "https://img.coomer.st/thumbnail/data/3c/b2/3cb2e5f10914d9c94e9676f284c6036adab875062df8f1651c4eade84d70fa3e.jpg",
+            "https://img.coomer.st/thumbnail/data/32/1c/321cf0ba92ec31f41e14722997af6dbb78f4003f91f812b36e99f586ed7ea6bf.jpg",
+			"https://img.coomer.st/thumbnail/data/0f/b7/0fb7f86b9e98f8328c67209897117e673c90738b27f29eecc20c2d70eca48cb3.jpg",
+			"https://img.coomer.st/thumbnail/data/56/55/5655cd37d445222b92519243a7b118240223a8949c9fc166bcb18ca511198452.jpg",
+			"https://img.coomer.st/thumbnail/data/51/eb/51eb38a07121e4c9ee75c303909b318b66020950c930bbf5f6b4d36f7e0bee4c.jpg",
+			"https://img.coomer.st/thumbnail/data/e8/70/e870cba8e4fd9a1deb56be80d85bcd300ac7348d545435bbbb445d2818fa8345.jpg",
+			"https://img.coomer.st/thumbnail/data/1c/0f/1c0f246f224222fdb161221512c9910d386b846575e4457403d951ecd7a86100.jpg",
+			"https://img.coomer.st/thumbnail/data/e2/37/e2374fd1e64fae3f4203bda2aed200135582aea58239eb557e8cc963cacb6a93.jpg",
+			"https://img.coomer.st/thumbnail/data/90/2e/902e8a816e441230be2fac57fd98a9ad6ae09063e19b03c6353427fa98687f39.jpg",
+			"https://img.coomer.st/thumbnail/data/57/df/57dfa3a9687ceda305f17e3634be7bea9df56c4da1ff505d0d966a9c3db34ae3.jpg",
+			"https://img.coomer.st/thumbnail/data/d6/34/d634a98360bf49b26a4b10f247dca207cef63ca9bd42f55b4859c6970fb47dd5.jpg",
+			"https://img.coomer.st/thumbnail/data/b2/04/b204ef4c1a3f0b975832cc1c504533acc2f4dbc6bc4a0eab3f82771d7692c8d5.jpg",
+			"https://img.coomer.st/thumbnail/data/5a/10/5a10ee858367219b4760a9d0dfd3d53ab0033935e18371a78f2fc208bb434d9d.jpg",
+			"https://img.coomer.st/thumbnail/data/32/73/32738db3bb17137d53ee81a601915c05e4be145f71370e0f3a9ef73482bb9d06.jpg",
+			"https://img.coomer.st/thumbnail/data/01/6e/016ebe1ca865df04889f6c7ff515a20e11690766b5726dc1fac5de74cc2d2e8e.jpg",
+			"https://img.coomer.st/thumbnail/data/d1/d4/d1d403c2f33b52a91aed88367898b998f92b315e0c655ac1380739def4b6902f.jpg",
+			"https://img.coomer.st/thumbnail/data/58/5d/585d2a93bd750ef5a3329316556d1ea97fe2009d0061b7356dd3d909254b48e1.jpg",
+			"https://img.coomer.st/thumbnail/data/52/04/52040482fa572ce94502421542fc38698c5056e0529903c9e297e2614f2774d3.jpg",
+			"https://img.coomer.st/thumbnail/data/3a/f6/3af62f742708eeb9dea88c25a586cf3a3a662ace2222badb8d8fb13d064e6fd9.jpg",
+			"https://img.coomer.st/thumbnail/data/d9/e4/d9e4d3d318c5e66764b8749991c78f1c6d6e0ba14de93ad9737c217a778ede4c.jpg",
+			"https://img.coomer.st/thumbnail/data/d1/0c/d10cc56be5990f4277ff9963db4b12d9d6901a5efd91d4955cd2c17f024edee6.jpg",
+			"https://img.coomer.st/thumbnail/data/e3/64/e3640d12a7d8469cf62052105b44905bec178d7e9967a934dd311380413eb884.jpg",
+			"https://img.coomer.st/thumbnail/data/92/c2/92c28af3e4874f5d2410743e5f7faba1c29d1c1063a97f32c3c64a6443345141.jpg",
+			"https://img.coomer.st/thumbnail/data/f1/88/f188f0a33f3be040efaf93487c96f99238cdf0d5c35e4bf1771c119296197327.jpg",
+			"https://img.coomer.st/thumbnail/data/16/47/1647536ad3dd3badc07c8e834a3f8ac8dea882401fc36e43709da02cd260c927.jpg",
+			"https://img.coomer.st/thumbnail/data/f1/0b/f10b326ab0bb54c4ec205e9229a8aa0e4fcd57fe9bc05e6c8f14323015680995.jpg",
+			"https://img.coomer.st/thumbnail/data/18/82/188248106942f1c05e168ccaca77fc786ad65dd42ce7f33be18b039bbf579b8c.jpg",
+			"https://img.coomer.st/thumbnail/data/af/d1/afd14e0ed4109abf63a6d6a95637405a1bd4cbf50f797365a58ac21db53cedf2.jpg",
+			"https://img.coomer.st/thumbnail/data/e7/fd/e7fd8f31cb7e59491575dfa40d7edc9588efc2e1bc10f46adb785988f27c6b4a.jpg",
+			"https://img.coomer.st/thumbnail/data/ff/7a/ff7abcb9391d43a8794911dd7c897e1269c6cc89548b3a482c69b80754bb886d.jpg",
+			"https://img.coomer.st/thumbnail/data/e6/92/e6923ef1dc5d11a5bc6b23309170074b68bca1d936b392b064bfd798eb0d677e.jpg",
+			"https://img.coomer.st/thumbnail/data/9f/49/9f4970c0ca45850e1b9507c49447ea44246090d664de7e1f0a40b3490b5b7f01.jpg",
+			"https://img.coomer.st/thumbnail/data/b3/fb/b3fb18f351da5d4178c70f8b4070b8e3dcbeefb4dcae5b7519e2ee71d6c294ac.jpg",
+			"https://img.coomer.st/thumbnail/data/3b/1d/3b1dba18ff485c52b29f003ba58e86824df5ce63b14eeb8a8a542a022625fdf0.jpg",
+			"https://img.coomer.st/thumbnail/data/19/0a/190a2058433ece4a86895ddaeb599f65d85a5e8ae58cfdf61217546370a65fe6.jpg",
+			"https://img.coomer.st/thumbnail/data/84/39/843970eeff79ffa691017203df8ae08e543e1cd6390d075071b16ae43cf9809a.jpg",
+			"https://img.coomer.st/thumbnail/data/06/6b/066b0a69f5ff444033b5348a0ae10841fa3ec01847cfcd5d53f0378dd433194a.jpg",
+			"https://img.coomer.st/thumbnail/data/6e/b7/6eb769bf4d6de8f11aae2343ac06a633e26f67392a9686a7fadd57512925f7f6.jpg",
+			"https://img.coomer.st/thumbnail/data/09/1b/091bc3719f6c08ac6b29ad26aba25adb9580d51e02ddc0b611c2bf94677427a5.jpg",
+			"https://img.coomer.st/thumbnail/data/87/00/87009bb5aa8e64567c4b43104ddf1ede34caebe5fc1c62425365927eccca5d89.jpg",
+			"https://img.coomer.st/thumbnail/data/d1/38/d1383505d1336826f94cbaafd27e03720e69757e198f9d4b4431ecb082f79192.jpg",
+			"https://img.coomer.st/thumbnail/data/ec/01/ec01dbe0eb8f3457748999f009c646a960abca14a6b63de1c20dc5805c720857.jpg",
+			"https://img.coomer.st/thumbnail/data/15/f1/15f1b70fb03f80ce94273c64e363ffee1679e275d13c6209e6172766abd2e0c5.jpg",
+			"https://img.coomer.st/thumbnail/data/65/0c/650c691889bca22672e07ee5f88fc03030453c44c91185b16e79312ed2c0ec4b.jpg",
+			"https://img.coomer.st/thumbnail/data/93/24/9324b7e34f6a8fa2b9710c399a95251f2aa31d1bc1e39d75552be1f554048312.jpg",
+			"https://img.coomer.st/thumbnail/data/71/5f/715f0a46d2feb036376fd56091b4a1db7b5e23547693949d81dd55698577a8c0.jpg",
+			"https://img.coomer.st/thumbnail/data/53/5b/535bd52693f70ddb135b61d6e29993e21a2aedef20e1313b446308532f22ce78.jpg",
+			"https://img.coomer.st/thumbnail/data/fe/b2/feb2be91e2321404279dcf8d02f822ff7c32e9457eb6bb22f48cae171a9400c3.jpg",
+			"https://img.coomer.st/thumbnail/data/83/1a/831a3ae5776755ae928aa447bb902fc53d4dddfba678d50837fe4b8acb859d37.jpg",
+			"https://img.coomer.st/thumbnail/data/78/00/78005c624f68f4bced2c0c619005f3cc98aea7c843c73f3efef537b78abcd9fa.jpg",
+			"https://img.coomer.st/thumbnail/data/74/2d/742d4f5e2e0c75dd7cda1ae8ea464cbb70ec8771ff125b4a66dd4d358d994201.jpg",
+			"https://img.coomer.st/thumbnail/data/af/43/af431493d51f89de97b4658346daf6bdfbe35c57a970688ff5319bf223c485c9.jpg",
+			"https://img.coomer.st/thumbnail/data/76/c6/76c6a0304af398b52faadf2c1aae3ad7b4c1110727e6d552b93af8efb7aa99d2.jpg",
+			"https://img.coomer.st/thumbnail/data/02/ca/02ca3d60fa07793d6885808537632f2725ea4501f1c45ba62bd0a2b05d034205.jpg",
+			"https://img.coomer.st/thumbnail/data/cb/58/cb5816bce4e3d81434882ef5029a422c57f5e1e3be57e02a6c68e9cc2ec8c41f.jpg",
+			"https://img.coomer.st/thumbnail/data/1d/57/1d571101b04eb5ea82efca2396218ae760cae565e63f716478c83a36164c0892.jpg",
+			"https://img.coomer.st/thumbnail/data/1d/6d/1d6db9ec08b03b0f365cd6a402e557d5a4db8c6a1cbdbbb3500e9b56a695539c.jpg",
+			"https://img.coomer.st/thumbnail/data/aa/ba/aababe26c9b5f10038fb49b3f74578fc3ca26dcf7a08d42aa112618c6a35f5c2.jpg",
+			"https://img.coomer.st/thumbnail/data/b2/0c/b20c7c583b94ed0593bbecba75ccd579c64b957bb7dbe1ed042dc0ee0caa92e8.jpg",
+			"https://img.coomer.st/thumbnail/data/2a/b5/2ab5599a5263f087ae0de27637ca9fc73d593c1b026460c7592d335938169677.jpg",
+			"https://img.coomer.st/thumbnail/data/14/6d/146d16130fc0d65e6fb05fbb7ba032191df6a4a9f346a20978007cdca59bb17e.jpg",
+			"https://img.coomer.st/thumbnail/data/68/56/68568c84d2c6d1a8c67a43e610a9c386b360f69c80eaf74c84a8b51dc4271e27.jpg",
+			"https://img.coomer.st/thumbnail/data/15/37/1537eb73478988fb93dc9d4c1969a392f6fe452a9d8ba0540f30ac3a710e3762.jpg",
+			"https://img.coomer.st/thumbnail/data/5c/aa/5caadb6dccd4b3ff419a689899317f93e99be7a1f87cedf43a770e84730462d6.jpg",
+			"https://img.coomer.st/thumbnail/data/31/93/3193ff9c145f87ca75d981c198811d5b2e9b4d62fce50a353a56c7bb703c9a56.jpg",
+			"https://img.coomer.st/thumbnail/data/48/0b/480be60686fbb191a2adfc505eb8f922f25aa649c74b6404bd2f8ebb4a5e066c.jpg",
+			"https://img.coomer.st/thumbnail/data/a2/fa/a2fa7561156ec45e98cf9faf578b497fc6c6c1373558764a824c988915838ff3.jpg",
+			"https://img.coomer.st/thumbnail/data/6f/66/6f6651f34f86cb601216a426b967d1edfe3ba4f7f4dbf1235d74e092fb5249d4.jpg",
+			"https://img.coomer.st/thumbnail/data/56/58/56585bf17e3cd0eb7c1575293fa6fca13d9b9d1e4c39f535d8025cc4614e3c17.jpg",
+			"https://img.coomer.st/thumbnail/data/f9/f0/f9f03429458defaded0c5604141b83a2ff094b4c8232cad8c648004f56234d41.jpg",
+			"https://img.coomer.st/thumbnail/data/9a/96/9a96dcf07671dc6772eb4717bd8fd97628ed1b410c039b8794ea6a97c137720c.jpg",
+			"https://img.coomer.st/thumbnail/data/ba/fe/bafe882672b3956e6038883c3e42f94c53811c4c6f0b9217333d2920247987c7.jpg",
+			"https://img.coomer.st/thumbnail/data/ac/71/ac7182d5eeab27d7085e29657b096fe8367de862f9de7df7474c911f152d0170.jpg",
+			"https://img.coomer.st/thumbnail/data/6c/2d/6c2d7bc7fb052db0a306e4d53887e7eb7201a149c14ec3bd0cb32fa749bad028.jpg"
+			
+			
+					
+			
+        ],
+        videos: [
+            "https://www.burstcloud.co/embed/2441b5a749baf9e60b92e4710cb266b686f1859a2b27e1788fd6dbe7d6a8f3bf/1000002003.mp4",
+			"https://www.burstcloud.co/embed/f85df0f600d4a7b47bf61387871e0c85241c7517c59c4dc7e98d06ac55f40e67/1000002307.mp4",
+			"https://www.burstcloud.co/embed/c38161e26606b8d7c2ac8a8738f13e0bd9f7b2ddff99c789c643b5d53691e159/Facial.mp4",
+			"https://www.burstcloud.co/embed/dc1fe7307f2a688ee283e028bd22f099c37783c33dd4da25d4f5fc9e76a86934/Lovingeli1%2B-%2BStuck%2BIn%2BA%2BChair.mp4",
+			"https://www.burstcloud.co/embed/98d8b2d0df003fdfb53128d5a95e0078ed7171ccfb792b39408a222a6ad7ede4/Sph.mp4",
+			"https://www.burstcloud.co/embed/f30b578dd66e0304405efd4119fc865b07153109cc4d9a00f56ce85e7efb9475/Transcoded%20166B5c0ff8494f61b1cf8eabcd920c71.mp4",
+			"https://www.burstcloud.co/embed/de0d9fa45d5892ee8243d524b6b4ad7e18b8d480660e2179e4a9122425a34837/Transcoded%202D5ee402a01b44999ba71345770f060a.mp4",
+			"https://www.burstcloud.co/embed/9ee2e5feafe89b0b5bbb9eab5fcf0064bdda4681fa8ce567ed56e833a11fa2b4/Transcoded%203051A8e9cc924b399436f9591870fd76.mp4",
+			"https://www.burstcloud.co/embed/02138fe599de12db992c1dd34e1e4ee3299ca3900d3ae358b99ffc969fc02346/Transcoded%2051D54b7bd10b4ceb84100d43c31b46e9.mp4",
+			"https://www.burstcloud.co/embed/8e3ce34c807a901f7d56da3ed445c53cb7cb385017399cc1f07e7c9571a9de1f/Transcoded%205228C8ea97ba4c128f5d6a0bd34188a1.mp4",
+			"https://www.burstcloud.co/embed/d7b843e6d41649f980b7b55163247445f7f86f4c1a8d3318a4a3470376688a59/Transcoded%2079E0cc702557445b95a72f5a4723e84f.mp4",
+			"https://www.burstcloud.co/embed/98f5162f6522cdbe641ad2a6b99a4213db5affabef90be45b0994c714fd84adc/Transcoded%207De8164caffa4569b7635b38c133e257.mp4",
+			"https://www.burstcloud.co/embed/d22d696c707d1895997d81eb63199e405e22dc17e926c259bec79b9c2f1a919f/Transcoded%20B476c61bda724a91892d80687b225c88-Xlj9rt2n.mp4",
+			"https://www.burstcloud.co/embed/e612e31a0386c7976263f6b2a4b8514d01533fcfa290a965452dacee7b9829ee/Transcoded%20D47c9c1c926b42f9b5a5ad9f2f576471.mp4",
+			"https://www.burstcloud.co/embed/e0f9703d5f038579fa811ce40047517b8ac8daeb80e6de3f814b336c595daa2c/Transcoded%20Df31c0ac57954ad180762307b0ef561f.mp4",
+			"https://www.burstcloud.co/embed/be28e88792e66805c6dbb2bdc35b2d0cc0347f447239c563ae7db160f7a8e426/Transcoded%20Fa640fb4d6034d2c972eefa25ffa2d0d.mp4",
+			"https://www.burstcloud.co/embed/5c3cb8c1c8c2672f808c522c67f42a36bd0cbd3a6475b85ad89fd461fa5bf5d7/Transcoded%20Ff7e7de6f951412f9a1f2a61e80202b9.mp4",
+			"https://www.burstcloud.co/embed/8c110577af3f98123f7a0de6c498fcd4bc5ec09f9d5234903741cf5b21fce1ed/Vi%2B(22).mp4",
+			"https://www.burstcloud.co/embed/38e31b69f7f80747bbdc0257badaf23e82e8e7d6602a0dbeee98cb2fd3c87b60/Vi%2B(24).mp4"
+			
         ]
     },
 ];
