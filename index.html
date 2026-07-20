@@ -22,7 +22,7 @@
             width: 100vw;
         }
 
-        /* Títulos de las Secciones (Estilo Películas) */
+        /* Títulos de las Secciones */
         .seccion-titulo {
             font-size: 1.2rem;
             font-weight: bold;
@@ -34,9 +34,7 @@
             gap: 6px;
         }
 
-        /* ==========================================
-           CARRUSEL HORIZONTAL (TIPO NETFLIX)
-           ========================================== */
+        /* CARRUSEL HORIZONTAL (TIPO NETFLIX) */
         .carrusel-horizontal {
             display: flex;
             gap: 12px;
@@ -50,18 +48,16 @@
             display: none; /* Oculta barra en móviles */
         }
 
-        /* Ajuste para mantener las dimensiones en el carrusel (Original: 140px) */
         .carrusel-horizontal .card-modelo {
             flex: 0 0 140px; 
             scroll-snap-align: start;
         }
 
-        /* Únicamente las destacadas de la semana se verán un poco más grandes */
-        #carrusel-hot .card-modelo {
-            flex: 0 0 180px; 
+        #carrusel-destacadas .card-modelo {
+            flex: 0 0 160px; 
         }
 
-        /* TARJETA ULTRA-MINIMALISTA BASE (Convertida a enlace nativo) */
+        /* TARJETA BASE */
         .card-modelo {
             position: relative;
             background-color: #16161a;
@@ -126,23 +122,7 @@
             gap: 3px; 
         }
 
-        /* Etiquetas (HOT / NUEVA) */
-        .badge {
-            position: absolute;
-            top: 8px;
-            left: 8px;
-            padding: 3px 8px;
-            border-radius: 20px;
-            font-size: 0.6rem;
-            font-weight: bold;
-            text-transform: uppercase;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.4);
-            z-index: 2;
-        }
-        .badge-hot { background-color: #ff2a74; color: #ffffff; }
-        .badge-nueva { background-color: #00bcd4; color: #ffffff; }
-
-        /* BARRA DE NAVEGACIÓN INFERIOR (BOTONES ORIGINALES) */
+        /* BARRA DE NAVEGACIÓN INFERIOR */
         .nav-bar {
             position: fixed;
             bottom: 0;
@@ -167,25 +147,26 @@
             align-items: center;
             width: 25%;
         }
+
+        .nav-item.active {
+            color: #ff2a74;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
 
-    <!-- 1. CATEGORÍA: DESTACADAS (CARRUSEL HORIZONTAL - UN POCO MÁS GRANDE) -->
-    <h2 class="seccion-titulo">🔥 Destacadas de la Semana</h2>
-    <section class="carrusel-horizontal" id="carrusel-hot"></section>
+    <!-- 1. CATEGORÍA: DESTACADAS -->
+    <h2 class="seccion-titulo">🔥 Modelos Destacadas</h2>
+    <section class="carrusel-horizontal" id="carrusel-destacadas"></section>
 
-    <!-- 2. CATEGORÍA: NOVEDADES (CARRUSEL HORIZONTAL - TAMAÑO ESTÁNDAR) -->
-    <h2 class="seccion-titulo">✨ Nuevos Rostros</h2>
-    <section class="carrusel-horizontal" id="carrusel-nuevas"></section>
+    <!-- 2. CATEGORÍA: TODAS LAS MODELOS -->
+    <h2 class="seccion-titulo">✨ Explorar Todas</h2>
+    <section class="carrusel-horizontal" id="carrusel-todas"></section>
 
-    <!-- Slider horizontal de Top Trans -->
-    <h2 class="seccion-titulo">⚧️ Top Trans</h2>
-    <section class="carrusel-horizontal" id="carrusel-trans"></section>
-
-    <!-- Menú Inferior (Botones originales intactos) -->
+    <!-- Menú Inferior -->
     <nav class="nav-bar">
-        <a href="index.html" class="nav-item"><span>🏠</span><span>Home</span></a>
+        <a href="index.html" class="nav-item active"><span>🏠</span><span>Home</span></a>
         <a href="chicas.html" class="nav-item"><span>🔥</span><span>Mis Chicas</span></a>
         <a href="buscar.html" class="nav-item"><span>🔍</span><span>Buscar</span></a>
         <a href="info.html" class="nav-item"><span>ℹ️</span><span>Info</span></a>
@@ -194,42 +175,23 @@
     <script src="db.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", () => {
-            // Contenedores HTML
-            const carruselHot = document.getElementById('carrusel-hot');
-            const carruselNuevas = document.getElementById('carrusel-nuevas');
-            const carruselTrans = document.getElementById('carrusel-trans');
+            const carruselDestacadas = document.getElementById('carrusel-destacadas');
+            const carruselTodas = document.getElementById('carrusel-todas');
 
-            // Limpiar contenedores
-            carruselHot.innerHTML = "";
-            carruselNuevas.innerHTML = "";
-            carruselTrans.innerHTML = "";
+            carruselDestacadas.innerHTML = "";
+            carruselTodas.innerHTML = "";
 
             if (typeof modelosDB !== 'undefined' && Array.isArray(modelosDB)) {
                 
-                modelosDB.forEach(modelo => {
-                    // SOLUCIÓN: Cambiado a elemento "a" nativo para heredar la navegación sin romperse al clonar
+                modelosDB.forEach((modelo, index) => {
                     const card = document.createElement('a');
                     card.className = 'card-modelo';
                     card.href = `modelo.html?id=${modelo.id}`;
 
-                    // Usar la propiedad 'badge' de tu db.js y pasarla a mayúsculas
-                    const badgeNormalizado = modelo.badge ? modelo.badge.toUpperCase() : '';
-
-                    // Control visual de etiquetas superiores
-                    let badgeHTML = '';
-                    if (badgeNormalizado === 'HOT') {
-                        badgeHTML = `<span class="badge badge-hot">HOT</span>`;
-                    } else if (badgeNormalizado === 'NUEVA') {
-                        badgeHTML = `<span class="badge badge-nueva">NUEVA</span>`;
-                    }
-
-                    // Contadores de recursos
                     const totalFotos = modelo.fotos ? modelo.fotos.length : 0;
                     const totalVideos = modelo.videos ? modelo.videos.length : 0;
 
-                    // Diseño interno limpio e intuitivo con iconos
                     card.innerHTML = `
-                        ${badgeHTML}
                         <img src="${modelo.fotoPortada}" alt="${modelo.nombre}" class="card-img" loading="lazy">
                         <div class="card-info">
                             <h2 class="card-name">${modelo.nombre}</h2>
@@ -240,32 +202,17 @@
                         </div>
                     `;
 
-                    // REPARTO INTELIGENTE EN LOS CARRUSELES DESLIZABLES
-                    if (badgeNormalizado === 'HOT') {
-                        carruselHot.appendChild(card.cloneNode(true));
-                    } else if (badgeNormalizado === 'NUEVA') {
-                        carruselNuevas.appendChild(card.cloneNode(true));
-                    }
-                    
-                    // Identifica la etiqueta "trans" en tu db.js y la añade al carrusel deslizable
-                    if (modelo.categoria && modelo.categoria.toLowerCase() === 'trans') {
-                        carruselTrans.appendChild(card.cloneNode(true));
+                    // Muestra todas las modelos en el carrusel inferior
+                    carruselTodas.appendChild(card.cloneNode(true));
+
+                    // Muestra las primeras 5 chicas en el carrusel de destacadas
+                    if (index < 5) {
+                        carruselDestacadas.appendChild(card.cloneNode(true));
                     }
                 });
 
-                // Control automático de filas vacías
-                if (carruselHot.children.length === 0) {
-                    carruselHot.style.display = 'none';
-                    carruselHot.previousElementSibling.style.display = 'none';
-                }
-                if (carruselNuevas.children.length === 0) {
-                    carruselNuevas.style.display = 'none';
-                    carruselNuevas.previousElementSibling.style.display = 'none';
-                }
-                if (carruselTrans.children.length === 0) {
-                    carruselTrans.style.display = 'none';
-                    carruselTrans.previousElementSibling.style.display = 'none';
-                }
+            } else {
+                console.error("Error: No se pudo cargar db.js correctamente.");
             }
         });
     </script>
