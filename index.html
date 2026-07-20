@@ -3,217 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Premium Streaming</title>
+    <title>Home - Tu Only Free</title>
     <style>
-        /* Estilos generales */
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Segoe UI', Roboto, sans-serif;
-            -webkit-tap-highlight-color: transparent; 
-        }
+        /* Diseño Verde Suave */
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+        body { background-color: #0f1512; color: #d1d9d4; padding-bottom: 70px; }
+        
+        /* Cabecera */
+        header { background-color: #1a241e; padding: 15px; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 4px rgba(0,0,0,0.3); text-align: center; border-bottom: 1px solid #2d3a33; }
+        header h1 { font-size: 1.5rem; color: #78a890; letter-spacing: -1px; }
 
-        body {
-            background-color: #0b0b0c;
-            color: #ffffff;
-            padding-bottom: 100px;
-            overflow-x: hidden;
-            width: 100vw;
-        }
+        /* Feed */
+        .feed-container { max-width: 500px; margin: 0 auto; padding-top: 10px; }
+        .post-card { background-color: #1a241e; margin-bottom: 15px; border-radius: 12px; overflow: hidden; border: 1px solid #2d3a33; }
+        .post-header { padding: 12px; display: flex; align-items: center; gap: 10px; }
+        .avatar-small { width: 40px; height: 40px; border-radius: 50%; object-fit: cover; border: 1px solid #4a5d52; }
+        .username { font-weight: bold; font-size: 0.95rem; color: #a3c4b1; }
+        .post-img { width: 100%; aspect-ratio: 4/5; object-fit: cover; cursor: pointer; display: block; }
+        .post-footer { padding: 12px; font-size: 0.9rem; color: #95a89d; }
 
-        /* Títulos de las Secciones */
-        .seccion-titulo {
-            font-size: 1.2rem;
-            font-weight: bold;
-            padding: 15px 15px 5px 15px;
-            letter-spacing: 0.5px;
-            color: #ffffff;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
-
-        /* CARRUSEL HORIZONTAL (TIPO NETFLIX) */
-        .carrusel-horizontal {
-            display: flex;
-            gap: 12px;
-            overflow-x: auto;
-            padding: 10px 15px;
-            scroll-snap-type: x mandatory;
-            scrollbar-width: none; /* Oculta barra en Firefox */
-        }
-
-        .carrusel-horizontal::-webkit-scrollbar {
-            display: none; /* Oculta barra en móviles */
-        }
-
-        .carrusel-horizontal .card-modelo {
-            flex: 0 0 140px; 
-            scroll-snap-align: start;
-        }
-
-        #carrusel-destacadas .card-modelo {
-            flex: 0 0 160px; 
-        }
-
-        /* TARJETA BASE */
-        .card-modelo {
-            position: relative;
-            background-color: #16161a;
-            border-radius: 12px;
-            overflow: hidden;
-            aspect-ratio: 2 / 3; 
-            cursor: pointer;
-            border: 1px solid #1f1f24;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-            transition: transform 0.2s ease;
-            text-decoration: none;
-            color: inherit;
-            display: block;
-        }
-
-        .card-modelo:active {
-            transform: scale(0.96); 
-        }
-
-        .card-img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
-
-        /* INFORMACIÓN FLOTANTE */
-        .card-info {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            padding: 25px 10px 10px 10px;
-            background: linear-gradient(transparent, rgba(0, 0, 0, 0.95));
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-        }
-
-        .card-name {
-            font-size: 0.95rem;
-            font-weight: bold;
-            color: #ffffff;
-            text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
-            margin-bottom: 4px;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis; 
-        }
-
-        .card-stats {
-            font-size: 0.75rem;
-            color: rgba(255, 255, 255, 0.8);
-            display: flex;
-            align-items: center;
-            gap: 10px; 
-        }
-
-        .stat-item {
-            display: flex;
-            align-items: center;
-            gap: 3px; 
-        }
-
-        /* BARRA DE NAVEGACIÓN INFERIOR */
-        .nav-bar {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 65px;
-            background-color: #111115;
-            border-top: 1px solid #1f1f24;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            z-index: 999;
-        }
-
-        .nav-item {
-            color: #8a8a93;
-            text-decoration: none;
-            font-size: 0.75rem;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 25%;
-        }
-
-        .nav-item.active {
-            color: #ff2a74;
-            font-weight: bold;
-        }
+        /* Barra de navegación */
+        .nav-bar { position: fixed; bottom: 0; width: 100%; height: 60px; background-color: #1a241e; display: flex; justify-content: space-around; align-items: center; border-top: 1px solid #2d3a33; z-index: 1000; }
+        .nav-item { color: #84968c; text-decoration: none; font-size: 0.8rem; text-align: center; }
+        .nav-item.active { color: #78a890; font-weight: bold; }
     </style>
 </head>
 <body>
 
-    <!-- 1. CATEGORÍA: DESTACADAS -->
-    <h2 class="seccion-titulo">🔥 Modelos Destacadas</h2>
-    <section class="carrusel-horizontal" id="carrusel-destacadas"></section>
+    <header><h1>Tu Only Free</h1></header>
 
-    <!-- 2. CATEGORÍA: TODAS LAS MODELOS -->
-    <h2 class="seccion-titulo">✨ Explorar Todas</h2>
-    <section class="carrusel-horizontal" id="carrusel-todas"></section>
+    <div class="feed-container" id="feed">
+        <!-- Contenido dinámico -->
+    </div>
 
-    <!-- Menú Inferior -->
     <nav class="nav-bar">
-        <a href="index.html" class="nav-item active"><span>🏠</span><span>Home</span></a>
-        <a href="chicas.html" class="nav-item"><span>🔥</span><span>Mis Chicas</span></a>
-        <a href="buscar.html" class="nav-item"><span>🔍</span><span>Buscar</span></a>
-        <a href="info.html" class="nav-item"><span>ℹ️</span><span>Info</span></a>
+        <a href="index.html" class="nav-item active">🏠<br>Inicio</a>
+        <a href="chicas.html" class="nav-item">🔥<br>Chicas</a>
+        <a href="buscar.html" class="nav-item">🔍<br>Buscar</a>
+        <a href="info.html" class="nav-item">ℹ️<br>Info</a>
     </nav>
 
     <script src="db.js"></script>
     <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const carruselDestacadas = document.getElementById('carrusel-destacadas');
-            const carruselTodas = document.getElementById('carrusel-todas');
+        const container = document.getElementById('feed');
+        
+        // MODO RESCATE: Imágenes de prueba
+        const bocetos = [
+            { id: 1, nombre: "Demo 1", fotoPortada: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=500" },
+            { id: 2, nombre: "Demo 2", fotoPortada: "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=500" }
+        ];
 
-            carruselDestacadas.innerHTML = "";
-            carruselTodas.innerHTML = "";
+        // Lógica de carga: Usa modelosDB si existe, sino los bocetos
+        const rawData = (typeof modelosDB !== 'undefined') ? modelosDB : bocetos;
+        
+        // .reverse() hace que el último en db.js salga primero en el feed
+        const data = [...rawData].reverse();
 
-            if (typeof modelosDB !== 'undefined' && Array.isArray(modelosDB)) {
-                
-                modelosDB.forEach((modelo, index) => {
-                    const card = document.createElement('a');
-                    card.className = 'card-modelo';
-                    card.href = `modelo.html?id=${modelo.id}`;
-
-                    const totalFotos = modelo.fotos ? modelo.fotos.length : 0;
-                    const totalVideos = modelo.videos ? modelo.videos.length : 0;
-
-                    card.innerHTML = `
-                        <img src="${modelo.fotoPortada}" alt="${modelo.nombre}" class="card-img" loading="lazy">
-                        <div class="card-info">
-                            <h2 class="card-name">${modelo.nombre}</h2>
-                            <div class="card-stats">
-                                <div class="stat-item"><span>📷</span> <span>${totalFotos}</span></div>
-                                <div class="stat-item"><span>🎬</span> <span>${totalVideos}</span></div>
-                            </div>
-                        </div>
-                    `;
-
-                    // Muestra todas las modelos en el carrusel inferior
-                    carruselTodas.appendChild(card.cloneNode(true));
-
-                    // Muestra las primeras 5 chicas en el carrusel de destacadas
-                    if (index < 5) {
-                        carruselDestacadas.appendChild(card.cloneNode(true));
-                    }
-                });
-
-            } else {
-                console.error("Error: No se pudo cargar db.js correctamente.");
-            }
+        data.forEach(modelo => {
+            const post = document.createElement('div');
+            post.className = 'post-card';
+            post.innerHTML = `
+                <div class="post-header">
+                    <img src="${modelo.fotoPortada}" class="avatar-small">
+                    <span class="username">${modelo.nombre}</span>
+                </div>
+                <a href="modelo.html?id=${modelo.id || ''}">
+                    <img src="${modelo.fotoPortada}" class="post-img">
+                </a>
+                <div class="post-footer">
+                    Ver más contenido de <b>${modelo.nombre}</b>
+                </div>
+            `;
+            container.appendChild(post);
         });
     </script>
 </body>
