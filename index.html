@@ -5,22 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Tu Only Free</title>
     <style>
-        /* Diseño Verde Suave */
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
         body { background-color: #0f1512; color: #d1d9d4; padding-bottom: 70px; }
         
-        /* Cabecera */
+        /* Cabecera estilo verde suave */
         header { background-color: #1a241e; padding: 15px; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 4px rgba(0,0,0,0.3); text-align: center; border-bottom: 1px solid #2d3a33; }
         header h1 { font-size: 1.5rem; color: #78a890; letter-spacing: -1px; }
 
-        /* Feed */
+        /* Contenedor del Feed */
         .feed-container { max-width: 500px; margin: 0 auto; padding-top: 10px; }
+
+        /* Tarjeta de Publicación (Diseño original limpio) */
         .post-card { background-color: #1a241e; margin-bottom: 15px; border-radius: 12px; overflow: hidden; border: 1px solid #2d3a33; }
-        .post-header { padding: 12px; display: flex; align-items: center; gap: 10px; }
-        .avatar-small { width: 40px; height: 40px; border-radius: 50%; object-fit: cover; border: 1px solid #4a5d52; }
+        .post-header { padding: 10px 12px; display: flex; align-items: center; gap: 10px; }
+        .avatar-small { width: 35px; height: 35px; border-radius: 50%; object-fit: cover; border: 1px solid #4a5d52; }
         .username { font-weight: bold; font-size: 0.95rem; color: #a3c4b1; }
-        .post-img { width: 100%; aspect-ratio: 4/5; object-fit: cover; cursor: pointer; display: block; }
-        .post-footer { padding: 12px; font-size: 0.9rem; color: #95a89d; }
+        
+        /* Imagen principal */
+        .post-img { width: 100%; aspect-ratio: 3/4; object-fit: cover; display: block; cursor: pointer; }
 
         /* Barra de navegación */
         .nav-bar { position: fixed; bottom: 0; width: 100%; height: 60px; background-color: #1a241e; display: flex; justify-content: space-around; align-items: center; border-top: 1px solid #2d3a33; z-index: 1000; }
@@ -32,9 +34,7 @@
 
     <header><h1>Tu Only Free</h1></header>
 
-    <div class="feed-container" id="feed">
-        <!-- Contenido dinámico -->
-    </div>
+    <div class="feed-container" id="feed"></div>
 
     <nav class="nav-bar">
         <a href="index.html" class="nav-item active">🏠<br>Inicio</a>
@@ -47,17 +47,14 @@
     <script>
         const container = document.getElementById('feed');
         
-        // MODO RESCATE: Imágenes de prueba
+        // MODO RESCATE (Imágenes de prueba)
         const bocetos = [
             { id: 1, nombre: "Demo 1", fotoPortada: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=500" },
             { id: 2, nombre: "Demo 2", fotoPortada: "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=500" }
         ];
 
-        // Lógica de carga: Usa modelosDB si existe, sino los bocetos
         const rawData = (typeof modelosDB !== 'undefined') ? modelosDB : bocetos;
-        
-        // .reverse() hace que el último en db.js salga primero en el feed
-        const data = [...rawData].reverse();
+        const data = [...rawData].reverse(); // La nueva chica siempre sale primero
 
         data.forEach(modelo => {
             const post = document.createElement('div');
@@ -70,9 +67,6 @@
                 <a href="modelo.html?id=${modelo.id || ''}">
                     <img src="${modelo.fotoPortada}" class="post-img">
                 </a>
-                <div class="post-footer">
-                    Ver más contenido de <b>${modelo.nombre}</b>
-                </div>
             `;
             container.appendChild(post);
         });
