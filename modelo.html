@@ -31,11 +31,11 @@
         /* Galería y Videos */
         .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
         .gallery-item { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 6px; cursor: pointer; }
-        .video-card { background-color: #16161a; border-radius: 10px; border: 1px solid #232329; overflow: hidden; margin-bottom: 15px; }
-        .video-card iframe { width: 100%; height: 320px; border: none; display: block; background-color: #000; }
+        .video-card { background-color: #16161a; border-radius: 10px; border: 1px solid #232329; overflow: hidden; margin-bottom: 15px; position: relative; }
         .video-card video { width: 100%; max-height: 450px; display: block; background-color: #000; }
+        .video-card iframe { width: 100%; height: 320px; border: none; display: block; background-color: #000; }
 
-        /* Modal Visor de Imágenes Limpio (Solo Gesture / Swipe) */
+        /* Modal Visor de Imágenes Limpio */
         .modal-viewer { display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgba(0,0,0,0.95); z-index: 2000; justify-content: center; align-items: center; }
         .modal-viewer.active { display: flex; }
         .modal-img { max-width: 95%; max-height: 85vh; object-fit: contain; border-radius: 8px; user-select: none; }
@@ -90,10 +90,16 @@
 
     <script src="db.js"></script>
     <script>
+        // CONFIGURACIÓN DE PUBLICIDAD
+        const LINK_PUBLICIDAD = "https://www.effectivecpmnetwork.com/jb6cyc4g?key=d42800bba4100981ec7c43105b7ea5e0"; // <-- REEMPLAZA CON TU LINK DE ANUNCIOS
+        const TIEMPO_COOLDOWN_MS = 3 * 60 * 1000; // 3 Minutos en milisegundos
+
         let currentFotos = [];
         let currentIndex = 0;
 
-        // Navegación de retorno
+        // Registro en memoria de la última vez que saltó anuncio por cada vídeo individual
+        const videoAdCooldowns = {};
+
         function goBack() {
             if (document.referrer && document.referrer.includes(window.location.host)) {
                 window.history.back();
@@ -127,7 +133,7 @@
             document.getElementById('modal-img').src = currentFotos[currentIndex];
         }
 
-        // Detección de Deslizamiento (Swipe Táctil)
+        // Gestos táctiles para deslizar fotos
         let touchStartX = 0;
         let touchEndX = 0;
         const modal = document.getElementById('modal-viewer');
@@ -138,9 +144,27 @@
 
         modal.addEventListener('touchend', e => {
             touchEndX = e.changedTouches[0].screenX;
-            if (touchStartX - touchEndX > 40) navigateImage(1);  // Deslizar Izquierda
-            if (touchEndX - touchStartX > 40) navigateImage(-1); // Deslizar Derecha
+            if (touchStartX - touchEndX > 40) navigateImage(1);
+            if (touchEndX - touchStartX > 40) navigateImage(-1);
         }, {passive: true});
+
+        // LÓGICA DEL REPRODUCTOR CON ANUNCIOS Y COOLDOWN DE 3 MIN
+        function handleVideoPlay(videoElement, videoUrl) {
+            const ahora = Date.now();
+            const ultimoAnuncio = videoAdCooldowns[videoUrl] || 0;
+
+            // Si han pasado más de 3 minutos desde el último anuncio para ESTE vídeo específico
+            if (ahora - ultimoAnuncio > TIEMPO_COOLDOWN_MS) {
+                // Pausamos el vídeo inmediatamente
+                videoElement.pause();
+                
+                // Registramos la hora actual para iniciar los 3 minutos de inmunidad
+                videoAdCooldowns[videoUrl] = ahora;
+
+                // Abrimos el anuncio en una pestaña/ventana nueva
+                window.open(LINK_PUBLICIDAD, '_blank');
+            }
+        }
 
         document.addEventListener("DOMContentLoaded", () => {
             const urlParams = new URLSearchParams(window.location.search);
@@ -154,7 +178,7 @@
             document.getElementById('profile-avatar').src = modelo.fotoPortada;
             document.getElementById('profile-banner').style.backgroundImage = `url('${modelo.fotoPortada}')`;
 
-            // LIMPIEZA PREVIA PARA EVITAR CONGELAMIENTO EN ANDROID WEBVIEW
+            // Limpieza previa
             const gallery = document.getElementById('gallery-container');
             const videosContainer = document.getElementById('videos-container');
             gallery.innerHTML = "";
@@ -170,7 +194,7 @@
                 gallery.appendChild(img);
             });
 
-            // Cargar Vídeos con filtro de origen
+            // Cargar Vídeos (Optimizados para Bunny CDN con controles de descarga bloqueados)
             (modelo.videos || []).forEach(videoUrl => {
                 const isEmbed = videoUrl.includes('/embed/') || videoUrl.includes('burstcloud.co');
 
@@ -185,14 +209,30 @@
                         </div>
                     `;
                 } else {
-                    videosContainer.innerHTML += `
-                        <div class="video-card">
-                            <video controls preload="metadata" playsinline style="width:100%; max-height:450px; display:block; background:#000;">
-                                <source src="${videoUrl}" type="video/mp4">
-                                Tu navegador no soporta vídeo HTML5.
-                            </video>
-                        </div>
-                    `;
+                    // Contenedor HTML5 con bloqueo visual de descargas (controlsList="nodownload")
+                    const card = document.createElement('div');
+                    card.className = 'video-card';
+
+                    const video = document.createElement('video');
+                    video.controls = true;
+                    video.preload = "metadata";
+                    video.playsInline = true;
+                    video.setAttribute('controlsList', 'nodownload'); // Oculta el botón de descargar
+                    video.style.width = "100%";
+                    video.style.maxHeight = "450px";
+                    video.style.display = "block";
+                    video.style.background = "#000";
+
+                    const source = document.createElement('source');
+                    source.src = videoUrl;
+                    source.type = "video/mp4";
+                    video.appendChild(source);
+
+                    // Escuchamos el evento de Play para disparar el anuncio
+                    video.onplay = () => handleVideoPlay(video, videoUrl);
+
+                    card.appendChild(video);
+                    videosContainer.appendChild(card);
                 }
             });
         });

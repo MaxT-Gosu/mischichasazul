@@ -452,15 +452,15 @@ const modelosDB = [
 			
         ],
         videos: [
-            "https://www.burstcloud.co/embed/8f828d8f6ac3c0e81834de986195102bbfa31e90775149d75e64bb70708bc5a0/1%20(1).mp4",
-            "https://www.burstcloud.co/embed/fd0f271e44d3962908d04b617d2aee6d05972992dda5e6fa8a03cd00fc3d0a16/1%20(2).mp4",
-            "https://www.burstcloud.co/embed/6054d31772dada25258b1f20abf2330b93d13c82137edd18b0abdc11c75a3cb9/1%20(3).mp4",
-			"https://www.burstcloud.co/embed/4f777e9487383263b646c60e60680defc8da19f161ecddcf641be5f08f9eafe1/1%20(4).mp4",
-			"https://www.burstcloud.co/embed/f901495bae9f3b9682394fc3115c3c3bcf2388a58bae77dfb71ccd9d7022dfa7/1%20(5).mp4",
-			"https://www.burstcloud.co/embed/e64a45e8c2299d06ddfa8100a373c68b38ea5bd083a89153d2473b7fffe2b684/1%20(6).mp4",
-			"https://www.burstcloud.co/embed/8c0c56bbd95e74f78628a30a08901d7445548f4f60f1fabbfe0866ef75287362/1%20(7).mp4",
-			"https://www.burstcloud.co/embed/9ae8306387a3cc57a82851d21a5ac691580fd69e28cf1b861b79cf7d3c7b295e/1%20(8).mp4",
-			"https://www.burstcloud.co/embed/69d13c4b1449d18d58dac16e4906fb2079fb15ec9a184cb054bf605e3a6dddd1/1%20(9).mp4"
+            "https://appcine.b-cdn.net/tuconte/Angelicat/1%20(1).mp4",
+            "https://appcine.b-cdn.net/tuconte/Angelicat/1%20(2).mp4",
+            "https://appcine.b-cdn.net/tuconte/Angelicat/1%20(3).mp4",
+			"https://appcine.b-cdn.net/tuconte/Angelicat/1%20(4).mp4",
+			"https://appcine.b-cdn.net/tuconte/Angelicat/1%20(5).mp4",
+			"https://appcine.b-cdn.net/tuconte/Angelicat/1%20(6).mp4",
+			"https://appcine.b-cdn.net/tuconte/Angelicat/1%20(7).mp4",
+			"https://appcine.b-cdn.net/tuconte/Angelicat/1%20(8).mp4",
+			"https://appcine.b-cdn.net/tuconte/Angelicat/1%20(9).mp4"
 
         ]
     },
