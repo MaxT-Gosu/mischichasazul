@@ -35,7 +35,7 @@
         .video-card iframe { width: 100%; height: 320px; border: none; display: block; background-color: #000; }
         .video-card video { width: 100%; max-height: 450px; display: block; background-color: #000; }
 
-        /* Modal Visor de Imágenes Limpio (Solo Swipe) */
+        /* Modal Visor de Imágenes Limpio (Solo Gesture / Swipe) */
         .modal-viewer { display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgba(0,0,0,0.95); z-index: 2000; justify-content: center; align-items: center; }
         .modal-viewer.active { display: flex; }
         .modal-img { max-width: 95%; max-height: 85vh; object-fit: contain; border-radius: 8px; user-select: none; }
@@ -93,7 +93,7 @@
         let currentFotos = [];
         let currentIndex = 0;
 
-        // Navegación segura de retorno
+        // Navegación de retorno
         function goBack() {
             if (document.referrer && document.referrer.includes(window.location.host)) {
                 window.history.back();
@@ -138,8 +138,8 @@
 
         modal.addEventListener('touchend', e => {
             touchEndX = e.changedTouches[0].screenX;
-            if (touchStartX - touchEndX > 40) navigateImage(1);  // Deslizar Izquierda (Siguiente)
-            if (touchEndX - touchStartX > 40) navigateImage(-1); // Deslizar Derecha (Anterior)
+            if (touchStartX - touchEndX > 40) navigateImage(1);  // Deslizar Izquierda
+            if (touchEndX - touchStartX > 40) navigateImage(-1); // Deslizar Derecha
         }, {passive: true});
 
         document.addEventListener("DOMContentLoaded", () => {
@@ -154,9 +154,14 @@
             document.getElementById('profile-avatar').src = modelo.fotoPortada;
             document.getElementById('profile-banner').style.backgroundImage = `url('${modelo.fotoPortada}')`;
 
-            // Fotos
-            currentFotos = modelo.fotos || [];
+            // LIMPIEZA PREVIA PARA EVITAR CONGELAMIENTO EN ANDROID WEBVIEW
             const gallery = document.getElementById('gallery-container');
+            const videosContainer = document.getElementById('videos-container');
+            gallery.innerHTML = "";
+            videosContainer.innerHTML = "";
+
+            // Cargar Fotos
+            currentFotos = modelo.fotos || [];
             currentFotos.forEach((foto, idx) => {
                 const img = document.createElement('img');
                 img.src = foto;
@@ -165,8 +170,7 @@
                 gallery.appendChild(img);
             });
 
-            // Vídeos (Soporte mixto para BurstCloud Embed y MP4 Directo)
-            const videosContainer = document.getElementById('videos-container');
+            // Cargar Vídeos con filtro de origen
             (modelo.videos || []).forEach(videoUrl => {
                 const isEmbed = videoUrl.includes('/embed/') || videoUrl.includes('burstcloud.co');
 
@@ -183,7 +187,7 @@
                 } else {
                     videosContainer.innerHTML += `
                         <div class="video-card">
-                            <video controls preload="metadata" playsinline>
+                            <video controls preload="metadata" playsinline style="width:100%; max-height:450px; display:block; background:#000;">
                                 <source src="${videoUrl}" type="video/mp4">
                                 Tu navegador no soporta vídeo HTML5.
                             </video>
