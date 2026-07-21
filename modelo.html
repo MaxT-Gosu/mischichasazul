@@ -21,12 +21,6 @@
         .profile-avatar { width: 110px; height: 110px; border-radius: 50%; border: 4px solid #0b0b0c; object-fit: cover; background-color: #000; box-shadow: 0 4px 10px rgba(0,0,0,0.5); }
         .profile-name { font-size: 1.4rem; font-weight: bold; margin-top: 10px; color: #ffffff; }
 
-        /* Social */
-        .social-links { display: flex; gap: 10px; justify-content: center; margin-top: 12px; flex-wrap: wrap; }
-        .social-btn { display: inline-flex; align-items: center; gap: 6px; padding: 8px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: bold; text-decoration: none; color: #ffffff; transition: transform 0.2s; box-shadow: 0 2px 8px rgba(0,0,0,0.4); }
-        .btn-onlyfans { background-color: #00aff0; }
-        .btn-instagram { background: linear-gradient(45deg, #f09433, #dc2743, #bc1888); }
-
         /* Tabs */
         .tabs { display: flex; background-color: #111115; border-bottom: 1px solid #1f1f24; position: sticky; top: 55px; z-index: 90; }
         .tab-btn { flex: 1; background: none; border: none; color: #8a8a93; font-weight: bold; font-size: 0.9rem; padding: 15px 0; cursor: pointer; border-bottom: 3px solid transparent; }
@@ -38,7 +32,16 @@
         .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
         .gallery-item { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 6px; cursor: pointer; }
         .video-card { background-color: #16161a; border-radius: 10px; border: 1px solid #232329; overflow: hidden; margin-bottom: 15px; }
-        .video-card iframe { width: 100%; display: block; background-color: #000; }
+        .video-card video { width: 100%; max-height: 450px; display: block; background-color: #000; }
+
+        /* Modal Visor de Imágenes (Swipe / Deslizar) */
+        .modal-viewer { display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgba(0,0,0,0.95); z-index: 2000; justify-content: center; align-items: center; }
+        .modal-viewer.active { display: flex; }
+        .modal-img { max-width: 95%; max-height: 85vh; object-fit: contain; border-radius: 8px; }
+        .close-modal { position: absolute; top: 20px; right: 20px; color: #fff; font-size: 2rem; cursor: pointer; z-index: 2001; }
+        .nav-modal-btn { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; font-size: 2rem; padding: 10px 15px; cursor: pointer; border-radius: 50%; user-select: none; }
+        .prev-btn { left: 10px; }
+        .next-btn { right: 10px; }
 
         /* Nav inferior */
         .nav-bar { position: fixed; bottom: 0; width: 100%; height: 65px; background-color: #111115; border-top: 1px solid #1f1f24; display: flex; justify-content: space-around; align-items: center; z-index: 999; }
@@ -48,7 +51,7 @@
 <body>
 
     <header>
-        <button class="back-btn" onclick="window.history.back()">⬅</button>
+        <a href="javascript:void(0)" class="back-btn" onclick="goBack()">⬅</a>
         <h1 id="header-title">Perfil</h1>
     </header>
 
@@ -57,7 +60,6 @@
         <div class="profile-info">
             <img src="" alt="Avatar" class="profile-avatar" id="profile-avatar">
             <h2 class="profile-name" id="profile-name">Cargando...</h2>
-            <div class="social-links" id="social-links"></div>
         </div>
     </section>
 
@@ -75,6 +77,14 @@
         </section>
     </main>
 
+    <!-- Modal Visor para Deslizar Fotos -->
+    <div class="modal-viewer" id="modal-viewer">
+        <span class="close-modal" onclick="closeViewer()">&times;</span>
+        <button class="nav-modal-btn prev-btn" onclick="navigateImage(-1)">❮</button>
+        <img src="" id="modal-img" class="modal-img">
+        <button class="nav-modal-btn next-btn" onclick="navigateImage(1)">❯</button>
+    </div>
+
     <nav class="nav-bar">
         <a href="index.html" class="nav-item">🏠<span>Home</span></a>
         <a href="chicas.html" class="nav-item">🔥<span>Mis Chicas</span></a>
@@ -84,12 +94,54 @@
 
     <script src="db.js"></script>
     <script>
+        let currentFotos = [];
+        let currentIndex = 0;
+
+        // Función Segura de Retroceso (Resuelve la congelación)
+        function goBack() {
+            if (document.referrer && document.referrer.includes(window.location.host)) {
+                window.history.back();
+            } else {
+                window.location.href = "index.html";
+            }
+        }
+
         function switchTab(tabName, btn) {
             document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
             document.querySelectorAll('.content-section').forEach(s => s.classList.remove('active'));
             btn.classList.add('active');
             document.getElementById(`sec-${tabName}`).classList.add('active');
         }
+
+        // Visor de Imágenes y Desplazamiento (Swipe)
+        function openViewer(index) {
+            currentIndex = index;
+            document.getElementById('modal-img').src = currentFotos[currentIndex];
+            document.getElementById('modal-viewer').classList.add('active');
+        }
+
+        function closeViewer() {
+            document.getElementById('modal-viewer').classList.remove('active');
+        }
+
+        function navigateImage(direction) {
+            currentIndex += direction;
+            if (currentIndex < 0) currentIndex = currentFotos.length - 1;
+            if (currentIndex >= currentFotos.length) currentIndex = 0;
+            document.getElementById('modal-img').src = currentFotos[currentIndex];
+        }
+
+        // Detección de Gestos Táctiles (Swipe en móvil)
+        let touchStartX = 0;
+        let touchEndX = 0;
+        const modal = document.getElementById('modal-viewer');
+
+        modal.addEventListener('touchstart', e => { touchStartX = e.changedTouches[0].screenX; });
+        modal.addEventListener('touchend', e => {
+            touchEndX = e.changedTouches[0].screenX;
+            if (touchStartX - touchEndX > 50) navigateImage(1);  // Deslizar Izquierda
+            if (touchEndX - touchStartX > 50) navigateImage(-1); // Deslizar Derecha
+        });
 
         document.addEventListener("DOMContentLoaded", () => {
             const urlParams = new URLSearchParams(window.location.search);
@@ -103,18 +155,26 @@
             document.getElementById('profile-avatar').src = modelo.fotoPortada;
             document.getElementById('profile-banner').style.backgroundImage = `url('${modelo.fotoPortada}')`;
 
-            // Fotos
+            // Fotos con visor interactivo
+            currentFotos = modelo.fotos || [];
             const gallery = document.getElementById('gallery-container');
-            (modelo.fotos || []).forEach(f => {
-                gallery.innerHTML += `<img src="${f}" class="gallery-item">`;
+            currentFotos.forEach((foto, idx) => {
+                const img = document.createElement('img');
+                img.src = foto;
+                img.className = 'gallery-item';
+                img.onclick = () => openViewer(idx);
+                gallery.appendChild(img);
             });
 
-            // Videos (CORREGIDO PARA BURSTCLOUD)
+            // Vídeos optimizados con HTML5 Video Directo
             const videosContainer = document.getElementById('videos-container');
             (modelo.videos || []).forEach(videoUrl => {
                 videosContainer.innerHTML += `
                     <div class="video-card">
-                        <iframe src="${videoUrl}" width="100%" height="300" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                        <video controls preload="metadata" playsinline>
+                            <source src="${videoUrl}" type="video/mp4">
+                            Tu navegador no soporta reproducción de vídeo.
+                        </video>
                     </div>
                 `;
             });
