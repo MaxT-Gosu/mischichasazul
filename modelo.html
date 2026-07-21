@@ -88,168 +88,174 @@
         <a href="info.html" class="nav-item">ℹ️<span>Info</span></a>
     </nav>
 
-<script src="db.js"></script>
-<script>
-    // CONFIGURACIÓN DE PUBLICIDAD GLOBAL
-    const LINK_PUBLICIDAD = "https://www.effectivecpmnetwork.com/jb6cyc4g?key=d42800bba4100981ec7c43105b7ea5e0";
-    const TIEMPO_COOLDOWN_MS = 1 * 60 * 1000; // 1 Minuto de inmunidad global
+    <script src="db.js"></script>
+    <script>
+        // CONFIGURACIÓN DE PUBLICIDAD GLOBAL (ADSTERRA)
+        const LINK_PUBLICIDAD = "https://www.effectivecpmnetwork.com/jb6cyc4g?key=d42800bba4100981ec7c43105b7ea5e0";
+        const TIEMPO_COOLDOWN_MS = 1 * 60 * 1000; // 1 Minuto de inmunidad global
 
-    let currentFotos = [];
-    let currentIndex = 0;
+        let currentFotos = [];
+        let currentIndex = 0;
 
-    function goBack() {
-        if (document.referrer && document.referrer.includes(window.location.host)) {
-            window.history.back();
-        } else {
-            window.location.href = "index.html";
-        }
-    }
-
-    function switchTab(tabName, btn) {
-        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-        document.querySelectorAll('.content-section').forEach(s => s.classList.remove('active'));
-        
-        if (btn) {
-            btn.classList.add('active');
-        } else {
-            const targetBtn = Array.from(document.querySelectorAll('.tab-btn')).find(b => b.textContent.toLowerCase().includes(tabName));
-            if (targetBtn) targetBtn.classList.add('active');
-        }
-
-        document.getElementById(`sec-${tabName}`).classList.add('active');
-        
-        // Recordar la última pestaña vista
-        sessionStorage.setItem('activeTab', tabName);
-    }
-
-    // Visor de Imágenes
-    function openViewer(index) {
-        currentIndex = index;
-        document.getElementById('modal-img').src = currentFotos[currentIndex];
-        document.getElementById('modal-viewer').classList.add('active');
-    }
-
-    function closeViewer() {
-        document.getElementById('modal-viewer').classList.remove('active');
-    }
-
-    function navigateImage(direction) {
-        currentIndex += direction;
-        if (currentIndex < 0) currentIndex = currentFotos.length - 1;
-        if (currentIndex >= currentFotos.length) currentIndex = 0;
-        document.getElementById('modal-img').src = currentFotos[currentIndex];
-    }
-
-    // Gestos táctiles
-    let touchStartX = 0;
-    let touchEndX = 0;
-    const modal = document.getElementById('modal-viewer');
-
-    modal.addEventListener('touchstart', e => { 
-        touchStartX = e.changedTouches[0].screenX; 
-    }, {passive: true});
-
-    modal.addEventListener('touchend', e => {
-        touchEndX = e.changedTouches[0].screenX;
-        if (touchStartX - touchEndX > 40) navigateImage(1);
-        if (touchEndX - touchStartX > 40) navigateImage(-1);
-    }, {passive: true});
-
-    // LÓGICA DE PUBLICIDAD GLOBAL (1 MINUTO)
-    function handleGlobalVideoAd(videoElement) {
-        const ahora = Date.now();
-        const ultimoAnuncioGlobal = parseInt(localStorage.getItem('ultimoAnuncioGlobal') || '0');
-
-        // Si ha pasado más de 1 minuto desde el ÚLTIMO anuncio en CUALQUIER video
-        if (ahora - ultimoAnuncioGlobal > TIEMPO_COOLDOWN_MS) {
-            // Pausamos el video de inmediato
-            videoElement.pause();
-
-            // Guardamos la hora actual como la última vez que vio publicidad
-            localStorage.setItem('ultimoAnuncioGlobal', ahora.toString());
-
-            // Forzamos a que recuerde la pestaña de videos al regresar
-            sessionStorage.setItem('activeTab', 'videos');
-
-            // Abrimos la publicidad
-            window.open(LINK_PUBLICIDAD, '_blank');
-        }
-    }
-
-    document.addEventListener("DOMContentLoaded", () => {
-        const urlParams = new URLSearchParams(window.location.search);
-        const modeloId = parseInt(urlParams.get('id'));
-        const modelo = typeof modelosDB !== 'undefined' ? modelosDB.find(m => m.id === modeloId) : null;
-
-        if (!modelo) return;
-
-        document.getElementById('header-title').textContent = modelo.nombre;
-        document.getElementById('profile-name').textContent = modelo.nombre;
-        document.getElementById('profile-avatar').src = modelo.fotoPortada;
-        document.getElementById('profile-banner').style.backgroundImage = `url('${modelo.fotoPortada}')`;
-
-        // Limpieza previa
-        const gallery = document.getElementById('gallery-container');
-        const videosContainer = document.getElementById('videos-container');
-        gallery.innerHTML = "";
-        videosContainer.innerHTML = "";
-
-        // Cargar Fotos
-        currentFotos = modelo.fotos || [];
-        currentFotos.forEach((foto, idx) => {
-            const img = document.createElement('img');
-            img.src = foto;
-            img.className = 'gallery-item';
-            img.onclick = () => openViewer(idx);
-            gallery.appendChild(img);
-        });
-
-        // Cargar Vídeos
-        (modelo.videos || []).forEach(videoUrl => {
-            const isEmbed = videoUrl.includes('/embed/') || videoUrl.includes('burstcloud.co');
-
-            if (isEmbed) {
-                videosContainer.innerHTML += `
-                    <div class="video-card">
-                        <iframe 
-                            src="${videoUrl}" 
-                            allow="autoplay; fullscreen; picture-in-picture" 
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-                `;
+        function goBack() {
+            if (document.referrer && document.referrer.includes(window.location.host)) {
+                window.history.back();
             } else {
-                const card = document.createElement('div');
-                card.className = 'video-card';
+                window.location.href = "index.html";
+            }
+        }
 
-                const video = document.createElement('video');
-                video.controls = true;
-                video.preload = "metadata";
-                video.playsInline = true; // Permite alternar entre la vista embebida y Fullscreen
-                video.setAttribute('controlsList', 'nodownload'); // Sigue ocultando el botón de descarga
-                video.style.width = "100%";
-                video.style.maxHeight = "450px";
-                video.style.display = "block";
-                video.style.background = "#000";
+        function switchTab(tabName, btn) {
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            document.querySelectorAll('.content-section').forEach(s => s.classList.remove('active'));
+            
+            if (btn) {
+                btn.classList.add('active');
+            } else {
+                const targetBtn = Array.from(document.querySelectorAll('.tab-btn')).find(b => b.textContent.toLowerCase().includes(tabName));
+                if (targetBtn) targetBtn.classList.add('active');
+            }
 
-                const source = document.createElement('source');
-                source.src = videoUrl;
-                source.type = "video/mp4";
-                video.appendChild(source);
+            document.getElementById(`sec-${tabName}`).classList.add('active');
+            
+            // Recordar la última pestaña vista
+            sessionStorage.setItem('activeTab', tabName);
+        }
 
-                // Disparador de publicidad global al dar Play
-                video.addEventListener('play', () => handleGlobalVideoAd(video));
+        // Visor de Imágenes
+        function openViewer(index) {
+            currentIndex = index;
+            document.getElementById('modal-img').src = currentFotos[currentIndex];
+            document.getElementById('modal-viewer').classList.add('active');
+        }
 
-                card.appendChild(video);
-                videosContainer.appendChild(card);
+        function closeViewer() {
+            document.getElementById('modal-viewer').classList.remove('active');
+        }
+
+        function navigateImage(direction) {
+            currentIndex += direction;
+            if (currentIndex < 0) currentIndex = currentFotos.length - 1;
+            if (currentIndex >= currentFotos.length) currentIndex = 0;
+            document.getElementById('modal-img').src = currentFotos[currentIndex];
+        }
+
+        // Gestos táctiles para deslizar fotos
+        let touchStartX = 0;
+        let touchEndX = 0;
+        const modal = document.getElementById('modal-viewer');
+
+        modal.addEventListener('touchstart', e => { 
+            touchStartX = e.changedTouches[0].screenX; 
+        }, {passive: true});
+
+        modal.addEventListener('touchend', e => {
+            touchEndX = e.changedTouches[0].screenX;
+            if (touchStartX - touchEndX > 40) navigateImage(1);
+            if (touchEndX - touchStartX > 40) navigateImage(-1);
+        }, {passive: true});
+
+        // LÓGICA DE PUBLICIDAD GLOBAL (1 MINUTO)
+        function handleGlobalVideoAd(videoElement) {
+            const ahora = Date.now();
+            const ultimoAnuncioGlobal = parseInt(localStorage.getItem('ultimoAnuncioGlobal') || '0');
+
+            // Si ha pasado más de 1 minuto desde el ÚLTIMO anuncio en CUALQUIER video
+            if (ahora - ultimoAnuncioGlobal > TIEMPO_COOLDOWN_MS) {
+                // Pausamos el video de inmediato
+                videoElement.pause();
+
+                // Guardamos la hora actual como la última vez que vio publicidad
+                localStorage.setItem('ultimoAnuncioGlobal', ahora.toString());
+
+                // Forzamos a que recuerde la pestaña de videos al regresar
+                sessionStorage.setItem('activeTab', 'videos');
+
+                // Abrimos la publicidad
+                window.open(LINK_PUBLICIDAD, '_blank');
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const modeloId = parseInt(urlParams.get('id'));
+            const modelo = typeof modelosDB !== 'undefined' ? modelosDB.find(m => m.id === modeloId) : null;
+
+            if (!modelo) return;
+
+            document.getElementById('header-title').textContent = modelo.nombre;
+            document.getElementById('profile-name').textContent = modelo.nombre;
+            document.getElementById('profile-avatar').src = modelo.fotoPortada;
+            document.getElementById('profile-banner').style.backgroundImage = `url('${modelo.fotoPortada}')`;
+
+            // Limpieza previa
+            const gallery = document.getElementById('gallery-container');
+            const videosContainer = document.getElementById('videos-container');
+            gallery.innerHTML = "";
+            videosContainer.innerHTML = "";
+
+            // Cargar Fotos
+            currentFotos = modelo.fotos || [];
+            currentFotos.forEach((foto, idx) => {
+                const img = document.createElement('img');
+                img.src = foto;
+                img.className = 'gallery-item';
+                img.onclick = () => openViewer(idx);
+                gallery.appendChild(img);
+            });
+
+            // Cargar Vídeos
+            (modelo.videos || []).forEach(videoUrl => {
+                const isEmbed = videoUrl.includes('/embed/') || videoUrl.includes('burstcloud.co');
+
+                if (isEmbed) {
+                    videosContainer.innerHTML += `
+                        <div class="video-card">
+                            <iframe 
+                                src="${videoUrl}" 
+                                allow="autoplay; fullscreen; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    `;
+                } else {
+                    const card = document.createElement('div');
+                    card.className = 'video-card';
+
+                    const video = document.createElement('video');
+                    video.controls = true;
+                    video.preload = "metadata";
+                    
+                    // ATRIBUTOS CLAVE PARA PANTALLA COMPLETA EN MÓVILES
+                    video.playsInline = true; 
+                    video.setAttribute('webkit-playsinline', 'true'); 
+                    video.setAttribute('controlsList', 'nodownload');
+                    
+                    video.style.width = "100%";
+                    video.style.maxHeight = "450px";
+                    video.style.display = "block";
+                    video.style.background = "#000";
+
+                    const source = document.createElement('source');
+                    source.src = videoUrl;
+                    source.type = "video/mp4";
+                    video.appendChild(source);
+
+                    // Disparador de publicidad global al dar Play
+                    video.addEventListener('play', () => handleGlobalVideoAd(video));
+
+                    card.appendChild(video);
+                    videosContainer.appendChild(card);
+                }
+            });
+
+            // RESTAURAR LA ÚLTIMA PESTAÑA ABIERTA (Evita volver a fotos tras ver un anuncio)
+            const savedTab = sessionStorage.getItem('activeTab');
+            if (savedTab === 'videos') {
+                const videoTabBtn = document.querySelectorAll('.tab-btn')[1];
+                switchTab('videos', videoTabBtn);
             }
         });
-
-        // RESTAURAR LA ÚLTIMA PESTAÑA ABIERTA
-        const savedTab = sessionStorage.getItem('activeTab');
-        if (savedTab === 'videos') {
-            const videoTabBtn = document.querySelectorAll('.tab-btn')[1];
-            switchTab('videos', videoTabBtn);
-        }
-    });
-</script>
+    </script>
+</body>
+</html>
