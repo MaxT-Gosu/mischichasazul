@@ -225,8 +225,8 @@
                 const video = document.createElement('video');
                 video.controls = true;
                 video.preload = "metadata";
-                video.playsInline = true;
-                video.setAttribute('controlsList', 'nodownload');
+                video.playsInline = true; // Permite alternar entre la vista embebida y Fullscreen
+                video.setAttribute('controlsList', 'nodownload'); // Sigue ocultando el botón de descarga
                 video.style.width = "100%";
                 video.style.maxHeight = "450px";
                 video.style.display = "block";
