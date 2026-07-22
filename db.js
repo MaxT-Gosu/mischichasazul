@@ -469,7 +469,7 @@ const modelosDB = [
 	{
         id: 12,
         nombre: "KaiIsYourHomie",
-        fotoPortada: "https://simp6.cuckcapital.cr/images3/3024x4032_d11813489ac39c901b20cf583a7f9ca68b16a20f3ec57ff6.md.jpg",
+        fotoPortada: "https://simp1.cuckcapital.cr/images/2880x2160_3e5bbeb4d509485fc68493eef0f475be.jpg",
         onlyfans: "https://onlyfans.com/kaiisyourhomie",
         instagram: "https://www.instagram.com/kaiisyourhomie/?hl=es",
         fotos: [
@@ -502,6 +502,60 @@ const modelosDB = [
 			"https://appcine.b-cdn.net/tuconte/KaiIsYourHomie/KaiIsYourHomie%20(10).mp4",
 			"https://appcine.b-cdn.net/tuconte/KaiIsYourHomie/KaiIsYourHomie%20(11).mp4",
 			"https://appcine.b-cdn.net/tuconte/KaiIsYourHomie/KaiIsYourHomie%20(12).mp4"
+
+        ]
+    },
+	{
+        id: 13,
+        nombre: "Chloee Mae",
+        fotoPortada: "https://img.coomer.st/thumbnail/data/66/c7/66c79c2abf206831f6e987210ea0932a45549cecf5f1a6e6d472ed298247bdd0.jpg",
+        onlyfans: "https://onlyfans.com/chloeemae",
+        instagram: "https://twitter.com/chloeemaexoxo",
+        fotos: [
+            "https://img.coomer.st/thumbnail/data/2d/1d/2d1db1dc8a8e961648da3a0f2e0f9c58ba92fcb4b46c066a7be91297445d1f44.jpg",
+            "https://img.coomer.st/thumbnail/data/95/1e/951ea70cf56e99ef8fbdd1d8f3f258292a8a74328375e6d8c21c36314ff58226.jpg",
+            "https://img.coomer.st/thumbnail/data/d3/dd/d3dd8037f9de28faf748f4e1e3522ddff0c93cf23a21130027ea00cca29bee10.jpg",
+			"https://img.coomer.st/thumbnail/data/5e/fb/5efb1b47a730a382df79889a5a60dbda2d298d8bd5704d931c9e815531097dc2.jpg",
+			"https://img.coomer.st/thumbnail/data/bf/45/bf45f22523cb31c27c080c0eaae739f0d78c59de5deceabb245256b9ce78ee65.jpg",
+			"https://img.coomer.st/thumbnail/data/62/3b/623b4203739f75dbc77cd97a2f189e80e5a079daaebd5e1405dd9c768dd14087.jpg",
+			"https://img.coomer.st/thumbnail/data/88/60/8860591926e3f03943620af47aceeca0988747be6f087cb7045371c50c9ef2bb.jpg",
+			"https://img.coomer.st/thumbnail/data/20/31/2031586fb27bcca2c66aa72ae8622f08ab309a4571388e921cc07309acabb8df.jpg",
+			"https://img.coomer.st/thumbnail/data/c0/2b/c02bdeb97ec98ec4b0702896b895fda13a3e1f7f7baf8e37237678f35a59e784.jpg",
+			"https://img.coomer.st/thumbnail/data/52/c0/52c06d4c4c3bc04afe1d61ad96be3cda3eb45414ac72972f81c32ddd931804df.jpg",
+			"https://img.coomer.st/thumbnail/data/e9/06/e9069d3ff3e961a13b9e174dc9fb6bd103bf9897e34410a0b86d1b9f93721bd4.jpg",
+			"https://img.coomer.st/thumbnail/data/bf/7d/bf7d28b465e642a0a8365ada1d6bcf4e851e3d45cb2d4b4408d9b7959f2fbd6b.jpg",
+			"https://img.coomer.st/thumbnail/data/fc/0a/fc0ae6f4595a92bea063265b3db459127f69c985e583625762aacf3baeb8f50e.jpg",
+			"https://img.coomer.st/thumbnail/data/2f/c3/2fc3cfa1473e1dd1b5fcdcad031a21985dd72f45123f8f90354efda782de2904.jpg",
+			"https://img.coomer.st/thumbnail/data/c2/7e/c27e0f1f00b7185b71fb8458166f921cd30c1e8d30cecba2212337546fd85e49.jpg",
+			"https://img.coomer.st/thumbnail/data/82/d9/82d9b615210e8d1e853ccefe898a7215a507c1e1a666e19fde22d874e230d88a.jpg",
+			"https://img.coomer.st/thumbnail/data/a8/8d/a88d57fa19fa8c5689304e4bd015dec14d5dbe11e94d6ae2008e83d5afa19a0a.jpg",
+			"https://img.coomer.st/thumbnail/data/55/c4/55c4b36f1c688c37c37effa98897d5f8c03d8ec41e23637a93ff4dcc5102ca6f.jpg",
+			"https://img.coomer.st/thumbnail/data/6b/ee/6bee96fb6b5e16163a5105e0caa244d0775622e497122cbd495bec094111c7e8.jpg",
+			"https://img.coomer.st/thumbnail/data/93/da/93dac8163e1bc849d099a4a551d0158ba82fd28d3c1f2883f2872cc33504f268.jpg",
+			"https://img.coomer.st/thumbnail/data/06/26/062675c9ed824dd27e2445f8a5fb2315a3b03deaf2f6b5509865cfdb7125b623.jpg",
+			"https://img.coomer.st/thumbnail/data/d4/3c/d43ce99fe6676a95191505b0e02ea6afa1461d18b4418fd21589c51b6b2a86d1.jpg",
+			"https://img.coomer.st/thumbnail/data/2c/ee/2cee44e84e0fd7dd0385384d839ef463d091644435f248adebef783aaf9a1431.jpg",
+			"https://img.coomer.st/thumbnail/data/e3/87/e3871baf005a783624e617cfc7f62a7b480b23db64347b41976d47170307faaa.jpg",
+			"https://img.coomer.st/thumbnail/data/09/65/09654c7eb8166e21295e98a2ae67368f550ea1b97c6299cfb4ed2756662c3688.jpg",
+			"https://img.coomer.st/thumbnail/data/24/5c/245c10bf9b3cf79a368ecc9c103315bf9392c39a36735927dd92a3fa3435f6e4.jpg",
+			"https://img.coomer.st/thumbnail/data/78/cc/78cc1d8ff1149447b754e4ca3422c4af422f155c191f1d91a3e677a6e9896263.jpg",
+			"https://img.coomer.st/thumbnail/data/5b/22/5b22587704d8e159057e95767532bc49493cd12f41f61464bb7e4530b05ca78c.jpg",
+			"https://img.coomer.st/thumbnail/data/68/3a/683a51e572a22ee43cd564f0d988e0e8b128492beb267cc014ed3d6a895d3577.jpg",
+			
+			
+
+        ],
+        videos: [
+            "https://appcine.b-cdn.net/tuconte/Chloee%20Mae/Chloee%20Mae%20(1).mp4",
+            "https://appcine.b-cdn.net/tuconte/Chloee%20Mae/Chloee%20Mae%20(2).mp4",
+            "https://appcine.b-cdn.net/tuconte/Chloee%20Mae/Chloee%20Mae%20(3).mp4",
+			"https://appcine.b-cdn.net/tuconte/Chloee%20Mae/Chloee%20Mae%20(4).mp4",
+			"https://appcine.b-cdn.net/tuconte/Chloee%20Mae/Chloee%20Mae%20(5).mp4",
+			"https://appcine.b-cdn.net/tuconte/Chloee%20Mae/Chloee%20Mae%20(6).mp4",
+			"https://appcine.b-cdn.net/tuconte/Chloee%20Mae/Chloee%20Mae%20(7).mp4",
+			"https://appcine.b-cdn.net/tuconte/Chloee%20Mae/Chloee%20Mae%20(8).mp4",
+			"https://appcine.b-cdn.net/tuconte/Chloee%20Mae/Chloee%20Mae%20(9).mp4",
+			"https://appcine.b-cdn.net/tuconte/Chloee%20Mae/Chloee%20Mae%20(10).mp4"
 
         ]
     },
