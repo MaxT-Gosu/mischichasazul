@@ -57,9 +57,9 @@ const modelosDB = [
             "https://simp6.cuckcapital.cr/images3/scene59851c11cdb80a3d2693e.md.jpg"
         ],
         videos: [
-            "https://www.burstcloud.co/embed/335d3c5388aefc23a4afcacff2d84173e0f032a0d922e50249ce3c20f4f96aca/691851021239988224-P4cgjlay(1).mp4",
-            "https://www.burstcloud.co/embed/72ce3384a737331d2b428bce63fb5243b3dde290b661f6c036c89deb39a41de8/693315955991785472-5Meguirj.mp4",
-            "https://www.burstcloud.co/embed/db719201ee4e08d53eb0fbb8839e16eb7b0275a4f98f339e0372062d0cbb7eff/694732882609975296.mp4"
+            "https://appcine.b-cdn.net/tuconte/lilijunex/1%20(1).mp4",
+            "https://appcine.b-cdn.net/tuconte/lilijunex/1%20(2).mp4",
+            "https://appcine.b-cdn.net/tuconte/lilijunex/1%20(3).mp4"
         ]
     },
     {
@@ -135,13 +135,14 @@ const modelosDB = [
             "https://simp6.cuckcapital.cr/images3/4369c5cb062c25d10.png"
         ],
         videos: [
-            "https://www.burstcloud.co/embed/bdbafe890e73858b3e29bd29efadafa678bbe480b0395fc4a991725ab3be546e/0Ha4znrst2j6g5tskajt5%20720P.mp4",
-            "https://www.burstcloud.co/embed/cc223c544162420f918443f0c687655423e16b508fd51695b96751110050a7ae/0Hjf3i94i1h047mcrtkbu%20Source.mp4",
-            "https://www.burstcloud.co/embed/0203d183809a17ade51ec1c1b54b3a15a26f624cf549c2f03d570ac438de64de/1000001590.mp4",
-            "https://www.burstcloud.co/embed/6f996ed2228c213b96f874fa20c7d29d6f3f8b0562eed0c19ff5e0ec5a6a8b37/1000001597.mp4",
-            "https://www.burstcloud.co/embed/ec515af342cc2d160cd36baa3d583207039a32a2a8d6d1cf3be6109fe5eaebe4/He%2BTried%2BTo%2BWatch%2BPorn%2C%2BWhen%2BMy%2BMouth%2BIs%2BAvailable%2BHow%2BRude.%2BFirst%2BTime%2B(On%2BCamera)%2BShooting%2BA%2BLoad%2BIn%2BMy%2BMou.mp4",
-            "https://www.burstcloud.co/embed/4972972375f0bfad81a737e749f29a9114ad06bdec5fc6029fcfbd9b2e292ecf/Kenalialuv%20-%20Reze.mp4",
-            "https://www.burstcloud.co/embed/85cc270573f6cf0a9f796da3c8ce13c3c57386a78d8742091a4d58489bfca8c7/Kenalialuv.mp4"
+            "https://appcine.b-cdn.net/tuconte/kenalialuv/1%20(1).mp4",
+            "https://appcine.b-cdn.net/tuconte/kenalialuv/1%20(2).mp4",
+            "https://appcine.b-cdn.net/tuconte/kenalialuv/1%20(3).mp4",
+            "https://appcine.b-cdn.net/tuconte/kenalialuv/1%20(4).mp4",
+            "https://appcine.b-cdn.net/tuconte/kenalialuv/1%20(5).mp4",
+            "https://appcine.b-cdn.net/tuconte/kenalialuv/1%20(6).mp4",
+            "https://appcine.b-cdn.net/tuconte/kenalialuv/1%20(7).mp4",
+			"https://appcine.b-cdn.net/tuconte/kenalialuv/1%20(8).mp4"
         ]
     },
     {
@@ -228,14 +229,15 @@ const modelosDB = [
             "https://simp6.cuckcapital.cr/images4/58f64ad7086570b2d.png"
         ],
         videos: [
-			"https://www.burstcloud.co/embed/58fc3180d5efa9c51698f3a22855c7dd9d8099575043e5adb432e595c3992d95/Flashanal.mp4",
-			"https://www.burstcloud.co/embed/531e1bdc566782b99c6db0133cfbc12b65a33ff9443f1fb30b0f86455d8ae462/Icouldntanymore.mp4",
-			"https://www.burstcloud.co/embed/35c3d8d4e8e159f26955cbacba5e6880c6757f76241d3fcc52e067cd6a9de7ee/Lillylynn%20Suncum%201080P.mp4",
-			"https://www.burstcloud.co/embed/dc8dfd406873c0512114a11368c4d9e4f9a7927eb42b527b048c88ffc010c9f2/Mll%20Anal.mp4",
-			"https://www.burstcloud.co/embed/c4c4338ba0649c4d3003f9a1f15c3e47c4da3d0fc5525e8f393b5743e4528031/Nightanal.mp4",
-			"https://www.burstcloud.co/embed/2e2a9561eac4bdd29095c46c246c4a91436f0705cfec5a9e8440d3c85f847593/Roomservice.mp4",
-			"https://www.burstcloud.co/embed/79c02c4a9ecc8b47284fbbef2ed890f12eacb953938370065efa9ca52ea2d55b/Savi2uotp-Zcwa9d.mp4",
-			"https://www.burstcloud.co/embed/700d3aa75c96cfdfa9fa2a3eba80df3ab8d9d5735499e6a4332c3d834fe90fe9/Titslap.mp4"
+			"https://appcine.b-cdn.net/tuconte/Lilly%20Lynn/1%20(1).mp4",
+			"https://appcine.b-cdn.net/tuconte/Lilly%20Lynn/1%20(2).mp4",
+			"https://appcine.b-cdn.net/tuconte/Lilly%20Lynn/1%20(3).mp4",
+			"https://appcine.b-cdn.net/tuconte/Lilly%20Lynn/1%20(4).mp4",
+			"https://appcine.b-cdn.net/tuconte/Lilly%20Lynn/1%20(5).mp4",
+			"https://appcine.b-cdn.net/tuconte/Lilly%20Lynn/1%20(6).mp4",
+			"https://appcine.b-cdn.net/tuconte/Lilly%20Lynn/1%20(7).mp4",
+			"https://appcine.b-cdn.net/tuconte/Lilly%20Lynn/1%20(8).mp4",
+			"https://appcine.b-cdn.net/tuconte/Lilly%20Lynn/1%20(9).mp4"
 
         ]
     },
