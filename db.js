@@ -466,4 +466,43 @@ const modelosDB = [
 
         ]
     },
+	{
+        id: 12,
+        nombre: "KaiIsYourHomie",
+        fotoPortada: "https://simp6.cuckcapital.cr/images3/3024x4032_d11813489ac39c901b20cf583a7f9ca68b16a20f3ec57ff6.md.jpg",
+        onlyfans: "https://onlyfans.com/kaiisyourhomie",
+        instagram: "https://www.instagram.com/kaiisyourhomie/?hl=es",
+        fotos: [
+            "https://img.coomer.st/thumbnail/data/e9/88/e988f90ced9d619ff9f929d88455a0f9377ab8f1c5dc39655b94c4ff694e1f41.jpg",
+            "https://img.coomer.st/thumbnail/data/47/62/4762b2f56174e686d6057a99b0f23c4e77fe9e1e53f4c6d022e84c939f7ba1b0.jpg",
+            "https://img.coomer.st/thumbnail/data/c4/e4/c4e4f363e0c767f1066f9b2d2cc014bde1de1aec2112ef26132eedcde23d611a.jpg",
+			"https://img.coomer.st/thumbnail/data/39/d7/39d79463e6d7dfb1932d62a76438c1beae84ad052a4c477ff2233f2fe27bbdcb.jpg",
+			"https://img.coomer.st/thumbnail/data/06/51/065135d0a3df40ddda0336aaa1063e3d07f21c841cadb21c52e79efb927cfa7a.jpg",
+			"https://img.coomer.st/thumbnail/data/17/ff/17ff64ab46c3ac2154b490fcdcd42454ec9f74b03c655bbac50c01409427c08f.jpg",
+			"https://img.coomer.st/thumbnail/data/3b/ab/3bab19ef7126625abcac2b7efe9bd4be4b5cb90bc3cf1c28580779f14c10b1a4.jpg",
+			"https://img.coomer.st/thumbnail/data/f1/9e/f19e96192ca880026ef113d866a3beefb67624092b2aa52d28bd4321141ffbd5.jpg",
+			"https://img.coomer.st/thumbnail/data/f9/12/f912218acbc0374755e0663897ec46f4211b80d5583dd3e5486c9547128fe82a.jpg",
+			"https://img.coomer.st/thumbnail/data/b6/fc/b6fc7bb97938eb31b7ec3984f82dd9e1d9fc181bc3f5e19de32faa7dca88f76c.jpg",
+			"https://img.coomer.st/thumbnail/data/cf/f5/cff58d0fccedd3dfe0b631d71c423edb6c30082971b2e13a7a74c612e282d4e1.jpg",
+			"https://img.coomer.st/thumbnail/data/33/de/33de1c6499ff2797e6311b50bcbe652016efcf566e4131f1f8d606518d392941.jpg",
+			"https://img.coomer.st/thumbnail/data/60/dc/60dc639c03606e2c5e84016dea21c59a4739af6b92d49e0d0e3a9eb8c2d40ea4.jpg",
+			"https://img.coomer.st/thumbnail/data/69/6d/696dd24e73d5b4e6983f83e378a507b763a29cf1aef38098468690c6dbb59039.jpg"
+
+        ],
+        videos: [
+            "https://appcine.b-cdn.net/tuconte/KaiIsYourHomie/KaiIsYourHomie%20(1).mp4",
+            "https://appcine.b-cdn.net/tuconte/KaiIsYourHomie/KaiIsYourHomie%20(2).mp4",
+            "https://appcine.b-cdn.net/tuconte/KaiIsYourHomie/KaiIsYourHomie%20(3).mp4",
+			"https://appcine.b-cdn.net/tuconte/KaiIsYourHomie/KaiIsYourHomie%20(4).mp4",
+			"https://appcine.b-cdn.net/tuconte/KaiIsYourHomie/KaiIsYourHomie%20(5).mp4",
+			"https://appcine.b-cdn.net/tuconte/KaiIsYourHomie/KaiIsYourHomie%20(6).mp4",
+			"https://appcine.b-cdn.net/tuconte/KaiIsYourHomie/KaiIsYourHomie%20(7).mp4",
+			"https://appcine.b-cdn.net/tuconte/KaiIsYourHomie/KaiIsYourHomie%20(8).mp4",
+			"https://appcine.b-cdn.net/tuconte/KaiIsYourHomie/KaiIsYourHomie%20(9).mp4",
+			"https://appcine.b-cdn.net/tuconte/KaiIsYourHomie/KaiIsYourHomie%20(10).mp4",
+			"https://appcine.b-cdn.net/tuconte/KaiIsYourHomie/KaiIsYourHomie%20(11).mp4",
+			"https://appcine.b-cdn.net/tuconte/KaiIsYourHomie/KaiIsYourHomie%20(12).mp4"
+
+        ]
+    },
 ];
