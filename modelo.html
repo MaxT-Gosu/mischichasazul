@@ -21,6 +21,13 @@
         .profile-avatar { width: 110px; height: 110px; border-radius: 50%; border: 4px solid #0b0b0c; object-fit: cover; background-color: #000; box-shadow: 0 4px 10px rgba(0,0,0,0.5); }
         .profile-name { font-size: 1.4rem; font-weight: bold; margin-top: 10px; color: #ffffff; }
 
+        /* Botones de Redes Sociales (OnlyFans e Instagram) */
+        .social-links { display: flex; gap: 10px; margin-top: 12px; justify-content: center; flex-wrap: wrap; }
+        .social-btn { display: inline-flex; align-items: center; gap: 6px; padding: 8px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: bold; text-decoration: none; color: #fff; transition: transform 0.2s, opacity 0.2s; }
+        .social-btn:active { transform: scale(0.95); }
+        .btn-onlyfans { background-color: #00aff0; }
+        .btn-instagram { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
+
         /* Tabs */
         .tabs { display: flex; background-color: #111115; border-bottom: 1px solid #1f1f24; position: sticky; top: 55px; z-index: 90; }
         .tab-btn { flex: 1; background: none; border: none; color: #8a8a93; font-weight: bold; font-size: 0.9rem; padding: 15px 0; cursor: pointer; border-bottom: 3px solid transparent; }
@@ -28,12 +35,21 @@
         .content-section { display: none; padding: 10px; }
         .content-section.active { display: block; }
 
-        /* Galería y Videos */
+        /* Galería y Vídeos */
         .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
         .gallery-item { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 6px; cursor: pointer; }
-        .video-card { background-color: #16161a; border-radius: 10px; border: 1px solid #232329; overflow: hidden; margin-bottom: 15px; position: relative; }
-        .video-card video { width: 100%; max-height: 450px; display: block; background-color: #000; }
-        .video-card iframe { width: 100%; height: 320px; border: none; display: block; background-color: #000; }
+
+        /* Estilos de Tarjetas e Items de Vídeo */
+        .videos-list { display: flex; flex-direction: column; gap: 12px; }
+        .video-item-card { background-color: #16161a; border: 1px solid #232329; border-radius: 10px; overflow: hidden; }
+        .video-play-btn { width: 100%; padding: 16px; background-color: #16161a; color: #ffffff; border: none; font-size: 1rem; font-weight: bold; display: flex; align-items: center; justify-content: space-between; cursor: pointer; transition: background-color 0.2s; text-align: left; }
+        .video-play-btn:active { background-color: #232329; }
+        .video-play-btn span.icon { color: #ff2a74; font-size: 1.2rem; }
+
+        .video-card-body { width: 100%; display: none; background-color: #000; }
+        .video-card-body.active { display: block; }
+        .video-card-body video { width: 100%; max-height: 450px; display: block; background-color: #000; }
+        .video-card-body iframe { width: 100%; height: 320px; border: none; display: block; background-color: #000; }
 
         /* Modal Visor de Imágenes Limpio */
         .modal-viewer { display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgba(0,0,0,0.95); z-index: 2000; justify-content: center; align-items: center; }
@@ -58,6 +74,9 @@
         <div class="profile-info">
             <img src="" alt="Avatar" class="profile-avatar" id="profile-avatar">
             <h2 class="profile-name" id="profile-name">Cargando...</h2>
+            
+            <!-- Redes sociales cargadas dinámicamente -->
+            <div class="social-links" id="social-links"></div>
         </div>
     </section>
 
@@ -75,7 +94,7 @@
         </section>
     </main>
 
-    <!-- Modal Visor Limpio sin Flechas -->
+    <!-- Modal Visor Limpio -->
     <div class="modal-viewer" id="modal-viewer">
         <span class="close-modal" onclick="closeViewer()">&times;</span>
         <img src="" id="modal-img" class="modal-img">
@@ -117,8 +136,6 @@
             }
 
             document.getElementById(`sec-${tabName}`).classList.add('active');
-            
-            // Recordar la última pestaña vista
             sessionStorage.setItem('activeTab', tabName);
         }
 
@@ -140,7 +157,7 @@
             document.getElementById('modal-img').src = currentFotos[currentIndex];
         }
 
-        // Gestos táctiles para deslizar fotos
+        // Gestos táctiles
         let touchStartX = 0;
         let touchEndX = 0;
         const modal = document.getElementById('modal-viewer');
@@ -155,24 +172,43 @@
             if (touchEndX - touchStartX > 40) navigateImage(-1);
         }, {passive: true});
 
-        // LÓGICA DE PUBLICIDAD GLOBAL (1 MINUTO)
-        function handleGlobalVideoAd(videoElement) {
+        // LÓGICA DE PUBLICIDAD AL HACER CLIC EN BOTÓN DE VÍDEO
+        function triggerGlobalAd() {
             const ahora = Date.now();
             const ultimoAnuncioGlobal = parseInt(localStorage.getItem('ultimoAnuncioGlobal') || '0');
 
-            // Si ha pasado más de 1 minuto desde el ÚLTIMO anuncio en CUALQUIER video
             if (ahora - ultimoAnuncioGlobal > TIEMPO_COOLDOWN_MS) {
-                // Pausamos el video de inmediato
-                videoElement.pause();
-
-                // Guardamos la hora actual como la última vez que vio publicidad
                 localStorage.setItem('ultimoAnuncioGlobal', ahora.toString());
-
-                // Forzamos a que recuerde la pestaña de videos al regresar
                 sessionStorage.setItem('activeTab', 'videos');
-
-                // Abrimos la publicidad
                 window.open(LINK_PUBLICIDAD, '_blank');
+            }
+        }
+
+        function cargarYReproducirVideo(index, videoUrl, containerElement, btnElement) {
+            // Disparar publicidad si corresponde
+            triggerGlobalAd();
+
+            // Ocultar botón y mostrar reproductor
+            btnElement.style.display = 'none';
+            containerElement.classList.add('active');
+
+            const isEmbed = videoUrl.includes('/embed/') || videoUrl.includes('burstcloud.co');
+
+            if (isEmbed) {
+                containerElement.innerHTML = `
+                    <iframe 
+                        src="${videoUrl}" 
+                        allow="autoplay; fullscreen; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                `;
+            } else {
+                containerElement.innerHTML = `
+                    <video controls playsinline webkit-playsinline="true" controlsList="nodownload" autoplay style="width:100%; max-height:450px; background:#000;">
+                        <source src="${videoUrl}" type="video/mp4">
+                        Tu navegador no soporta la reproducción de video.
+                    </video>
+                `;
             }
         }
 
@@ -187,6 +223,28 @@
             document.getElementById('profile-name').textContent = modelo.nombre;
             document.getElementById('profile-avatar').src = modelo.fotoPortada;
             document.getElementById('profile-banner').style.backgroundImage = `url('${modelo.fotoPortada}')`;
+
+            // Renderizar Redes Sociales (OnlyFans / Instagram)
+            const socialContainer = document.getElementById('social-links');
+            socialContainer.innerHTML = "";
+
+            if (modelo.onlyfans && modelo.onlyfans !== "Desconocido") {
+                const ofLink = document.createElement('a');
+                ofLink.href = modelo.onlyfans;
+                ofLink.target = "_blank";
+                ofLink.className = "social-btn btn-onlyfans";
+                ofLink.innerHTML = "💙 OnlyFans";
+                socialContainer.appendChild(ofLink);
+            }
+
+            if (modelo.instagram && modelo.instagram !== "Desconocido") {
+                const igLink = document.createElement('a');
+                igLink.href = modelo.instagram;
+                igLink.target = "_blank";
+                igLink.className = "social-btn btn-instagram";
+                igLink.innerHTML = "📸 Instagram";
+                socialContainer.appendChild(igLink);
+            }
 
             // Limpieza previa
             const gallery = document.getElementById('gallery-container');
@@ -204,52 +262,36 @@
                 gallery.appendChild(img);
             });
 
-            // Cargar Vídeos
-            (modelo.videos || []).forEach(videoUrl => {
-                const isEmbed = videoUrl.includes('/embed/') || videoUrl.includes('burstcloud.co');
+            // Cargar Lista de Vídeos Numerados (Vídeo 1, Vídeo 2, etc.)
+            const videosList = modelo.videos || [];
+            if (videosList.length === 0) {
+                videosContainer.innerHTML = "<p style='text-align:center; padding:20px; color:#8a8a93;'>No hay vídeos disponibles.</p>";
+            } else {
+                videosList.forEach((videoUrl, index) => {
+                    const videoNum = index + 1;
 
-                if (isEmbed) {
-                    videosContainer.innerHTML += `
-                        <div class="video-card">
-                            <iframe 
-                                src="${videoUrl}" 
-                                allow="autoplay; fullscreen; picture-in-picture" 
-                                allowfullscreen>
-                            </iframe>
-                        </div>
-                    `;
-                } else {
                     const card = document.createElement('div');
-                    card.className = 'video-card';
+                    card.className = 'video-item-card';
 
-                    const video = document.createElement('video');
-                    video.controls = true;
-                    video.preload = "metadata";
-                    
-                    // ATRIBUTOS CLAVE PARA PANTALLA COMPLETA EN MÓVILES
-                    video.playsInline = true; 
-                    video.setAttribute('webkit-playsinline', 'true'); 
-                    video.setAttribute('controlsList', 'nodownload');
-                    
-                    video.style.width = "100%";
-                    video.style.maxHeight = "450px";
-                    video.style.display = "block";
-                    video.style.background = "#000";
+                    const btn = document.createElement('button');
+                    btn.className = 'video-play-btn';
+                    btn.innerHTML = `
+                        <span>▶️ Ver Vídeo ${videoNum}</span>
+                        <span class="icon">🎬</span>
+                    `;
 
-                    const source = document.createElement('source');
-                    source.src = videoUrl;
-                    source.type = "video/mp4";
-                    video.appendChild(source);
+                    const body = document.createElement('div');
+                    body.className = 'video-card-body';
 
-                    // Disparador de publicidad global al dar Play
-                    video.addEventListener('play', () => handleGlobalVideoAd(video));
+                    btn.onclick = () => cargarYReproducirVideo(index, videoUrl, body, btn);
 
-                    card.appendChild(video);
+                    card.appendChild(btn);
+                    card.appendChild(body);
                     videosContainer.appendChild(card);
-                }
-            });
+                });
+            }
 
-            // RESTAURAR LA ÚLTIMA PESTAÑA ABIERTA (Evita volver a fotos tras ver un anuncio)
+            // Restaurar pestaña activa previa
             const savedTab = sessionStorage.getItem('activeTab');
             if (savedTab === 'videos') {
                 const videoTabBtn = document.querySelectorAll('.tab-btn')[1];
