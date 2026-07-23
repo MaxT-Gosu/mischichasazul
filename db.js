@@ -559,4 +559,52 @@ const modelosDB = [
 
         ]
     },
+	{
+        id: 14,
+        nombre: "Talia Taylor",
+        fotoPortada: "https://img.coomer.st/thumbnail/data/ac/22/ac22bf4d019efe3456033970a63b51afd0017cd1b1ebfae86a1fb16fbf9926d7.jpg",
+        onlyfans: "https://onlyfans.com/talia_taylor",
+        instagram: "https://www.instagram.com/taliatayylor",
+        fotos: [
+            "https://img.coomer.st/thumbnail/data/8a/56/8a561276634d2280b8f3e66023672da6b88bbd70c46804ade14a27ae97927c7d.jpg",
+            "https://img.coomer.st/thumbnail/data/a4/d0/a4d0a98107262cd4e1747dab0146490a55636abaac01aff66e85ce3d5b2c2c69.jpg",
+            "https://img.coomer.st/thumbnail/data/08/54/08549c2610edd3339d87bcb8f752a1e7599d7d75cc58636642d746049d455ebd.jpg",
+			"https://img.coomer.st/thumbnail/data/31/ce/31ceab0f8d3ce5186797b9dfc84bfe461c878dc9bed85b34554bf38ec8646faa.jpg",
+			"https://img.coomer.st/thumbnail/data/2c/b2/2cb2e4610aebd456a9cd6fbcd99dabae9f45213869709d16a4de364b9596027a.jpg",
+			"https://img.coomer.st/thumbnail/data/76/76/7676f483c0687866b0a52545e230faf74b015c0c9f9ad0046b999cd0afa532e5.jpg",
+			"https://img.coomer.st/thumbnail/data/70/84/70845dfa448ead93dd61a64b128fa21ffd389a673577de871b51ee955a29ceb3.jpg",
+			"https://img.coomer.st/thumbnail/data/f3/5d/f35de534d8f66d380834ba4698b75ba93af0ff23c0ad9243331b9f66f952c679.jpg",
+			"https://img.coomer.st/thumbnail/data/2e/9d/2e9d56cd00703a85dbab29f3973adaa3dc377a0121b21abe8ac1fb00c82fca86.jpg",
+			"https://img.coomer.st/thumbnail/data/63/ed/63ed79591b2490b218a1e2c787516751dc60b7f5f2ae4b6b6fed665f13db9ffd.jpg",
+			"https://img.coomer.st/thumbnail/data/2a/17/2a178551dedd8b800d691b7ea33c7be7a68b8c72b4ad31c41794b325c302b828.jpg",
+			"https://img.coomer.st/thumbnail/data/ca/81/ca812dfc92628cbcab0a30fe87ea2dc30779efd9fc5f1e0ca22c3eab9d08fa35.jpg",
+			"https://img.coomer.st/thumbnail/data/31/ce/31ceab0f8d3ce5186797b9dfc84bfe461c878dc9bed85b34554bf38ec8646faa.jpg",
+			"https://img.coomer.st/thumbnail/data/61/06/610616109d903177345b11d1e68afa6525ab12d2160ac00d4e3f94437e249391.jpg",
+			"https://img.coomer.st/thumbnail/data/f1/e2/f1e2bebab265069344e547dbcb4611d16692dbbe8c324908f21752575b81e2dd.jpg",
+			"https://img.coomer.st/thumbnail/data/d6/5d/d65dfd9328b000658cb576dab86d9a8ad62f530b6ec89c5d53c60db55b71e5f9.jpg",
+			"https://img.coomer.st/thumbnail/data/e3/10/e310fa51d3bcca84bfda1db71844ea371282cc8a0e05aefbb1722fcb08284dee.jpg",
+			"https://img.coomer.st/thumbnail/data/24/66/246628e31f16d170fc95600720ceef5272d70534b51a73f9cc0cfe870ef0ddcd.jpg",
+			"https://img.coomer.st/thumbnail/data/8a/0f/8a0fc040944f5ae33787dd3f13d1bd2a6203fd746588eae98bb72873801b4fed.jpg",
+			"https://img.coomer.st/thumbnail/data/e3/10/e310fa51d3bcca84bfda1db71844ea371282cc8a0e05aefbb1722fcb08284dee.jpg",
+			"https://img.coomer.st/thumbnail/data/d8/e8/d8e8c33800bbf20e2c251a04e7900de04d36880c684df06b17bd827101314c5f.jpg",
+			"https://img.coomer.st/thumbnail/data/f3/bf/f3bf6e30e7082b90a936fec34f076efb4d7ab5bb7c2c78c35e3586542f53e238.jpg",
+			"https://img.coomer.st/thumbnail/data/a4/4e/a44e288a8a09201d1ecc1884c0affece00c39faba5835091a5de796483f39d75.jpg",
+			"https://img.coomer.st/thumbnail/data/0d/a6/0da6dc3601b68fa399956e4457de1e2f6d2072619b3fd66d5160912e5af5166a.jpg",
+			"https://img.coomer.st/thumbnail/data/ce/71/ce713e783836615f1d1019159f218e4602c5f71683eaecf020cb86f84cb1021f.jpg"
+
+        ],
+        videos: [
+            "https://appcine.b-cdn.net/tuconte/Talia%20Taylor/1%20(1).mp4",
+            "https://appcine.b-cdn.net/tuconte/Talia%20Taylor/1%20(2).mp4",
+            "https://appcine.b-cdn.net/tuconte/Talia%20Taylor/1%20(3).mp4",
+			"https://appcine.b-cdn.net/tuconte/Talia%20Taylor/1%20(4).mp4",
+			"https://appcine.b-cdn.net/tuconte/Talia%20Taylor/1%20(5).mp4",
+			"https://appcine.b-cdn.net/tuconte/Talia%20Taylor/1%20(6).mp4",
+			"https://appcine.b-cdn.net/tuconte/Talia%20Taylor/1%20(7).mp4",
+			"https://appcine.b-cdn.net/tuconte/Talia%20Taylor/1%20(8).mp4",
+			"https://appcine.b-cdn.net/tuconte/Talia%20Taylor/1%20(9).mp4",
+			"https://appcine.b-cdn.net/tuconte/Talia%20Taylor/1%20(10).mp4"
+
+        ]
+    },
 ];
