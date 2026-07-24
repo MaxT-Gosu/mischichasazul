@@ -109,10 +109,6 @@
 
     <script src="db.js"></script>
     <script>
-        // CONFIGURACIÓN DE PUBLICIDAD GLOBAL (ADSTERRA)
-        const LINK_PUBLICIDAD = "https://www.effectivecpmnetwork.com/jb6cyc4g?key=d42800bba4100981ec7c43105b7ea5e0";
-        const TIEMPO_COOLDOWN_MS = 1 * 60 * 1000; // 1 Minuto de inmunidad global
-
         let currentFotos = [];
         let currentIndex = 0;
 
@@ -172,23 +168,9 @@
             if (touchEndX - touchStartX > 40) navigateImage(-1);
         }, {passive: true});
 
-        // LÓGICA DE PUBLICIDAD AL HACER CLIC EN BOTÓN DE VÍDEO
-        function triggerGlobalAd() {
-            const ahora = Date.now();
-            const ultimoAnuncioGlobal = parseInt(localStorage.getItem('ultimoAnuncioGlobal') || '0');
-
-            if (ahora - ultimoAnuncioGlobal > TIEMPO_COOLDOWN_MS) {
-                localStorage.setItem('ultimoAnuncioGlobal', ahora.toString());
-                sessionStorage.setItem('activeTab', 'videos');
-                window.open(LINK_PUBLICIDAD, '_blank');
-            }
-        }
-
+        // Reproducción directa de vídeo sin publicidad ni popups
         function cargarYReproducirVideo(index, videoUrl, containerElement, btnElement) {
-            // Disparar publicidad si corresponde
-            triggerGlobalAd();
-
-            // Ocultar botón y mostrar reproductor
+            // Ocultar botón y mostrar reproductor directamente
             btnElement.style.display = 'none';
             containerElement.classList.add('active');
 
@@ -262,7 +244,7 @@
                 gallery.appendChild(img);
             });
 
-            // Cargar Lista de Vídeos Numerados (Vídeo 1, Vídeo 2, etc.)
+            // Cargar Lista de Vídeos Numerados
             const videosList = modelo.videos || [];
             if (videosList.length === 0) {
                 videosContainer.innerHTML = "<p style='text-align:center; padding:20px; color:#8a8a93;'>No hay vídeos disponibles.</p>";
