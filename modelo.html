@@ -2,64 +2,310 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil de la Modelo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Perfil Premium de la Modelo</title>
     <style>
-        /* Estilos generales */
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Roboto, sans-serif; -webkit-tap-highlight-color: transparent; }
-        body { background-color: #0b0b0c; color: #ffffff; padding-bottom: 90px; overflow-x: hidden; width: 100vw; }
+        /* =========================================
+           1. ESTILOS GENERALES Y RESETEOS
+           ========================================= */
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; -webkit-tap-highlight-color: transparent; }
+        
+        body { 
+            background-color: #060608; /* Un negro más profundo */
+            color: #ececec; 
+            padding-bottom: 90px; /* Espacio para el nav inferior */
+            overflow-x: hidden; 
+            width: 100vw; 
+            line-height: 1.5;
+        }
 
-        /* Cabecera */
-        header { background-color: #16161a; padding: 15px; display: flex; align-items: center; border-bottom: 1px solid #1f1f24; position: sticky; top: 0; z-index: 100; }
-        .back-btn { background: none; border: none; color: #ff2a74; font-size: 1.4rem; cursor: pointer; margin-right: 15px; text-decoration: none; display: flex; align-items: center; }
-        header h1 { font-size: 1.2rem; font-weight: bold; color: #ffffff; }
+        /* Fuents de Google - Opcional, para un look más moderno */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
 
-        /* Banner y Portada */
-        .profile-header { position: relative; background-color: #16161a; border-bottom: 1px solid #1f1f24; overflow: hidden; }
-        .profile-banner { width: 100%; height: 140px; background-size: cover; background-position: center; filter: blur(10px) brightness(0.5); transform: scale(1.1); }
-        .profile-info { position: relative; display: flex; flex-direction: column; align-items: center; margin-top: -60px; padding: 0 15px 20px 15px; text-align: center; }
-        .profile-avatar { width: 110px; height: 110px; border-radius: 50%; border: 4px solid #0b0b0c; object-fit: cover; background-color: #000; box-shadow: 0 4px 10px rgba(0,0,0,0.5); }
-        .profile-name { font-size: 1.4rem; font-weight: bold; margin-top: 10px; color: #ffffff; }
+        /* =========================================
+           2. CABECERA (HEADER) - Rediseño Elegante
+           ========================================= */
+        header { 
+            background: rgba(18, 18, 22, 0.95); /* Semitransparente blur */
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            padding: 12px 16px; 
+            display: flex; 
+            align-items: center; 
+            justify-content: space-between;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.04); 
+            position: sticky; 
+            top: 0; 
+            z-index: 1000; 
+        }
+        .back-btn { 
+            background: rgba(255, 2a, 116, 0.1); 
+            border: none; 
+            color: #ff2a74; 
+            font-size: 1.1rem; 
+            cursor: pointer; 
+            text-decoration: none; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+        }
+        header h1 { 
+            font-size: 1.05rem; 
+            font-weight: 700; 
+            color: #ffffff; 
+            flex-grow: 1; 
+            text-align: center;
+            margin-right: 36px; /* Balancear el espacio del botón de atrás */
+        }
 
-        /* Botones de Redes Sociales (OnlyFans e Instagram) */
-        .social-links { display: flex; gap: 10px; margin-top: 12px; justify-content: center; flex-wrap: wrap; }
-        .social-btn { display: inline-flex; align-items: center; gap: 6px; padding: 8px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: bold; text-decoration: none; color: #fff; transition: transform 0.2s, opacity 0.2s; }
-        .social-btn:active { transform: scale(0.95); }
-        .btn-onlyfans { background-color: #00aff0; }
-        .btn-instagram { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
+        /* =========================================
+           3. CABECERA DEL PERFIL - ¡IMPACTO TOTAL!
+           ========================================= */
+        .profile-header { 
+            position: relative; 
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.03); 
+            overflow: visible; /* Permitir que el avatar sobresalga */
+        }
 
-        /* Tabs */
-        .tabs { display: flex; background-color: #111115; border-bottom: 1px solid #1f1f24; position: sticky; top: 55px; z-index: 90; }
-        .tab-btn { flex: 1; background: none; border: none; color: #8a8a93; font-weight: bold; font-size: 0.9rem; padding: 15px 0; cursor: pointer; border-bottom: 3px solid transparent; }
-        .tab-btn.active { color: #ff2a74; border-bottom-color: #ff2a74; }
-        .content-section { display: none; padding: 10px; }
+        /* El Banner ahora es una imagen de fondo difuminada y oscurecida */
+        .profile-banner { 
+            width: 100%; 
+            height: 180px; /* Más alto */
+            background-size: cover; 
+            background-position: center; 
+            filter: blur(15px); /* Más blur */
+            transform: scale(1.1); /* Prevenir bordes blancos por blur */
+            opacity: 0.4; /* Muy sutil */
+        }
+
+        /* El área de información flotante */
+        .profile-info-container {
+            position: relative;
+            margin-top: -110px; /* Subir la información sobre el banner */
+            padding: 0 16px 24px 16px;
+            text-align: center;
+            z-index: 10;
+        }
+
+        /* Avatar: Grande, con borde y sombra premium */
+        .profile-avatar { 
+            width: 130px; 
+            height: 130px; 
+            border-radius: 50%; 
+            border: 5px solid #060608; 
+            object-fit: cover; 
+            background-color: #000; 
+            box-shadow: 0 10px 25px rgba(0,0,0,0.7); 
+        }
+
+        /* Nombre: Grande, bold y elegante */
+        .profile-name { 
+            font-size: 1.8rem; 
+            font-weight: 800; 
+            margin-top: 14px; 
+            color: #ffffff; 
+            letter-spacing: -0.5px;
+        }
+
+        /* Subtítulo o Username (Simulado) */
+        .profile-username {
+            font-size: 0.9rem;
+            color: #8a8a93;
+            margin-top: 2px;
+            margin-bottom: 16px;
+        }
+
+        /* =========================================
+           4. BOTONES DE REDES SOCIALES
+           ========================================= */
+        .social-links { 
+            display: flex; 
+            gap: 12px; 
+            margin-top: 16px; 
+            justify-content: center; 
+            flex-wrap: wrap; 
+        }
+        .social-btn { 
+            display: inline-flex; 
+            align-items: center; 
+            gap: 8px; 
+            padding: 10px 20px; 
+            border-radius: 25px; 
+            font-size: 0.85rem; 
+            font-weight: 700; 
+            text-decoration: none; 
+            color: #fff; 
+            transition: all 0.2s ease; 
+            border: 1px solid transparent;
+        }
+        .social-btn:active { transform: scale(0.96); opacity: 0.9; }
+        
+        .btn-onlyfans { 
+            background-color: transparent; 
+            border-color: rgba(0, 175, 240, 0.4); 
+            color: #00aff0;
+        }
+        .btn-onlyfans:hover, .btn-onlyfans:active {
+            background-color: #00aff0;
+            color: #ffffff;
+        }
+
+        .btn-instagram { 
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+        }
+
+        /* =========================================
+           5. PESTAÑAS (TABS) - Rediseño Minimalista
+           ========================================= */
+        .tabs { 
+            display: flex; 
+            background-color: rgba(18, 18, 22, 0.98); 
+            border-bottom: 1px solid rgba(255, 255, 255, 0.04); 
+            position: sticky; 
+            top: 61px; /* Justo debajo del header */
+            z-index: 900; 
+            padding: 0 10px;
+        }
+        .tab-btn { 
+            flex: 1; 
+            background: none; 
+            border: none; 
+            color: #8a8a93; 
+            font-weight: 600; 
+            font-size: 0.9rem; 
+            padding: 16px 0; 
+            cursor: pointer; 
+            transition: color 0.2s, font-weight 0.2s;
+            position: relative;
+        }
+        
+        /* Indicador de pestaña activa (línea inferior animada) */
+        .tab-btn::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 3px;
+            background-color: #ff2a74;
+            transition: width 0.3s ease, left 0.3s ease;
+            transform: translateX(-50%);
+            border-radius: 3px 3px 0 0;
+        }
+
+        .tab-btn.active { 
+            color: #ffffff; 
+            font-weight: 700;
+        }
+        
+        .tab-btn.active::after {
+            width: 40px; /* O el tamaño que prefieras */
+        }
+
+        .content-section { display: none; padding: 12px; animation: fadeIn 0.4s ease; }
         .content-section.active { display: block; }
 
-        /* Galería y Vídeos */
-        .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
-        .gallery-item { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 6px; cursor: pointer; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
 
-        /* Estilos de Tarjetas e Items de Vídeo */
+        /* =========================================
+           6. GALERÍA DE FOTOS (GRID)
+           ========================================= */
+        .gallery-grid { 
+            display: grid; 
+            grid-template-columns: repeat(3, 1fr); 
+            gap: 6px; 
+        }
+        .gallery-item { 
+            width: 100%; 
+            aspect-ratio: 1 / 1; 
+            object-fit: cover; 
+            border-radius: 8px; /* Más redondeado */
+            cursor: pointer; 
+            transition: opacity 0.2s;
+            border: 1px solid rgba(255, 255, 255, 0.03);
+        }
+        .gallery-item:active { opacity: 0.7; }
+
+        /* =========================================
+           7. LISTA DE VÍDEOS (CARDS)
+           ========================================= */
         .videos-list { display: flex; flex-direction: column; gap: 12px; }
-        .video-item-card { background-color: #16161a; border: 1px solid #232329; border-radius: 10px; overflow: hidden; }
-        .video-play-btn { width: 100%; padding: 16px; background-color: #16161a; color: #ffffff; border: none; font-size: 1rem; font-weight: bold; display: flex; align-items: center; justify-content: space-between; cursor: pointer; transition: background-color 0.2s; text-align: left; }
-        .video-play-btn:active { background-color: #232329; }
-        .video-play-btn span.icon { color: #ff2a74; font-size: 1.2rem; }
+        
+        .video-item-card { 
+            background-color: #121216; /* Más oscuro */
+            border: 1px solid rgba(255, 255, 255, 0.04); 
+            border-radius: 12px; /* Más redondeado */
+            overflow: hidden; 
+            transition: all 0.2s ease;
+        }
+        .video-item-card:active { background-color: #1a1a20; }
 
-        .video-card-body { width: 100%; display: none; background-color: #000; }
-        .video-card-body.active { display: block; }
-        .video-card-body video { width: 100%; max-height: 450px; display: block; background-color: #000; }
-        .video-card-body iframe { width: 100%; height: 320px; border: none; display: block; background-color: #000; }
+        .video-play-btn { 
+            width: 100%; 
+            padding: 20px; /* Más espacio */
+            background-color: transparent; 
+            color: #ffffff; 
+            border: none; 
+            font-size: 0.95rem; 
+            font-weight: 600; 
+            display: flex; 
+            align-items: center; 
+            justify-content: space-between; 
+            cursor: pointer; 
+            text-align: left; 
+        }
+        .video-play-btn span.icon { 
+            color: rgba(255, 255, 255, 0.3); 
+            font-size: 1rem;
+            background: rgba(255, 255, 255, 0.05);
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
 
-        /* Modal Visor de Imágenes Limpio */
-        .modal-viewer { display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgba(0,0,0,0.95); z-index: 2000; justify-content: center; align-items: center; }
-        .modal-viewer.active { display: flex; }
-        .modal-img { max-width: 95%; max-height: 85vh; object-fit: contain; border-radius: 8px; user-select: none; }
-        .close-modal { position: absolute; top: 20px; right: 20px; color: #fff; font-size: 2rem; cursor: pointer; z-index: 2001; }
+        .video-card-body { 
+            width: 100%; 
+            display: none; 
+            background-color: #000; 
+            padding-bottom: 56.25%; /* Relación de aspecto 16:9 por defecto */
+            position: relative;
+        }
+        .video-card-body.active { display: block; height: 0; }
 
-        /* Nav inferior */
+        .video-card-body video, .video-card-body iframe { 
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%; 
+            height: 100%; 
+            border: none; 
+            display: block; 
+            background-color: #000; 
+        }
+
+        /* =========================================
+           8. MODAL VISOR DE IMÁGENES
+           ========================================= */
+        .modal-viewer { display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgba(0,0,0,0.98); z-index: 2000; justify-content: center; align-items: center; }
+        .modal-viewer.active { display: flex; animation: fadeIn 0.3s ease; }
+        .modal-img { max-width: 95%; max-height: 85vh; object-fit: contain; border-radius: 8px; user-select: none; box-shadow: 0 15px 50px rgba(0,0,0,0.8); }
+        .close-modal { position: absolute; top: 20px; right: 20px; color: rgba(255,255,255,0.7); font-size: 2rem; cursor: pointer; z-index: 2001; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; }
+
+        /* =========================================
+           9. BARRA DE NAVEGACIÓN INFERIOR
+              ¡NO MODIFICADA, TAL COMO PEDISTE!
+           ========================================= */
         .nav-bar { position: fixed; bottom: 0; width: 100%; height: 65px; background-color: #111115; border-top: 1px solid #1f1f24; display: flex; justify-content: space-around; align-items: center; z-index: 999; }
         .nav-item { color: #8a8a93; text-decoration: none; font-size: 0.75rem; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; width: 25%; }
+        /* Puedes añadir aquí .nav-item span para los emojis/iconos si lo deseas */
     </style>
 </head>
 <body>
@@ -69,13 +315,15 @@
         <h1 id="header-title">Perfil</h1>
     </header>
 
+    <!-- Sección de Cabecera del Perfil Rediseñada -->
     <section class="profile-header">
         <div class="profile-banner" id="profile-banner"></div>
-        <div class="profile-info">
+        
+        <div class="profile-info-container">
             <img src="" alt="Avatar" class="profile-avatar" id="profile-avatar">
             <h2 class="profile-name" id="profile-name">Cargando...</h2>
+            <p class="profile-username" id="profile-username">@loading</p>
             
-            <!-- Redes sociales cargadas dinámicamente -->
             <div class="social-links" id="social-links"></div>
         </div>
     </section>
@@ -100,6 +348,7 @@
         <img src="" id="modal-img" class="modal-img">
     </div>
 
+    <!-- Barra Inferior INTACTA -->
     <nav class="nav-bar">
         <a href="index.html" class="nav-item">🏠<span>Home</span></a>
         <a href="chicas.html" class="nav-item">🔥<span>Mis Chicas</span></a>
@@ -140,17 +389,27 @@
             currentIndex = index;
             document.getElementById('modal-img').src = currentFotos[currentIndex];
             document.getElementById('modal-viewer').classList.add('active');
+            // Bloquear scroll del body
+            document.body.style.overflow = 'hidden';
         }
 
         function closeViewer() {
             document.getElementById('modal-viewer').classList.remove('active');
+            // Restaurar scroll del body
+            document.body.style.overflow = '';
         }
 
         function navigateImage(direction) {
             currentIndex += direction;
             if (currentIndex < 0) currentIndex = currentFotos.length - 1;
             if (currentIndex >= currentFotos.length) currentIndex = 0;
-            document.getElementById('modal-img').src = currentFotos[currentIndex];
+            // Animación sutil al cambiar de imagen
+            const img = document.getElementById('modal-img');
+            img.style.opacity = 0.5;
+            setTimeout(() => {
+                img.src = currentFotos[currentIndex];
+                img.style.opacity = 1;
+            }, 100);
         }
 
         // Gestos táctiles
@@ -168,9 +427,8 @@
             if (touchEndX - touchStartX > 40) navigateImage(-1);
         }, {passive: true});
 
-        // Reproducción directa de vídeo sin publicidad ni popups
+        // Reproducción directa de vídeo
         function cargarYReproducirVideo(index, videoUrl, containerElement, btnElement) {
-            // Ocultar botón y mostrar reproductor directamente
             btnElement.style.display = 'none';
             containerElement.classList.add('active');
 
@@ -186,7 +444,7 @@
                 `;
             } else {
                 containerElement.innerHTML = `
-                    <video controls playsinline webkit-playsinline="true" controlsList="nodownload" autoplay style="width:100%; max-height:450px; background:#000;">
+                    <video controls playsinline webkit-playsinline="true" controlsList="nodownload" autoplay style="position: absolute; top: 0; left: 0; width:100%; height:100%; background:#000;">
                         <source src="${videoUrl}" type="video/mp4">
                         Tu navegador no soporta la reproducción de video.
                     </video>
@@ -199,14 +457,22 @@
             const modeloId = parseInt(urlParams.get('id'));
             const modelo = typeof modelosDB !== 'undefined' ? modelosDB.find(m => m.id === modeloId) : null;
 
-            if (!modelo) return;
+            if (!modelo) {
+                document.getElementById('profile-name').textContent = "Modelo no encontrada";
+                document.getElementById('header-title').textContent = "Error";
+                return;
+            };
 
             document.getElementById('header-title').textContent = modelo.nombre;
             document.getElementById('profile-name').textContent = modelo.nombre;
+            // Simular un username basado en el nombre
+            document.getElementById('profile-username').textContent = `@${modelo.nombre.toLowerCase().replace(/\s+/g, '')}`;
+            
             document.getElementById('profile-avatar').src = modelo.fotoPortada;
+            // El banner usa la misma foto pero con filtro blur/oscuro
             document.getElementById('profile-banner').style.backgroundImage = `url('${modelo.fotoPortada}')`;
 
-            // Renderizar Redes Sociales (OnlyFans / Instagram)
+            // Renderizar Redes Sociales
             const socialContainer = document.getElementById('social-links');
             socialContainer.innerHTML = "";
 
@@ -236,18 +502,22 @@
 
             // Cargar Fotos
             currentFotos = modelo.fotos || [];
-            currentFotos.forEach((foto, idx) => {
-                const img = document.createElement('img');
-                img.src = foto;
-                img.className = 'gallery-item';
-                img.onclick = () => openViewer(idx);
-                gallery.appendChild(img);
-            });
+            if (currentFotos.length === 0) {
+                 gallery.innerHTML = "<p style='grid-column: 1 / -1; text-align:center; padding:30px; color:#8a8a93;'>No hay fotos aún.</p>";
+            } else {
+                currentFotos.forEach((foto, idx) => {
+                    const img = document.createElement('img');
+                    img.src = foto;
+                    img.className = 'gallery-item';
+                    img.onclick = () => openViewer(idx);
+                    gallery.appendChild(img);
+                });
+            }
 
             // Cargar Lista de Vídeos Numerados
             const videosList = modelo.videos || [];
             if (videosList.length === 0) {
-                videosContainer.innerHTML = "<p style='text-align:center; padding:20px; color:#8a8a93;'>No hay vídeos disponibles.</p>";
+                videosContainer.innerHTML = "<p style='text-align:center; padding:30px; color:#8a8a93;'>No hay vídeos disponibles.</p>";
             } else {
                 videosList.forEach((videoUrl, index) => {
                     const videoNum = index + 1;
