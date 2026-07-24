@@ -865,4 +865,56 @@ const modelosDB = [
 
         ]
     },
+	{
+        id: 19,
+        nombre: "karagarcia1",
+        fotoPortada: "https://img.coomer.st/thumbnail/data/3b/13/3b138f1b5ba707b51e791683fdfb3c75eee984ab0ab98b64d2471a8ede2b5fb7.jpg",
+        onlyfans: "https://onlyfans.com/karagarcia1",
+        instagram: "https://www.instagram.com/fairy.kara8",
+        fotos: [
+            "https://img.coomer.st/thumbnail/data/9f/f2/9ff2ddf49dd71ec32136f4306143840334cfacf99adeae284950b80512ae3f05.jpg",
+            "https://img.coomer.st/thumbnail/data/d8/53/d853a432dc47328172b320ce6828a92bc0835ec896099166bdfc8c151f547265.jpg",
+            "https://img.coomer.st/thumbnail/data/13/b4/13b496baba2998bdbd3955f3173a84a0edc259f7a0bd7714b08227f5206c2af7.jpg",
+			"https://img.coomer.st/thumbnail/data/82/cb/82cb01c899c97ce2b04118841be310c91cb199eb69f362707c596e3b3e42f7e7.jpg",
+			"https://img.coomer.st/thumbnail/data/7a/22/7a22c6e4a53ba95aff8a4da8912b1620c1342e6023b214899fa99b1fe3535444.jpg",
+			"https://img.coomer.st/thumbnail/data/98/cb/98cb818edc5c7075422d0aaa1b77a9e8c404bce5632f33d2ef857ac9209b880f.jpg",
+			"https://img.coomer.st/thumbnail/data/21/c1/21c14846b556c4dfba0f437234fe7c7e899718e63842dda06afb87f2115922c8.jpg",
+			"https://img.coomer.st/thumbnail/data/6e/7d/6e7d2ab060d32e13efc26636f415acdd7e2f09cf66f802c417492512b78214c6.jpg",
+			"https://img.coomer.st/thumbnail/data/a1/e5/a1e5ea2fecbace3a4e458002c256867e884d20065b0e43a9d033b2aa78b1db16.jpg",
+			"https://img.coomer.st/thumbnail/data/1f/80/1f805da6de58bf36b24b6306260ee1796ad1828754d464fbf7d724e9b18ce7b1.jpg",
+			"https://img.coomer.st/thumbnail/data/1a/29/1a2961087ad16539d78df24eb793073ced23ce8066f125fa69125c52f8dff8f1.jpg",
+			"https://img.coomer.st/thumbnail/data/52/20/52203092432c2a6f0248f40c2aa0ebe363a366cfe69982fe5b5f2fbac4796299.jpg",
+			"https://img.coomer.st/thumbnail/data/fe/1b/fe1b772248cd327adb6ec2a5b4a2116d30e79853e38d964a6de272bf4a19992d.jpg",
+			"https://img.coomer.st/thumbnail/data/93/62/93622520e4627599f56a631bd37d41950efa67136cf273dd34c378344a121838.jpg",
+			"https://img.coomer.st/thumbnail/data/bd/57/bd57ed4c0fd4dc2ab0d3a2f7dafd5642c970d1e6ca3cb836bffca0621ef19053.jpg",
+			"https://img.coomer.st/thumbnail/data/a0/90/a090cec34c08c4599523cb2b1d3e4f07556b2795fd55f4592b670f1db004d74e.jpg",
+			"https://img.coomer.st/thumbnail/data/e3/5c/e35c266ccd1baaf4090c2a1aec7a8e9db2b9984c18424cff90d9f935626b228d.jpg",
+			"https://img.coomer.st/thumbnail/data/ba/10/ba10d8a93e8b9701b87d7ce61a8256beb140601873d3b717746764f07b8463d5.jpg",
+			"https://img.coomer.st/thumbnail/data/69/57/6957bdd7beba3f3b58d2706e2b1a913413d101a690f3d98217abcbec41ff47b4.jpg",
+			"https://img.coomer.st/thumbnail/data/0c/99/0c99d2e7356a55de2b8ae710fe01bf67e591bfcb4e55e527d3a0c5a680f93ca4.jpg",
+			"https://img.coomer.st/thumbnail/data/63/67/6367e61d16715b01312339cc712bf68b7de98f869b6bf1fc72efe7a7fd4f7f7b.jpg",
+			"https://img.coomer.st/thumbnail/data/b4/e9/b4e92c64bc3d9627ca46f8ee8ae38a379fc1c0435879e3155c2ce7f807fddd3f.jpg"
+			
+
+        ],
+        videos: [
+            "https://www.burstcloud.co/embed/4ebfb3682ac0d453208b9eb71afd23a0dc7bece716319ff15b2246567e18e528/Karagarcia%20(1).mp4",
+            "https://www.burstcloud.co/embed/57c5d04293b88c8dbc6d65582a5fe5916f69af63775f73d0b528f716bf9ee39d/Karagarcia%20(10).mp4",
+            "https://www.burstcloud.co/embed/204054cdcfb0f4cca6ee6e6e797125054b236a3607af7c36edd515ada4385f18/Karagarcia%20(11).mp4",
+			"https://www.burstcloud.co/embed/7cfa8d959abbc8aa7a9c841b7d07b195f4bf09662cdfc8c04a4463a42d611cad/Karagarcia%20(12).mp4",
+			"https://www.burstcloud.co/embed/25588a0327125c95c7c67a41ed27f2b1af759604fbc38678b9fea1d10cb2ae1e/Karagarcia%20(13).mp4",
+			"https://www.burstcloud.co/embed/8e5ff8a9d7a1b746f9fc057f813c523103f2920f74674da318a2ec0ba330d924/Karagarcia%20(14).mp4",
+			"https://www.burstcloud.co/embed/39eafd351502e1817f2e06244b7a43d7ec59a4335e807504f6cf06b66ee78f65/Karagarcia%20(15).mp4",
+			"https://www.burstcloud.co/embed/24843e8258137ee9481ff0a550b70ff340d1d9a27c95873316029309ff5a5f08/Karagarcia%20(16).mp4",
+			"https://www.burstcloud.co/embed/7566d3ef3ad1c5a21cc3e64dccc36c97f6a3186c593f841c2f68535173eef876/Karagarcia%20(2).mp4",
+			"https://www.burstcloud.co/embed/3d3161483ab6cdb989d869a1ca82abdbc5e61a5560b1b1c053afd6c07fa1baee/Karagarcia%20(3).mp4",
+			"https://www.burstcloud.co/embed/3d9eb9b37a5ce9dcc62d6540bae6a37a10e2195e57f743254e0db94e60de49c3/Karagarcia%20(4).mp4",
+			"https://www.burstcloud.co/embed/db7e1a9f2edffa9dbc9f6d392cbd0a3c63bf455f63d6e11f961084847ef97ccc/Karagarcia%20(5).mp4",
+			"https://www.burstcloud.co/embed/c6adbd0806c3296ce59d64d5639d54dd944786be5e0781a2233be28be373f489/Karagarcia%20(6).mp4",
+			"https://www.burstcloud.co/embed/1e2ad63448cc656ed8dd60c70fad3dac9cd3f507721552714a94047cd85fcdf9/Karagarcia%20(7).mp4",
+			"https://www.burstcloud.co/embed/1d9ef11e8cebb7398294ff59ca28851622908772bcd654bba684037e65a9a085/Karagarcia%20(8).mp4",
+			"https://www.burstcloud.co/embed/b91682b987e1e0834ffd9ec2000841c61ce95fd7e36a712f9d3803f8aa82da79/Karagarcia%20(9).mp4"
+
+        ]
+    },
 ];
