@@ -917,4 +917,64 @@ const modelosDB = [
 
         ]
     },
+	{
+        id: 20,
+        nombre: "lolaxyummy",
+        fotoPortada: "https://simp6.cuckcapital.cr/images4/10000395841aa08464592f8815.jpg",
+        onlyfans: "https://onlyfans.com/lolaxyummy",
+        instagram: "https://www.instagram.com/lolaxmina",
+        fotos: [
+            "https://simp6.cuckcapital.cr/images4/imgi_42_1836x1240_93b4659666f57dff44bee81645cfe54b3dc04864cfa69702.jpg",
+            "https://simp6.cuckcapital.cr/images4/75905b38-8bf8-4b8e-9471-7783e4d5faad.png",
+            "https://simp6.cuckcapital.cr/images4/6eaa1026-89e0-4e7f-9e9c-16e297fd1eea.png",
+			"https://simp6.cuckcapital.cr/images4/daf24245-c9fc-4de3-a1b6-7d662d1cc8d2.png",
+			"https://simp6.cuckcapital.cr/images4/54a5dbc1-3d56-4bd7-9d36-8ca4acaed360.png",
+			"https://simp6.cuckcapital.cr/images3/gehh7a3e1050c35717ee.png",
+			"https://simp6.cuckcapital.cr/images3/1242x2208_cb4645b5eb1e0d1f759f010322602f8a---Copy22299641e7ef667b.jpg",
+			"https://simp6.cuckcapital.cr/images3/G8kYiVAWUAAqgfN03526ba6a9b7fe5c.jpg",
+			"https://simp6.cuckcapital.cr/images3/HAeIN_IXUAAgG_g0eb8f506d0c9dc1f.jpg",
+			"https://simp6.cuckcapital.cr/images3/GoGfFTOXwAATsTs7c06deded98f3ea8.jpg",
+			"https://simp6.cuckcapital.cr/images3/1242x1919_f6af6015328222f61895f6eba9cb3da2a004e659786a7336.jpg",
+			"https://simp6.cuckcapital.cr/images3/GoBRyLZWAAAGQ4Cd4a15de8a250f3ee.jpg",
+			"https://simp6.cuckcapital.cr/images3/1536x2048_9c900bb9a30ca85e9d1b70b1aa0417bac3b8020f1b219e66.jpg",
+			"https://simp6.cuckcapital.cr/images3/2048x1536_fd4e9bb57d869812e878e156cdcd68cec568c9f9b71537c2.jpg",
+			"https://simp6.cuckcapital.cr/images3/1536x2048_4bf2ea91e57cce3dfe127a892e3197e11be683ecd7f016f5.jpg",
+			"https://simp6.cuckcapital.cr/images3/2208x1242_ca554a5ad1c02d71b0d3972923f4382924d72dee0aa1c2a1.md.jpg",
+			"https://simp6.cuckcapital.cr/images3/2025x1242_c264e2837cebece753664c9df63d00b15dc82ac9246453cf.jpg",
+			"https://simp6.cuckcapital.cr/images3/960x1707_7a7a8136af97c863b5f28bebb0867c622526ef64a2e5ecb2.jpg",
+			"https://simp6.cuckcapital.cr/images3/1536x2048_774ae9019f6dd46dc4557e41a9cc7f79c33f9751cbc4c107.jpg",
+			"https://simp6.cuckcapital.cr/images3/2048x1536_012becb7de82c39de788eb221bb8540a836d543903032936.jpg",
+			"https://simp6.cuckcapital.cr/images3/IMG_26981a598bde7490e28d.md.jpg",
+			"https://simp6.cuckcapital.cr/images3/100021828437cee9cd8226459f.md.jpg",
+			"https://simp6.cuckcapital.cr/images3/IMG_20251009_171413_402c70348efb8d1d65f.md.jpg",
+			"https://simp6.cuckcapital.cr/images3/728b1817-0a24-40b9-80ad-7bbdc8d36433e76581c0d569e964.jpg",
+			"https://simp6.cuckcapital.cr/images3/3a48d6ef905756de8.jpg",
+			"https://simp6.cuckcapital.cr/images3/20efbab01269982f7.md.jpg",
+			"https://simp6.cuckcapital.cr/images3/2ff7a040c39af84a5.md.jpg",
+			"https://simp6.cuckcapital.cr/images3/1242x2208_e29067f18f1297a07f5765deab583a6d2a904fca1d46fcd9.jpg",
+			"https://simp6.cuckcapital.cr/images3/1242x2208_8e37fa42b749a5ff8e6f54210d52b9d780ee49be4f28e1b3.jpg",
+			"https://simp6.cuckcapital.cr/images3/IMG_20250126_152328_494951edc4a78100201.jpg",
+			"https://simp6.cuckcapital.cr/images3/z2210315a494c10ffa.jpg",
+			"https://simp6.cuckcapital.cr/images3/IMG_20250226_195507_9936f99a458174431af.jpg",
+			"https://simp6.cuckcapital.cr/images3/136d94d7f38ce3725.jpg"
+			
+
+        ],
+        videos: [
+            "https://www.burstcloud.co/embed/9019c548f3804bea8726348a88b830a1ee065c5f2f4e5623584fa89299b5f241/Lolaxyummy%20(1).mp4",
+            "https://www.burstcloud.co/embed/02b5be7e2985740fe9b239193e4702cdcd331d8054ae5c4ccb5481c0e0e3b25a/Lolaxyummy%20(10).mp4",
+            "https://www.burstcloud.co/embed/76175e184b06c699fb71ecb0684d60427ffdc87753dda05e044f1e42032a9c99/Lolaxyummy%20(11).mp4",
+			"https://www.burstcloud.co/embed/49e779213b07acae0b9ad86c4dc4c0590a4dc5400136728841271513db8e73fd/Lolaxyummy%20(12).mp4",
+			"https://www.burstcloud.co/embed/4c88f21d1f9745baadbbe549820b71191a05087999541ab5a035ec32479d9a67/Lolaxyummy%20(1345).mp4",
+			"https://www.burstcloud.co/embed/dc0b9625a3e6a68bb30efa164088032bf9ae2654e749becbb617de1143b22170/Lolaxyummy%20(2).mp4",
+			"https://www.burstcloud.co/embed/638c02a4dd9b5c5c4893070ccc1d8982b66a4fc1060064ec56c9388949fe32c4/Lolaxyummy%20(3).mp4",
+			"https://www.burstcloud.co/embed/ba8552765a35806f43ce2e841a4c1e6e28ee8b5b9b7f2b1456288b41325a042b/Lolaxyummy%20(4).mp4",
+			"https://www.burstcloud.co/embed/c3c3b60a427c8a7ce5a4e5cf291852de62c9fcb9f2c350172ea70ab0d4d2c9b8/Lolaxyummy%20(5).mp4",
+			"https://www.burstcloud.co/embed/095f4e83d1ff9bc1126eee7612995c91cfaa6d927de349e975dc6d2d66460519/Lolaxyummy%20(6).mp4",
+			"https://www.burstcloud.co/embed/91a8a9c6bd7140c66214de410c904f58ac14f12c85fd55fa86b745b8937c23f1/Lolaxyummy%20(7).mp4",
+			"https://www.burstcloud.co/embed/715cd2838de3fc765311ef6778ed937052132ecb0f7adfa7eb1787ffb6af359c/Lolaxyummy%20(8).mp4",
+			"https://www.burstcloud.co/embed/e501cd1b7690bf9189ec1a95936605730c9b20c71dd8db11b6351f066e0c8851/Lolaxyummy%20(9).mp4"
+
+        ]
+    },
 ];
