@@ -799,4 +799,70 @@ const modelosDB = [
 
         ]
     },
+	{
+        id: 18,
+        nombre: "LunaRexx",
+        fotoPortada: "https://simp1.cuckcapital.cr/images/3840x2560_3a781b5460453ba61d539720e1d6513a.md.jpg",
+        onlyfans: "https://onlyfans.com/lunarexx",
+        instagram: "",
+        fotos: [
+            "https://img.coomer.st/thumbnail/data/76/4f/764f3d07da5e7082f283aa256195f0e088889fd3c2a7c1546b20b51c8d4f7e9a.jpg",
+            "https://img.coomer.st/thumbnail/data/97/6f/976f7bee85c9be792cfef36eb0c52315334364a21f9993c2e712a4757cc0cf67.jpg",
+            "https://img.coomer.st/thumbnail/data/37/2e/372ef91909977c1a465ceaf946c65ca55e4e5485075cea1317760e9dc72ca85b.jpg",
+			"https://img.coomer.st/thumbnail/data/28/a9/28a9da6091d99afd1f7835f2a533c9f2d610e339555a17ba6c8edc1be517867e.jpg",
+			"https://img.coomer.st/thumbnail/data/87/0e/870e956f4e231506a967918cd4514c9f8d8ee09d6935f4057cb9892522d4e5d2.jpg",
+			"https://img.coomer.st/thumbnail/data/48/53/48537095242c1c28826a13120d728cda9a6f4452271ebc355c7d6babb0eca945.jpg",
+			"https://img.coomer.st/thumbnail/data/cd/77/cd778c7f48f2382211ad8f64a23529ca9f281344c0e157e1e6703eb2c769634d.jpg",
+			"https://img.coomer.st/thumbnail/data/2f/05/2f05ccf9fd006aaf7519816f67c317aef9072b28498ae916cef6b2479d67d78b.jpg",
+			"https://img.coomer.st/thumbnail/data/fe/26/fe26e9936b2bbf8205f94c15e949ed0ac5cc932466a96fe5737543012886f3f9.jpg",
+			"https://img.coomer.st/thumbnail/data/2b/6c/2b6c35ff4b0d9a6b7ac8382cb9ca211e277f5e5dada2168ed2a98f5d7a4f1e0c.jpg",
+			"https://img.coomer.st/thumbnail/data/4a/54/4a54e5afe9e8e74f3be4fdd1899313ee7e4905becb774d088196cf288e540271.jpg",
+			"https://img.coomer.st/thumbnail/data/f9/0b/f90b0046f7987c4bea53851301f9ad311f7d8d93511ed76cff254e5619882b2c.jpg",
+			"https://img.coomer.st/thumbnail/data/1e/7b/1e7b17178a9931bb9968ee39a378048bd6646013152f3f827861216b8c3053a2.jpg",
+			"https://simp1.cuckcapital.cr/images/3840x3085_e1910280fe37c7efc501c5d44cec5c53.jpg",
+			"https://simp1.cuckcapital.cr/images/3840x5344_54502cd4992de3996cdf66a6142e10aa.jpg",
+			"https://simp1.cuckcapital.cr/images/3840x5760_568234195c01d08e6d0b3823e82ee6d8.jpg",
+			"https://simp1.cuckcapital.cr/images/3840x2560_6243008cae3f554701c9e8d1df6ac926.jpg",
+			"https://simp1.cuckcapital.cr/images/3840x4872_b1dd74193943052c36a26f2516286013.md.jpg",
+			"https://simp1.cuckcapital.cr/images/3840x2534_01ced517fa2db71c28b8fc72aef7e502.jpg",
+			"https://simp1.cuckcapital.cr/images/3840x2560_5fa5cbdac53d569bde031e8cfb7f0b00.jpg",
+			"https://simp1.cuckcapital.cr/images/3840x5760_0ccb1072ddab7828009229bf6da26478.jpg",
+			"https://simp1.cuckcapital.cr/images/1280x1016_7108e1fc64c559ca489439ea3394c39c.jpg",
+			"https://simp1.cuckcapital.cr/images/3840x2560_596f11128346cde0191186c913c029f7.jpg",
+			"https://simp1.cuckcapital.cr/images/3840x2560_5f971d03bd7c8f12d0db2a5d179a645d.jpg",
+			"https://simp1.cuckcapital.cr/images/3840x5760_ce820f9457b6d6ff7cc46788aeac5de3.jpg",
+			"https://simp1.cuckcapital.cr/images/3840x2690_45db616f61952cdbdbfdf662be464b68.jpg"
+			
+			
+			
+
+        ],
+        videos: [
+            "https://www.burstcloud.co/embed/1924fb1bf38c2d7cba1ffd3d5776dae7720fc8a1c9227a798f6005bec477a06b/LunaRexx%20(1).mp4",
+            "https://www.burstcloud.co/embed/71c7399ffbd85f774da56cc496e44b59981c65e89fc98fc1c1d32e1d17017f96/LunaRexx%20(10).mp4",
+            "https://www.burstcloud.co/embed/c2fe29680ee12bec5de807490f896b73f6a1131e77fcdd722c0181e59bfc3ec2/LunaRexx%20(11).mp4",
+			"https://www.burstcloud.co/embed/c1c9d1a8fc96e82b50e432ca7dfec868944985c1f6e87fe8e177010b48382c2f/LunaRexx%20(12).mp4",
+			"https://www.burstcloud.co/embed/f1340e6fdbc0542a3cd236ba70f420a9afe44e09ff1c8a5dff3df047369d8db7/LunaRexx%20(13).mp4",
+			"https://www.burstcloud.co/embed/6fda534dab929d73a8c204f68f8440898d08a430d5b340536fc108181f38c093/LunaRexx%20(14).mp4",
+			"https://www.burstcloud.co/embed/0e9bcfce43fd945f757a5478d5fe3903a09f47b5e92ee043790d660dc859ea7a/LunaRexx%20(15).mp4",
+			"https://www.burstcloud.co/embed/6585c0e9c7f622529fc54a6899dbd0885ab902b875c53ccab99b60adf8056ba0/LunaRexx%20(16).mp4",
+			"https://www.burstcloud.co/embed/d5c9f9fb9f5956e8e0fa6ec88c3ac04888c9001a1b3ea3a3281b98eb7f153168/LunaRexx%20(17).mp4",
+			"https://www.burstcloud.co/embed/208bb5607242b72c4dacbac41f6a103208ddccd87ea2cff07291d9221ce13bb2/LunaRexx%20(18).mp4",
+			"https://www.burstcloud.co/embed/a7ca46ce8cbcd253595c60f033c95a0f6fd68d9f9e1a1499336d73729ede34cb/LunaRexx%20(19).mp4",
+			"https://www.burstcloud.co/embed/b5f6ad9fafdd18a93f4e206e07950da7470aac47b799b1e671ce2a0837e7e109/LunaRexx%20(2).mp4",
+			"https://www.burstcloud.co/embed/8a35d1144472194f187168e6c3561876859fb3ac553d7117607e75541a32d892/LunaRexx%20(20).mp4",
+			"https://www.burstcloud.co/embed/49a208951dfcd5b92f9237d677b19f1de999f896bd9d9f4a12173a173a598474/LunaRexx%20(21).mp4",
+			"https://www.burstcloud.co/embed/6fb65ca7e33e1ce82f17c65a4b5160d12d45933f62124049817c813701d41514/LunaRexx%20(22).mp4",
+			"https://www.burstcloud.co/embed/67a3057e7ea47bc6437515612c0ffe89569ebbb10d59c23f8895438a22fa1a68/LunaRexx%20(23).mp4",
+			"https://www.burstcloud.co/embed/ff4ed535ec19e0c053832f4aa8b22dfadd316d66ee4c325bdbfd75f4fa5ac8b1/LunaRexx%20(3).mp4",
+			"https://www.burstcloud.co/embed/adf1a39ef5c007113ad805b3009ca8387d3f1b9291df59e7d8cd4d4ea68c920c/LunaRexx%20(4).mp4",
+			"https://www.burstcloud.co/embed/076911afc07498f16cd0a7e0c604c9397f056be920b78ad737c5a34023aefd81/LunaRexx%20(5).mp4",
+			"https://www.burstcloud.co/embed/74483a6affc13ea53ac33a138e3f61c5449c814dd677c6c14c7a494e909352d7/LunaRexx%20(6).mp4",
+			"https://www.burstcloud.co/embed/dc03ba5e3dc42d2bb6e596c32086cf6533565adfc26c11a1ce01a56a5e3d64c1/LunaRexx%20(7).mp4",
+			"https://www.burstcloud.co/embed/2818cafc8febb474381ad3a83d17fcb723da9413342fb9b4b972295be59386c5/LunaRexx%20(8).mp4",
+			"https://www.burstcloud.co/embed/614786b65d05aab2c59c18b5c220daab96a74b0b4902aa8d8ca7a010ea4af6b2/LunaRexx%20(9).mp4"
+			
+
+        ]
+    },
 ];
