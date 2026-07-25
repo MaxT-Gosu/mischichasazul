@@ -5,70 +5,187 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Tu Only Free</title>
     <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
-        body { background-color: #0f1512; color: #d1d9d4; padding-bottom: 70px; }
+        * { 
+            box-sizing: border-box; 
+            margin: 0; 
+            padding: 0; 
+            font-family: 'Segoe UI', Roboto, sans-serif; 
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body { 
+            background-color: #0b0b0c; 
+            color: #ffffff; 
+            padding-bottom: 85px; 
+        }
         
-        /* Cabecera estilo verde suave */
-        header { background-color: #1a241e; padding: 15px; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 4px rgba(0,0,0,0.3); text-align: center; border-bottom: 1px solid #2d3a33; }
-        header h1 { font-size: 1.5rem; color: #78a890; letter-spacing: -1px; }
+        /* Cabecera estilo oscuro / rosado neón */
+        header { 
+            background: linear-gradient(180deg, #16161a 0%, #0b0b0c 100%); 
+            padding: 15px; 
+            position: sticky; 
+            top: 0; 
+            z-index: 1000; 
+            border-bottom: 1px solid #1f1f24; 
+            text-align: center; 
+        }
+
+        header h1 { 
+            font-size: 1.4rem; 
+            color: #ff2a74; 
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-shadow: 0 0 10px rgba(255, 42, 116, 0.3);
+        }
 
         /* Contenedor del Feed */
-        .feed-container { max-width: 500px; margin: 0 auto; padding-top: 10px; }
+        .feed-container { 
+            max-width: 500px; 
+            margin: 0 auto; 
+            padding: 10px 12px 0 12px; 
+        }
 
-        /* Tarjeta de Publicación (Diseño original limpio) */
-        .post-card { background-color: #1a241e; margin-bottom: 15px; border-radius: 12px; overflow: hidden; border: 1px solid #2d3a33; }
-        .post-header { padding: 10px 12px; display: flex; align-items: center; gap: 10px; }
-        .avatar-small { width: 35px; height: 35px; border-radius: 50%; object-fit: cover; border: 1px solid #4a5d52; }
-        .username { font-weight: bold; font-size: 0.95rem; color: #a3c4b1; }
+        /* Tarjeta de Publicación */
+        .post-card { 
+            background-color: #16161a; 
+            margin-bottom: 15px; 
+            border-radius: 12px; 
+            overflow: hidden; 
+            border: 1px solid #232329; 
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .post-header { 
+            padding: 12px; 
+            display: flex; 
+            align-items: center; 
+            gap: 10px; 
+        }
+
+        .avatar-small { 
+            width: 38px; 
+            height: 38px; 
+            border-radius: 50%; 
+            object-fit: cover; 
+            border: 2px solid #ff2a74; 
+        }
+
+        .username { 
+            font-weight: bold; 
+            font-size: 0.95rem; 
+            color: #ffffff; 
+        } 
         
         /* Imagen principal */
-        .post-img { width: 100%; aspect-ratio: 3/4; object-fit: cover; display: block; cursor: pointer; }
+        .post-img { 
+            width: 100%; 
+            aspect-ratio: 3/4; 
+            object-fit: cover; 
+            display: block; 
+            cursor: pointer; 
+        }
 
-        /* Barra de navegación */
-        .nav-bar { position: fixed; bottom: 0; width: 100%; height: 60px; background-color: #1a241e; display: flex; justify-content: space-around; align-items: center; border-top: 1px solid #2d3a33; z-index: 1000; }
-        .nav-item { color: #84968c; text-decoration: none; font-size: 0.8rem; text-align: center; }
-        .nav-item.active { color: #78a890; font-weight: bold; }
+        /* Barra de navegación inferior */
+        .nav-bar { 
+            position: fixed; 
+            bottom: 0; 
+            left: 0;
+            width: 100%; 
+            height: 65px; 
+            background-color: #111115; 
+            display: flex; 
+            justify-content: space-around; 
+            align-items: center; 
+            border-top: 1px solid #1f1f24; 
+            z-index: 999; 
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        .nav-item { 
+            color: #8a8a93; 
+            text-decoration: none; 
+            font-size: 0.75rem; 
+            text-align: center; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 25%;
+            height: 100%;
+            transition: color 0.2s;
+        }
+
+        .nav-icon {
+            font-size: 1.3rem;
+            margin-bottom: 2px;
+        }
+
+        .nav-item.active { 
+            color: #ff2a74; 
+            font-weight: bold; 
+        }
+
+        .nav-item:active {
+            transform: scale(0.92);
+        }
     </style>
 </head>
 <body>
 
-    <header><h1>Tu Only Free</h1></header>
+    <header>
+        <h1>Tu Only Free</h1>
+    </header>
 
     <div class="feed-container" id="feed"></div>
 
     <nav class="nav-bar">
-        <a href="index.html" class="nav-item active">🏠<br>Inicio</a>
-        <a href="chicas.html" class="nav-item">🔥<br>Chicas</a>
-        <a href="buscar.html" class="nav-item">🔍<br>Buscar</a>
-        <a href="info.html" class="nav-item">ℹ️<br>Info</a>
+        <a href="index.html" class="nav-item active">
+            <span class="nav-icon">🏠</span>
+            <span>Home</span>
+        </a>
+        <a href="chicas.html" class="nav-item">
+            <span class="nav-icon">🔥</span>
+            <span>Mis Chicas</span>
+        </a>
+        <a href="buscar.html" class="nav-item">
+            <span class="nav-icon">🔍</span>
+            <span>Buscar</span>
+        </a>
+        <a href="info.html" class="nav-item">
+            <span class="nav-icon">ℹ️</span>
+            <span>Info</span>
+        </a>
     </nav>
 
     <script src="db.js"></script>
     <script>
-        const container = document.getElementById('feed');
-        
-        // MODO RESCATE (Imágenes de prueba)
-        const bocetos = [
-            { id: 1, nombre: "Demo 1", fotoPortada: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=500" },
-            { id: 2, nombre: "Demo 2", fotoPortada: "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=500" }
-        ];
+        document.addEventListener("DOMContentLoaded", () => {
+            const container = document.getElementById('feed');
+            
+            // Verificamos que la BD exista y no usamos bocetos de relleno
+            if (typeof modelosDB !== 'undefined' && Array.isArray(modelosDB)) {
+                const data = [...modelosDB].reverse(); 
 
-        const rawData = (typeof modelosDB !== 'undefined') ? modelosDB : bocetos;
-        const data = [...rawData].reverse(); // La nueva chica siempre sale primero
+                data.forEach(modelo => {
+                    // Validamos que tenga ID y foto para no romper enlaces
+                    if (!modelo || !modelo.id) return;
 
-        data.forEach(modelo => {
-            const post = document.createElement('div');
-            post.className = 'post-card';
-            post.innerHTML = `
-                <div class="post-header">
-                    <img src="${modelo.fotoPortada}" class="avatar-small">
-                    <span class="username">${modelo.nombre}</span>
-                </div>
-                <a href="modelo.html?id=${modelo.id || ''}">
-                    <img src="${modelo.fotoPortada}" class="post-img">
-                </a>
-            `;
-            container.appendChild(post);
+                    const post = document.createElement('div');
+                    post.className = 'post-card';
+                    post.innerHTML = `
+                        <div class="post-header">
+                            <img src="${modelo.fotoPortada}" class="avatar-small" alt="${modelo.nombre}">
+                            <span class="username">${modelo.nombre}</span>
+                        </div>
+                        <a href="modelo.html?id=${modelo.id}">
+                            <img src="${modelo.fotoPortada}" class="post-img" loading="lazy" alt="${modelo.nombre}">
+                        </a>
+                    `;
+                    container.appendChild(post);
+                });
+            } else {
+                container.innerHTML = "<p style='text-align:center; padding:40px; color:#8a8a93;'>No se pudieron cargar los datos.</p>";
+            }
         });
     </script>
 </body>

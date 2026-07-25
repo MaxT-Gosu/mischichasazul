@@ -5,22 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mis Chicas</title>
     <style>
-        /* Estilos generales */
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
             font-family: 'Segoe UI', Roboto, sans-serif;
+            -webkit-tap-highlight-color: transparent;
         }
 
         body {
             background-color: #0b0b0c;
             color: #ffffff;
-            /* Espacio abajo para que la barra inferior no tape las fotos */
             padding-bottom: 85px; 
         }
 
-        /* Cabecera */
         header {
             background: linear-gradient(180deg, #16161a 0%, #0b0b0c 100%);
             padding: 15px 10px;
@@ -42,17 +40,15 @@
             margin-top: 5px;
         }
 
-        /* CUADRÍCULA DE 4 COLUMNAS (Estilo 4x4) */
         .grid-chicas {
             display: grid;
-            grid-template-columns: repeat(4, 1fr); /* 4 columnas de igual tamaño */
-            gap: 6px; /* Espacio más cerrado para aprovechar el ancho */
+            grid-template-columns: repeat(4, 1fr);
+            gap: 6px;
             padding: 6px;
             max-width: 600px;
             margin: 0 auto;
         }
 
-        /* Tarjeta de cada Chica (Simplificada al máximo) */
         .card-chica {
             background-color: #16161a;
             border-radius: 6px;
@@ -69,10 +65,9 @@
             transform: scale(0.95);
         }
 
-        /* Contenedor de la foto */
         .img-container {
             width: 100%;
-            aspect-ratio: 3 / 4; /* Mantiene la proporción de retrato */
+            aspect-ratio: 3 / 4;
             background-color: #000;
         }
 
@@ -82,21 +77,17 @@
             object-fit: cover; 
         }
 
-        /* Nombre de la chica (Debajo de la foto) */
         .nombre-chica {
             padding: 6px 3px;
             text-align: center;
-            font-size: 0.75rem; /* Tamaño de letra adaptado a 4 columnas */
+            font-size: 0.75rem;
             font-weight: 600;
             color: #ffffff;
             white-space: nowrap;
             overflow: hidden;
-            text-overflow: ellipsis; /* Si el nombre es muy largo pone '...' */
+            text-overflow: ellipsis;
         }
 
-        /* ==========================================
-           BARRA DE NAVEGACIÓN INFERIOR
-           ========================================== */
         .nav-bar {
             position: fixed;
             bottom: 0;
@@ -124,7 +115,6 @@
             width: 25%;
             height: 100%;
             transition: color 0.2s;
-            -webkit-tap-highlight-color: transparent;
         }
 
         .nav-icon {
@@ -132,7 +122,6 @@
             margin-bottom: 2px;
         }
 
-        /* Aquí el botón "Mis Chicas" es el que está activo */
         .nav-item.active {
             color: #ff2a74;
             font-weight: bold;
@@ -150,60 +139,45 @@
         <p>Explora a todas nuestras creadoras</p>
     </header>
 
-    <!-- La cuadrícula de 4 columnas que se llena sola -->
     <main class="grid-chicas" id="grid-chicas"></main>
 
-    <!-- ==========================================
-       MENÚ INFERIOR TÁCTIL
-       ========================================== -->
     <nav class="nav-bar">
-        <!-- 1. Home -->
         <a href="index.html" class="nav-item">
             <span class="nav-icon">🏠</span>
             <span>Home</span>
         </a>
-        
-        <!-- 2. Mis Chicas (Página actual activa) -->
         <a href="chicas.html" class="nav-item active">
             <span class="nav-icon">🔥</span>
             <span>Mis Chicas</span>
         </a>
-        
-        <!-- 3. Buscar -->
         <a href="buscar.html" class="nav-item">
             <span class="nav-icon">🔍</span>
             <span>Buscar</span>
         </a>
-        
-        <!-- 4. Info -->
         <a href="info.html" class="nav-item">
             <span class="nav-icon">ℹ️</span>
             <span>Info</span>
         </a>
     </nav>
 
-    <!-- 1. Importación de tu base de datos central -->
     <script src="db.js"></script>
-
-    <!-- 2. Lector y Renderizador para 4 columnas -->
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             const gridContainer = document.getElementById("grid-chicas");
             gridContainer.innerHTML = ""; 
 
-            // Cargar datos desde db.js
             if (typeof modelosDB !== 'undefined' && Array.isArray(modelosDB)) {
                 modelosDB.forEach(modelo => {
+                    if (!modelo || !modelo.id) return;
+
                     const card = document.createElement("a");
                     card.className = "card-chica";
-                    
-                    // Apunta a la futura página de visualización del perfil pasando el ID
                     card.href = `modelo.html?id=${modelo.id}`;
 
-                    // Estructura limpia: Solo Imagen y Nombre
+                    // Agregamos loading="lazy" a la etiqueta img
                     card.innerHTML = `
                         <div class="img-container">
-                            <img src="${modelo.fotoPortada}" alt="${modelo.nombre}">
+                            <img src="${modelo.fotoPortada}" alt="${modelo.nombre}" loading="lazy">
                         </div>
                         <div class="nombre-chica">${modelo.nombre}</div>
                     `;
