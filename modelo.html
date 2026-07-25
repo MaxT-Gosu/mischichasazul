@@ -5,87 +5,304 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil de la Modelo</title>
     <style>
-        /* Estilos generales */
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Roboto, sans-serif; -webkit-tap-highlight-color: transparent; }
-        body { background-color: #0b0b0c; color: #ffffff; padding-bottom: 90px; overflow-x: hidden; width: 100vw; }
+        * { 
+            box-sizing: border-box; 
+            margin: 0; 
+            padding: 0; 
+            font-family: 'Segoe UI', Roboto, -apple-system, sans-serif; 
+            -webkit-tap-highlight-color: transparent; 
+        }
 
-        /* Cabecera */
-        header { background-color: #16161a; padding: 15px; display: flex; align-items: center; border-bottom: 1px solid #1f1f24; position: sticky; top: 0; z-index: 100; }
-        .back-btn { background: none; border: none; color: #ff2a74; font-size: 1.4rem; cursor: pointer; margin-right: 15px; text-decoration: none; display: flex; align-items: center; }
-        header h1 { font-size: 1.2rem; font-weight: bold; color: #ffffff; }
+        body { 
+            background-color: #0b0b0c; 
+            color: #ffffff; 
+            padding-bottom: 90px; 
+            overflow-x: hidden; 
+            width: 100vw; 
+        }
 
-        /* Banner y Portada */
-        .profile-header { position: relative; background-color: #16161a; border-bottom: 1px solid #1f1f24; overflow: hidden; }
-        .profile-banner { width: 100%; height: 140px; background-size: cover; background-position: center; filter: blur(10px) brightness(0.5); transform: scale(1.1); }
-        .profile-info { position: relative; display: flex; flex-direction: column; align-items: center; margin-top: -60px; padding: 0 15px 20px 15px; text-align: center; }
-        .profile-avatar { width: 110px; height: 110px; border-radius: 50%; border: 4px solid #0b0b0c; object-fit: cover; background-color: #000; box-shadow: 0 4px 10px rgba(0,0,0,0.5); }
-        .profile-name { font-size: 1.4rem; font-weight: bold; margin-top: 10px; color: #ffffff; }
+        /* Botón de volver flotante elegante */
+        .header-nav { 
+            position: fixed; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            padding: 12px 15px; 
+            display: flex; 
+            align-items: center; 
+            justify-content: space-between; 
+            z-index: 1000; 
+            background: linear-gradient(180deg, rgba(11, 11, 12, 0.8) 0%, transparent 100%);
+        }
 
-        /* Botones de Redes Sociales (OnlyFans e Instagram) */
-        .social-links { display: flex; gap: 10px; margin-top: 12px; justify-content: center; flex-wrap: wrap; }
-        .social-btn { display: inline-flex; align-items: center; gap: 6px; padding: 8px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: bold; text-decoration: none; color: #fff; transition: transform 0.2s, opacity 0.2s; }
+        .back-btn { 
+            background: rgba(22, 22, 26, 0.7); 
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1); 
+            color: #ffffff; 
+            width: 40px; 
+            height: 40px; 
+            border-radius: 50%; 
+            font-size: 1.1rem; 
+            cursor: pointer; 
+            text-decoration: none; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+            transition: transform 0.2s;
+        }
+
+        .back-btn:active { transform: scale(0.9); }
+
+        /* Banner de Perfil Hero */
+        .profile-hero { 
+            position: relative; 
+            width: 100%; 
+            height: 320px; 
+            background-color: #16161a; 
+            overflow: hidden; 
+        }
+
+        .hero-bg { 
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover; 
+            filter: brightness(0.65); 
+        }
+
+        .hero-overlay { 
+            position: absolute; 
+            bottom: 0; 
+            left: 0; 
+            right: 0; 
+            padding: 30px 20px 20px 20px; 
+            background: linear-gradient(180deg, transparent 0%, #0b0b0c 100%); 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            text-align: center; 
+        }
+
+        .profile-avatar { 
+            width: 95px; 
+            height: 95px; 
+            border-radius: 50%; 
+            border: 3px solid #ff2a74; 
+            object-fit: cover; 
+            background-color: #000; 
+            box-shadow: 0 0 20px rgba(255, 42, 116, 0.4); 
+            margin-bottom: 10px; 
+        }
+
+        .profile-name { 
+            font-size: 1.5rem; 
+            font-weight: 800; 
+            color: #ffffff; 
+            text-transform: uppercase; 
+            letter-spacing: 0.5px; 
+            text-shadow: 0 2px 10px rgba(0,0,0,0.8); 
+        }
+
+        /* Botones de Redes Sociales */
+        .social-links { 
+            display: flex; 
+            gap: 10px; 
+            margin-top: 10px; 
+            justify-content: center; 
+            flex-wrap: wrap; 
+        }
+
+        .social-btn { 
+            display: inline-flex; 
+            align-items: center; 
+            gap: 6px; 
+            padding: 7px 15px; 
+            border-radius: 20px; 
+            font-size: 0.8rem; 
+            font-weight: 700; 
+            text-decoration: none; 
+            color: #fff; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            transition: transform 0.2s; 
+        }
+
         .social-btn:active { transform: scale(0.95); }
-        .btn-onlyfans { background-color: #00aff0; }
-        .btn-instagram { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
+        .btn-onlyfans { background: linear-gradient(45deg, #00aff0, #0088cc); }
+        .btn-instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
 
-        /* Tabs */
-        .tabs { display: flex; background-color: #111115; border-bottom: 1px solid #1f1f24; position: sticky; top: 55px; z-index: 90; }
-        .tab-btn { flex: 1; background: none; border: none; color: #8a8a93; font-weight: bold; font-size: 0.9rem; padding: 15px 0; cursor: pointer; border-bottom: 3px solid transparent; }
-        .tab-btn.active { color: #ff2a74; border-bottom-color: #ff2a74; }
-        .content-section { display: none; padding: 10px; }
+        /* Selector de Pestañas (Tabs) */
+        .tabs-container { 
+            display: flex; 
+            background: rgba(17, 17, 21, 0.8); 
+            backdrop-filter: blur(10px); 
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05); 
+            position: sticky; 
+            top: 0; 
+            z-index: 90; 
+            margin-top: 10px; 
+        }
+
+        .tab-btn { 
+            flex: 1; 
+            background: none; 
+            border: none; 
+            color: #8a8a93; 
+            font-weight: 700; 
+            font-size: 0.9rem; 
+            padding: 14px 0; 
+            cursor: pointer; 
+            border-bottom: 2px solid transparent; 
+            transition: color 0.2s, border-color 0.2s; 
+        }
+
+        .tab-btn.active { 
+            color: #ff2a74; 
+            border-bottom-color: #ff2a74; 
+        }
+
+        .content-section { display: none; padding: 12px; max-width: 600px; margin: 0 auto; }
         .content-section.active { display: block; }
 
-        /* Galería y Vídeos */
-        .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
-        .gallery-item { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 6px; cursor: pointer; }
+        /* Galería de Fotos */
+        .gallery-grid { 
+            display: grid; 
+            grid-template-columns: repeat(3, 1fr); 
+            gap: 6px; 
+        }
 
-        /* Estilos de Tarjetas e Items de Vídeo */
+        .gallery-item { 
+            width: 100%; 
+            aspect-ratio: 1 / 1; 
+            object-fit: cover; 
+            border-radius: 8px; 
+            cursor: pointer; 
+            border: 1px solid rgba(255, 255, 255, 0.05); 
+            transition: transform 0.2s; 
+        }
+
+        .gallery-item:active { transform: scale(0.95); }
+
+        /* Tarjetas de Vídeo */
         .videos-list { display: flex; flex-direction: column; gap: 12px; }
-        .video-item-card { background-color: #16161a; border: 1px solid #232329; border-radius: 10px; overflow: hidden; }
-        .video-play-btn { width: 100%; padding: 16px; background-color: #16161a; color: #ffffff; border: none; font-size: 1rem; font-weight: bold; display: flex; align-items: center; justify-content: space-between; cursor: pointer; transition: background-color 0.2s; text-align: left; }
+
+        .video-item-card { 
+            background-color: #16161a; 
+            border: 1px solid #232329; 
+            border-radius: 14px; 
+            overflow: hidden; 
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3); 
+        }
+
+        .video-play-btn { 
+            width: 100%; 
+            padding: 16px; 
+            background: #16161a; 
+            color: #ffffff; 
+            border: none; 
+            font-size: 0.95rem; 
+            font-weight: 700; 
+            display: flex; 
+            align-items: center; 
+            justify-content: space-between; 
+            cursor: pointer; 
+            text-align: left; 
+            transition: background-color 0.2s; 
+        }
+
         .video-play-btn:active { background-color: #232329; }
-        .video-play-btn span.icon { color: #ff2a74; font-size: 1.2rem; }
+        .video-play-btn .icon-play { 
+            width: 32px; 
+            height: 32px; 
+            border-radius: 50%; 
+            background: rgba(255, 42, 116, 0.15); 
+            color: #ff2a74; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            font-size: 0.9rem; 
+            border: 1px solid rgba(255, 42, 116, 0.3); 
+        }
 
         .video-card-body { width: 100%; display: none; background-color: #000; }
         .video-card-body.active { display: block; }
         .video-card-body video { width: 100%; max-height: 450px; display: block; background-color: #000; }
         .video-card-body iframe { width: 100%; height: 320px; border: none; display: block; background-color: #000; }
 
-        /* Modal Visor de Imágenes Limpio */
-        .modal-viewer { display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgba(0,0,0,0.95); z-index: 2000; justify-content: center; align-items: center; }
+        /* Visor Modal de Imágenes */
+        .modal-viewer { 
+            display: none; 
+            position: fixed; 
+            top: 0; 
+            left: 0; 
+            width: 100vw; 
+            height: 100vh; 
+            background-color: rgba(0,0,0,0.95); 
+            z-index: 2000; 
+            justify-content: center; 
+            align-items: center; 
+        }
+
         .modal-viewer.active { display: flex; }
         .modal-img { max-width: 95%; max-height: 85vh; object-fit: contain; border-radius: 8px; user-select: none; }
         .close-modal { position: absolute; top: 20px; right: 20px; color: #fff; font-size: 2rem; cursor: pointer; z-index: 2001; }
 
-        /* Nav inferior */
-        .nav-bar { position: fixed; bottom: 0; width: 100%; height: 65px; background-color: #111115; border-top: 1px solid #1f1f24; display: flex; justify-content: space-around; align-items: center; z-index: 999; }
-        .nav-item { color: #8a8a93; text-decoration: none; font-size: 0.75rem; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; width: 25%; }
+        /* Navegación Inferior */
+        .nav-bar { 
+            position: fixed; 
+            bottom: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 65px; 
+            background: rgba(17, 17, 21, 0.85); 
+            backdrop-filter: blur(15px); 
+            border-top: 1px solid rgba(255, 255, 255, 0.08); 
+            display: flex; 
+            justify-content: space-around; 
+            align-items: center; 
+            z-index: 999; 
+        }
+
+        .nav-item { 
+            color: #8a8a93; 
+            text-decoration: none; 
+            font-size: 0.75rem; 
+            text-align: center; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+            width: 25%; 
+        }
+
+        .nav-icon { font-size: 1.3rem; margin-bottom: 2px; }
     </style>
 </head>
 <body>
 
-    <header>
+    <!-- Botón Volver -->
+    <div class="header-nav">
         <a href="javascript:void(0)" class="back-btn" onclick="goBack()">⬅</a>
-        <h1 id="header-title">Perfil</h1>
-    </header>
+    </div>
 
-    <section class="profile-header">
-        <div class="profile-banner" id="profile-banner"></div>
-        <div class="profile-info">
-            <img src="" alt="Avatar" class="profile-avatar" id="profile-avatar">
-            <h2 class="profile-name" id="profile-name">Cargando...</h2>
-            
-            <!-- Redes sociales cargadas dinámicamente -->
+    <!-- Header Hero con Foto Principal -->
+    <section class="profile-hero">
+        <img id="hero-bg" class="hero-bg" src="" alt="Portada">
+        <div class="hero-overlay">
+            <img id="profile-avatar" class="profile-avatar" src="" alt="Avatar">
+            <h1 id="profile-name" class="profile-name">Cargando...</h1>
             <div class="social-links" id="social-links"></div>
         </div>
     </section>
 
-    <nav class="tabs">
+    <!-- Pestañas -->
+    <nav class="tabs-container">
         <button class="tab-btn active" onclick="switchTab('fotos', this)">📷 Fotos</button>
         <button class="tab-btn" onclick="switchTab('videos', this)">🎬 Videos</button>
     </nav>
 
-    <main class="tab-content">
+    <!-- Contenido -->
+    <main>
         <section id="sec-fotos" class="content-section active">
             <div class="gallery-grid" id="gallery-container"></div>
         </section>
@@ -94,17 +311,18 @@
         </section>
     </main>
 
-    <!-- Modal Visor Limpio -->
+    <!-- Visor de Fotos Modal -->
     <div class="modal-viewer" id="modal-viewer">
         <span class="close-modal" onclick="closeViewer()">&times;</span>
         <img src="" id="modal-img" class="modal-img">
     </div>
 
+    <!-- Barra de Navegación -->
     <nav class="nav-bar">
-        <a href="index.html" class="nav-item">🏠<span>Home</span></a>
-        <a href="chicas.html" class="nav-item">🔥<span>Mis Chicas</span></a>
-        <a href="buscar.html" class="nav-item">🔍<span>Buscar</span></a>
-        <a href="info.html" class="nav-item">ℹ️<span>Info</span></a>
+        <a href="index.html" class="nav-item"><span class="nav-icon">🏠</span><span>Home</span></a>
+        <a href="chicas.html" class="nav-item"><span class="nav-icon">🔥</span><span>Mis Chicas</span></a>
+        <a href="buscar.html" class="nav-item"><span class="nav-icon">🔍</span><span>Buscar</span></a>
+        <a href="info.html" class="nav-item"><span class="nav-icon">ℹ️</span><span>Info</span></a>
     </nav>
 
     <script src="db.js"></script>
@@ -135,7 +353,6 @@
             sessionStorage.setItem('activeTab', tabName);
         }
 
-        // Visor de Imágenes
         function openViewer(index) {
             currentIndex = index;
             document.getElementById('modal-img').src = currentFotos[currentIndex];
@@ -153,24 +370,18 @@
             document.getElementById('modal-img').src = currentFotos[currentIndex];
         }
 
-        // Gestos táctiles
         let touchStartX = 0;
         let touchEndX = 0;
         const modal = document.getElementById('modal-viewer');
 
-        modal.addEventListener('touchstart', e => { 
-            touchStartX = e.changedTouches[0].screenX; 
-        }, {passive: true});
-
+        modal.addEventListener('touchstart', e => { touchStartX = e.changedTouches[0].screenX; }, {passive: true});
         modal.addEventListener('touchend', e => {
             touchEndX = e.changedTouches[0].screenX;
             if (touchStartX - touchEndX > 40) navigateImage(1);
             if (touchEndX - touchStartX > 40) navigateImage(-1);
         }, {passive: true});
 
-        // Reproducción directa de vídeo sin publicidad ni popups
         function cargarYReproducirVideo(index, videoUrl, containerElement, btnElement) {
-            // Ocultar botón y mostrar reproductor directamente
             btnElement.style.display = 'none';
             containerElement.classList.add('active');
 
@@ -178,17 +389,13 @@
 
             if (isEmbed) {
                 containerElement.innerHTML = `
-                    <iframe 
-                        src="${videoUrl}" 
-                        allow="autoplay; fullscreen; picture-in-picture" 
-                        allowfullscreen>
-                    </iframe>
+                    <iframe src="${videoUrl}" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
                 `;
             } else {
                 containerElement.innerHTML = `
                     <video controls playsinline webkit-playsinline="true" controlsList="nodownload" autoplay style="width:100%; max-height:450px; background:#000;">
                         <source src="${videoUrl}" type="video/mp4">
-                        Tu navegador no soporta la reproducción de video.
+                        Tu navegador no soporta el reproductor.
                     </video>
                 `;
             }
@@ -199,14 +406,15 @@
             const modeloId = parseInt(urlParams.get('id'));
             const modelo = typeof modelosDB !== 'undefined' ? modelosDB.find(m => m.id === modeloId) : null;
 
-            if (!modelo) return;
+            if (!modelo) {
+                document.getElementById('profile-name').textContent = "Perfil no encontrado";
+                return;
+            }
 
-            document.getElementById('header-title').textContent = modelo.nombre;
             document.getElementById('profile-name').textContent = modelo.nombre;
             document.getElementById('profile-avatar').src = modelo.fotoPortada;
-            document.getElementById('profile-banner').style.backgroundImage = `url('${modelo.fotoPortada}')`;
+            document.getElementById('hero-bg').src = modelo.fotoPortada;
 
-            // Renderizar Redes Sociales (OnlyFans / Instagram)
             const socialContainer = document.getElementById('social-links');
             socialContainer.innerHTML = "";
 
@@ -228,38 +436,35 @@
                 socialContainer.appendChild(igLink);
             }
 
-            // Limpieza previa
             const gallery = document.getElementById('gallery-container');
             const videosContainer = document.getElementById('videos-container');
             gallery.innerHTML = "";
             videosContainer.innerHTML = "";
 
-            // Cargar Fotos
             currentFotos = modelo.fotos || [];
             currentFotos.forEach((foto, idx) => {
                 const img = document.createElement('img');
                 img.src = foto;
                 img.className = 'gallery-item';
+                img.loading = 'lazy';
                 img.onclick = () => openViewer(idx);
                 gallery.appendChild(img);
             });
 
-            // Cargar Lista de Vídeos Numerados
             const videosList = modelo.videos || [];
             if (videosList.length === 0) {
-                videosContainer.innerHTML = "<p style='text-align:center; padding:20px; color:#8a8a93;'>No hay vídeos disponibles.</p>";
+                videosContainer.innerHTML = "<p style='text-align:center; padding:30px; color:#8a8a93;'>No hay vídeos disponibles.</p>";
             } else {
                 videosList.forEach((videoUrl, index) => {
                     const videoNum = index + 1;
-
                     const card = document.createElement('div');
                     card.className = 'video-item-card';
 
                     const btn = document.createElement('button');
                     btn.className = 'video-play-btn';
                     btn.innerHTML = `
-                        <span>▶️ Ver Vídeo ${videoNum}</span>
-                        <span class="icon">🎬</span>
+                        <span>Reproducir Vídeo ${videoNum}</span>
+                        <div class="icon-play">▶</div>
                     `;
 
                     const body = document.createElement('div');
@@ -273,7 +478,6 @@
                 });
             }
 
-            // Restaurar pestaña activa previa
             const savedTab = sessionStorage.getItem('activeTab');
             if (savedTab === 'videos') {
                 const videoTabBtn = document.querySelectorAll('.tab-btn')[1];
