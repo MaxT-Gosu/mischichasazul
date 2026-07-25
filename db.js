@@ -977,4 +977,67 @@ const modelosDB = [
 
         ]
     },
+	{
+        id: 21,
+        nombre: "GrettaGrand",
+        fotoPortada: "https://img.coomer.st/thumbnail/data/f5/75/f5754499e0f649bf8f04826c92007ce3cac12c7fe6975f2bdf19bb41f23dad4b.jpg",
+        onlyfans: "https://onlyfans.com/dolly.grettits",
+        instagram: "",
+        fotos: [
+            "https://img.coomer.st/thumbnail/data/0c/66/0c66a8854d60db9f46231042f055e015f63a9c62834616d9eda3b13d35c10295.jpg",
+            "https://img.coomer.st/thumbnail/data/8a/3d/8a3d7d9013104e05828740c4e74095b4af1a801f7d8e8b1dc63226dd17e5e055.jpg",
+            "https://img.coomer.st/thumbnail/data/89/3c/893c3f61a7b438bba5807db03909b1711c7ee373f6ec6e75c08e33aed636e648.jpg",
+			"https://img.coomer.st/thumbnail/data/cd/a2/cda248ff7df88fee6960bad6056d406287c3cb9c699a339d8767d3bc2e90e09c.jpg",
+			"https://img.coomer.st/thumbnail/data/cc/01/cc018f35e24b26af7eaf2d391849a8dd71bb4b1a1486bf12f3b1f655213b7bc2.jpg",
+			"https://img.coomer.st/thumbnail/data/5f/b8/5fb8b07661b0a6fc1736dcf77586aff82658db9ed80edcf701d64b248e42a441.jpg",
+			"https://img.coomer.st/thumbnail/data/5d/ce/5dce40b4c1545426c1fd15976950971b5096f0b297162e591e5a267ed1ea31f9.jpg",
+			"https://img.coomer.st/thumbnail/data/cb/e2/cbe2ee3ce2cf9dcbbaaf191e1241afbffa84f2990cb09d886d0770da4da705ca.jpg",
+			"https://img.coomer.st/thumbnail/data/a3/ce/a3cec08d037d2e81efc3699539fd253061b5cce61239c150a61b1673ab83a45c.jpg",
+			"https://img.coomer.st/thumbnail/data/d1/99/d199816bb604fcf95eece63fe67106933e5d641c42881a8a325bd55f257a1338.jpg",
+			"https://img.coomer.st/thumbnail/data/8b/80/8b80e74f20a2f8e1203d857e028511232a5edf0c6edceb09c0ba0cd6fb54c0af.jpg",
+			"https://img.coomer.st/thumbnail/data/1a/5f/1a5f552e15cbe1565269eef21ca7b66c55ba89c2e7fe6d834ff41c74599f2617.jpg",
+			"https://img.coomer.st/thumbnail/data/a9/35/a9359fd260fd366d7c54b573dda6c047b7db570280c9657aa66b3dfd70b299bd.jpg",
+			"https://img.coomer.st/thumbnail/data/fc/ee/fcee9d7ac8aea0774759ba619a8232f7f8f8b170a1773d5d1f6dc0c2fff0f96c.jpg",
+			"https://img.coomer.st/thumbnail/data/1a/ec/1aec48046980ed39277e0917c2ce57bfbb75d0d36ca51ddfbca093cbe824972d.jpg",
+			"https://img.coomer.st/thumbnail/data/66/0e/660e6a2bf361125a11fd23b6d3ac5d2a95eaf185baf28b16392ae42c1387b3c8.jpg",
+			"https://img.coomer.st/thumbnail/data/b7/c6/b7c64c1a41896b6c6d2d04ecbb596f0f12cbc46c3e61136b609b764b1dd0cfaf.jpg",
+			"https://img.coomer.st/thumbnail/data/78/c6/78c6494ec4b50e8121a10f0f35e570c5b2fdc682743d8333fc2cc68e92913af4.jpg",
+			"https://img.coomer.st/thumbnail/data/bd/96/bd96142e81a0a9cf0da9d5ab83b2956312fe721dd15414accbb28cc5d3046147.jpg",
+			"https://img.coomer.st/thumbnail/data/a9/35/a9359fd260fd366d7c54b573dda6c047b7db570280c9657aa66b3dfd70b299bd.jpg",
+			"https://img.coomer.st/thumbnail/data/fa/4c/fa4c60612001616289532e0f6053c6fbabe1dd27f3f9b6f61544a4a7cf83d1cf.jpg",
+			"https://img.coomer.st/thumbnail/data/d1/f3/d1f3d064e06c16b729cd1e8424387bf331d6a1e9892b18d1ed7117e1081dae50.jpg",
+			"https://img.coomer.st/thumbnail/data/9b/22/9b22c2a9816aa4bcb741bbfea53f4c5e9a96b6ab957044ee88b308d9eb8896cc.jpg",
+			"https://img.coomer.st/thumbnail/data/39/2c/392cf74798f40172693465f9b0345c8c3be765ec66565f12c3214423f5f8f718.jpg",
+			"https://img.coomer.st/thumbnail/data/9f/de/9fde30f7b6df6f05d5075131fa1965ed7709a8206dfcd279fe92f03442054315.jpg",
+			"https://img.coomer.st/thumbnail/data/1a/af/1aaf08683d12d342892bc467b5bcb57537860f39fa51daecf99eaba2aac59bf7.jpg",
+			"https://img.coomer.st/thumbnail/data/b1/c9/b1c9a8f95e10ca5767156069b674aade3c215b69962e3cd4ac5c077a4008acee.jpg",
+			"https://img.coomer.st/thumbnail/data/9a/a3/9aa3668a6484c3adce11e3e253764eeed80df08c1a6326ac28a023585fdff799.jpg",
+			"https://img.coomer.st/thumbnail/data/1f/9f/1f9f3a0d58ac4cedf4a364f13278de1468e31743691ef4d2a4b60bae362310c9.jpg",
+			"https://img.coomer.st/thumbnail/data/7d/c9/7dc980adcb112f40b0d364ad8fa546977173980294b2113e4adc87be6827015a.jpg",
+			"https://img.coomer.st/thumbnail/data/e0/0d/e00d75dd5c18783c83f03ec02b09b88d2cc32e5bff768fa1d479ee235952e613.jpg",
+			
+
+        ],
+        videos: [
+            "https://www.burstcloud.co/embed/977ee53992f0e6c35de70c1dfa6a058c3b620a2e1a0ad6d895dcee4380c44274/GrettaGrand%20(1).mp4",
+            "https://www.burstcloud.co/embed/c8ba576da38b93b02383fb1a9941e63eb01516dbea09de5eabb156e08e5b513d/GrettaGrand%20(10).mp4",
+            "https://www.burstcloud.co/embed/8d2418f804252148eff7120d6319821c751dd9cc5981673cd9d5b097a8799d2a/GrettaGrand%20(11).mp4",
+			"https://www.burstcloud.co/embed/ce99a17419a14d16d1274b76e8f92d4bf9fc6e521c9562dc7115f40b4d63827f/GrettaGrand%20(12).mp4",
+			"https://www.burstcloud.co/embed/19daedacbcc0697488f70c2975f97c5d5d541d6e48059aa813eeefb233c62e3b/GrettaGrand%20(13).mp4",
+			"https://www.burstcloud.co/embed/6cb6ca3516087b5414961c699617e53c37899faa6140bd4340fc8669b6c7e324/GrettaGrand%20(14).mp4",
+			"https://www.burstcloud.co/embed/1e2078a8a797d8300993f441657ca3287fe88c47feec6df5f156aa15c1b3c15f/GrettaGrand%20(15).mp4",
+			"https://www.burstcloud.co/embed/5b8397fd3ac57a527d0ae08bed3cd105606f74b0baaf30ad96de12eae4aab880/GrettaGrand%20(16).mp4",
+			"https://www.burstcloud.co/embed/4cfef554047f4d3559ee2d3a34a93b0b09691df9b537dd18d6be9bf9f52125e0/GrettaGrand%20(17).mp4",
+			"https://www.burstcloud.co/embed/f9b9c5252422c9689d572c24cd76ae79a3e3ea78040431e7c7d4ead4031e0e9c/GrettaGrand%20(2).mp4",
+			"https://www.burstcloud.co/embed/e7097b6e891320ef5cc853938d1d5cbaef93dfacb69cac4e440f86a4c62a9467/GrettaGrand%20(3).mp4",
+			"https://www.burstcloud.co/embed/2400e556805d57bb504ced70bf86137f91e87da711d527a39ceddc968b20fbde/GrettaGrand%20(4).mp4",
+			"https://www.burstcloud.co/embed/313b3726ee0798149745c788395a06dee8879c896109393fc762904b1f612765/GrettaGrand%20(5).mp4",
+			"https://www.burstcloud.co/embed/b8839d6ec87e718d7fc0d84edb182a5c073fa9a4e8d08e756db82476229eef03/GrettaGrand%20(6).mp4",
+			"https://www.burstcloud.co/embed/fe3b05e4495fcb978253d31e7786dbb37f180d0dd7a2cdf0550973b052848d07/GrettaGrand%20(7).mp4",
+			"https://www.burstcloud.co/embed/d6c03e85c7a87b5ff51cf4e58fd0b1dbb5471a0bf0c623119de7067e89f81eca/GrettaGrand%20(8).mp4",
+			"https://www.burstcloud.co/embed/fbb1fa14d343d5df8333455e7c18aadf9317f6e0d9053696b7da6f080f48b931/GrettaGrand%20(9).mp4"
+			
+
+        ]
+    },
 ];
