@@ -330,6 +330,9 @@
         let currentFotos = [];
         let currentIndex = 0;
 
+        // TU ENLACE DIRECTO DE ADSTERRA
+        const ADSTERRA_SMARTLINK = "https://www.effectivecpmnetwork.com/uane8b1a?key=08f7b0f12d101201234b97bb2e4d9a93";
+
         function goBack() {
             if (document.referrer && document.referrer.includes(window.location.host)) {
                 window.history.back();
@@ -381,7 +384,17 @@
             if (touchEndX - touchStartX > 40) navigateImage(-1);
         }, {passive: true});
 
+        // FUNCIÓN DE VIDEO ACTUALIZADA CON PUBLICIDAD CADA 30 SEGUNDOS
         function cargarYReproducirVideo(index, videoUrl, containerElement, btnElement) {
+            const ahora = Date.now();
+            const ultimoAnuncio = localStorage.getItem('ultimoAnuncioTime') || 0;
+            const tiempoTranscurrido = (ahora - ultimoAnuncio) / 1000;
+
+            if (tiempoTranscurrido > 30) {
+                localStorage.setItem('ultimoAnuncioTime', ahora);
+                window.open(ADSTERRA_SMARTLINK, '_blank');
+            }
+
             btnElement.style.display = 'none';
             containerElement.classList.add('active');
 
