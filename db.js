@@ -1292,4 +1292,62 @@ const modelosDB = [
 
         ]
     },
+	{
+        id: 26,
+        nombre: "Arise Peachy",
+        fotoPortada: "https://simp6.cuckcapital.cr/images4/2448x1378_8c7d21ab759bb58965c78b795c5ce2da807cfb703459ac9d.jpg",
+        onlyfans: "https://onlyfans.com/arisepeachy",
+        instagram: "https://fansly.com/arialily/posts",
+        fotos: [
+            "https://simp6.cuckcapital.cr/images4/1000138642019ec274cc98064b.jpg",
+            "https://simp6.cuckcapital.cr/images4/10001385031042cffa8291c465.jpg",
+            "https://simp6.cuckcapital.cr/images3/10001366976b724e74ccb2cedb.jpg",
+			"https://simp6.cuckcapital.cr/images3/1000136551d51fd3d0008f9b17.jpg",
+			"https://simp6.cuckcapital.cr/images4/1377x2448_72731fb67d74868c3d25ffc318994a601e416edf17dd96cd.jpg",
+			"https://simp6.cuckcapital.cr/images4/1836x2448_66f191d075ec4f52d12cbdd37c51126ebcf7c04e08cdffad.jpg",
+			"https://simp6.cuckcapital.cr/images4/960x1280_521ce8577aa72a1895c571eda841a6dae40567ec1d652145.jpg",
+			"https://simp6.cuckcapital.cr/images4/960x1280_f28085bbb47f97fdb190d609929745eb8b0329e0c8a0b2a8.jpg",
+			"https://simp6.cuckcapital.cr/images4/1450x2576_f937269a6715dfd45c33d5a8854f7253-115885ce4bd053034.jpg",
+			"https://simp6.cuckcapital.cr/images4/1450x2576_6873ace51440f3af4dc3f778dfad756471f7159021c88d1c.jpg",
+			"https://simp6.cuckcapital.cr/images4/1450x2576_7ff638328f73dee1330c48bbe05b2e27f0ca5cf2da496efc.jpg",
+			"https://simp6.cuckcapital.cr/images3/10001358391afcce967c100ac3.jpg",
+			"https://simp6.cuckcapital.cr/images3/100013595704918227bb74dc8b.jpg",
+			"https://simp6.cuckcapital.cr/images3/1000136113386519122026a77b.jpg",
+			"https://simp6.cuckcapital.cr/images3/20250908_194316026e5f0fa2987292.jpg",
+			"https://simp6.cuckcapital.cr/images3/1633x2448_93e4ac21dd4ab0351274392aab877ad6927305bc86f8ed88.jpg",
+			"https://simp6.cuckcapital.cr/images3/1836x2448_a0542b671e0e8333eb9c7eb4a0bf12ff50d40316ba16b8b4.jpg",
+			"https://simp6.cuckcapital.cr/images3/imgi_6_1836x2448_341eff7b56f5ad73e0767f78a862d040c540cedb3c2c43b7.jpg",
+			"https://simp6.cuckcapital.cr/images3/1450x2576_a7e35a9b73bace1d3ed78ce5f40ac8674764afe425c0eb30.jpg",
+			"https://simp6.cuckcapital.cr/images3/imgi_12_1633x2448_59a4db4fd298848a8a35d9941cd8196e8bbc30e77d2364c6.jpg",
+			"https://simp6.cuckcapital.cr/images3/1378x2448_b18174301477e0ef700dbe8a22717a75b2678482f0f57a17.jpg",
+			"https://simp6.cuckcapital.cr/images3/1449x2576_4ca1fb7561440be5c404f9cae8b0dde2ffea7dcb63df8268.jpg",
+			"https://simp6.cuckcapital.cr/images3/20250908_1943252fb795e24d03f2df.jpg",
+			"https://simp6.cuckcapital.cr/images3/1378x2448_6f2213ce60c1b25eab9b71a100d879f2276d3c85948aa090.jpg",
+			"https://simp6.cuckcapital.cr/images3/1682x2447_f973fc52f485ba9153ea8ea7305c4a7775f0f3d22895c0a4.jpg",
+			"https://simp6.cuckcapital.cr/images3/1836x2448_59f697869e8ad604cbac529e26e242667de65327de716be8.jpg",
+			"https://simp6.cuckcapital.cr/images3/1450x2576_fb6ccc45ee27d8577b97d2616b048b0956b89cd1dd5dedf4.jpg",
+			"https://simp6.cuckcapital.cr/images3/1836x2448_8ec16709120b0edf272b50527e007da1d47e86f130634569.jpg",
+			"https://simp6.cuckcapital.cr/images3/1836x2448_73c0173daacbc7c8d69f646c9ee1954c4e79dce9b8ca96a5.jpg",
+			"https://simp6.cuckcapital.cr/images3/kitty19dc1413193850a56.jpg",
+			"https://simp6.cuckcapital.cr/images3/peach3ee86328b61b9a967.jpg"
+			
+
+        ],
+        videos: [
+            "https://www.burstcloud.co/embed/22289b999b47e7d3d0c02561de4193118af3771caa16af18eb524b46261d1b31/ArisePeachy%20(1).mp4",
+            "https://www.burstcloud.co/embed/f612d9bbfb56b01bfc4902e8c773bc89c3b33bd3e5b3338be1df8ebf73c93165/ArisePeachy%20(2).mp4",
+            "https://www.burstcloud.co/embed/a835c6f9a6ff78be00217926ffcba0c1490af5bd9417a1de793d8be38c17c32d/ArisePeachy%20(3).mp4",
+			"https://www.burstcloud.co/embed/8dab5d4669408998925eb7069151b050f7c82ec5cfa345e0d3906089cd487bc8/ArisePeachy%20(4).mp4",
+			"https://www.burstcloud.co/embed/f94bcf6acb8b87b5958c494d4ae8e90d6f5fa23d4f9c058786b4b6d026e24ff6/ArisePeachy%20(5).mp4",
+			"https://www.burstcloud.co/embed/6c062fe1cc4e5dca2567639d1cf126870ba4064959509e354bb075840a2a4c29/ArisePeachy%20(1).mp4",
+			"https://www.burstcloud.co/embed/92eae814fa2f95744953b6b5663bbc3c2e53952b92d7c4385595030dfa2ebd14/ArisePeachy%20(7).mp4",
+			"https://www.burstcloud.co/embed/2ad52fcc12691c6625c43ea26a7c1935955898ad71a2bfd822d306d54ac40344/ArisePeachy%20(8).mp4",
+			"https://www.burstcloud.co/embed/dad1b3a94dfccd5d0b56e4820cd30606f8e2938b0dc8c028d357b75f6a404b3f/ArisePeachy%20(9).mp4",
+			"https://www.burstcloud.co/embed/6171f8237178d248f84abe09b7a8c24d0d0dbe9af69f355fd734ab72a3a74fab/ArisePeachy%20(10).mp4",
+			"https://www.burstcloud.co/embed/d14457510f06cc9fc0b2e7d968ba3677d67601970ffed28317b787f95e99ed73/ArisePeachy%20(11).mp4",
+			"https://www.burstcloud.co/embed/f17e33ebcabd2881bc403aca7a2ded0e1a432d547a79264529177b199bc530eb/ArisePeachy%20(12).mp4",
+			"https://www.burstcloud.co/embed/1ad7e003c4871a8699985e915eaea320b5cf552111bc35450a494e9293c4431e/ArisePeachy%20(13).mp4"
+
+        ]
+    },
 ];
