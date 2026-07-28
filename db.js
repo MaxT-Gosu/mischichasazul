@@ -186,7 +186,7 @@ const modelosDB = [
             "https://appcine.b-cdn.net/tuconte/chloewildd/1%20(2).mp4",
             "https://appcine.b-cdn.net/tuconte/chloewildd/1%20(3).mp4",
             "https://appcine.b-cdn.net/tuconte/chloewildd/1%20(4).mp4",
-            "https://appcine.b-cdn.net/tuconte/chloewildd/1%20(5).mp44",
+            "https://appcine.b-cdn.net/tuconte/chloewildd/1%20(5).mp4"
 
         ]
     },
@@ -378,7 +378,7 @@ const modelosDB = [
 			"https://img.coomer.st/thumbnail/data/73/fd/73fd13f0a2a87348ed43f5959ae6f1a93531a1afbd27fabe8ea70eac7814482b.jpg",
 			"https://img.coomer.st/thumbnail/data/06/24/062414da7204bfe12085ac3576ae20e6f0e33b59ccf08bc0c7ed0292387f24cf.jpg",
 			"https://img.coomer.st/thumbnail/data/85/8a/858af6c54dfe9b07736d8bec507fb235ba76bea55f149e7d8715ed6fdafce574.jpg",
-			"https://img.coomer.st/thumbnail/data/dc/d0/dcd0a9fc331f470edcfc6bb3ba9cac03a15288bd8ddc238c7f934624afa49ca1.jpg",
+			"https://img.coomer.st/thumbnail/data/dc/d0/dcd0a9fc331f470edcfc6bb3ba9cac03a15288bd8ddc238c7f934624afa49ca1.jpg"
 			
 			
 			
@@ -1347,6 +1347,50 @@ const modelosDB = [
 			"https://www.burstcloud.co/embed/d14457510f06cc9fc0b2e7d968ba3677d67601970ffed28317b787f95e99ed73/ArisePeachy%20(11).mp4",
 			"https://www.burstcloud.co/embed/f17e33ebcabd2881bc403aca7a2ded0e1a432d547a79264529177b199bc530eb/ArisePeachy%20(12).mp4",
 			"https://www.burstcloud.co/embed/1ad7e003c4871a8699985e915eaea320b5cf552111bc35450a494e9293c4431e/ArisePeachy%20(13).mp4"
+
+        ]
+    },
+	{
+        id: 27,
+        nombre: "Rusty Fawkes",
+        fotoPortada: "https://simp6.cuckcapital.cr/images3/RDT_20260123_02160647418910271299876780f8e484d5d579a5c.webp",
+        onlyfans: "https://onlyfans.com/rustyfawkes",
+        instagram: "https://www.instagram.com/rusty.fawkes/",
+        fotos: [
+            "https://simp6.cuckcapital.cr/images4/10001970975b7c883e638a31fa.jpg",
+            "https://simp6.cuckcapital.cr/images4/20260217_192044c5efdd32b7c022fc.jpg",
+            "https://simp6.cuckcapital.cr/images4/RDT_20260220_2327183451305813034326383073f5e24418f3e1f.webp",
+			"https://simp6.cuckcapital.cr/images4/20260223_182210083cc25ae5beec51.jpg",
+			"https://simp6.cuckcapital.cr/images4/RDT_20260222_003556853590456425097863625ac4e94803e49cf.webp",
+			"https://simp6.cuckcapital.cr/images4/Screenshot_2026-03-23-06-07-44-484_com.android.chromec999614f74d5564a.jpg",
+			"https://simp6.cuckcapital.cr/images3/2756x1693_8646797f8fe2596b42d9ac9ae660b169ddf9f94f2e872117.jpg",
+			"https://simp6.cuckcapital.cr/images3/1620x2881_d4a9a89e0fb0c9437989421d658cd3add486c9dcfa15bfaa.jpg",
+			"https://simp6.cuckcapital.cr/images3/58737309_2078645448910529_9208634917435473920_n063d84c50808c1aa.jpg",
+			"https://simp6.cuckcapital.cr/images3/Screenshot-2026-01-04-1824388e93072a74e4c29b.png",
+			"https://simp6.cuckcapital.cr/images3/20241222_1734107342861db37289a1.jpg",
+			"https://simp6.cuckcapital.cr/images3/20241231_18533046df57bc5e5539d7.jpg",
+			"https://simp6.cuckcapital.cr/images3/1592x2931_13e8bbc45ac82c59d6b1cf6526a4b3a294d2ba699bc7b22b.jpg",
+			"https://simp6.cuckcapital.cr/images3/1795x2599_ecd9aa0ac0ce0f8b64c92eddff588f722bbba2bc69dcc3b7.md.jpg",
+			"https://simp6.cuckcapital.cr/images3/2881x1620_399a93f55db066f4267c81af7ded646e69cc0ec27a44d112.jpg",
+			"https://simp6.cuckcapital.cr/images3/2651x3535_6657b4942e520d28b137ad5d18b56989e780161ed5d244ba.jpg",
+			"https://simp6.cuckcapital.cr/images3/IMG_20241108_0916047133ceb8db6a6e9b.jpg",
+			"https://simp6.cuckcapital.cr/images3/1575x1575_b91a1d8fbf6252588facf3c8797ad53417a63934d42e2139.jpg",
+			"https://simp6.cuckcapital.cr/images3/IMG_2607f85ececd6635b65a.jpg",
+			"https://simp6.cuckcapital.cr/images3/668317907603697664605c3c5ef306508d.jpg",
+			"https://simp6.cuckcapital.cr/images3/870x1245_0147a168c47736d897fb359fc5494a1b576b66049667966d.jpg"
+
+        ],
+        videos: [
+            "https://www.burstcloud.co/embed/fe6d6f3b22856690ca1ff5c78c25a2b0283ed7f4b09be1e30838888ff9d6ad3f/RustyFawkes%20(10).mp4",
+            "https://www.burstcloud.co/embed/b936318ce53231c21e8a31087f063383ad83b648d19b4f376984cf1654bd0081/RustyFawkes%20(11).mp4",
+            "https://www.burstcloud.co/embed/84dfb5f6c49263c417ec20b054fbca40f1f4a800650760c419af4878d560c4d0/RustyFawkes%20(12).mp4",
+			"https://www.burstcloud.co/embed/e80f2ae1f39099c1041c0494f1770cac984c0502e0f3c5f5b79963fa80abd44b/RustyFawkes%20(3).mp4",
+			"https://www.burstcloud.co/embed/fe41a8b07e9be7fc6c19c1a93ad3dfec920d570b9144863d5b4477b4abd799e1/RustyFawkes%20(4).mp4",
+			"https://www.burstcloud.co/embed/5bd37740526ec026709beb8522fccad095fdab7270aa3fa1d83a0af0681ee544/RustyFawkes%20(5).mp4",
+			"https://www.burstcloud.co/embed/ec55e63a010622bc3be0ec792f66a638822df47ae1b3754fdfea7c082b4312d1/RustyFawkes%20(6).mp4",
+			"https://www.burstcloud.co/embed/08d1d5377ff95fb615234ecb5f5fc10d8fe75b486a58d80b1a6e3fdc35961817/RustyFawkes%20(7).mp4",
+			"https://www.burstcloud.co/embed/d04c1a6060cd27c3f889b86871646cbbb43c4976a1acb70a0bf4f5f4d83198cf/RustyFawkes%20(8).mp4",
+			"https://www.burstcloud.co/embed/166efaf87edc138bb425bf05c9c1886c3bd5c114094f9f0fd0969cad285d8003/RustyFawkes%20(9).mp4"
 
         ]
     },
