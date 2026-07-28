@@ -1394,4 +1394,45 @@ const modelosDB = [
 
         ]
     },
+	{
+        id: 28,
+        nombre: "Addictiveana",
+        fotoPortada: "https://simp6.cuckcapital.cr/images4/IMG_2898_Originale91326f184ae0a63.jpg",
+        onlyfans: "https://onlyfans.com/anattraction",
+        instagram: "https://www.instagram.com/add1ctedtoana/",
+        fotos: [
+            "https://simp6.cuckcapital.cr/images3/babe-want-to-see-what-I-am-doing-right-now-I-ended-up-naked-.00_01_49_27.Still002---Copy546ed2f57c379db4.jpg",
+            "https://simp6.cuckcapital.cr/images3/20251230_2137185d4c34726ca99bad.jpg",
+            "https://simp6.cuckcapital.cr/images3/1000011110d3a6d80cb0ff8aec.png",
+			"https://simp6.cuckcapital.cr/images3/10000111138625388a481d677f.png",
+			"https://simp6.cuckcapital.cr/images4/IMG_9931c4c9f9b1a2d37a69.jpg",
+			"https://simp6.cuckcapital.cr/images4/2025-09-23_4056546055_b0cb8dc6bce45452.jpg",
+			"https://simp6.cuckcapital.cr/images4/2025-03-24_3752597560_Did-anyone-say-ass-here4539dcdc2f63a398.jpg",
+			"https://simp6.cuckcapital.cr/images4/960x1440_c4cf3ccb70418519f35f07361b249752ba1900b0455a8b3b.jpg",
+			"https://simp6.cuckcapital.cr/images4/100001325698111330826848cd.png",
+			"https://simp6.cuckcapital.cr/images3/20260112_1923047e4df969d83b0679.jpg",
+			"https://simp6.cuckcapital.cr/images4/07bd1dfd-91f3-44af-918f-4157482e59f6.jpg",
+			"https://simp6.cuckcapital.cr/images4/76a10fc9-e464-4b2a-8f2f-e0ca75717465.png",
+			"https://simp6.cuckcapital.cr/images4/IMG_428026f056afb12075cc.jpg",
+			"https://simp6.cuckcapital.cr/images4/1000014539d7f7d4f6509791a3.png",
+			"https://simp6.cuckcapital.cr/images4/Chucky-sextape.00_04_06_09.Still003---Copy6e6c66fe1ff65bec.jpg",
+			"https://simp6.cuckcapital.cr/images3/1000010651dcccea5a84d99689.png",
+			"https://simp6.cuckcapital.cr/images3/1000010410de1d1b9d7dc792b7.png",
+			
+
+        ],
+        videos: [
+            "https://www.burstcloud.co/embed/097097c77332b69b524c195b619efa790e30cff650043996538a1c46144bda9a/Addictiveana%20(1).mp4",
+            "https://www.burstcloud.co/embed/eca7c8690003884c723f154afe3e281096dc2ae5ab7cbacf34b841fde52ed3ad/Addictiveana%20(10).mp4",
+            "https://www.burstcloud.co/embed/8b63894ccafa168768e2d808dd8389d810a77ab2b090094d8dbfdc3f88ac436f/Addictiveana%20(11).mp4",
+			"https://www.burstcloud.co/embed/cd114c74e8699280ca724120c63c6d205d986c33e0a60749caa5f1d8eee90d18/Addictiveana%20(2).mp4",
+			"https://www.burstcloud.co/embed/a5ede74142a281f61d2bb64bd4dc919402c17c682768dd43690ebc3c5d741d21/Addictiveana%20(3).mp4",
+			"https://www.burstcloud.co/embed/fce0e635997ac8639bfa0d333e3451e43d69d00bcee70c76182de4cfb2a36652/Addictiveana%20(4).mp4",
+			"https://www.burstcloud.co/embed/887ec4945132b9b943dfd25ca62c10c634323379594dc0e87b2e0c7893290e1a/Addictiveana%20(5).mp4",
+			"https://www.burstcloud.co/embed/e8ed4513754ac3e77ad1e02b83ae6ceeeeaee1463653d01b4ff89fa03f7a9a70/Addictiveana%20(7).mp4",
+			"https://www.burstcloud.co/embed/5cca6525f381429c99d328b03bcccd5590be84721278d5e5be1d8db39ffa15d7/Addictiveana%20(8).mp4",
+			"https://www.burstcloud.co/embed/ca55c1fa24bca9b4559f1b08c6aa273fbfa6427b3102c4eb10b94ba22e62c3f8/Addictiveana%20(9).mp4"
+
+        ]
+    },
 ];
