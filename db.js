@@ -1353,15 +1353,15 @@ const modelosDB = [
 	{
         id: 27,
         nombre: "Rusty Fawkes",
-        fotoPortada: "https://simp6.cuckcapital.cr/images3/RDT_20260123_02160647418910271299876780f8e484d5d579a5c.webp",
+        fotoPortada: "https://simp6.cuckcapital.cr/images4/10001964210d86b62fb0ea419a.jpg",
         onlyfans: "https://onlyfans.com/rustyfawkes",
         instagram: "https://www.instagram.com/rusty.fawkes/",
         fotos: [
             "https://simp6.cuckcapital.cr/images4/10001970975b7c883e638a31fa.jpg",
             "https://simp6.cuckcapital.cr/images4/20260217_192044c5efdd32b7c022fc.jpg",
-            "https://simp6.cuckcapital.cr/images4/RDT_20260220_2327183451305813034326383073f5e24418f3e1f.webp",
+            "https://simp6.cuckcapital.cr/images3/Screenshot-2026-01-04-1822529fd5d090890e17f1.png",
 			"https://simp6.cuckcapital.cr/images4/20260223_182210083cc25ae5beec51.jpg",
-			"https://simp6.cuckcapital.cr/images4/RDT_20260222_003556853590456425097863625ac4e94803e49cf.webp",
+			"https://simp6.cuckcapital.cr/images3/IMG_20241108_0916047133ceb8db6a6e9b.jpg",
 			"https://simp6.cuckcapital.cr/images4/Screenshot_2026-03-23-06-07-44-484_com.android.chromec999614f74d5564a.jpg",
 			"https://simp6.cuckcapital.cr/images3/2756x1693_8646797f8fe2596b42d9ac9ae660b169ddf9f94f2e872117.jpg",
 			"https://simp6.cuckcapital.cr/images3/1620x2881_d4a9a89e0fb0c9437989421d658cd3add486c9dcfa15bfaa.jpg",
@@ -1491,6 +1491,58 @@ const modelosDB = [
 			"https://www.burstcloud.co/embed/d2d1e27d85f921d4e7270bbf952a24f35ab404b8d419321bb0f7e87d3a312482/Kittydevimon%20(7).mp4",
 			"https://www.burstcloud.co/embed/be567549c139f333e2f6411194a2b3670702035091a848e30699fdb6a093a834/Kittydevimon%20(8).mp4",
 			"https://www.burstcloud.co/embed/4a1d4d4520e2bbd5066cb0cf66cb2d5361dfdf1f7c2322143b92218fbd1d0a71/Kittydevimon%20(9).mp4"
+			
+
+        ]
+    },
+	{
+        id: 30,
+        nombre: "Marieee Loveee",
+        fotoPortada: "https://simp6.cuckcapital.cr/images3/BDCEB087-AAA0-422F-8276-8919AA75E61660bf0bdbefead13c.jpg",
+        onlyfans: "https://onlyfans.com/marieee_loveee",
+        instagram: "https://www.instagram.com/marie._.love22",
+        fotos: [
+            "https://i.ibb.co/R3hNKt2/BD8-F2-F08-9-A67-4292-8-B74-9-F873-AA61458.jpg",
+            "https://simp6.cuckcapital.cr/images3/929DE92B-185C-4717-A64E-E8A75CC59B684da47bbd3818e7b1.jpg",
+            "https://i.ibb.co/X8XmFM6/3-E17-FCBC-AE15-457-E-87-CD-38-BFA0808-A22.jpg",
+			"https://i.ibb.co/jMD8vWn/7-AA09-DA7-333-F-47-BA-AF5-F-0-F8-DFCAD7348.jpg",
+			"https://i.ibb.co/vkH5Fb5/5-F84-DD57-5563-4-D2-A-B490-14-A5-EA6-C199-B.jpg",
+			"https://simp6.cuckcapital.cr/images3/ECF12A59-4EA1-440B-8C5E-E25B4A7F6B93b57077fafd327b42.jpg",
+			"https://simp6.cuckcapital.cr/images3/1000008228c60bb96c9d636311.png",
+			"https://simp6.cuckcapital.cr/images3/1000007917ef1af0f76292da08.png",
+			"https://i.ibb.co/Zzs8wKD/2-F2-A6-A74-5567-44-A5-A413-5-D6-CBAEE4088.jpg",
+			"https://i.ibb.co/sphDvvD8/D1420-F5-B-304-E-4-EB3-887-C-05-A4-B300-A0-DA.jpg",
+			"https://simp6.cuckcapital.cr/images3/90796BAF-D196-4F1D-99AA-F79EF895DFD4176740cf09b14bad.jpg",
+			"https://simp6.cuckcapital.cr/images3/Four_Peaks-21-Custom661b6660076126a2.jpg",
+			"https://simp6.cuckcapital.cr/images3/1000071735e1d0817ba1f900a5.jpg",
+			"https://simp6.cuckcapital.cr/images3/017-013c56f8caf61c8105e.jpg",
+			"https://simp6.cuckcapital.cr/images3/F54D3D63-D113-4B93-9075-94D4F1335BA4be1d1e63cc21b973.jpg",
+			"https://simp6.cuckcapital.cr/images4/645573062_18024669014805010_2211904482710279388_n09d46980899888d6.jpg",
+			"https://simp6.cuckcapital.cr/images4/018p-0014e3971b3cbba9ceb.jpg",
+			"https://simp6.cuckcapital.cr/images4/ced33c79-4688-4016-89f8-4d6a3319f3c6.jpg"
+			
+
+        ],
+        videos: [
+            "https://www.burstcloud.co/embed/cc80150558cbb8e45319ae41f47a7afe6feff19838215f43d649a2d251d6a698/Marieee%20Loveee%20(1).mp4",
+            "https://www.burstcloud.co/embed/2c85f0e25bf7aca01d00ebbfa8160abcc5a0807627a6b1cce8fb0f4db2cce0e4/Marieee%20Loveee%20(10).mp4",
+            "https://www.burstcloud.co/embed/ef4e97a37929f8651a66409c4cfac0eb3aa27bd10013c6c748edf94d07d4eb6b/Marieee%20Loveee%20(11).mp4",
+			"https://www.burstcloud.co/embed/0bf06adf1a3790226130b1c2bb14e8c09532956409c310103f3249af940a01cd/Marieee%20Loveee%20(12).mp4",
+			"https://www.burstcloud.co/embed/8782bc0e478eee5f914c148d0a2e19858eef3a13a2a4b0ac09d4a31d41141864/Marieee%20Loveee%20(13).mp4",
+			"https://www.burstcloud.co/embed/5cb4ea801e3dba73273ac1c754d1685329dc735a79eca70444b350d908a79347/Marieee%20Loveee%20(14).mp4",
+			"https://www.burstcloud.co/embed/67327d20da2890807e801a62ae7d46cdf25982e38f86536d2548ba15866878b9/Marieee%20Loveee%20(15).mp4",
+			"https://www.burstcloud.co/embed/fa5d163ddfa205f5dec689befdf9e5c3cdeca35a6f42a6c92d7bf0c5ec6487d8/Marieee%20Loveee%20(16).mp4",
+			"https://www.burstcloud.co/embed/3736191276b22458830ff5457c122fc919d72a7159a0db7a7f7d45543cb6220f/Marieee%20Loveee%20(17).mp4",
+			"https://www.burstcloud.co/embed/84371457b8499df272a83ccec753d9800e3ad67aa8334f7490b6cb9415cd8b08/Marieee%20Loveee%20(18).mp4",
+			"https://www.burstcloud.co/embed/dafdcd01bc9777d4f0b4e3888e9aaf0d011dbd75a1ee24650efbf34cd9b32ff1/Marieee%20Loveee%20(19).mp4",
+			"https://www.burstcloud.co/embed/464932da3b3a09fe974211a49e9c3cdac9ca768a32b4fd22e747c6cc8a049f5a/Marieee%20Loveee%20(2).mp4",
+			"https://www.burstcloud.co/embed/26ddaaa4d9088444d5292f0dfa5bcb2154b85bb1adc03b4230c2d9c9b7b813f0/Marieee%20Loveee%20(3).mp4",
+			"https://www.burstcloud.co/embed/4375cb7a470dfd3162af575677faf91dd3c17b07d5d8d397663b4e5f0a498200/Marieee%20Loveee%20(4).mp4",
+			"https://www.burstcloud.co/embed/339adb3ea7ed061fc3d9f657ab63e9e4b16d6414a281ef8bfb7af08bd70c9048/Marieee%20Loveee%20(5).mp4",
+			"https://www.burstcloud.co/embed/0c211991499e3cb4447c365e7c29f5f58b92bbbc02c3359dfefb4b63b8e8769a/Marieee%20Loveee%20(6).mp4",
+			"https://www.burstcloud.co/embed/30fc9a52ec430b4c08fc13e8520fb5c6b31af43556118d07a47a290f5c5614d2/Marieee%20Loveee%20(7).mp4",
+			"https://www.burstcloud.co/embed/e803b6b362b5979ad4f115709bc424fd8b788a73d081131a56b7bc7e01f6373c/Marieee%20Loveee%20(8).mp4",
+			"https://www.burstcloud.co/embed/36afb1b4c948d5f2d8b118a32229b89c9862e0e4ffa5e3665ab64bab56c4e68d/Marieee%20Loveee%20(9).mp4"
 			
 
         ]
