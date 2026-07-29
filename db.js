@@ -1435,4 +1435,64 @@ const modelosDB = [
 
         ]
     },
+	{
+        id: 29,
+        nombre: "Kittydevimon",
+        fotoPortada: "https://simp4.cuckcapital.cr/kitty-d-406.jpg",
+        onlyfans: "https://onlyfans.com/kittydevimon",
+        instagram: "https://x.com/kittydevimon",
+        fotos: [
+            "https://simp4.cuckcapital.cr/kitty-d-365.jpg",
+            "https://simp4.cuckcapital.cr/kitty-d-118.jpg",
+            "https://simp4.cuckcapital.cr/kitty-d-160.jpg",
+			"https://simp4.cuckcapital.cr/kitty-d-164.jpg",
+			"https://simp4.cuckcapital.cr/kitty-d-180.jpg",
+			"https://simp4.cuckcapital.cr/kitty-d-237.jpg",
+			"https://simp4.cuckcapital.cr/kitty-d-240.jpg",
+			"https://simp4.cuckcapital.cr/kitty-d-298.jpg",
+			"https://simp4.cuckcapital.cr/kitty-d-302.jpg",
+			"https://simp4.cuckcapital.cr/kitty-d-317.jpg",
+			"https://simp4.cuckcapital.cr/kitty-d-344.jpg",
+			"https://simp4.cuckcapital.cr/kitty-d-359.jpg",
+			"https://simp4.cuckcapital.cr/kitty-d-354.jpg",
+			"https://simp4.cuckcapital.cr/kitty-d-430.jpg",
+			"https://simp4.cuckcapital.cr/kitty-d-491.jpg",
+			"https://simp4.cuckcapital.cr/kitty-d-501.jpg",
+			"https://simp4.cuckcapital.cr/kitty-d-536.jpg",
+			"https://pbs.twimg.com/media/GsKceMzXQAAu_5C?format=jpg&name=4096x4096",
+			"https://simp6.cuckcapital.cr/images4/Capture-decran-2026-04-28-19422996d444c2ea98f156.png",
+			"https://simp4.cuckcapital.cr/kitty-d-119.jpg",
+			"https://simp4.cuckcapital.cr/kitty-d-107.jpg",
+			"https://simp4.cuckcapital.cr/kitty-d-102.jpg",
+			"https://simp4.cuckcapital.cr/kitty-d-93.jpg",
+			"https://simp4.cuckcapital.cr/kitty-d-71.jpg",
+			"https://simp4.cuckcapital.cr/kitty-d-56.jpg",
+			"https://simp4.cuckcapital.cr/kitty-d-66.jpg",
+			"https://simp4.cuckcapital.cr/kitty-d-50.jpg",
+			"https://simp4.cuckcapital.cr/kitty-d-38.jpg",
+			"https://simp4.cuckcapital.cr/kitty-d-25.jpg",
+			"https://simp4.cuckcapital.cr/kitty-d-12.jpg",
+			"https://simp6.cuckcapital.cr/images3/81323525105989222417aff130cd4d552c.jpg",
+			
+
+        ],
+        videos: [
+            "https://www.burstcloud.co/embed/adf2bf9e87bd4f23f36fb7737d856fb52c3bdb5c8d9421bfa26cafd67f606c17/Kittydevimon%20(1).mp4",
+            "https://www.burstcloud.co/embed/fa4f3172bcb798fd09df40c477d92e6efbad71af843bd2a66f3d8ace0d99b5f2/Kittydevimon%20(10).mp4",
+            "https://www.burstcloud.co/embed/a65da68b86681201bcdf866a310bfca49130fdb0c02c5cf98ba6d0a259265654/Kittydevimon%20(11).mp4",
+			"https://www.burstcloud.co/embed/06fda875ff4955125678483e19aebc6aca8ade5d61879c8f5524a858762ee52f/Kittydevimon%20(12).mp4",
+			"https://www.burstcloud.co/embed/ded9176ed794b5d3de2a23fc746cd57111c4bcee3f790ec5cdf38c31f53179ea/Kittydevimon%20(13).mp4",
+			"https://www.burstcloud.co/embed/848dbe49db377195a69bf461266b838a199ad6fd5d69ef36ecd0eccbfe877fbd/Kittydevimon%20(14).mp4",
+			"https://www.burstcloud.co/embed/af1919647d1512e3b41b68a16a3d95f64469d8d3c3f6321090e34eed757d3da3/Kittydevimon%20(2).mp4",
+			"https://www.burstcloud.co/embed/cd3d7ea418c232ea8d9b30f3cce12a703f975e4255f9804800639b1e7b1fc0ba/Kittydevimon%20(3).mp4",
+			"https://www.burstcloud.co/embed/903f63cbcae66d718f50b70ba82cde906de36c1a607834c84b7306c0dbd36cb3/Kittydevimon%20(4).mp4",
+			"https://www.burstcloud.co/embed/de63590b2067744f2ebbd3c9e1044b5e5708b724407498f2b7326ae290698ebf/Kittydevimon%20(5).mp4",
+			"https://www.burstcloud.co/embed/f6d8e1d9280577619c7e5d267533c5837ccece5944d5647c2e731e8bb4c8512d/Kittydevimon%20(6).mp4",
+			"https://www.burstcloud.co/embed/d2d1e27d85f921d4e7270bbf952a24f35ab404b8d419321bb0f7e87d3a312482/Kittydevimon%20(7).mp4",
+			"https://www.burstcloud.co/embed/be567549c139f333e2f6411194a2b3670702035091a848e30699fdb6a093a834/Kittydevimon%20(8).mp4",
+			"https://www.burstcloud.co/embed/4a1d4d4520e2bbd5066cb0cf66cb2d5361dfdf1f7c2322143b92218fbd1d0a71/Kittydevimon%20(9).mp4"
+			
+
+        ]
+    },
 ];
