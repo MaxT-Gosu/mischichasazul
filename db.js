@@ -1633,4 +1633,59 @@ const modelosDB = [
 
         ]
     },
+	{
+        id: 33,
+        nombre: "Flare Bahr",
+        fotoPortada: "https://simp6.cuckcapital.cr/images3/IMG_52505009c6a7c3c207d1.jpg",
+        onlyfans: "https://onlyfans.com/waifuuflare",
+        instagram: "https://www.instagram.com/cursed.fit",
+        fotos: [
+            "https://simp6.cuckcapital.cr/images4/3840x2261_d0d8aa6c3c6197e54fe3227fb0aa737aaac44a195fdab3be.jpg",
+            "https://simp6.cuckcapital.cr/images4/3840x5120_378ea80b9212f35727ef4d681fe713ca83271ba2e4815892.jpg",
+            "https://simp6.cuckcapital.cr/images4/3024x4032_e63a066df819ef252e10258715f163325668e7eac6cea10c.jpg",
+			"https://simp6.cuckcapital.cr/images4/3840x5120_d049813b5891710001d8f0416c338436e60da28fa49c0f11.jpg",
+			"https://simp6.cuckcapital.cr/images4/3840x2880_dcfc22a9a25936fa6cc95b7ed03d55ba3ea904a648068859.jpg",
+			"https://simp6.cuckcapital.cr/images4/2928x4096_44e50492c9ec15398e5fb06a87adeb409eec8cbed00b1d06.jpg",
+			"https://simp6.cuckcapital.cr/images4/3840x5286_346fc9ef32e9bc73bd6847bfb46ae59d946aeebdea128bdf.jpg",
+			"https://simp6.cuckcapital.cr/images4/2316x3160_f7b20b2af2576da17a57e0242293e215f4e8de76b9d96e99.jpg",
+			"https://simp6.cuckcapital.cr/images4/716x893_28d035113f5b13bbaf4fe6577af0226aec9244b78c427c1f.jpg",
+			"https://simp6.cuckcapital.cr/images4/2316x3088_702e3c829dc50d10c5b60aa7199d4b473a7a4da6ff961f89.jpg",
+			"https://simp6.cuckcapital.cr/images4/3024x4032_425ef7ac97679967de851674c64afd9379a6495fa5533485.jpg",
+			"https://simp6.cuckcapital.cr/images4/3572x5148_3855c52eab0c1ec5a56204f2f9da5062f9345cf7acb230b4.jpg",
+			"https://simp6.cuckcapital.cr/images4/2316x3088_cab5617111967704be6b0b44cc53a3881853d98cc18e958c.jpg",
+			"https://simp6.cuckcapital.cr/images4/2140x3088_8d0700c8b15ae56ad3a49c772fb11e84b2b552e3c16800ca.jpg",
+			"https://simp6.cuckcapital.cr/images4/1080x1920_6a6490124926f2a9705b5da0969648cbf7400f0934b6e2ff.jpg",
+			"https://simp6.cuckcapital.cr/images4/2316x3088_96b9b3face232d9c79c3928e0e4d7f5a344f3879b4f0582a.jpg",
+			"https://simp6.cuckcapital.cr/images4/3024x4032_7db71477cf0e319b6afcbfdb1f3c925821ccc2a5457e0eb0.jpg",
+			"https://simp6.cuckcapital.cr/images4/3000x4000_79049a3cad7cce758b66d5b9a03e275f83d51432af4cd11c.jpg",
+			"https://simp6.cuckcapital.cr/images4/3024x4032_6093043631cd1318d69ead8ebcffd4c7c461aec74f4c0ad0.jpg",
+			"https://simp6.cuckcapital.cr/images4/1317x1881_ed3d31892db61a7d93a24351ab5e855a383bf14d5827e024.jpg",
+			"https://simp6.cuckcapital.cr/images4/3840x5120_29fdc118da83693496a4f1556f143b89b169b2d13e235645.jpg",
+			"https://simp6.cuckcapital.cr/images4/cursed.fit_20260522_p_3902491880148270415_1_3902491232911901056366fb35553328c69.jpg",
+			"https://simp6.cuckcapital.cr/images4/e8195a3c-f623-4409-8787-29e7a78e3b6c.jpg",
+			"https://simp6.cuckcapital.cr/images4/3024x4032_ff505ad3ea7e71a9ed232cf118bf6c227038652664bde4b4.jpg",
+			"https://simp6.cuckcapital.cr/images4/3024x4032_816de6742e157bd932c4ca6e4b75ee3ed42f805060da8b2d.jpg"
+			
+
+        ],
+        videos: [
+            "https://www.burstcloud.co/embed/e09721b2e96027cd0d15ae5e259307708a6176976123c0faf954d47394459a56/Flare%20Bahr%20(1).mp4",
+            "https://www.burstcloud.co/embed/53c0e9844309de5848ec1880aff0b9750be1ab52b2fe974de8a6af95c14cfd3b/Flare%20Bahr%20(10).mp4",
+            "https://www.burstcloud.co/embed/4d35aa83f02712dd53d8b2e69a49365aeeeb21d75d8e7f207c525e9d526db6bb/Flare%20Bahr%20(11).mp4",
+			"https://www.burstcloud.co/embed/2da6489094c8bf6e25556fe5ec91573ee8617756ad394e8e343df60cc6cb2dd2/Flare%20Bahr%20(12).mp4",
+			"https://www.burstcloud.co/embed/586e283d8a57fd3664108aa1cf72759ffad5a06d62402f7e60b03e431e11adbf/Flare%20Bahr%20(13).mp4",
+			"https://www.burstcloud.co/embed/2dd5ed8a9015e42847547d80be6bf339d094dce19a366839524fabc0447fa9e4/Flare%20Bahr%20(14).mp4",
+			"https://www.burstcloud.co/embed/9bfde8a64b8379f27bf2e8cff822300fefac5e4e92adf563604a54e408c57f3a/Flare%20Bahr%20(15).mp4",
+			"https://www.burstcloud.co/embed/6ae28926f77d9142d1554bb1cf0f690c5b128c306d15c5184c68adcb2d0c3542/Flare%20Bahr%20(16).mp4",
+			"https://www.burstcloud.co/embed/60c8b2264a2691dad265f32f1da61194d7623da55ea03c2b5848ada35f3e44ed/Flare%20Bahr%20(2).mp4",
+			"https://www.burstcloud.co/embed/bdc5ba2f33397f05dd3639abbda9eedf7cb059fd2be87c978ec75836db9670a8/Flare%20Bahr%20(3).mp4",
+			"https://www.burstcloud.co/embed/c618db1f30c63db251ef0983df90295fdb1d21046ff0bef1e7a4a2396f6c4412/Flare%20Bahr%20(4).mp4",
+			"https://www.burstcloud.co/embed/770e3a09211828610a168d18db526493471e7a43166b7bcf19e7b33a6aea97b3/Flare%20Bahr%20(5).mp4",
+			"https://www.burstcloud.co/embed/b06fa4d5a837e8832e7d33e7d5ee800b040c7c5d585a53406dbbf77f81724f20/Flare%20Bahr%20(6).mp4",
+			"https://www.burstcloud.co/embed/91d472ca222324c72ecfbd4d72604c8a8a8caa7ddeb670d3f1d55df2feb57659/Flare%20Bahr%20(7).mp4",
+			"https://www.burstcloud.co/embed/555d899aba4f835c85f1ee85975b5ff9646ef80dc0bd84c24c3eda342efd605d/Flare%20Bahr%20(8).mp4",
+			"https://www.burstcloud.co/embed/c819348388b7792871b4ac076935a700813b449bc73c22b4d6bdc1c4dcdb3b79/Flare%20Bahr%20(9).mp4"
+
+        ]
+    },
 ];
