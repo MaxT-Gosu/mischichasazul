@@ -1593,4 +1593,44 @@ const modelosDB = [
 
         ]
     },
+	{
+        id: 32,
+        nombre: "sofi_lovee",
+        fotoPortada: "https://simp6.cuckcapital.cr/images2/carosofia_0000109059bf4cc0f642f.jpg",
+        onlyfans: "https://onlyfans.com/sofi_lovee",
+        instagram: "https://www.instagram.com/carosofia__/",
+        fotos: [
+            "https://simp6.cuckcapital.cr/images2/carosofia_00006b5216d9bc5ac8b0a.jpg",
+            "https://simp6.cuckcapital.cr/images2/carosofia_000158be18979fd49fa86.jpg",
+            "https://simp6.cuckcapital.cr/images2/carosofia_00018d7502a9c3d59471d.jpg",
+            "https://simp6.cuckcapital.cr/images2/carosofia_00057a9e53ff23004dd41.jpg",
+			"https://simp6.cuckcapital.cr/images2/carosofia_000606305e21a28e83acf.jpg",
+			"https://simp4.cuckcapital.cr/carosofia_0006225bf3fd6d652b826.jpg",
+			"https://simp6.cuckcapital.cr/images2/carosofia_00104f8ffcec3722175c3.jpg",
+			"https://simp4.cuckcapital.cr/carosofia_00078742d1c0b88454aaf.jpg",
+			"https://simp6.cuckcapital.cr/images3/IMG_20241107_015717_314abe78915461f0ef4.jpg",
+			"https://simp6.cuckcapital.cr/images3/IMG_20241107_015716_868d77c6e28c1af1832.jpg",
+			"https://simp6.cuckcapital.cr/images3/IMG_20241107_015712_38687bdcc5baa4ce8d3.jpg",
+			"https://simp6.cuckcapital.cr/images3/IMG_20241107_015707_7426143eb8a92105237.jpg",
+			"https://simp6.cuckcapital.cr/images3/IMG_20241107_015708_331912118e2e63cb7b9.jpg",
+			"https://simp6.cuckcapital.cr/images3/IMG_20250519_220017_926782a410bc3032c92.jpg",
+			"https://simp6.cuckcapital.cr/images3/IMG_20250519_220013_606311264648a81cd3e.jpg",
+			"https://simp6.cuckcapital.cr/images3/IMG_20250519_220008_5427890df8bb92100cf.jpg",
+			"https://simp6.cuckcapital.cr/images3/IMG_20250519_220003_5037521b8e1ce48ed82.jpg",
+			"https://simp6.cuckcapital.cr/images3/IMG_20250519_215958_94486412e954cebbade.jpg",
+			"https://simp6.cuckcapital.cr/images3/IMG_20250519_215958_8359f394153eb94ae07.jpg",
+			"https://simp6.cuckcapital.cr/images3/IMG_20250519_215943_7732d0cae1b19aa6ac9.jpg",
+			"https://simp6.cuckcapital.cr/images3/IMG_20250519_215937_9625bb86342686708da.jpg",
+			"https://simp6.cuckcapital.cr/images3/IMG_20250519_215938_088d3db2ef0a75c1b88.jpg",
+			"https://simp6.cuckcapital.cr/images3/IMG_20250519_215932_682faf10641c69e0fa5.jpg",
+			"https://simp6.cuckcapital.cr/images3/IMG_20250519_215906_2857845e03b21d9a84d.jpg",
+			"https://simp6.cuckcapital.cr/images3/IMG_20250519_215906_12487b8358d25fe01c7.jpg",
+			"https://simp6.cuckcapital.cr/images4/IMG_20260617_194229_2578ec94020673ac878.jpg"
+        ],
+        videos: [
+            "https://www.burstcloud.co/embed/ebd424fa6d3ebc0d12a0108324820cbb95bdcdb1599993a1ff1685f2518325c5/sofi_lovee%20(1).mp4",
+            "https://www.burstcloud.co/embed/5b2e4b84860c7d18b11b04b265afe3ca1d2fec3f451d03d83a463424bd71e5f1/sofi_lovee%20(2).mp4"
+
+        ]
+    },
 ];
