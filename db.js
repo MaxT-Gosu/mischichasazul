@@ -1774,4 +1774,59 @@ const modelosDB = [
 
         ]
     },
+	{
+        id: 36,
+        nombre: "akanechann",
+        fotoPortada: "https://simp6.cuckcapital.cr/images3/100010200685e4abfd19ad5493.jpg",
+        onlyfans: "https://onlyfans.com/miniakanee",
+        instagram: "https://www.instagram.com/miniakanee",
+        fotos: [
+            "https://simp6.cuckcapital.cr/images3/IMG_3416d19ae0f1db148e50.jpg",
+            "https://simp6.cuckcapital.cr/images3/1000102030bc32120c2e1b7c8c.jpg",
+            "https://simp6.cuckcapital.cr/images3/1000010123785795c3894d6574.jpg",
+			"https://simp6.cuckcapital.cr/images3/10000101299a687f1a4c9bcbb2.jpg",
+			"https://simp6.cuckcapital.cr/images3/1290x2110_e1ab7c32487988185da6e844ea20689e25141ea9a87cd481.jpg",
+			"https://simp6.cuckcapital.cr/images3/1771x2698_0cf40948d45b79db0043f62a72715e471f6c8341b7da34d5.jpg",
+			"https://simp6.cuckcapital.cr/images3/2496x3840_75d1707f2c43c01085111f68476a149208930849685bd558.jpg",
+			"https://simp6.cuckcapital.cr/images3/1290x2113_dcbe267d78e90c3bc8b3c97afaa730cd94586c4885d4d1c5.jpg",
+			"https://simp6.cuckcapital.cr/images3/1771x2323_8918a5f67d8290ec847f87ac1ae7e4ae3bf6839e2697b395.jpg",
+			"https://simp6.cuckcapital.cr/images3/1771x3104_e60f1c62f212c7c58be68f0eac2e4c9cd2536d535d7569ed.jpg",
+			"https://simp6.cuckcapital.cr/images3/1771x3022_fd8360bdcabcb7ba269cd7764202924da2c5612fbdfd9c31.jpg",
+			"https://simp6.cuckcapital.cr/images3/2160x3840_54a3b40e52ec8cbaebf13f280f022b52a207fbf24f7eda91.jpg",
+			"https://simp6.cuckcapital.cr/images3/IMG_20241022_140002_180d11bdf26d405da02.jpg",
+			"https://simp6.cuckcapital.cr/images3/IMG_20241022_135910_79243c9682d6bd3c784.jpg",
+			"https://simp6.cuckcapital.cr/images3/IMG_20241021_182735_570328bcae93e0523bc.jpg",
+			"https://simp6.cuckcapital.cr/images3/2880x3840_a10d5b185703a2ad3d11deb49b906724b36aa9d2db2cd902.jpg",
+			"https://simp6.cuckcapital.cr/images3/2880x3840_41bbb4dfac6543e7de12103971f2e6dae5c2f22c1709730e.jpg",
+			"https://simp6.cuckcapital.cr/images3/2160x3840_7bcec6d7d580e778a7e3fa508eaa11a767ce7749fc1282b7.jpg",
+			"https://simp6.cuckcapital.cr/images3/2880x3840_956ad8a46cdff0a7ef426267a68f7b3331e43e524d5d6edb.jpg",
+			"https://simp6.cuckcapital.cr/images3/2880x3840_1392bb2f95913ee923a908e24f2a3789313bc8d60d19932b.jpg",
+			"https://simp6.cuckcapital.cr/images3/2880x3840_6c6bd7a5d9c51f359c12bbd0955052e75e94195cc6f24e37.jpg",
+			"https://simp6.cuckcapital.cr/images3/2817x3508_800cc8f2d0ff7d67b5abf1bf5b7828bc6496d672edacb23b.jpg",
+			"https://simp6.cuckcapital.cr/images3/IMG_11278da10cf87ef16151.jpg",
+			"https://simp6.cuckcapital.cr/images3/2880x3840_fb24191010c1749f7fb28d3a6699ea4cc1957edda83e48c8.jpg",
+			"https://simp6.cuckcapital.cr/images3/1080x1440_6242f9889a5d4cdc1c1c6d47300afbb391d37bbebfba6828.jpg",
+			"https://simp6.cuckcapital.cr/images3/2160x3840_5259e5105ff00f8843af8b37868caa1f4a669dd8169ab153.jpg",
+			"https://simp6.cuckcapital.cr/images4/3147735d00e8ea82b8bc751.jpg",
+			"https://simp6.cuckcapital.cr/images4/1000587233013a224c74e6827a.jpg",
+			"https://simp6.cuckcapital.cr/images4/1000112361d833fb787e25b52e.jpg"
+			
+			
+
+        ],
+        videos: [
+            "https://www.burstcloud.co/embed/aa60a71580b0c35345ef800f7314a783a6d12c00a72b52cb463e16107cd1ff34/akanechann%20(1).mp4",
+            "https://www.burstcloud.co/embed/d3de90f7b7754d73ea07c267793b0ad8a5c5bb9fe5527b3a2bc1168dbf727dca/akanechann%20(10).mp4",
+            "https://www.burstcloud.co/embed/c550da0a08d4d5daef45c512cb120c479c7510ad89d8cc1528b1a0bc9cbd30b7/akanechann%20(11).mp4",
+			"https://www.burstcloud.co/embed/8294f2013c590fb61ace4c8e1b0a9136327a7826cf921272328756284ae7ee1b/akanechann%20(2).mp4",
+			"https://www.burstcloud.co/embed/4230b06c7c7a6620f03eb6f411252c1758d433daee6424ad304dcd456ccb0ca9/akanechann%20(3).mp4",
+			"https://www.burstcloud.co/embed/b598c5c4833eea8b5e17e5828734fe7f0aa361a5e644af90636946c2eb197ff5/akanechann%20(4).mp4",
+			"https://www.burstcloud.co/embed/68a6c77d8043081627b6d0ac87ca1a1a577a703c78ec6416d84bd9d4c435b975/akanechann%20(5).mp4",
+			"https://www.burstcloud.co/embed/27fb7286329f8977675588da7cb8f93a9171d2daba3900063f05655778122915/akanechann%20(6).mp4",
+			"https://www.burstcloud.co/embed/23fd23084b078f1c8c48b56cee47eaf020b80c04d35970ec19a9255296de6d09/akanechann%20(7).mp4",
+			"https://www.burstcloud.co/embed/0ef503bdd81823a2c3211e4f4712f6bae7e15a22d242b02f4a7eefedcd3d8036/akanechann%20(8).mp4",
+			"https://www.burstcloud.co/embed/40161e08210b2a545a43e72073118ee254e85026f9423e64e0b7a30e530a0ca5/akanechann%20(9).mp4"
+
+        ]
+    },
 ];
