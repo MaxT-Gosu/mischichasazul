@@ -1829,4 +1829,36 @@ const modelosDB = [
 
         ]
     },
+	{
+        id: 37,
+        nombre: "nichxxle/art3m1s",
+        fotoPortada: "https://simp2.cuckcapital.cr/Art3m1ss.jpg",
+        onlyfans: "https://onlyfans.com/nicolessecret",
+        instagram: "",
+        fotos: [
+            "https://simp6.cuckcapital.cr/images/20220313_1620x1852_f4a74e335cc5947e6191a34c708e6c7b.md.jpg",
+            "https://simp6.cuckcapital.cr/images/20211119_1620x2055_71074fe47fa2905b5e4944e9b9b68742.jpg",
+            "https://simp6.cuckcapital.cr/images/20210518_1620x2028_2b458320632f30f229aa478693830cfa.jpg",
+			"https://simp6.cuckcapital.cr/images/20220226_2160x1620_5e95d36cdd6560ad7d832655f5bd0088.jpg",
+			"https://simp6.cuckcapital.cr/images/20220211_3024x3008_2f06ec43965b071aab73e856ebdfb937.jpg",
+			"https://simp6.cuckcapital.cr/images/20200830_2160x1050_e875e1108e48a6d4ab6d20b468619f51.jpg",
+			"https://simp6.cuckcapital.cr/images/3d7b1b93-28bd-4516-a809-9d858f5c82a2.jpg",
+			"https://simp4.cuckcapital.cr/20220516_1620x2160_57633c856be447e195abe8b48db59c8af22a2cf33a580be0.jpg",
+			"https://simp4.cuckcapital.cr/20220820_3000x4000_fd15d66f637010a5640d8724b602aeadc572c8df4c5de7bd.jpg",
+			"https://simp4.cuckcapital.cr/20210408_1620x1984_2321938f93b0ceb747478ef385bf8e1e.jpg",
+			"https://simp4.cuckcapital.cr/20210320_1620x1569_1feffa0ba0a4d628fcab8e7781ffe47e.md.jpg",
+			
+			
+
+        ],
+        videos: [
+            "https://www.burstcloud.co/embed/3b9071ec32c77c1d0eeb0885abdab3094fef74bc5262c30b33c31d6c849a4073/art3m1s%20(1).mp4",
+            "https://www.burstcloud.co/embed/1f4d3795d707401f168219c604900f0c2d74736014190cd4e908e779c0347aac/art3m1s%20(2).mp4",
+            "https://www.burstcloud.co/embed/0d6b59d7b6d8428620c2a9b91e3a9d5faf6d156b693090c51fb7c243a05b4920/art3m1s%20(3).mp4",
+			"https://www.burstcloud.co/embed/718faa9188c5b915d52255aab8f29127ace6d0bbba8a412eb864ae55e7e47ce7/art3m1s%20(4).mp4",
+			"https://www.burstcloud.co/embed/bbcde96f10e658f55f1a4a44378f1e9defdc0495dc92145ca608aea6d8cfb6b7/art3m1s%20(5).mp4",
+			"https://www.burstcloud.co/embed/9ee4d97edb608851bb4298db66bc95da77fcaeb59a7bd773b471bbd982dd2eee/art3m1s%20(6).mp4"
+			
+        ]
+    },
 ];
