@@ -1688,4 +1688,90 @@ const modelosDB = [
 
         ]
     },
+	{
+        id: 34,
+        nombre: "Gio rojas",
+        fotoPortada: "https://simp6.cuckcapital.cr/images3/IMG_20240314_201043_71671a990e7490f6d32.jpg",
+        onlyfans: "https://onlyfans.com/giorojas",
+        instagram: "https://www.instagram.com/_giorojas__",
+        fotos: [
+            "https://simp6.cuckcapital.cr/images3/172300215679d64ff165cee7e7f7.jpg",
+            "https://simp6.cuckcapital.cr/images3/1000067493af87397a23897358.jpg",
+            "https://simp6.cuckcapital.cr/images3/0F36b4fa2f6984ccde1.jpg",
+			"https://simp6.cuckcapital.cr/images3/IMG_20240908_213302_6347b8621d7fbca27f9.jpg",
+			"https://simp6.cuckcapital.cr/images3/3EC89d259c2d9306700.jpg",
+			"https://simp6.cuckcapital.cr/images3/10000563013c30c02a3b22255e.jpg",
+			"https://simp4.cuckcapital.cr/2024/IMG_20240114_105557_5397482c37afab9bd14.jpg",
+			"https://simp6.cuckcapital.cr/images3/IMG_20240114_105547_9975c3b8f0478937b6b.jpg",
+			"https://simp6.cuckcapital.cr/images3/IMG_20240114_105601_942e1ac088a140a0249.jpg",
+			"https://simp4.cuckcapital.cr/2024/IMG_20240131_234812_51118c1265f65fe6d5b.jpg",
+			"https://simp6.cuckcapital.cr/images3/IMG_20240311_002314_6472387f34d097b8a51.jpg",
+			"https://simp6.cuckcapital.cr/images3/IMG_20240314_201043_7215b4cd328bad0a891.jpg",
+			"https://simp6.cuckcapital.cr/images4/1348597ad1318cfa177569.jpg",
+			"https://simp6.cuckcapital.cr/images4/1348476ec36d87f9755212.jpg",
+			"https://simp6.cuckcapital.cr/images4/134819b6912de88f12f06c.jpg",
+			"https://simp6.cuckcapital.cr/images4/IMG_20260301_000053_3027ab2854967fdacf1.jpg",
+			"https://simp6.cuckcapital.cr/images3/4913887764735438912_1215270e7b694a99746.jpg",
+			"https://simp6.cuckcapital.cr/images3/Screenshot_20250616_125144_com.opera.browser_edit_12609617565482167cbb1b2a4e993d13.jpg",
+			"https://simp6.cuckcapital.cr/images3/Screenshot_20250616_071524_com.opera.browser_edit_1260853536166983cbcd05e13cc36c51.jpg",
+			"https://simp6.cuckcapital.cr/images3/1000147552e955792dbd4cdbec.jpg",
+			"https://simp6.cuckcapital.cr/images3/778721e43e2cd08580ca7.jpg",
+			"https://simp6.cuckcapital.cr/images3/93840dba701eba698fbd9.jpg",
+			"https://simp6.cuckcapital.cr/images4/134873444db9790ad96f75.jpg"
+
+        ],
+        videos: [
+            "https://www.burstcloud.co/embed/76f757b8e45b213025888dbe01fec69a82d0f79bac5e0239175a80ba95a21861/Giorojas%20(1).mp4",
+            "https://www.burstcloud.co/embed/eb01f67fce55a4178afc6a42ec1ed7b2c03ba2cc2f96860dbdccbff9ba140686/Giorojas%20(2).mp4",
+            "https://www.burstcloud.co/embed/da8043644cfe1fcfe381b0df7bc795da9fa20c44f130f1f5b64191e33984cc92/Giorojas%20(3).mp4",
+			"https://www.burstcloud.co/embed/55a3b303e485b128f2c6dbb1f2bffc349e99a0497d2694726af5f12ddc96feea/Giorojas%20(4).mp4",
+			"https://www.burstcloud.co/embed/ee4cd81801baede6b775b3ccbdfd93f0c736bcb2264be015b9becd732a7d43a1/Giorojas%20(5).mp4",
+			"https://www.burstcloud.co/embed/9011dca22b28b51fea118039dc07e58469fb3ddbbaa4a1a591e6a1b85a60e9fa/Giorojas%20(6).mp4",
+			"https://www.burstcloud.co/embed/f5dff358b8d3e12a87d2dc4e4a14fa550635082074463ce5c83e2aa15693da2b/Giorojas%20(7).mp4",
+			"https://www.burstcloud.co/embed/910a52820bea48a308e90c0340e04892e108a066396303c71a1ae3b06414611f/Giorojas%20(8).mp4",
+			"https://www.burstcloud.co/embed/96ebe89628c56230c1792284b6fd462c402d2e55a837b91a70107a8c6ce588c2/Giorojas%20(9).mp4"
+
+        ]
+    },
+	{
+        id: 35,
+        nombre: "DoctoraSensual",
+        fotoPortada: "https://simp4.cuckcapital.cr/Capturab900dbb5708d0839.png",
+        onlyfans: "https://onlyfans.com/doctorasensual",
+        instagram: "https://www.instagram.com/doctorajovss",
+        fotos: [
+            "https://simp6.cuckcapital.cr/images3/photo_2427-12-2023_06-28-31f1f973c1cdc917e5.jpg",
+            "https://simp6.cuckcapital.cr/images3/photo_727-12-2023_06-28-235323b0f953cadedf.jpg",
+            "https://simp6.cuckcapital.cr/images3/photo_827-12-2023_06-28-241d0e90bad2000323.jpg",
+			"https://simp4.cuckcapital.cr/2024/photo_927-12-2023_06-28-241e6038553154e0fe.jpg",
+			"https://simp6.cuckcapital.cr/images3/photo_2927-12-2023_06-28-32366283452d1a9f76.jpg",
+			"https://simp4.cuckcapital.cr/2024/photo_3427-12-2023_06-28-330559ecbc668d2638.jpg",
+			"https://simp6.cuckcapital.cr/images3/photo_6027-12-2023_06-28-44d389069de32a71ba.jpg",
+			"https://simp4.cuckcapital.cr/2024/photo_6227-12-2023_06-28-45d371f0f3a3782843.jpg",
+			"https://simp6.cuckcapital.cr/images3/photo_3527-12-2023_06-28-34adb48dc82e01aac8.jpg",
+			"https://simp4.cuckcapital.cr/2024/photo_7927-12-2023_06-28-53b9b9e447aca0a518.jpg",
+			"https://simp4.cuckcapital.cr/2024/photo_7427-12-2023_06-28-508a7b83b25b292ffa.jpg",
+			"https://simp4.cuckcapital.cr/2024/photo_5727-12-2023_06-28-43cf8d3a541ec79dab.jpg",
+			"https://simp4.cuckcapital.cr/2024/photo_8227-12-2023_06-28-54057bf84080c984f5.jpg",
+			"https://simp6.cuckcapital.cr/images3/photo_11427-12-2023_06-29-07046612d38129ac7d.jpg",
+			"https://simp4.cuckcapital.cr/2024/photo_12327-12-2023_06-29-10e208068d88c73aab.jpg",
+			"https://simp6.cuckcapital.cr/images3/photo_2025-02-21_19-58-16067053932b5b3032.jpg",
+			"https://simp6.cuckcapital.cr/images3/IMG_20251121_115935_910c204167c231ffd4c.jpg",
+			"https://simp6.cuckcapital.cr/images3/IMG_20251121_120107_2319a19ea85d0ad5a96.jpg",
+			"https://simp6.cuckcapital.cr/images3/zXBQ6d1P90928516f6a46215.jpg",
+			"https://simp6.cuckcapital.cr/images3/g9zQ9ZFn7f673fbcb3160c5b.jpg",
+			"https://simp6.cuckcapital.cr/images3/1849x2773_b36937354ad2807124374bbb9ac7ea28c0401b9238c0e508.jpg"
+			
+
+        ],
+        videos: [
+            "https://www.burstcloud.co/embed/f735323a588cb3fb7e2e8fd67f425fff17bad54a4968bbf1ad61c744ede8a3cc/DoctoraSensual%20(1).mp4",
+            "https://www.burstcloud.co/embed/cc43ea25815fb37f6de58366d7a1cd86d54c07912f80a8c9633c1a44e9727547/DoctoraSensual%20(2).mp4",
+            "https://www.burstcloud.co/embed/6ec0fdd8abf45d16813c669242cfda7df9a3d16c07c6bd90270270853c75afc5/DoctoraSensual%20(3).mp4",
+			"https://www.burstcloud.co/embed/2cd90130278d846994631222ef70052493f1af636542cdb8ce25bff280bc281b/DoctoraSensual%20(4).mp4",
+			"https://www.burstcloud.co/embed/9741669368a997366d82ac40c79fee5707c18ba85be2ac74ef5ab6777352e036/DoctoraSensual%20(5).mp4",
+			"https://www.burstcloud.co/embed/ee2dae26177960558a7afa12ac7949922892c6eddac1d40201415541f0436a48/DoctoraSensual%20(6).mp4"
+
+        ]
+    },
 ];
