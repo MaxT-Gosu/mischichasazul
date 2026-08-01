@@ -1554,6 +1554,7 @@ const modelosDB = [
         onlyfans: "https://onlyfans.com/melodymew_jpg",
         instagram: "https://x.com/melodymewOwO?s=20",
         fotos: [
+		    "https://simp6.cuckcapital.cr/images4/998ca5f0-53b7-443e-bddf-8c11415e6ec3.jpg",
             "https://simp6.cuckcapital.cr/images3/5127457538969807163_121ea0883763f914469.jpg",
             "https://simp6.cuckcapital.cr/images3/5136776956577164230_1210b9be6e24a97f555.jpg",
             "https://simp6.cuckcapital.cr/images3/5147824651844561501_1211ea2eb89542cc57a.jpg",
@@ -1918,6 +1919,54 @@ const modelosDB = [
 			"https://www.burstcloud.co/embed/5a038b2104eed7db71ed5e5f37cf58b4f9f88da0bb129c19f3a3d1fc12473796/ladydusha666%20(7).mp4",
 			"https://www.burstcloud.co/embed/16a5942981949265196aba0591ea6db89b3e10ea341eee56f1ed7038a06b11c6/ladydusha666%20(8).mp4",
 			"https://www.burstcloud.co/embed/416b6a85c9febc8655d1ecc588b3d528dfae1b1e2417ab4514f455c266357cbf/ladydusha666%20(9).mp4"
+
+        ]
+    },
+	{
+        id: 39,
+        nombre: "Gloom",
+        fotoPortada: "https://simp3.cuckcapital.cr/images/h3UtO.jpg",
+        onlyfans: "https://onlyfans.com/gloom",
+        instagram: "https://www.instagram.com/gloom_sg",
+        fotos: [
+            "https://simp3.cuckcapital.cr/images/1613x1075_ffcc33ae7f3cf92adc78666a7c5151a6.jpg",
+            "https://simp3.cuckcapital.cr/images/3840x5131_87d77b3b49478d49943066c22d9b818d.jpg",
+            "https://simp3.cuckcapital.cr/images/1200x1600_4f4cb451d2446399b17f4c323aba2cba.jpg",
+			"https://simp3.cuckcapital.cr/images/1600x1066_7ff4d41b2fda341a2aebd824b02e2e3d3771725e21bad1b717f.jpg",
+		    "https://simp3.cuckcapital.cr/images/3840x2560_e715b2d6209524f7ddc84d8f0b56b368.jpg",
+			"https://simp3.cuckcapital.cr/images/1200x1600_104c1d9591bc074fd33e186b2f0b0fa4.jpg",
+			"https://simp3.cuckcapital.cr/images/1532x2048_42fe3776c9c5a862d41870486a4e8744.jpg",
+			"https://simp3.cuckcapital.cr/images/1536x2048_21b93dce5ec15df91fba826f97be2fbe.jpg",
+			"https://simp3.cuckcapital.cr/images/3840x2875_4a34bd8f9f1455fb626eb4a82284c1d4.jpg",
+			"https://simp4.cuckcapital.cr/1055x582_54bfaa83b89cc1e3e156fa9a7a95e369.jpg",
+			"https://simp4.cuckcapital.cr/2048x1365_e29364c45829e5917b35fa1585722f6f.jpg",
+			"https://simp4.cuckcapital.cr/3840x2875_08b369894137c59723cadda43c0678ab.jpg",
+			"https://simp4.cuckcapital.cr/1066x1600_7137cdc9c48d6482664438de9ed1d698.jpg",
+			"https://simp4.cuckcapital.cr/2916x5184_9b6bcfd730f5607efb2550a687bd1e0c.jpg",
+			"https://simp4.cuckcapital.cr/2316x3088_6666bf878a5f3c00fbcfa4d7c47ab76f.jpg",
+			"https://simp4.cuckcapital.cr/3840x2875_672cd4585d9ff6f3a52cc17f5daca61e.jpg",
+			"https://simp4.cuckcapital.cr/3840x2560_ea5b2bccde3d27bf0d0501ee597313c1.jpg",
+			"https://simp6.cuckcapital.cr/images/3024x4032_ba9e0fb4378428a0edd4a949cd3e6ffa.jpg",
+			"https://simp6.cuckcapital.cr/images/2268x3024_6d051f8aa5f0d54321e02ef317f2bcb2.jpg",
+			"https://simp6.cuckcapital.cr/images/3024x4032_863082f0b54925bc40e04fccfced4ed4-1.jpg",
+			"https://simp6.cuckcapital.cr/images/3024x4032_c35af64adb6b5e95ea3ffabde19d7efd.jpg",
+			"https://simp4.cuckcapital.cr/2805997228a9919e17176f5d66.jpg",
+			"https://simp4.cuckcapital.cr/3840x2880_18fb9f75b01cfee29015c8d9aa6ea2462d634df2812981d9.jpg",
+			"https://simp6.cuckcapital.cr/images2/10e76a7cfb13f855cb.jpg",
+			"https://simp6.cuckcapital.cr/images2/24847aa176facd1af.jpg",
+			"https://simp6.cuckcapital.cr/images2/236ca24fca9d5633ca.jpg",
+			"https://simp6.cuckcapital.cr/images3/15bcca5d9a2d022b93.jpg"
+
+        ],
+        videos: [
+            "https://www.burstcloud.co/embed/2cbf62982396f11e2562580b73ce3c62066d91df060530f6ea6cedf40039b496/Gloom%20(1).mp4",
+            "https://www.burstcloud.co/embed/e1528c241b190e06374f7fad133fd3ce17da845503abc5010ea5396225f5b684/Gloom%20(3).mp4",
+            "https://www.burstcloud.co/embed/9a6c35da7cc332cb094faa5ce2b84d974e676b715462f4a2aee22d165c5c8785/Gloom%20(4).mp4",
+			"https://www.burstcloud.co/embed/ffe5987cacb9c6b058f944c50eb43982ce986622158bd7ae08cc4ddfdf86b546/Gloom%20(5).mp4",
+			"https://www.burstcloud.co/embed/f645c162aec0cc35324b37b16cc15eadddcdb492ebc29d1ab873570108f1061b/Gloom%20(6).mp4",
+			"https://www.burstcloud.co/embed/4fb287226afddb8d2f8a76dbde46996d7258585065e7416e6ba410ae74e2ab64/Gloom%20(7).mp4",
+			"https://www.burstcloud.co/embed/afde4b51ca3d1838a96e002bf85179519dde7480be6c85de27ff55c19915a58f/Gloom%20(8).mp4",
+			"https://www.burstcloud.co/embed/fff91174f06f426471f949b951007f84e35aeaaf943f6ca654c59543240ade17/Gloom%20(9).mp4"
 
         ]
     },
