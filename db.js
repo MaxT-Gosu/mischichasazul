@@ -1970,4 +1970,62 @@ const modelosDB = [
 
         ]
     },
+	{
+        id: 40,
+        nombre: "Ruivaisabel",
+        fotoPortada: "https://simp6.cuckcapital.cr/images4/100188f60aec8ee49caa3.jpg",
+        onlyfans: "https://onlyfans.com/ruivaisabell",
+        instagram: "https://www.instagram.com/ruivabellnunes",
+        fotos: [
+            "https://simp6.cuckcapital.cr/images4/Screenshot_2026-06-12-12-13-22-026_com.android.chromeef1cbef337c2b85c.png",
+            "https://simp6.cuckcapital.cr/images4/1001140d0aa6d10a2db24.jpg",
+            "https://simp6.cuckcapital.cr/images4/10012ec1d275d47f37870.jpg",
+			"https://simp6.cuckcapital.cr/images4/dc10ce8c-c891-4c96-87d1-4af17df1f3f2.jpg",
+			"https://simp6.cuckcapital.cr/images4/236d2bb8-58d8-49fa-b00e-546ebdfa3ec2.jpg",
+			"https://simp6.cuckcapital.cr/images4/44933f9f-5907-4f3c-bec8-35edf4519cf3.jpg",
+			"https://simp6.cuckcapital.cr/images4/Fyucdsf66cc328529d6e93.webp",
+			"https://simp6.cuckcapital.cr/images4/10022fb80078b0ff7c8c3.jpg",
+			"https://simp6.cuckcapital.cr/images4/10030d905d0a151b9830e.jpg",
+			"https://simp6.cuckcapital.cr/images4/100325951b2392df36b4d.jpg",
+			"https://simp6.cuckcapital.cr/images3/640797387_bc34b257b5656d4e3.jpg",
+			"https://simp6.cuckcapital.cr/images3/640886289_f6385c578df6fd79e.jpg",
+			"https://simp6.cuckcapital.cr/images3/643759194_284a9ebb468a15d442.jpg",
+			"https://simp6.cuckcapital.cr/images3/Jd8ccw41c3ef08142d8081.jpg",
+			"https://simp6.cuckcapital.cr/images3/6yhh7uj9bea4f6f245a120c.webp",
+			"https://simp6.cuckcapital.cr/images4/Kxjjee05708ed89b3c1884.webp",
+			"https://simp6.cuckcapital.cr/images4/Ufujww07abceca1641189f.webp",
+			"https://simp6.cuckcapital.cr/images4/DyyehsD0ed3f46db8c3ed25.webp",
+			"https://simp6.cuckcapital.cr/images4/Uxisjs44dbb40496b6e8b5.webp",
+			"https://simp6.cuckcapital.cr/images4/Ckix8swa2c6e2ab8727aa8a.webp",
+			"https://simp6.cuckcapital.cr/images3/Hx88siwjejdf8606f2b03ef4a16.jpg",
+			"https://simp6.cuckcapital.cr/images3/U8c8udfbf473617f5e3574.webp",
+			"https://simp6.cuckcapital.cr/images3/Hyc6cc17dea4b6350498bb.webp",
+			
+
+        ],
+        videos: [
+            "https://www.burstcloud.co/embed/4f5ff72f86323860c68af7cfccbe006273c30d3d8f27803abed737a7fa799bcf/Ruivaisabel%20(1).mp4",
+            "https://www.burstcloud.co/embed/7fd8d6755f629a27b6477cbad040b52f21049f627f8c68ad9111e9c1887392ad/Ruivaisabel%20(10).mp4",
+            "https://www.burstcloud.co/embed/5b076a2e9dcf02b061c5d6b83024475683285a89c0fd8f39ccad62d48675bfb6/Ruivaisabel%20(11).mp4",
+			"https://www.burstcloud.co/embed/a9b9dc560d785d7564cffeead080ff002815c245679f33672f8df393e5a31c45/Ruivaisabel%20(12).mp4",
+			"https://www.burstcloud.co/embed/da703edc41550096b226e16b7d5a61ce0f055d6344cc6e5c194c49efedc7f1c6/Ruivaisabel%20(13).mp4",
+			"https://www.burstcloud.co/embed/4df851deb83d8dba81281847f6a69feb2cd4811e380c292c8b6e910b6fb5a681/Ruivaisabel%20(14).mp4",
+			"https://www.burstcloud.co/embed/4ea1a909112f74a1d4663b2453c2f84e3755c792e6f93527a479625a5a5a7889/Ruivaisabel%20(15).mp4",
+			"https://www.burstcloud.co/embed/68c2a6da722aa800095c3f4cd5e4b126ff4e247e590ddd82364d8db2dfd16b85/Ruivaisabel%20(16).mp4",
+			"https://www.burstcloud.co/embed/234ba35157308aedd31396d225010cf2ca1c28968787361a07a1053e83629edb/Ruivaisabel%20(17).mp4",
+			"https://www.burstcloud.co/embed/0e0f0b3789a1c69e7002ade4a4531624e678842542dd4eab4302516b09b27ac2/Ruivaisabel%20(18).mp4",
+			"https://www.burstcloud.co/embed/e5d6c5bd2703326b410a3960cb99fe4faf57ef58de9d5d15657e3c4749de14ab/Ruivaisabel%20(19).mp4",
+			"https://www.burstcloud.co/embed/a2db09209f594a688e5c7db40f24a34bf25b52ba5724a92c2ae7f0e335aa1be6/Ruivaisabel%20(2).mp4",
+			"https://www.burstcloud.co/embed/a2b97216d45d976c48bb4b20c456d590011d05c4d3f0f35044a15ee6f70d0dbb/Ruivaisabel%20(20).mp4",
+			"https://www.burstcloud.co/embed/5ab79bd3d865a5b842aba92ad97273d30099c490de5e93123387460d0c594d13/Ruivaisabel%20(21).mp4",
+			"https://www.burstcloud.co/embed/c1a9d77db8ed4956d7615aa726fbee9c5b1f307a63e808d8151f0ccc278ea299/Ruivaisabel%20(3).mp4",
+			"https://www.burstcloud.co/embed/d80bb9a833620d5208ad7e2ad5db11ca3b98a2c95a5bc9eb038688e7c99806a7/Ruivaisabel%20(4).mp4",
+			"https://www.burstcloud.co/embed/0974d2c85b247480303f47e17ae0733493ad6f0077f33e0f50d0ef3b4e450436/Ruivaisabel%20(5).mp4",
+			"https://www.burstcloud.co/embed/73f6fab6dba9dc314cf47bdb93d76be5e56e2319293dd404f3f790e5917fdb89/Ruivaisabel%20(6).mp4",
+			"https://www.burstcloud.co/embed/fadec6567d32614b997a77aa565a18165822dd308209a0d269a3ecf79a5fc99a/Ruivaisabel%20(7).mp4",
+			"https://www.burstcloud.co/embed/c55d49800fd9d3de595dc83cc71e4b8d1b3a7712993774f395b8fc76f4bc4953/Ruivaisabel%20(8).mp4",
+			"https://www.burstcloud.co/embed/23b740104ce7bca514c915f17e6223d8c84f4db039cc4b9f04f648e05446fa4a/Ruivaisabel%20(9).mp4"
+
+        ]
+    },
 ];
