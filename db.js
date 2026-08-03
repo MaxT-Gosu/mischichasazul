@@ -2082,4 +2082,55 @@ const modelosDB = [
 
         ]
     },
+	{
+        id: 42,
+        nombre: "bbxvictoria",
+        fotoPortada: "https://simp6.cuckcapital.cr/images3/IMG_2853bd86a77e2b3e7491.jpg",
+        onlyfans: "https://onlyfans.com/bbxvictoria",
+        instagram: "https://www.instagram.com/cacawaterslushy/",
+        fotos: [
+            "https://simp6.cuckcapital.cr/images4/IMG_60792c611a4134413e6e.jpg",
+            "https://simp6.cuckcapital.cr/images4/IMG_611780ce2dc63fa5302a.jpg",
+            "https://simp6.cuckcapital.cr/images4/IMG_620896f124d21eac9b5c.jpg",
+			"https://simp6.cuckcapital.cr/images4/IMG_623302de10bd5055f46a.jpg",
+			"https://simp6.cuckcapital.cr/images4/IMG_6237d97de459ebf6b454.jpg",
+			"https://simp6.cuckcapital.cr/images4/IMG_6292aa4384b235b63fb9.jpg",
+			"https://simp6.cuckcapital.cr/images4/1c0c0969-589f-4c55-9990-2a35743d9720.jpg",
+			"https://simp6.cuckcapital.cr/images4/HBacYs0aAAAFPie940bc1e8861740ac.jpg",
+			"https://simp6.cuckcapital.cr/images4/HA2TacjasAAS2AG51c64948913be559.jpg",
+			"https://simp6.cuckcapital.cr/images4/GsdIt7Rb0AEm6am7048b116c5e6fc2b.jpg",
+			"https://simp6.cuckcapital.cr/images4/G2xBIJvacAA8G4w-1b92d68a3596d93ce.jpg",
+			"https://simp6.cuckcapital.cr/images3/M7JQRK82d209e88818beff63.jpg",
+			"https://simp6.cuckcapital.cr/images3/591xhH58269d559ea379404f.jpg",
+			"https://simp6.cuckcapital.cr/images3/IMG_4016c8dc67cf9e736a70.jpg",
+			"https://simp6.cuckcapital.cr/images3/IMG_3801aa2e70dbdc23d632.jpg",
+			"https://simp6.cuckcapital.cr/images3/IMG_36282510fe0812246227.jpg",
+			"https://simp6.cuckcapital.cr/images3/IMG_3546c09ff7f68b7c976d.jpg",
+			"https://simp6.cuckcapital.cr/images3/Internet_20250417_064746_549fc56ec2badc7f1.jpg",
+			"https://simp6.cuckcapital.cr/images3/IMG_696178f02a437b477b9f.jpg",
+			"https://simp6.cuckcapital.cr/images3/photo_4929444561483313306_y3a7a9cd1d63a8ef7.jpg",
+			"https://simp6.cuckcapital.cr/images3/Screenshot_20250911-195536_Instagram55d4bfa427ad6537.jpg",
+			"https://simp6.cuckcapital.cr/images3/Internet_20241106_215058_2528a7a8b408e0524.png",
+			"https://simp6.cuckcapital.cr/images3/2268x4032_6f05b6ee06b62da5018a04c33f92af1e3e285059d14475fa.jpg",
+			"https://simp6.cuckcapital.cr/images3/Internet_20250417_064746_2434e8eaada5e7eba.jpg",
+			"https://simp6.cuckcapital.cr/images3/1000049554a5258f560db54ca3.jpg",
+			"https://simp6.cuckcapital.cr/images3/GbWD2IdWQAAVmJ7b256a16fe361504a.jpg",
+			"https://simp6.cuckcapital.cr/images3/GaS-84xWYAApyhicdeebeec6ac8baad.jpg"
+
+        ],
+        videos: [
+            "https://www.burstcloud.co/embed/03c2f3ad8e58793cfe4a8c7778746d31b982f7c2a101d7894efe76d7c93e2785/bbxvictoria%20(1).mp4",
+            "https://www.burstcloud.co/embed/2e1d44cde8151abcbd61e10d354bd9ff43643156e5df1a0bfe1b06108e6718a2/bbxvictoria%20(10).mp4",
+            "https://www.burstcloud.co/embed/5142fdbeb58b7ca1feaee362fc4536618117ff4e9205437379f41bb80bb0b72e/bbxvictoria%20(11).mp4",
+			"https://www.burstcloud.co/embed/92b882177dc74824fb21d5b0bf16be55b53fc16c888df77622f15c6aaab28476/bbxvictoria%20(2).mp4",
+			"https://www.burstcloud.co/embed/fa88c27d3a89a0aeca3af1fef28904eca52604d8b1de9e9cd886edea7f57fc82/bbxvictoria%20(3).mp4",
+			"https://www.burstcloud.co/embed/21e235792831cb404ecc7b8630abf69b281b7fdf2b986ee40a8bfeacce1a65a2/bbxvictoria%20(4).mp4",
+			"https://www.burstcloud.co/embed/ad0f7171a5fba4a4a318ef6a9e796ecc296482248db6b0ff0d358043e36b79e0/bbxvictoria%20(5).mp4",
+			"https://www.burstcloud.co/embed/e1b42e239d7b5c7aea637b46f42854fcb3901c0de7e97376cf46b71e0fff93a7/bbxvictoria%20(6).mp4",
+			"https://www.burstcloud.co/embed/d943955f248d7629e9f9cc44232b010b12c982b13ce6e445d973df7782cd47a7/bbxvictoria%20(7).mp4",
+			"https://www.burstcloud.co/embed/fca949a5c31fc8912f0a40cee062c2c068f05cd13af39a8e210ca1bce62dbd80/bbxvictoria%20(8).mp4",
+			"https://www.burstcloud.co/embed/63155f7d4fce4f818fa6464201b7db28b53b5190bd74a7c61171668853bd7ad6/bbxvictoria%20(9).mp4"
+
+        ]
+    },
 ];
