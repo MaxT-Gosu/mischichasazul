@@ -2133,4 +2133,43 @@ const modelosDB = [
 
         ]
     },
+	{
+        id: 43,
+        nombre: "bellacuentos",
+        fotoPortada: "https://pbs.twimg.com/media/GjnfUGaWAAAAkY8?format=jpg&name=large",
+        onlyfans: "https://onlyfans.com/bellacuentos",
+        instagram: "https://www.instagram.com/bellacuentosss/",
+        fotos: [
+            "https://pbs.twimg.com/media/FuCCh5daEAMyKMW?format=jpg&name=large",
+            "https://simp6.cuckcapital.cr/images3/5109446675218413160_1210f6bd9f5b61b2e68.jpg",
+            "https://pbs.twimg.com/media/GuCsCJCXsAA8Zu6?format=jpg&name=large",
+			"https://pbs.twimg.com/media/GnK22pxbAAAZcpj?format=jpg&name=large",
+			"https://simp4.cuckcapital.cr/IMG_20230609_135532_2454c1a428ac0777e62.jpg",
+			"https://simp6.cuckcapital.cr/images2/IMG_20230910_112049_5254ead909b86ca5c66.jpg",
+			"https://simp6.cuckcapital.cr/images2/IMG_20230910_112049_44573563c8b21f3577c.jpg",
+			"https://simp6.cuckcapital.cr/images2/IMG_20230910_112134_2200b599c1116af4abe.jpg",
+			"https://simp6.cuckcapital.cr/images2/IMG_20230920_160557_3124d97d2a1d8572110.jpg",
+			"https://simp6.cuckcapital.cr/images2/IMG_20230920_160557_8351aef8ca1722e1e44.jpg",
+			"https://simp4.cuckcapital.cr/IMG_20230920_160603_99789266e1886ccaba3.jpg",
+			"https://simp4.cuckcapital.cr/IMG_20230920_160601_691112eebffc2a21dfb.jpg",
+			"https://simp4.cuckcapital.cr/IMG_20230920_160603_9163a92c8e13629b309.jpg",
+			"https://simp4.cuckcapital.cr/IMG_20230923_164353_76089be7627c0193e68.jpg",
+			"https://simp6.cuckcapital.cr/images2/IMG_20231001_134623_19001d9da59c3044631.jpg",
+			"https://simp6.cuckcapital.cr/images3/4983436724210346953_1212dc1500cf8705c26.jpg",
+			"https://simp6.cuckcapital.cr/images3/4983436724210346957_1216387317a37a45b95.jpg",
+			"https://pbs.twimg.com/media/GSDQeQUWAAAt6YQ?format=jpg&name=large",
+			"https://pbs.twimg.com/media/GSDQeQnWUAA0-0H?format=jpg&name=large"
+			
+
+        ],
+        videos: [
+            "https://www.burstcloud.co/embed/be7fba99e75ae159c156ee373b7c2c1fbfeefdeb3bc9046d87bcfd26673de4c7/bellacuentos%20(1).mp4",
+            "https://www.burstcloud.co/embed/056b43e8bb826dba1fa4103358308b1f85aa1d10cfff17ce2ddb5db94b8b4a60/bellacuentos%20(2).mp4",
+            "https://www.burstcloud.co/embed/5e5d664d7e4f0beef2d822d554e028da9e29737cfdfb083f0fa90578c864c733/bellacuentos%20(3).mp4",
+			"https://www.burstcloud.co/embed/994854d1ef5a963fc8a009fd30795f0de46e76dc517adae5bcf9905dac31547d/bellacuentos%20(4).mp4",
+			"https://www.burstcloud.co/embed/5b7367ee4130cfd4a7677eebd194c09dc693a6b5d68240ed1ef75c785afac5a8/bellacuentos%20(5).mp4",
+			"https://www.burstcloud.co/embed/33c17e094091a66e4c68b9da76befac363c845721b636103e26da9a927b6a61f/bellacuentos%20(6).mp4"
+
+        ]
+    },
 ];
