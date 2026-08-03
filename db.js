@@ -2028,4 +2028,58 @@ const modelosDB = [
 
         ]
     },
+	{
+        id: 41,
+        nombre: "foggycat",
+        fotoPortada: "https://simp6.cuckcapital.cr/images3/1000036178f8799ee198843667.jpg",
+        onlyfans: "https://fansly.com/foggycat/posts",
+        instagram: "https://www.instagram.com/foggycattt/",
+        fotos: [
+            "https://simp6.cuckcapital.cr/images3/IMG_1020b74b25b07c4d45dc.jpg",
+            "https://simp6.cuckcapital.cr/images3/Ga-5ARab0AAwDvF56d5dae5cbe83e32.jpg",
+            "https://simp6.cuckcapital.cr/images3/960x1147_09378a246f68742e5a8e12ec0debe235e0c38695146e6afd.jpg",
+			"https://simp6.cuckcapital.cr/images3/Screenshot_20250216_100355_Photosb0100d24f22a3bae.jpg",
+			"https://simp6.cuckcapital.cr/images3/Screenshot_20250302_234921_Photos86c28c276c1d4fa5.jpg",
+			"https://simp6.cuckcapital.cr/images3/Screenshot_20250307_1032432a56182f8fdf750a0.jpg",
+			"https://simp6.cuckcapital.cr/images3/Screenshot_20250527_065635_Photos219fcb6123f86541.jpg",
+			"https://simp6.cuckcapital.cr/images3/Screenshot_20250617_170247_Photos2f4473b4525c8e78.jpg",
+			"https://simp6.cuckcapital.cr/images3/10000373927c612a46e96f5158.jpg",
+			"https://simp6.cuckcapital.cr/images3/456289e888ece9469024.jpg",
+			"https://simp6.cuckcapital.cr/images3/Screenshot_20251228_044247_Photosc8476892a1e0fb26.jpg",
+			"https://simp6.cuckcapital.cr/images3/2160x2880_478a7f421fae9ea39882b8f4e1576350d81bbb65ece09b16.jpg",
+			"https://simp6.cuckcapital.cr/images3/IMG_0568b13978d350b242d2.jpg",
+			"https://simp6.cuckcapital.cr/images3/Screenshot_20240823_071603_Photos20914cd1c6657bbf.jpg",
+			"https://simp6.cuckcapital.cr/images3/Screenshot_1275350e3e9f92a8b.png",
+			"https://simp4.cuckcapital.cr/2024/frieren-by-axcy92-v0-677hhx4iftfc1150d72c15346b1af.jpg",
+			"https://simp4.cuckcapital.cr/2024/the-best-version-of-my-feet-v0-iiooh5pfu88b109fcd19110b33727.jpg",
+			"https://simp6.cuckcapital.cr/images2/1001096352c8978a9c21e20da1.jpg",
+			"https://simp4.cuckcapital.cr/1000501001ea447eb9add1d51d.webp",
+			"https://simp1.cuckcapital.cr/images/1976608-b884fb35d57d89dcaaba4c94cfb2ce39.jpg",
+			"https://simp4.cuckcapital.cr/722C4381-583A-4174-A043-9EA12EBD5C9B.jpg",
+			"https://simp3.cuckcapital.cr/images/16f8f7c69fffb3e457.jpg",
+			"https://simp3.cuckcapital.cr/images/47898758.jpg",
+			"https://simp3.cuckcapital.cr/images/b08f3d30.jpg",
+			"https://simp2.cuckcapital.cr/CD847C26-2E3C-4A76-9771-AFD96AEFF05D.jpg",
+			"https://simp2.cuckcapital.cr/20220314_155049.jpg",
+			"https://simp3.cuckcapital.cr/images/foggycattt_252008635_384599000060790_5724715055648549848_n.jpg",
+			"https://simp3.cuckcapital.cr/images/2880x3641_9cbf3da185f5c0bd7ce8f29a0e468611.jpg",
+			"https://simp3.cuckcapital.cr/images/bf1b4e8c.jpg",
+
+        ],
+        videos: [
+            "https://www.burstcloud.co/embed/c7bd32279861f8e15e3751430a425be8503709d816f8e19915677659c030e109/foggycat%20(1).mp4",
+            "https://www.burstcloud.co/embed/9a0bc8f251b9bd66ac48132408e984b6088f73f813c699fe3feaa53d36f8127f/foggycat%20(10).mp4",
+            "https://www.burstcloud.co/embed/6bf58871f904fca82cc5fb52a2b83db45003dc9662f065797cb1bf164911ddbf/foggycat%20(11).mp4",
+			"https://www.burstcloud.co/embed/825544f37595b64b39917da2fee4e2662945732ff255355bb50e7f660798b51c/foggycat%20(12).mp4",
+			"https://www.burstcloud.co/embed/1f9bace07f4a4a5c1b7f9ce44b63cfc824dcc5c66668bb2385cd00029c4a3e68/foggycat%20(2).mp4",
+			"https://www.burstcloud.co/embed/777262b3ab410436b21056c6abc6f7c23bd29f55fd43d4ef67d1d913fb6f70e9/foggycat%20(3).mp4",
+			"https://www.burstcloud.co/embed/85c7f2cc9e4d067118e91ea0e065f2111edf277dcffc478c7d7eb5e32f8eec95/foggycat%20(4).mp4",
+			"https://www.burstcloud.co/embed/8fa203f56c760dc0f67684c42bdf8f3698b9ef7029e006deb6505c613ba11da1/foggycat%20(5).mp4",
+			"https://www.burstcloud.co/embed/d61edc3b12142ebd89582465c326ea75486195b3b0999a67313c3746f9df45fb/foggycat%20(6).mp4",
+			"https://www.burstcloud.co/embed/6fc938e72e6e9e2514fe5b835ed92fd59451e1c1e16027377658ee1a706a5241/foggycat%20(7).mp4",
+			"https://www.burstcloud.co/embed/1633755e8dcd91ce15b582746901efe5016f0afef1427c6f4a633c41f35ebec6/foggycat%20(8).mp4",
+			"https://www.burstcloud.co/embed/082fc6e2f30202162f2c40d54bf6468de2354abd39f0cc287ac230eeaf8367c3/foggycat%20(9).mp4"
+
+        ]
+    },
 ];
