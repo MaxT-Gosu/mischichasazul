@@ -2217,4 +2217,57 @@ const modelosDB = [
 
         ]
     },
+	{
+        id: 45,
+        nombre: "bananapotato333",
+        fotoPortada: "https://simp6.cuckcapital.cr/images/1537x2049_6a0b3fec9f6e1dadc6c0c4dcfc32ff9f.jpg",
+        onlyfans: "https://onlyfans.com/bananapotato333",
+        instagram: "https://www.instagram.com/bananapotato333",
+        fotos: [
+            "https://simp6.cuckcapital.cr/images4/Screenshot-2026-03-01-5.55.24-AMce00e52fc09faa7e.png",
+            "https://simp6.cuckcapital.cr/images4/IMG_6131e6130b8adc245e79.jpg",
+            "https://simp6.cuckcapital.cr/images/SmartSelect_20230128_182407_Instagram.jpg",
+			"https://simp6.cuckcapital.cr/images/SmartSelect_20230130_061734_Chrome.jpg",
+			"https://simp6.cuckcapital.cr/images/SmartSelect_20230130_061845_Chrome.jpg",
+			"https://simp6.cuckcapital.cr/images/SmartSelect_20230130_061527_Chrome.jpg",
+			"https://simp4.cuckcapital.cr/IMG_20230801_095132_70269dcab9fb6fa31a4.jpg",
+			"https://simp4.cuckcapital.cr/6EBF5A1B-447C-4F71-B2E7-56403E06ED00f2760258443abd04.jpg",
+			"https://simp6.cuckcapital.cr/images3/bp3334f84851a3f91fe0e8.png",
+			"https://simp6.cuckcapital.cr/images3/1170x1524_df8ef2264305efc86d839c8e1da41aab7de815571a603e9c.jpg",
+			"https://simp6.cuckcapital.cr/images3/1170x2080_0e66952b4a76225aea5c7354c072b7f15a5aed16fc4d5358.jpg",
+			"https://simp6.cuckcapital.cr/images3/2249x1536_74e0928357ad280623544ef1787131cb7ec3f7c93d68f186.jpg",
+			"https://simp6.cuckcapital.cr/images3/3024x4032_ed318011c87affd9f352df8c7148bdce6b15be82eeb6c883.jpg",
+			"https://simp6.cuckcapital.cr/images3/1002x1330_92082862ce54bbd04ef9900ce48ddcb950a0c72c1a937690.jpg",
+			"https://simp6.cuckcapital.cr/images4/Screenshot-2026-02-11-2.40.04-AMf2320b629732c2c9.png",
+			"https://simp6.cuckcapital.cr/images3/1033x1836_34621b8e11d5a90d1f8283de2270030f2fd574634db5f087.jpg",
+			"https://simp6.cuckcapital.cr/images3/Screenshot-2025-11-07-12.01.00-AM5023cfc5366d66ff.png",
+			"https://simp6.cuckcapital.cr/images3/Screenshot-2025-10-25-11.32.26-PM782a9cdc31b970cb.png",
+			"https://simp6.cuckcapital.cr/images3/Screenshot-2025-10-19-4.31.17-PM2745248ab65fe9b4.png",
+			"https://simp6.cuckcapital.cr/images3/Screenshot-2025-10-19-4.33.15-PM6e3416e1b8ca96ea.png",
+			"https://simp6.cuckcapital.cr/images3/Screenshot-2025-10-19-4.36.10-PM923ac9a9331d9311.png",
+			"https://simp6.cuckcapital.cr/images3/Screenshot-2025-10-19-4.04.56-PMacaa545bafd4e0ce.png",
+			"https://simp6.cuckcapital.cr/images3/10004344239acc24eef046f751.webp"
+			
+			
+
+        ],
+        videos: [
+            "https://www.burstcloud.co/embed/60b646646d64ede8a65a5f102bbc132c95dfcbabd9601d87aca69bb8d7d09376/bananapotato333%20(1).mp4",
+            "https://www.burstcloud.co/embed/d08144a3dde6a2fd98d4962edc33938a454d5077f188147186dd9d750c68d6fe/bananapotato333%20(10).mp4",
+            "https://www.burstcloud.co/embed/85ef5d23cd1b586afa2e46ea60ec02e85e46ee7bdfc5727e04bf782331c39316/bananapotato333%20(11).mp4",
+			"https://www.burstcloud.co/embed/d0d936fdb1889d87b4e589226c2b3588a6bfd9c6b3234cd1e72bff8d16464882/bananapotato333%20(12).mp4",
+			"https://www.burstcloud.co/embed/97eebaaf38c1b2e4a6d8566c8aefd723d39e9d760a8805333e69169a20b68b1e/bananapotato333%20(13).mp4",
+			"https://www.burstcloud.co/embed/3efc50af6abd9818f8d1766f330547a0886030d24a92443bf118c653a7c08a5e/bananapotato333%20(14).mp4",
+			"https://www.burstcloud.co/embed/5d352dc05f2984276edcd309ac075f306e74c94a688c70ba1620ae8c9bc3c0d8/bananapotato333%20(2).mp4",
+			"https://www.burstcloud.co/embed/1b7721b7b7518c8836e3ea01e6b37b5877e8e925fc53e143721b36eec53d05f6/bananapotato333%20(3).mp4",
+			"https://www.burstcloud.co/embed/f6b260dedcfd2c5926362240dc8acf68fb5d071ddcbf2171da7178b7e62fa29e/bananapotato333%20(4).mp4",
+			"https://www.burstcloud.co/embed/a934ec5c73a5ac32e8fffc991a3453e3a55cee3206ff345d91375839e41b602b/bananapotato333%20(5).mp4",
+			"https://www.burstcloud.co/embed/68a330977fd6e9d226cceb8efedf532cd6557939861c3dbdd5cf50d0dc66a71a/bananapotato333%20(6).mp4",
+			"https://www.burstcloud.co/embed/de859c4c32de2f01d5fe1f542685b918484c12f3f664ff2e7f914152a1b36c9c/bananapotato333%20(7).mp4",
+			"https://www.burstcloud.co/embed/17b8e49a68a12e9cafa1441baaae471befb5c5c8558f46669aeac69427850c5b/bananapotato333%20(8).mp4",
+			"https://www.burstcloud.co/embed/3452fe2cf0f92d033554bae7f0db470d0a7a943496a400e62edd770a960147e3/bananapotato333%20(9).mp4"
+			
+
+        ]
+    },
 ];
