@@ -738,6 +738,7 @@ const modelosDB = [
         onlyfans: "https://onlyfans.com/jakarakami",
         instagram: "https://www.instagram.com/itsathenakami",
         fotos: [
+		    "https://simp6.cuckcapital.cr/images4/f07fd614-5706-42ab-83ae-1f1df6aa736e.png",
             "https://simp6.cuckcapital.cr/images4/c9ee02b7-93fe-4ba3-a4f9-dc1706eea844.jpg",
             "https://simp6.cuckcapital.cr/images4/4f74b02d-e6ed-4d3b-a4fd-e279c9fe251f.jpg",
             "https://simp6.cuckcapital.cr/images4/a22368a8-de32-47e3-bccd-362f27ba4375.jpg",
@@ -795,7 +796,11 @@ const modelosDB = [
 			"https://www.burstcloud.co/embed/30ed7a1dc2e7e971f5779615d6210a38e21c73e8405782680d30a42c89842bf7/1%20(6).mp4",
 			"https://www.burstcloud.co/embed/edc979c6788883a29f21d5f6204954908791501294295d3faf43d5d1ab288dec/1%20(7).mp4",
 			"https://www.burstcloud.co/embed/5507bb2c7211f9a11141a605cd2c743a09a712b23384b6ef28304e871dbbf30b/1%20(8).mp4",
-			"https://www.burstcloud.co/embed/cfe0c0e7d8e9d7ad699b6f5a68762e214506f8f4ab2b481ae0e3332f6ce03e5e/1%20(9).mp4"
+			"https://www.burstcloud.co/embed/cfe0c0e7d8e9d7ad699b6f5a68762e214506f8f4ab2b481ae0e3332f6ce03e5e/1%20(9).mp4",
+			"https://www.burstcloud.co/embed/89d11e4a59665bbd3e17e0e65d5a4804f033728a1e631e9b59db851b0d85559f/athenea30.mp4",
+			"https://www.burstcloud.co/embed/e6fdebb158ebd4a0869de0511539dbe17728db9e2672142604698d1d70c97d30/athenea31.mp4",
+			"https://www.burstcloud.co/embed/3844862495442d7a9fc66b29a052288f504a526bb366bdf34c4ddff341466248/athenea32.mp4",
+			"https://www.burstcloud.co/embed/09f94a9b7bca07fd0f9da38361e2af1469e4102ba0d23172bb42417d310a1a2c/athenea33.mp4"
 
         ]
     },
@@ -1346,7 +1351,8 @@ const modelosDB = [
 			"https://www.burstcloud.co/embed/6171f8237178d248f84abe09b7a8c24d0d0dbe9af69f355fd734ab72a3a74fab/ArisePeachy%20(10).mp4",
 			"https://www.burstcloud.co/embed/d14457510f06cc9fc0b2e7d968ba3677d67601970ffed28317b787f95e99ed73/ArisePeachy%20(11).mp4",
 			"https://www.burstcloud.co/embed/f17e33ebcabd2881bc403aca7a2ded0e1a432d547a79264529177b199bc530eb/ArisePeachy%20(12).mp4",
-			"https://www.burstcloud.co/embed/1ad7e003c4871a8699985e915eaea320b5cf552111bc35450a494e9293c4431e/ArisePeachy%20(13).mp4"
+			"https://www.burstcloud.co/embed/1ad7e003c4871a8699985e915eaea320b5cf552111bc35450a494e9293c4431e/ArisePeachy%20(13).mp4",
+			"https://www.burstcloud.co/embed/40e5c130fafc4df04d89121584dc83095c2c94f76931741da42e1435e81b9d84/ArisePeachy15.mp4"
 
         ]
     },
