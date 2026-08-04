@@ -2172,4 +2172,49 @@ const modelosDB = [
 
         ]
     },
+	{
+        id: 44,
+        nombre: "Soy_Sofia",
+        fotoPortada: "https://simp6.cuckcapital.cr/images3/3664x2062_1f04480e5245b1a6584a808678646da836acee01bed8d303.jpg",
+        onlyfans: "https://onlyfans.com/soy_Sofia",
+        instagram: "https://www.instagram.com/sofihayek",
+        fotos: [
+            "https://simp6.cuckcapital.cr/images3/3024x4032_b0cb3aef641c0bd6e7f609a9de0790c08a047e1fd1420b70.jpg",
+            "https://simp6.cuckcapital.cr/images3/2316x3088_6630438ce1d99b9380c160e842c5b0fe6df73cd2918e580d.jpg",
+            "https://simp6.cuckcapital.cr/images3/1179x1667_a406fbff156687ece8e52b56b2705c44de694ba8aad93fe3.jpg",
+			"https://simp6.cuckcapital.cr/images3/1536x2049_ab2000ad529554131f325e493f1c762eae4727b777049ca1.jpg",
+			"https://simp6.cuckcapital.cr/images3/3024x4032_7714c6f0066c21272ef4e2051cc0ee6b7fc219c56d9eea4d.jpg",
+			"https://simp6.cuckcapital.cr/images3/2316x3088_d124c406b1169d652e12ae965f8477abd0c3a2ac815ae3f4.jpg",
+			"https://simp6.cuckcapital.cr/images3/3024x4032_693ba7b55e0b8cb2822d6575b7487e8c2629642308c717c6.jpg",
+			"https://simp6.cuckcapital.cr/images3/2316x3088_b9b3186afb117136c9b3c4d117866e1174ce682b0110cc27.jpg",
+			"https://simp6.cuckcapital.cr/images3/2316x3088_466ac01aed80c71fefc16d5ae9b7e6f3b8c35ce529461bae.jpg",
+			"https://simp6.cuckcapital.cr/images3/3024x4032_88bb60b67dd88f320fdcd64d87a288e0d2a4813af6d1accb.jpg",
+			"https://simp6.cuckcapital.cr/images3/2316x3088_9add13e023f07c61ab324d330d2880214e3f1b81c7ea8533.jpg",
+			"https://simp6.cuckcapital.cr/images3/1536x2049_4cd714cb95b2b64c8b5789a5167ec0adb5f62f0982eaf961.jpg",
+			"https://simp6.cuckcapital.cr/images3/3000x4000_337ddad0075498adc7d73797c80365023682795be5dfd00e.jpg",
+			"https://simp6.cuckcapital.cr/images3/2730x1536_3ba8ce9f88195e2a69742e8aa4093b9351afb604b99a0566.jpg",
+			"https://simp6.cuckcapital.cr/images3/1536x2048_6e11fa1f12a03265d68ce9ff8c834f7808a1fbf5206adc69.jpg",
+			"https://simp6.cuckcapital.cr/images3/1536x2048_f117d94e264b5733a3aa58ae3d2e92c001621c61cfd53b8a.jpg",
+			"https://simp6.cuckcapital.cr/images3/1536x2048_5786153036909264a7cebee5a0dcd0f9640ab8a4448292b2.jpg",
+			"https://simp6.cuckcapital.cr/images3/3000x4000_ea96c3176194c95f061c743f6f81fb95e101600454e70a89.jpg",
+			
+			
+			
+
+        ],
+        videos: [
+            "https://www.burstcloud.co/embed/525c7e9dded95a0fc6e11f0bde0a9fce78ccf63bb9e27c7f8bfe7905ab4c96b2/SoySofia%20(1).mp4",
+            "https://www.burstcloud.co/embed/793ce6ae5f8f271957314a7bbe77c9988fa0f6a5e231ed4fd2b9a5106d429e5e/SoySofia%20(10).mp4",
+            "https://www.burstcloud.co/embed/32e38beeace37a4f2a8b9f2af7caa04334494352a42a63002864fc061f9222a9/SoySofia%20(12).mp4",
+			"https://www.burstcloud.co/embed/b3cf55f112c0226753b7bbc53dfdd8087bb895aab120043e59768ae4c9190e3b/SoySofia%20(13).mp4",
+			"https://www.burstcloud.co/embed/346a142104b4841c816da2b7640491a2a35b0a2b8847e6d10b7c6f03e947985f/SoySofia%20(3).mp4",
+			"https://www.burstcloud.co/embed/b978af3ecadb8828806fc900c42afcdc8288dc43954f9e193b34ec9bc923d8e7/SoySofia%20(4).mp4",
+			"https://www.burstcloud.co/embed/75df33e455604f4a416df26e3ceae0506e5fc71b0e25fdfd3b68e6384d9159ae/SoySofia%20(5).mp4",
+			"https://www.burstcloud.co/embed/2c7802a2e21a937798f64f19c7784cb076491323389d98d360f1ced872a8150b/SoySofia%20(6).mp4",
+			"https://www.burstcloud.co/embed/6ec9f643016776c6a62df21dc3ad5c137a0969761fce70e038f79105cdb0685d/SoySofia%20(7).mp4",
+			"https://www.burstcloud.co/embed/0c0ecfae76a016e9555fcc12eeefcc54dfb189327046da8fc526ec8fe7cc528f/SoySofia%20(8).mp4",
+			"https://www.burstcloud.co/embed/ba8ebd039d11ede9edd3fad09ee2b3e57c2f41f4a5acb43aaa06e72bb3e1ccfd/SoySofia%20(9).mp4"
+
+        ]
+    },
 ];
