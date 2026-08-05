@@ -2343,4 +2343,36 @@ const modelosDB = [
 
         ]
     },
+	{
+        id: 47,
+        nombre: "Zoe_lovee",
+        fotoPortada: "https://simp6.cuckcapital.cr/images3/IMG_36356c9e072d3e6e2b99.jpg",
+        onlyfans: "https://onlyfans.com/zoe_lovee",
+        instagram: "https://www.instagram.com/zoe101anddone/",
+        fotos: [
+            "https://simp6.cuckcapital.cr/images3/2025-02-10-604c1b6600b1bf87ee.png",
+            "https://simp6.cuckcapital.cr/images3/2025-02-10-21331f3797959667506.png",
+            "https://simp6.cuckcapital.cr/images3/IMG_20250528_101931d8f4cb67387c1d7d.jpg",
+			"https://simp6.cuckcapital.cr/images3/z1695553b63af0ce79.jpg",
+			"https://simp6.cuckcapital.cr/images3/1179x2556_8517ceb22e048d109b5ae41b6ad24ab194647653e5085484.jpg",
+			"https://simp6.cuckcapital.cr/images3/1290x2296_716e5e1b04732c382c17e978f9171c4f9d2a7d1f7b0aa0d1.jpg",
+			"https://simp6.cuckcapital.cr/images3/2025-02-10-42caff811df4679d00.png",
+			"https://simp6.cuckcapital.cr/images3/2025-02-10-11a221e77525eabe8c.png",
+			"https://simp6.cuckcapital.cr/images3/2025-02-10-2cc774e8ff74981fe.png",
+			"https://simp6.cuckcapital.cr/images3/44eeb9b0febc4501f97e6cbae4e0601305ffa760c4be706b53428398dfd4d2074481791603236420.jpg",
+			"https://simp6.cuckcapital.cr/images3/087313262b04bcedf2371ad86cffa3a9b20f2fce7f60b103d8bda5ae018a997edb33f6cb9f299241.jpg",
+			"https://simp6.cuckcapital.cr/images3/IMG_4602f23163200ef8f0e0.jpg",
+			"https://simp6.cuckcapital.cr/images3/IMG_52275b951bd48d90b386.jpg"
+			
+
+        ],
+        videos: [
+            "https://www.burstcloud.co/embed/05a9d71029d813039362daa86cef0cf5105f03e5898c3a856addcda42f79372f/Zoelovee%20(1).mp4",
+            "https://www.burstcloud.co/embed/1bc905efa914be42ece93eb0306e39691a157f31dfca8dc81856272b4280ed79/Zoelovee%20(2).mp4",
+            "https://www.burstcloud.co/embed/869f22c220dd55c9c82b0c684b92c6945302d1e9e1d08dac5255e37397bd6db7/Zoelovee%20(3).mp4",
+			"https://www.burstcloud.co/embed/869f22c220dd55c9c82b0c684b92c6945302d1e9e1d08dac5255e37397bd6db7/Zoelovee%20(3).mp4",
+			"https://www.burstcloud.co/embed/e76da86662873e10db5293157365c48039595acdf089d2e60363e539c99f3983/Zoelovee%20(5).mp4"
+
+        ]
+    },
 ];
