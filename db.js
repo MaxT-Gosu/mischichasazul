@@ -2376,4 +2376,51 @@ const modelosDB = [
 
         ]
     },
+	{
+        id: 48,
+        nombre: "Comeovwhenursober",
+        fotoPortada: "https://simp6.cuckcapital.cr/images3/IMG_3882d08b86fb1c86b005.jpg",
+        onlyfans: "https://onlyfans.com/comeovwhenursober",
+        instagram: "https://www.instagram.com/comeovwhenursober",
+        fotos: [
+            "https://simp6.cuckcapital.cr/images3/IMG_93532d64c6fa750523d5.jpg",
+            "https://simp6.cuckcapital.cr/images4/IMG_0563f425bb50fe48fa0c.jpg",
+            "https://simp6.cuckcapital.cr/images/IMG_244810c1e286f1c43e5d.jpg",
+            "https://simp6.cuckcapital.cr/images4/13fa7aa2-e9b3-4550-94b9-4e78cdf720e1.jpg",
+			"https://simp6.cuckcapital.cr/images4/e1c54a4d-9756-421b-a0ec-c02b8afa11ed.jpg",
+			"https://simp6.cuckcapital.cr/images4/f70d3054-3888-4b82-9884-a0a31b8a7675.jpg",
+			"https://simp6.cuckcapital.cr/images3/instdown8ae4dd38dbb337fd.jpg",
+			"https://simp6.cuckcapital.cr/images4/IMG_315067104fd17cbabb92.jpg",
+			"https://simp6.cuckcapital.cr/images3/Gv41MnybsAAmtswb9622d3af67a258c.jpg",
+			"https://simp6.cuckcapital.cr/images4/IMG_030509ee8c03e3260d32.jpg",
+			"https://simp6.cuckcapital.cr/images4/IMG_31816bcd15d86463fe94.jpg",
+			"https://simp6.cuckcapital.cr/images3/960x960_89f79c395283b0d254bc19eb10d9750fe5d7efab82fe3310.jpg",
+			"https://simp6.cuckcapital.cr/images3/2208x1242_6e754bcfd15061262befd1f4ecc5d252968f5616d4465b3a.jpg",
+			"https://simp6.cuckcapital.cr/images4/IMG_068779a80fe2ef3857ef.jpg",
+			"https://simp6.cuckcapital.cr/images4/IMG_0594af3f47aba2ae9921.jpg",
+			"https://simp6.cuckcapital.cr/images3/960x1707_5cfb33863cabb7ca0756248f368b4ad686e73330a1775d82.jpg",
+			"https://simp6.cuckcapital.cr/images3/960x1707_6e4691c20fd57c2350a90d242b93425a89c5a98cc7f7d04c.jpg",
+			"https://simp6.cuckcapital.cr/images/IMG_705855559bc96d7e1e08.jpg",
+			"https://simp6.cuckcapital.cr/images/IMG_70620cb66b1d30da7960.jpg"
+			
+			
+        ],
+        videos: [
+            "https://www.burstcloud.co/embed/e96fe2851f4ed0aeda41b745ba1c68abc69958f1716174ef9ece1e772d6cbd7c/Comeovwhenursober%20(1).mp4",
+            "https://www.burstcloud.co/embed/bdff07d6c8c86ccdc519d67d1fa3728838677817e2f49bf77edd583708ed3414/Comeovwhenursober%20(2).mp4",
+            "https://www.burstcloud.co/embed/964d1dbbe6b9ea8c857437821736ee092906f532e7d9e3b4279074c7bc04115c/Comeovwhenursober%20(3).mp4",
+			"https://www.burstcloud.co/embed/2bf01e614e90b1c89a984cec8702b9e2cce4092c53271e6d590cf8310666666d/Comeovwhenursober%20(4).mp4",
+			"https://www.burstcloud.co/embed/5177ad98a9372e1db967aa6fd513f0aef0a5e681851fcef7f7038df1340a8d03/Comeovwhenursober%20(5).mp4",
+			"https://www.burstcloud.co/embed/c1e25d582228e4019304123f8f3d20dbf9409c108f2e2ea4ad59c6a6453840f4/Comeovwhenursober%20(6).mp4",
+			"https://www.burstcloud.co/embed/62f08267aeea6b30f0e1bb76fe2c09997c3227d244ebccedaa43973ef99b30bb/Comeovwhenursober%20(7).mp4",
+			"https://www.burstcloud.co/embed/725b9f99b18c8d17a49718f51dff0137d6ba6b5c453a821327ccd4cba44c3dcc/Comeovwhenursober%20(8).mp4",
+			"https://www.burstcloud.co/embed/14b4bcdcb256e295904a78b6f9ab4e2c27bf2aa06833b824d1a3abdc8fb93d96/Comeovwhenursober%20(9).mp4",
+			"https://www.burstcloud.co/embed/5e0b4cf68a46bd0ddddf6a599a2b64ed0db12f0476d4a649b29cde6a8921c96a/Comeovwhenursober%20(10).mp4",
+			"https://www.burstcloud.co/embed/e7a56a31c20497f5cc63c9d202f2fbe9aa6c14467032084a36a51c44dc4a99c4/Comeovwhenursober%20(11).mp4",
+			"https://www.burstcloud.co/embed/82e80c900b01724d1b35f8e15885c159a4870c05fd9277892c9f8fd8c63e49ce/Comeovwhenursober%20(12).mp4",
+			"https://www.burstcloud.co/embed/b202fe242d7ce52231bc1a2c12d9b1add57dbac1c318c9f020cf5f2077df9550/Comeovwhenursober%20(13).mp4",
+			"https://www.burstcloud.co/embed/f1912fb66696b9eb86fcfb0730c4dbdbb2f75e5ba169c974f407714254f45cd4/Comeovwhenursober%20(14).mp4"
+
+        ]
+    },
 ];
