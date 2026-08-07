@@ -2423,4 +2423,45 @@ const modelosDB = [
 
         ]
     },
+	{
+        id: 49,
+        nombre: "soleilretro",
+        fotoPortada: "https://simp6.cuckcapital.cr/images3/GwJIzTsW0AIOSZucdb4811b78c07478.jpg",
+        onlyfans: "https://onlyfans.com/soleilretro",
+        instagram: "https://x.com/soleilretro_",
+        fotos: [
+            "https://simp6.cuckcapital.cr/images4/HHLdgDOWEAAtUe65fb6f153a4551530.jpg",
+            "https://simp6.cuckcapital.cr/images4/Soleilxretro-2068724586661728758-0229b77781c01a5df1.jpg",
+            "https://simp6.cuckcapital.cr/images4/312cfd7f-be41-4db2-92be-9947ec1556b4.png",
+			"https://simp6.cuckcapital.cr/images4/f9b060b8-c498-49f4-a438-477a4f93aa66.jpg",
+			"https://simp6.cuckcapital.cr/images4/d6dbcd92-4052-4110-8c65-ab9550574a4b.jpg",
+			"https://simp6.cuckcapital.cr/images4/HGhn3NYW8AAVy3P83d647b1db74bfe2.jpg",
+		    "https://simp6.cuckcapital.cr/images4/HIih1olXgAAh_hA1210c42cecea74b1.jpg",
+			"https://simp6.cuckcapital.cr/images3/GbQSBucXcAARhVV77cf9a899ac118c8.jpg",
+			"https://simp6.cuckcapital.cr/images3/tumblr_ae2_20489d6e2fe126ae8817.jpg",
+			"https://simp6.cuckcapital.cr/images3/2877x1852_64726818e42dd6ba10b19e50d76110e7149c73b62744f6a8.jpg",
+			"https://simp6.cuckcapital.cr/images3/2160x2210_7d0e843daccd3309e7a3c3f8574cb3b8f8e4169b932ecf20.jpg",
+			"https://simp6.cuckcapital.cr/images3/1855x2151_3fdba2f2dcd3874d8e3c24506daf81649ada3fab6f7a9411.jpg",
+			"https://simp6.cuckcapital.cr/images3/2880x2105_ac992001f1a7492ef1eebb5043bf61a358425a81ae0d8083.jpg",
+			"https://simp6.cuckcapital.cr/images3/IMG_59257af56f55543afa56.jpg",
+			"https://simp6.cuckcapital.cr/images4/IMG_3370d7263a381902c36c.jpg",
+			"https://simp6.cuckcapital.cr/images3/2880x2078_c52551cd993617b914b1c2b5a899beee1fb22262a3f398f1.jpg",
+			"https://simp6.cuckcapital.cr/images3/2880x2050_933cf0c4306d91fc30a2a5e0a0fd3211363b31d8e22a0075.jpg"
+
+        ],
+        videos: [
+            "https://www.burstcloud.co/embed/a82338f08d194b8c191a0ff5286ed7df9ca7c1e9325be7d9c1d0e21e32732324/soleilretro%20(1).mp4",
+            "https://www.burstcloud.co/embed/29444a62c5aa049db58cf4668f3d60fe317d40c6231372d2faa0911daa39a25e/soleilretro%20(10).mp4",
+            "https://www.burstcloud.co/embed/0de051ececf783381bfe1c0ea7fdcaf58fbaa76ae27803b9c50aa418dd241fb7/soleilretro%20(2).mp4",
+			"https://www.burstcloud.co/embed/8d41b1792cdc00de6c51a381be285c9daeefe28220f5e0955ee17405de0f97d3/soleilretro%20(3).mp4",
+			"https://www.burstcloud.co/embed/00480b64b229b94517cc2a8a446fd4479a90d710c83c0594dda168144875754c/soleilretro%20(4).mp4",
+			"https://www.burstcloud.co/embed/08e2922a18adfa6be313bb6f2245fd0436c6e7ea414a6571c25a316ca7a9fd8e/soleilretro%20(5).mp4",
+			"https://www.burstcloud.co/embed/c3309d852e98c4d974619ecc224d93a1e109acac5389898f910c833412f5ce30/soleilretro%20(6).mp4",
+			"https://www.burstcloud.co/embed/4e48dee76908a6b0e0d651f4e0571e25c720268aff69fd7863d69040686ab24c/soleilretro%20(7).mp4",
+			"https://www.burstcloud.co/embed/a9957d9c5a4947462d55704c7f594e3f6e543070eec655ec31532f24c606b6ba/soleilretro%20(8).mp4",
+			"https://www.burstcloud.co/embed/1846cc0ade597519f468031b469cce04708929f5c3487231f9ed2a043f0e42c7/soleilretro%20(9).mp4"
+			
+
+        ]
+    },
 ];
